@@ -1,15 +1,1907 @@
 [
   {
-    "id": "sample-jkssb-001",
+    "id": "5c2a3525",
     "category": "jkssb",
-    "name": "JKSSB Junior Engineer Recruitment",
-    "subtitle": "Public Works (R&B) Department",
-    "desc": "Junior Engineer recruitment through JKSSB written test for Civil/Electrical/Mechanical streams.",
-    "badges": [{"label": "JKSSB", "cls": "tcb-p"}, {"label": "Diploma/B.E.", "cls": "tcb-b"}],
+    "name": "Recruitment Calendar",
+    "subtitle": "JKSSB",
+    "desc": "Recruitment Calendar — posted by JKSSB.",
+    "badges": [
+      {
+        "label": "JKSSB",
+        "cls": "tcb-g"
+      }
+    ],
     "lastDate": "--/--/----",
     "applyLink": "https://jkssb.nic.in",
-    "notificationLink": "https://jkssb.nic.in",
+    "notificationLink": "https://jkssb.nic.in/pdf/Annual_calendar_2026_18122025.pdf",
     "officialLink": "https://jkssb.nic.in",
-    "scrapedAt": "2026-09-05T00:00:00"
+    "scrapedAt": "2026-09-06T03:37:46.585Z"
+  },
+  {
+    "id": "fb39e796",
+    "category": "jkssb",
+    "name": "Notice: OMR Written Examination for the posts of Sanitary\n                                    Inspector and Junior Ophth",
+    "subtitle": "JKSSB",
+    "desc": "Notice: OMR Written Examination for the posts of Sanitary\n                                    Inspector and Junior Ophthalmic Technician (Notification\n                              — posted by JKSSB.",
+    "badges": [
+      {
+        "label": "JKSSB",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "08-07-2026",
+    "applyLink": "https://jkssb.nic.in",
+    "notificationLink": "https://jkssb.nic.in/../Pdf/notice_07072026.pdf",
+    "officialLink": "https://jkssb.nic.in",
+    "scrapedAt": "2026-09-06T03:37:46.586Z"
+  },
+  {
+    "id": "fec62efc",
+    "category": "jkssb",
+    "name": "Services Selection Board",
+    "subtitle": "JKSSB",
+    "desc": "Services Selection Board — posted by JKSSB.",
+    "badges": [
+      {
+        "label": "JKSSB",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkssb.nic.in",
+    "notificationLink": "https://jkssb.nic.in/#",
+    "officialLink": "https://jkssb.nic.in",
+    "scrapedAt": "2026-09-06T03:37:46.586Z"
+  },
+  {
+    "id": "fec62efc",
+    "category": "jkssb",
+    "name": "Services Selection Board,",
+    "subtitle": "JKSSB",
+    "desc": "Services Selection Board, — posted by JKSSB.",
+    "badges": [
+      {
+        "label": "JKSSB",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkssb.nic.in",
+    "notificationLink": "https://jkssb.nic.in/#",
+    "officialLink": "https://jkssb.nic.in",
+    "scrapedAt": "2026-09-06T03:37:46.586Z"
+  },
+  {
+    "id": "fec62efc",
+    "category": "jkssb",
+    "name": "Services Selection Board,",
+    "subtitle": "JKSSB",
+    "desc": "Services Selection Board, — posted by JKSSB.",
+    "badges": [
+      {
+        "label": "JKSSB",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkssb.nic.in",
+    "notificationLink": "https://jkssb.nic.in/#",
+    "officialLink": "https://jkssb.nic.in",
+    "scrapedAt": "2026-09-06T03:37:46.586Z"
+  },
+  {
+    "id": "fec62efc",
+    "category": "jkssb",
+    "name": "Services Selection Board,",
+    "subtitle": "JKSSB",
+    "desc": "Services Selection Board, — posted by JKSSB.",
+    "badges": [
+      {
+        "label": "JKSSB",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkssb.nic.in",
+    "notificationLink": "https://jkssb.nic.in/#",
+    "officialLink": "https://jkssb.nic.in",
+    "scrapedAt": "2026-09-06T03:37:46.586Z"
+  },
+  {
+    "id": "c04fb6da",
+    "category": "jkpolice",
+    "name": "Notifications",
+    "subtitle": "JK Police",
+    "desc": "Notifications — posted by JK Police.",
+    "badges": [
+      {
+        "label": "JK Police",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkpolice.gov.in",
+    "notificationLink": "https://jkpolice.gov.in/#",
+    "officialLink": "https://jkpolice.gov.in",
+    "scrapedAt": "2026-09-06T03:37:46.983Z"
+  },
+  {
+    "id": "e38e20ff",
+    "category": "jkpolice",
+    "name": "Notifications",
+    "subtitle": "JK Police",
+    "desc": "Notifications — posted by JK Police.",
+    "badges": [
+      {
+        "label": "JK Police",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkpolice.gov.in",
+    "notificationLink": "https://jkpolice.gov.in/Notifications",
+    "officialLink": "https://jkpolice.gov.in",
+    "scrapedAt": "2026-09-06T03:37:46.983Z"
+  },
+  {
+    "id": "1160dfc8",
+    "category": "jkbank",
+    "name": "EOI &amp; Tender / Notifications",
+    "subtitle": "J&K Bank",
+    "desc": "EOI &amp; Tender / Notifications — posted by J&K Bank.",
+    "badges": [
+      {
+        "label": "J&K Bank",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://www.jkbank.com",
+    "notificationLink": "https://www.jkbank.com/tenderNotice",
+    "officialLink": "https://www.jkbank.com",
+    "scrapedAt": "2026-09-06T03:37:48.197Z"
+  },
+  {
+    "id": "91febee0",
+    "category": "jkjudiciary",
+    "name": "Notifications",
+    "subtitle": "JK Judiciary",
+    "desc": "Notifications — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/notice.php",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.782Z"
+  },
+  {
+    "id": "91febee0",
+    "category": "jkjudiciary",
+    "name": "Notifications",
+    "subtitle": "JK Judiciary",
+    "desc": "Notifications — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/notice.php",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.782Z"
+  },
+  {
+    "id": "56adc09",
+    "category": "jkjudiciary",
+    "name": "Notification regarding Rules for Designation of an advocate as Senior Advocate,2025.",
+    "subtitle": "JK Judiciary",
+    "desc": "Notification regarding Rules for Designation of an advocate as Senior Advocate,2025. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/noti_1784_29052025.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.783Z"
+  },
+  {
+    "id": "e5d290b2",
+    "category": "jkjudiciary",
+    "name": "Notification regarding'Criteria for Designating Senior Advocates, 2023'",
+    "subtitle": "JK Judiciary",
+    "desc": "Notification regarding'Criteria for Designating Senior Advocates, 2023' — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/Criteria for Designating Senior Advocates, 2023.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.783Z"
+  },
+  {
+    "id": "e507c68d",
+    "category": "jkjudiciary",
+    "name": "Notification regarding Scheme for Internship and e-internship in the High Court of Jammu and Kashmir.",
+    "subtitle": "JK Judiciary",
+    "desc": "Notification regarding Scheme for Internship and e-internship in the High Court of Jammu and Kashmir. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/noti_23072020.PDF",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.783Z"
+  },
+  {
+    "id": "78b584d2",
+    "category": "jkjudiciary",
+    "name": "Notification regarging Amendment in the Jammu & Kashmir and Ladakh Lawyers\nChambers (Allotment and License Fee) Rules, 2",
+    "subtitle": "JK Judiciary",
+    "desc": "Notification regarging Amendment in the Jammu & Kashmir and Ladakh Lawyers\nChambers (Allotment and License Fee) Rules, 2024. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/noti_2083_02092026.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.783Z"
+  },
+  {
+    "id": "630f17ea",
+    "category": "jkjudiciary",
+    "name": "Notification",
+    "subtitle": "JK Judiciary",
+    "desc": "Notification — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/transnoti.php",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.783Z"
+  },
+  {
+    "id": "bf4d3c88",
+    "category": "jkjudiciary",
+    "name": "J&K Civil Services Judicial Recruitment Rules,1967",
+    "subtitle": "JK Judiciary",
+    "desc": "J&K Civil Services Judicial Recruitment Rules,1967 — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/THE JAMMU AND KASHMIR CIVIL SERVICES (JUDICIAL) RECRUTIMENT RULES 1967.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.783Z"
+  },
+  {
+    "id": "d4693016",
+    "category": "jkjudiciary",
+    "name": "J&K Ministerial Staff of the Subordinate Courts (Recruitment & Conditions Of Services) Rules 2016",
+    "subtitle": "JK Judiciary",
+    "desc": "J&K Ministerial Staff of the Subordinate Courts (Recruitment & Conditions Of Services) Rules 2016 — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/JAMMU AND KASHMIR MINISTERIAL STAFF OF THE SUBORDINATE COURTS(RECRUITMENT AND CONDITIONS OF SERVICES) RULES 2016.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.783Z"
+  },
+  {
+    "id": "da78c8f5",
+    "category": "jkjudiciary",
+    "name": "Recruitment",
+    "subtitle": "JK Judiciary",
+    "desc": "Recruitment — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/#collapseSeventeen",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.783Z"
+  },
+  {
+    "id": "1919607e",
+    "category": "jkjudiciary",
+    "name": "Notifications",
+    "subtitle": "JK Judiciary",
+    "desc": "Notifications — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/noti.php",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.783Z"
+  },
+  {
+    "id": "438a1a96",
+    "category": "jkjudiciary",
+    "name": "Link to  Download the Admit Card for the post of Junior Assistant Advertised vide High Court Advertisement Notification ",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to  Download the Admit Card for the post of Junior Assistant Advertised vide High Court Advertisement Notification No. 02 of 2025/RR/RC Dated 26.05.2025. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "26.05.2025",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://hallticket.online/login",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "438a1a96",
+    "category": "jkjudiciary",
+    "name": "Link to  Download Tentative answer key for the post of Driver grade -II in the District Judiciary & objections to Tentat",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to  Download Tentative answer key for the post of Driver grade -II in the District Judiciary & objections to Tentative answer key, Advertised Vide Notification No. 03 of 2025/ — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "26.06.2025",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://hallticket.online/login",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "d4459806",
+    "category": "jkjudiciary",
+    "name": "Link to  Download Result of driving skill test for the posts of Driver Grade-II, Advertised vide Notification No.\n03 of ",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to  Download Result of driving skill test for the posts of Driver Grade-II, Advertised vide Notification No.\n03 of 2025/Psy dated 26.06.2025. ‎ — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "26.06.2025",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/Annexures_09042026_n.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "9e82af0c",
+    "category": "jkjudiciary",
+    "name": "Link to  Download Admit Card for the post of Lift Operator, advertised pursuant to Advertisement Notification No. 04 of ",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to  Download Admit Card for the post of Lift Operator, advertised pursuant to Advertisement Notification No. 04 of 2024/RR/RC dated 29.07.2024. ‎ — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "29.07.2024",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://ibtexamination.com/secuAdmitcard/JKHC2025OMR/",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "37889d6",
+    "category": "jkjudiciary",
+    "name": "Link to  Apply for the post of Reader, Senior Scale Stenographer, Junior Scale Stenographer, Steno-Typist and Junior Ass",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to  Apply for the post of Reader, Senior Scale Stenographer, Junior Scale Stenographer, Steno-Typist and Junior Assistant advertised pursuant to High Court Advertisement Notif — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "26.05.2025",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://ibtexamination.com/JKHC_02OF2025_RRRC/",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "31f1414e",
+    "category": "jkjudiciary",
+    "name": "Link to  Download Admit Card for Conduct of Driving test for the District Cadre posts of Driver Grade-II, advertised vid",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to  Download Admit Card for Conduct of Driving test for the District Cadre posts of Driver Grade-II, advertised vide Adv. Notification No. 03 of\n2025/Psy dated 26.06.2025. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "26.06.2025",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://ibtexamination.com/secuAdmitcard/JKHC_DRIVER_ADMITCARD/ ",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "11f521af",
+    "category": "jkjudiciary",
+    "name": "Link to  check the revised response sheet/answer key for the post of Reader, advertised pursuant to Advertisement Notifi",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to  check the revised response sheet/answer key for the post of Reader, advertised pursuant to Advertisement Notification No. 02 of 2025/RR/RC dated 26.05.2025. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "26.05.2025",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://www.examresponse.in/jkhc-grievance/",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "6187cd99",
+    "category": "jkjudiciary",
+    "name": "Link to  Download Admit Cards for the post of Senior Scale Stenographer, Junior Scale Stenographer and Steno-Typists, ad",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to  Download Admit Cards for the post of Senior Scale Stenographer, Junior Scale Stenographer and Steno-Typists, advertised pursuant to Advertisement Notification No’s. 01 of  — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "19.03.2025",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://ibtexamination.com/secuAdmitcard/JKHC_SEP2025_ADMITCARD/",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "abc2faa4",
+    "category": "jkjudiciary",
+    "name": "Link to  Download Admit Cards for the post of Reader, advertised pursuant to Advertisement Notification No. 02 of 2025/R",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to  Download Admit Cards for the post of Reader, advertised pursuant to Advertisement Notification No. 02 of 2025/RR/RC Dated 26.05.2025. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "26.05.2025",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://ibtexamination.com/secuAdmitcard/JKHC_AUG2025_ADMITCARD/",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "6187cd99",
+    "category": "jkjudiciary",
+    "name": "Link to  Download Admit Cards for the post of Senior Scale Stenographer, Junior Scale Stenographer and Steno-Typists, ad",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to  Download Admit Cards for the post of Senior Scale Stenographer, Junior Scale Stenographer and Steno-Typists, advertised pursuant to Advertisement Notification No’s. 01 of  — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "19.03.2025",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://ibtexamination.com/secuAdmitcard/JKHC_SEP2025_ADMITCARD/",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "abc2faa4",
+    "category": "jkjudiciary",
+    "name": "Link to  Download Admit Card for the post of Reader advertised pursuant to High Court Advertisement Notification No. 02 ",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to  Download Admit Card for the post of Reader advertised pursuant to High Court Advertisement Notification No. 02 of 2025/RR/RC dated 26.05.2025. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "26.05.2025",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://ibtexamination.com/secuAdmitcard/JKHC_AUG2025_ADMITCARD/",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "eb341970",
+    "category": "jkjudiciary",
+    "name": "Link to  Apply for the Post of Research Assistant advertised pursuant to High Court Advertisement Notification No. 04 of",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to  Apply for the Post of Research Assistant advertised pursuant to High Court Advertisement Notification No. 04 of 2025/RR/RC Dated 11.08.2025. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "11.08.2025",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://ibtexamination.com/JKHC_04OF2025_ResAsst/index",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "b4b8d120",
+    "category": "jkjudiciary",
+    "name": "Link to  Apply for the post of Drivers Grade-II ,in District Judiciary of UT of Jammu & Kashmir advertised pursuant to A",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to  Apply for the post of Drivers Grade-II ,in District Judiciary of UT of Jammu & Kashmir advertised pursuant to Advertisement Notification No. 03 of 2025/Psy dated 26.06.202 — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "26.06.2025",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://ibtexamination.com/JKHC_03OF2025_Driver/",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "462abc49",
+    "category": "jkjudiciary",
+    "name": "Link to  Download Question Booklet and Answer key for the post of Lift Operator, advertised pursuant to Advertisement No",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to  Download Question Booklet and Answer key for the post of Lift Operator, advertised pursuant to Advertisement Notification No. 04 of 2024/RR/RC dated 29.07.2024 (Note:-Cand — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "29.07.2024",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/Lift_oper_quest_ans_key_18062025.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "be0c2579",
+    "category": "jkjudiciary",
+    "name": "Link  regarding “Edit Option” for the various posts advertised pursuant to Advertisement Notification No. 02 of 2025/RR/",
+    "subtitle": "JK Judiciary",
+    "desc": "Link  regarding “Edit Option” for the various posts advertised pursuant to Advertisement Notification No. 02 of 2025/RR/RC dated 26.05.2025. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "26.05.2025",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://ibtexamination.com/JKHC_02OF2025_RRRC",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "4e071c98",
+    "category": "jkjudiciary",
+    "name": "Link to  apply for the post of Reader, Senior Scale Stenographer, Junior Scale Stenographer, Translator, Developer and C",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to  apply for the post of Reader, Senior Scale Stenographer, Junior Scale Stenographer, Translator, Developer and Compositor, advertised in pursuance to Advertisement Notifica — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "19.03.2025",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://ibtexamination.com/JKHC01OF2025_RRRC/index",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "f4e89dfb",
+    "category": "jkjudiciary",
+    "name": "Link to  Download Question Paper & Challenge the Provisional Answer Key for the post of Junior Assistant Adv Vide Notifi",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to  Download Question Paper & Challenge the Provisional Answer Key for the post of Junior Assistant Adv Vide Notification No 06 of 2024/Psy dated 28.08.2024 — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "28.08.2024",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://www.jkhcexam.com/jkhc-representation/",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "ddaebb30",
+    "category": "jkjudiciary",
+    "name": "Link to  Download the Admit card for the post of Junior Assistant (Jammu Division), Adv vide Notification No 06 of 2024/",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to  Download the Admit card for the post of Junior Assistant (Jammu Division), Adv vide Notification No 06 of 2024/Psy dated 28.08.2024. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "28.08.2024",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://ibtexamination.com/secuAdmitcard/JKHC2025_JAMMU_OMRBASEDEXAM/index",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "6cf8e8c3",
+    "category": "jkjudiciary",
+    "name": "Link to  Download the Admit card for the post of Junior Assistant (Kashmir Division), Adv vide Notification No 06 of 202",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to  Download the Admit card for the post of Junior Assistant (Kashmir Division), Adv vide Notification No 06 of 2024/Psy dated 28.08.2024. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "28.08.2024",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://ibtexamination.com/secuAdmitcard/JKHC2025_OMRBASEDEXAM/",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "62988af8",
+    "category": "jkjudiciary",
+    "name": "Link to  Download Admit Card for the post of Steno-Typist Advertised vide High Court Advertisement No. 02 of 2024/RR/RC ",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to  Download Admit Card for the post of Steno-Typist Advertised vide High Court Advertisement No. 02 of 2024/RR/RC dated 09.05.2024, read with Corrigendum dated 29.07.2024. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "09.05.2024",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://ibtexamination.com/secuAdmitcard/JKHC2025_STENO/",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "7776f9c3",
+    "category": "jkjudiciary",
+    "name": "Link  regarding Response sheet/Answer key for the post of System Assistant, Adv Vide Notification No 06 of 2024/Psy date",
+    "subtitle": "JK Judiciary",
+    "desc": "Link  regarding Response sheet/Answer key for the post of System Assistant, Adv Vide Notification No 06 of 2024/Psy dated 28.08.2024, whose online CBT was held on 2nd Dec 2024. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "28.08.2024",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://www.cbtexam.co.in/response-sheet/",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "dc54220",
+    "category": "jkjudiciary",
+    "name": "Link  to download the admit cards for the post of Steno-Typist & System Assistant in the Subordinate Judiciary of UT of ",
+    "subtitle": "JK Judiciary",
+    "desc": "Link  to download the admit cards for the post of Steno-Typist & System Assistant in the Subordinate Judiciary of UT of J&K, adv Vide Notification No 06 of 2024/Psy dated 28.08.202 — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "28.08.2024",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://ibtexamination.com/secuAdmitcard/JKHC_STENO_Typing",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "1071a99c",
+    "category": "jkjudiciary",
+    "name": "Link to  Download Admit Card for the Post of Senior Scale Stenographer and Junior Scale Stenographer Advertised vide Hig",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to  Download Admit Card for the Post of Senior Scale Stenographer and Junior Scale Stenographer Advertised vide High Court Advertisement Notification No.02 of 2024/RR/RC Dated — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "09.05.2024",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://ibtexamination.com/secuAdmitcard/JKHC_admitcard_02of2024RRRC/",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "49a8fe79",
+    "category": "jkjudiciary",
+    "name": "Link to  Download Admit Card For Various Posts Advertised vide High Court Advertisement Notification No. 02 of 2024/RR/R",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to  Download Admit Card For Various Posts Advertised vide High Court Advertisement Notification No. 02 of 2024/RR/RC Dated 09.05.2024, whose examination is scheduled to be hel — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "09.05.2024",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://ibtexamination.com/secuAdmitcard/JKHC_admitcard/",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.784Z"
+  },
+  {
+    "id": "20cfb74a",
+    "category": "jkjudiciary",
+    "name": "Link to Download Admit Card  for the posts of Accounts Clerk, Data Entry Operator/Computer Operator and Library\nAssistan",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to Download Admit Card  for the posts of Accounts Clerk, Data Entry Operator/Computer Operator and Library\nAssistant in District Judiciary of UT of J&K vide Advertisement Noti — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "10.01.2019",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://cbexams.com/jkhcadmitcardmarch2024/default1.aspx",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.785Z"
+  },
+  {
+    "id": "fd3ba4dc",
+    "category": "jkjudiciary",
+    "name": "Link to Apply  for the post of Telephone Operator\n(Non-Gazetted), in the High Court of Jammu &\nKashmir and ladakh. \n vid",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to Apply  for the post of Telephone Operator\n(Non-Gazetted), in the High Court of Jammu &\nKashmir and ladakh. \n vide Advertisement Notice No. 01 of 2024/RR/RC dated: 27-02-202 — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "27-02-2024",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://ibtexamination.com/jkhc_Application/",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.785Z"
+  },
+  {
+    "id": "a6282db2",
+    "category": "jkjudiciary",
+    "name": "Link for   Provisional answer key for the post of Computer Operator (Level-2 & Level-4) advertised vide Advertisement No",
+    "subtitle": "JK Judiciary",
+    "desc": "Link for   Provisional answer key for the post of Computer Operator (Level-2 & Level-4) advertised vide Advertisement Notice No. 03 of 2022/RG/NG dated 30-08-2022 held on 03-02-202 — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "30-08-2022",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://cbexams.com/jkhcKeyChallengefeb2024/Login.aspx",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.785Z"
+  },
+  {
+    "id": "d7de5f2d",
+    "category": "jkjudiciary",
+    "name": "Link to download Admit Cards   for the divisional cadre posts of Steno-Typists in the\nSubordinate Judiciary of UT of Jam",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to download Admit Cards   for the divisional cadre posts of Steno-Typists in the\nSubordinate Judiciary of UT of Jammu & Kashmir advertised pursuant to\nthe Advertisement Notifi — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "01.01.2022",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://pariksha24x7.in/jk_25_feb_2023_ac/",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.785Z"
+  },
+  {
+    "id": "77f58e54",
+    "category": "jkjudiciary",
+    "name": "Link to download    admit card for the post of Computer Operator advertised vide Advertisement Notice No. 03 of 2022/RG/",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to download    admit card for the post of Computer Operator advertised vide Advertisement Notice No. 03 of 2022/RG/NG dated 30-08-2022 — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "30-08-2022",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://online.cbexams.com/jkhc/admitcardl2l4/default.aspx",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.785Z"
+  },
+  {
+    "id": "1443ed13",
+    "category": "jkjudiciary",
+    "name": "Link to Apply for the post  of Adhoc Civil\nJudge (Junior Division)/Munsiff, in the High Court\nof Jammu & Kashmir and Lad",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to Apply for the post  of Adhoc Civil\nJudge (Junior Division)/Munsiff, in the High Court\nof Jammu & Kashmir and Ladakh vide Advertisement Notice No. 04 of 2022/RG dated: 19-11 — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "19-11-2022",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhcrecruitment.in/RPS/Home.aspx",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.785Z"
+  },
+  {
+    "id": "f0185c18",
+    "category": "jkjudiciary",
+    "name": "Link to Apply for  temporary engagement\nagainst the vacant/anticipated positions of\nResearch Assistants in the High Cour",
+    "subtitle": "JK Judiciary",
+    "desc": "Link to Apply for  temporary engagement\nagainst the vacant/anticipated positions of\nResearch Assistants in the High Court of\nJammu & Kashmir and Ladakh vide Advertisement Notice No — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "11-04-2023",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhcrecruitment.in/#/auth/landing",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.785Z"
+  },
+  {
+    "id": "f0185c18",
+    "category": "jkjudiciary",
+    "name": "Link For Downloading the  Admit Card for the post of Junior Assistant in the District Judiciary of UT of Ladakh pursuant",
+    "subtitle": "JK Judiciary",
+    "desc": "Link For Downloading the  Admit Card for the post of Junior Assistant in the District Judiciary of UT of Ladakh pursuant to the Advertisement Notification No. 642 of 2023/Psy dated — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "10.04.2023",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhcrecruitment.in/#/auth/landing",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.785Z"
+  },
+  {
+    "id": "2bb1ca02",
+    "category": "jkjudiciary",
+    "name": "WP(C) No.150 2023  \nLYCEUM PUBLIC SCHOOL v.  Union Territory of Jammu and Kashmir\n \nDecided on: March 29, 2024  \n\n\n\n LPA",
+    "subtitle": "JK Judiciary",
+    "desc": "WP(C) No.150 2023  \nLYCEUM PUBLIC SCHOOL v.  Union Territory of Jammu and Kashmir\n \nDecided on: March 29, 2024  \n\n\n\n LPA No. 46 2024 \nUniversity of Kashmir, Hazratbal, through its  — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/includes/Jud_Search/Judgement/WP(C) No.1502023.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.785Z"
+  },
+  {
+    "id": "7f1ec954",
+    "category": "jkjudiciary",
+    "name": "Notification No. 2540 of 2024/RR/RC dated 18.10.2024, regarding document verification of candidates who had appeared in ",
+    "subtitle": "JK Judiciary",
+    "desc": "Notification No. 2540 of 2024/RR/RC dated 18.10.2024, regarding document verification of candidates who had appeared in the Online CBT and Written Examination for the post of Trans — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "18.10.2024",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in//upload/notices/notice_2540_18102024.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.785Z"
+  },
+  {
+    "id": "ca333da3",
+    "category": "jkjudiciary",
+    "name": "Notification regarding candidates who have qualified the \ndriving test held for the post of Driver-II in the High Court ",
+    "subtitle": "JK Judiciary",
+    "desc": "Notification regarding candidates who have qualified the \ndriving test held for the post of Driver-II in the High Court \nof Jammu & Kashmir and Ladakh pursuant to Advertisement Not — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "25-05-2022",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/notice_21102022.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.786Z"
+  },
+  {
+    "id": "c648257",
+    "category": "jkjudiciary",
+    "name": "Notification regarding candidates whose\nnames have been mentioned in Annexure \"A\" and \"B\" appended\nherewith, shall appea",
+    "subtitle": "JK Judiciary",
+    "desc": "Notification regarding candidates whose\nnames have been mentioned in Annexure \"A\" and \"B\" appended\nherewith, shall appear for interview for the post of Adhoc Civil\nJudge (Junior Di — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "19.11.2022",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/noti_389_01032023.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.786Z"
+  },
+  {
+    "id": "4e65a47b",
+    "category": "jkjudiciary",
+    "name": "Notification regarding Court timing of Jammu Wing of the High Court of J&K and Ladakh and Courts of District Judiciary o",
+    "subtitle": "JK Judiciary",
+    "desc": "Notification regarding Court timing of Jammu Wing of the High Court of J&K and Ladakh and Courts of District Judiciary of Jammu Division — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/noti_851_24052024.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.786Z"
+  },
+  {
+    "id": "f51f9ca1",
+    "category": "jkjudiciary",
+    "name": "Notice regarding Candidates who have been shortlisted for viva-voce/interview for the post of Junior Assistant, pursuant",
+    "subtitle": "JK Judiciary",
+    "desc": "Notice regarding Candidates who have been shortlisted for viva-voce/interview for the post of Junior Assistant, pursuant to advertisement notification No. 642 of 2023 dated 02.03.2 — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "02.03.2023",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/noti_13_14022024.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.786Z"
+  },
+  {
+    "id": "de5e269b",
+    "category": "jkjudiciary",
+    "name": "Notification regarding Winter Vacations.",
+    "subtitle": "JK Judiciary",
+    "desc": "Notification regarding Winter Vacations. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/noti_2698_11122023.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.786Z"
+  },
+  {
+    "id": "7b88ab1",
+    "category": "jkjudiciary",
+    "name": "Advertisement for the posts of Readers (Direct quota)\n(Gazetted) in the High Court of Jammu & Kashmir and\nLadakh.",
+    "subtitle": "JK Judiciary",
+    "desc": "Advertisement for the posts of Readers (Direct quota)\n(Gazetted) in the High Court of Jammu & Kashmir and\nLadakh. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/Advertisement for the posts of REaders(Direct quota) (Gazetted) in the High Court of J&K and Ladakh.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.786Z"
+  },
+  {
+    "id": "3dbad7e5",
+    "category": "jkjudiciary",
+    "name": "Answer Key of Question Booklet (Series-A,B & C) of Written examination for the post of Junior Assistants in the District",
+    "subtitle": "JK Judiciary",
+    "desc": "Answer Key of Question Booklet (Series-A,B & C) of Written examination for the post of Junior Assistants in the District Judiciary of UT of Ladakh pursuant\nto the Advertisement Not — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "10.04.2023",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/ANSWER KEY.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.786Z"
+  },
+  {
+    "id": "308cb7c",
+    "category": "jkjudiciary",
+    "name": "Question Booklet (Series-C) of Written examination for the post of Junior Assistants in the District Judiciary of UT of ",
+    "subtitle": "JK Judiciary",
+    "desc": "Question Booklet (Series-C) of Written examination for the post of Junior Assistants in the District Judiciary of UT of Ladakh pursuant\nto the Advertisement Notification No. 642 of — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "10.04.2023",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/C SERIES.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.786Z"
+  },
+  {
+    "id": "55300e3d",
+    "category": "jkjudiciary",
+    "name": "Question Booklet (Series-B) of Written examination for the post of Junior Assistants in the District Judiciary of UT of ",
+    "subtitle": "JK Judiciary",
+    "desc": "Question Booklet (Series-B) of Written examination for the post of Junior Assistants in the District Judiciary of UT of Ladakh pursuant\nto the Advertisement Notification No. 642 of — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "10.04.2023",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/B Series.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.786Z"
+  },
+  {
+    "id": "f3a580be",
+    "category": "jkjudiciary",
+    "name": "Question Booklet (Series-A) of Written examination for the post of Junior Assistants in the District Judiciary of UT of ",
+    "subtitle": "JK Judiciary",
+    "desc": "Question Booklet (Series-A) of Written examination for the post of Junior Assistants in the District Judiciary of UT of Ladakh pursuant\nto the Advertisement Notification No. 642 of — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "10.04.2023",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/A SERIES.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.786Z"
+  },
+  {
+    "id": "abb4933d",
+    "category": "jkjudiciary",
+    "name": "Notification regarding advertisement Notice No. 03 of 2022/RG/NG dated\n30.08.2022..",
+    "subtitle": "JK Judiciary",
+    "desc": "Notification regarding advertisement Notice No. 03 of 2022/RG/NG dated\n30.08.2022.. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "30.08.2022",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/Noti_2586_23112023.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.786Z"
+  },
+  {
+    "id": "669b4aa4",
+    "category": "jkjudiciary",
+    "name": "Notification regarding all those candidates who have applied \nfor the post of Junior Assistant in the District Judiciary",
+    "subtitle": "JK Judiciary",
+    "desc": "Notification regarding all those candidates who have applied \nfor the post of Junior Assistant in the District Judiciary of UT of Ladakh pursuant to the Advertise Notification No.  — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "10.04.2023",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/noti_2542_08112023.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.786Z"
+  },
+  {
+    "id": "84bd8105",
+    "category": "jkjudiciary",
+    "name": "Notification regarding written test of all the candidates who have applied for the post of\n Junior Assistant pursuant to",
+    "subtitle": "JK Judiciary",
+    "desc": "Notification regarding written test of all the candidates who have applied for the post of\n Junior Assistant pursuant to advertisement notification no. 642 of 2023/Psy dated 10.04. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "10.04.2023",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/noti_2541_08112023.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.786Z"
+  },
+  {
+    "id": "76bee475",
+    "category": "jkjudiciary",
+    "name": "Notification regarding Preparation of a panel of translators for transiating the judgments of Supreme Court and High Cou",
+    "subtitle": "JK Judiciary",
+    "desc": "Notification regarding Preparation of a panel of translators for transiating the judgments of Supreme Court and High Court. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/noticerg_16102023.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.786Z"
+  },
+  {
+    "id": "653ef16a",
+    "category": "jkjudiciary",
+    "name": "Notification regarding Court/Office timing for the Winter Session,\n2023-2024.",
+    "subtitle": "JK Judiciary",
+    "desc": "Notification regarding Court/Office timing for the Winter Session,\n2023-2024. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/noti_2281_30092023.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.786Z"
+  },
+  {
+    "id": "79690b8f",
+    "category": "jkjudiciary",
+    "name": "Notification regarding Short-hand\nand Computer based Typing Test schedule of all those candidates who have applied for t",
+    "subtitle": "JK Judiciary",
+    "desc": "Notification regarding Short-hand\nand Computer based Typing Test schedule of all those candidates who have applied for the\npost of Steno-Typist in the District Judiciary of UT of L — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "10.04.2023",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/noti_2086_16092023.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.786Z"
+  },
+  {
+    "id": "75b6c2bf",
+    "category": "jkjudiciary",
+    "name": "Notification regarding candidates who have applied for the post of Ad hoc Civil Judge (Junior Division)/ Munsiff in term",
+    "subtitle": "JK Judiciary",
+    "desc": "Notification regarding candidates who have applied for the post of Ad hoc Civil Judge (Junior Division)/ Munsiff in terms of Advertisement Notice No. 04 of 2022/RG dated 19.11.2022 — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "19.11.2022",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/noti_385_17022023.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.786Z"
+  },
+  {
+    "id": "a99d7dfc",
+    "category": "jkjudiciary",
+    "name": "Notification regarding Hon'ble Shri Justice\nNongmeikapam Kotiswar Singh took oath of the office as Chief Justice of\nthe ",
+    "subtitle": "JK Judiciary",
+    "desc": "Notification regarding Hon'ble Shri Justice\nNongmeikapam Kotiswar Singh took oath of the office as Chief Justice of\nthe High Court of Jammu & Kashmir and Ladakh, today on 15th of F — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/notice_384_15022023.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.786Z"
+  },
+  {
+    "id": "f42edb8a",
+    "category": "jkjudiciary",
+    "name": "Corrigendum for downloading of Admit Card for Jammu based candidates w.e.f 03.03.2023 instead of 03.02.2023 as shown in ",
+    "subtitle": "JK Judiciary",
+    "desc": "Corrigendum for downloading of Admit Card for Jammu based candidates w.e.f 03.03.2023 instead of 03.02.2023 as shown in Notification No. 05 of 2023/Psy dated 31.01.2023, issued by  — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "03.03.2023",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/orders&cir/corr_06022023.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.787Z"
+  },
+  {
+    "id": "1b627197",
+    "category": "jkjudiciary",
+    "name": "Notification regarding Shorthand/Type\ntest for the posts of Steno-Typist in Subordinate Courts of UT of Jammu and kashmi",
+    "subtitle": "JK Judiciary",
+    "desc": "Notification regarding Shorthand/Type\ntest for the posts of Steno-Typist in Subordinate Courts of UT of Jammu and kashmir,\nadvertised vide Notification No. 01 of 2022 dated 01.01.2 — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "01.01.2022",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/noti_05_31012023.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.787Z"
+  },
+  {
+    "id": "a34b96f3",
+    "category": "jkjudiciary",
+    "name": "Order regarding Corrigendum to the Advertisement for filling up of the posts of Adhoc Civil Judge (Junior Division)/Muns",
+    "subtitle": "JK Judiciary",
+    "desc": "Order regarding Corrigendum to the Advertisement for filling up of the posts of Adhoc Civil Judge (Junior Division)/Munsiff. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/orders&cir/corr_adv_05122022.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.787Z"
+  },
+  {
+    "id": "ea97927f",
+    "category": "jkjudiciary",
+    "name": "Notice regarding  candidates who have applied for the\npost of Junior Scale Stenographer in the pay Levei-6B (35600-11280",
+    "subtitle": "JK Judiciary",
+    "desc": "Notice regarding  candidates who have applied for the\npost of Junior Scale Stenographer in the pay Levei-6B (35600-112800} in the\nHigh Court of Jammu & kashmir and Ladakh pursuant  — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "30-08-2022",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/noti_2034_01122022.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.787Z"
+  },
+  {
+    "id": "a9c45f00",
+    "category": "jkjudiciary",
+    "name": "Advertisement for filling up of the posts of Adhoc Civil\nJudge (Junior Division)/Munsiff.",
+    "subtitle": "JK Judiciary",
+    "desc": "Advertisement for filling up of the posts of Adhoc Civil\nJudge (Junior Division)/Munsiff. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/notices/adv_04_2022_19112022.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.787Z"
+  },
+  {
+    "id": "276ec1c6",
+    "category": "jkjudiciary",
+    "name": "Advertisement for the posts in different categories (Non-Gazetted), in the High\nCourt of Jammu & Kashmir and Ladakh.",
+    "subtitle": "JK Judiciary",
+    "desc": "Advertisement for the posts in different categories (Non-Gazetted), in the High\nCourt of Jammu & Kashmir and Ladakh. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/recruitment/Advertisement_03_30082022.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.787Z"
+  },
+  {
+    "id": "9e61f5e2",
+    "category": "jkjudiciary",
+    "name": "Advertisement for posts in different categories (Non-Gazetted), in the High Court of Jammu & Kashmir and Ladakh.",
+    "subtitle": "JK Judiciary",
+    "desc": "Advertisement for posts in different categories (Non-Gazetted), in the High Court of Jammu & Kashmir and Ladakh. — posted by JK Judiciary.",
+    "badges": [
+      {
+        "label": "JK Judiciary",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkhighcourt.nic.in",
+    "notificationLink": "https://jkhighcourt.nic.in/upload/recruitment/Advertisement Notice No. 02 of 2022_RG__NG_25052022.pdf",
+    "officialLink": "https://jkhighcourt.nic.in",
+    "scrapedAt": "2026-09-06T03:37:48.787Z"
+  },
+  {
+    "id": "bc7ac2d",
+    "category": "jkuniversity",
+    "name": "Jobs/Recruitment\r\n                Advertisements,Call Letters",
+    "subtitle": "JK University",
+    "desc": "Jobs/Recruitment\r\n                Advertisements,Call Letters — posted by JK University.",
+    "badges": [
+      {
+        "label": "JK University",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://kashmiruniversity.net",
+    "notificationLink": "https://kashmiruniversity.net/jobs.aspx",
+    "officialLink": "https://kashmiruniversity.net",
+    "scrapedAt": "2026-09-06T03:37:49.807Z"
+  },
+  {
+    "id": "50c52b85",
+    "category": "jkuniversity",
+    "name": "Notifications",
+    "subtitle": "JK University",
+    "desc": "Notifications — posted by JK University.",
+    "badges": [
+      {
+        "label": "JK University",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://kashmiruniversity.net",
+    "notificationLink": "https://kashmiruniversity.net/javascript:void(0)",
+    "officialLink": "https://kashmiruniversity.net",
+    "scrapedAt": "2026-09-06T03:37:49.807Z"
+  },
+  {
+    "id": "50c52b85",
+    "category": "jkuniversity",
+    "name": "Departmental Notifications",
+    "subtitle": "JK University",
+    "desc": "Departmental Notifications — posted by JK University.",
+    "badges": [
+      {
+        "label": "JK University",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://kashmiruniversity.net",
+    "notificationLink": "https://kashmiruniversity.net/javascript:void(0)",
+    "officialLink": "https://kashmiruniversity.net",
+    "scrapedAt": "2026-09-06T03:37:49.807Z"
+  },
+  {
+    "id": "dc0426a6",
+    "category": "jkuniversity",
+    "name": "View All Notifications",
+    "subtitle": "JK University",
+    "desc": "View All Notifications — posted by JK University.",
+    "badges": [
+      {
+        "label": "JK University",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://kashmiruniversity.net",
+    "notificationLink": "https://kashmiruniversity.net/DepartmentNotification.aspx",
+    "officialLink": "https://kashmiruniversity.net",
+    "scrapedAt": "2026-09-06T03:37:49.807Z"
+  },
+  {
+    "id": "27b4b478",
+    "category": "jkuniversity",
+    "name": "Recruitment",
+    "subtitle": "JK University",
+    "desc": "Recruitment — posted by JK University.",
+    "badges": [
+      {
+        "label": "JK University",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://kashmiruniversity.net",
+    "notificationLink": "https://kashmiruniversity.net/Recruitment/",
+    "officialLink": "https://kashmiruniversity.net",
+    "scrapedAt": "2026-09-06T03:37:49.808Z"
+  },
+  {
+    "id": "2c843d85",
+    "category": "jkuniversity",
+    "name": "Notifications",
+    "subtitle": "JK University",
+    "desc": "Notifications — posted by JK University.",
+    "badges": [
+      {
+        "label": "JK University",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://kashmiruniversity.net",
+    "notificationLink": "https://kashmiruniversity.net/notifications.aspx",
+    "officialLink": "https://kashmiruniversity.net",
+    "scrapedAt": "2026-09-06T03:37:49.808Z"
+  },
+  {
+    "id": "jkssb-finance-accounts-assistant",
+    "category": "jkssb",
+    "categoryLabel": "JKSSB",
+    "title": "JKSSB Finance Accounts Assistant",
+    "org": "J&K Finance Department",
+    "qualification": "Graduate",
+    "badgeClass": "tcb-p",
+    "qualBadgeClass": "tcb-g",
+    "description": "Recruitment for Accounts Assistant posts in the Finance Department of Jammu & Kashmir through JKSSB.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://jkssb.nic.in"
+  },
+  {
+    "id": "jkssb-panchayat-account-assistant",
+    "category": "jkssb",
+    "categoryLabel": "JKSSB",
+    "title": "JKSSB Panchayat Account Assistant",
+    "org": "Rural Development Dept",
+    "qualification": "Graduate",
+    "badgeClass": "tcb-p",
+    "qualBadgeClass": "tcb-g",
+    "description": "Vacancies for Panchayat Account Assistant in the Rural Development & Panchayati Raj Department, J&K.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://jkssb.nic.in"
+  },
+  {
+    "id": "jkssb-junior-assistant",
+    "category": "jkssb",
+    "categoryLabel": "JKSSB",
+    "title": "JKSSB Junior Assistant",
+    "org": "Multiple Departments, J&K",
+    "qualification": "12th Pass",
+    "badgeClass": "tcb-p",
+    "qualBadgeClass": "tcb-y",
+    "description": "Junior Assistant / Clerk posts across various J&K Government departments selected through JKSSB common exam.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://jkssb.nic.in"
+  },
+  {
+    "id": "jkssb-forest-guard",
+    "category": "jkssb",
+    "categoryLabel": "JKSSB",
+    "title": "JKSSB Forest Guard",
+    "org": "Forest Department, J&K",
+    "qualification": "12th Pass",
+    "badgeClass": "tcb-p",
+    "qualBadgeClass": "tcb-y",
+    "description": "Forest Guard recruitment under the Department of Forest, J&K including physical efficiency test & written exam.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://jkssb.nic.in"
+  },
+  {
+    "id": "jkpsc-combined-competitive-exam-kas",
+    "category": "jkpsc",
+    "categoryLabel": "JKPSC",
+    "title": "JKPSC Combined Competitive Exam (KAS)",
+    "org": "Kashmir Administrative Service",
+    "qualification": "Graduate",
+    "badgeClass": "tcb-g",
+    "qualBadgeClass": "tcb-g",
+    "description": "J&K Combined Competitive Examination for KAS & allied administrative services under the Public Service Commission.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://jkpsc.nic.in"
+  },
+  {
+    "id": "jkpsc-assistant-professor",
+    "category": "jkpsc",
+    "categoryLabel": "JKPSC",
+    "title": "JKPSC Assistant Professor",
+    "org": "Higher Education Department, J&K",
+    "qualification": "PG/NET",
+    "badgeClass": "tcb-g",
+    "qualBadgeClass": "tcb-b",
+    "description": "Recruitment of Assistant Professors across various disciplines in J&K Government degree colleges through JKPSC.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://jkpsc.nic.in"
+  },
+  {
+    "id": "jkpsc-medical-officer",
+    "category": "jkpsc",
+    "categoryLabel": "JKPSC",
+    "title": "JKPSC Medical Officer",
+    "org": "Health & Medical Education Dept",
+    "qualification": "MBBS",
+    "badgeClass": "tcb-g",
+    "qualBadgeClass": "tcb-b",
+    "description": "Medical Officer recruitment in J&K Government hospitals & health centres conducted through JKPSC.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://jkpsc.nic.in"
+  },
+  {
+    "id": "jk-police-constable",
+    "category": "jkpolice",
+    "categoryLabel": "JK Police",
+    "title": "JK Police Constable",
+    "org": "Executive & Armed Wing",
+    "qualification": "12th Pass",
+    "badgeClass": "tcb-r",
+    "qualBadgeClass": "tcb-y",
+    "description": "Constable recruitment in the Executive & Armed wings of Jammu & Kashmir Police, including PST/PET & written exam.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://jkpolice.gov.in"
+  },
+  {
+    "id": "jk-police-sub-inspector",
+    "category": "jkpolice",
+    "categoryLabel": "JK Police",
+    "title": "JK Police Sub-Inspector",
+    "org": "Executive Wing",
+    "qualification": "Graduate",
+    "badgeClass": "tcb-r",
+    "qualBadgeClass": "tcb-g",
+    "description": "Sub-Inspector recruitment in J&K Police with written exam, physical standards test & interview rounds.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://jkpolice.gov.in"
+  },
+  {
+    "id": "jk-police-spo",
+    "category": "jkpolice",
+    "categoryLabel": "JK Police",
+    "title": "JK Police Special Police Officer (SPO)",
+    "org": "District Police Lines",
+    "qualification": "10th/12th Pass",
+    "badgeClass": "tcb-r",
+    "qualBadgeClass": "tcb-y",
+    "description": "Recruitment of Special Police Officers across district police lines in Jammu & Kashmir.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://jkpolice.gov.in"
+  },
+  {
+    "id": "jk-bank-probationary-officer",
+    "category": "jkbank",
+    "categoryLabel": "J&K Bank",
+    "title": "J&K Bank Probationary Officer",
+    "org": "JKB PO Recruitment",
+    "qualification": "Graduate",
+    "badgeClass": "tcb-y",
+    "qualBadgeClass": "tcb-g",
+    "description": "Probationary Officer recruitment in Jammu & Kashmir Bank through online exam & interview process.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://www.jkbank.com"
+  },
+  {
+    "id": "jk-bank-banking-associate",
+    "category": "jkbank",
+    "categoryLabel": "J&K Bank",
+    "title": "J&K Bank Banking Associate",
+    "org": "Clerical Cadre",
+    "qualification": "Graduate",
+    "badgeClass": "tcb-y",
+    "qualBadgeClass": "tcb-g",
+    "description": "Banking Associate (Clerk) recruitment across J&K Bank branches in Jammu & Kashmir.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://www.jkbank.com"
+  },
+  {
+    "id": "jk-bank-apprentice",
+    "category": "jkbank",
+    "categoryLabel": "J&K Bank",
+    "title": "J&K Bank Apprentice",
+    "org": "Apprenticeship Program",
+    "qualification": "Graduate",
+    "badgeClass": "tcb-y",
+    "qualBadgeClass": "tcb-g",
+    "description": "One-year apprenticeship program with J&K Bank branches, open to graduates domiciled in Jammu & Kashmir.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://www.jkbank.com"
+  },
+  {
+    "id": "jk-high-court-clerk",
+    "category": "jkjudiciary",
+    "categoryLabel": "Judiciary",
+    "title": "J&K High Court Clerk",
+    "org": "Registry, J&K High Court",
+    "qualification": "Graduate",
+    "badgeClass": "tcb-b",
+    "qualBadgeClass": "tcb-g",
+    "description": "Clerk / Copyist recruitment in the Registry of the High Court of Jammu & Kashmir and Ladakh.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://jkhighcourt.nic.in"
+  },
+  {
+    "id": "jk-civil-judge",
+    "category": "jkjudiciary",
+    "categoryLabel": "Judiciary",
+    "title": "J&K Civil Judge (Munsiff)",
+    "org": "J&K Judicial Service",
+    "qualification": "Law Graduate",
+    "badgeClass": "tcb-b",
+    "qualBadgeClass": "tcb-b",
+    "description": "Recruitment to the J&K Judicial Service for the post of Civil Judge (Junior Division) through competitive exam.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://jkhighcourt.nic.in"
+  },
+  {
+    "id": "district-court-driver-process-server",
+    "category": "jkjudiciary",
+    "categoryLabel": "Judiciary",
+    "title": "District Court Driver / Process Server",
+    "org": "District Courts, J&K",
+    "qualification": "10th/12th Pass",
+    "badgeClass": "tcb-b",
+    "qualBadgeClass": "tcb-y",
+    "description": "Recruitment for Driver, Process Server & other subordinate posts across district courts in Jammu & Kashmir.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://jkhighcourt.nic.in"
+  },
+  {
+    "id": "jk-ret-teacher-recruitment",
+    "category": "jkteaching",
+    "categoryLabel": "Teaching",
+    "title": "JK Rehbar-e-Taleem (ReT) Recruitment",
+    "org": "School Education Dept",
+    "qualification": "12th Pass/Graduate",
+    "badgeClass": "tcb-g",
+    "qualBadgeClass": "tcb-y",
+    "description": "Rehbar-e-Taleem teacher recruitment for primary & upper primary schools across Jammu & Kashmir.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://jkschooleducation.nic.in"
+  },
+  {
+    "id": "jk-teacher-eligibility-test",
+    "category": "jkteaching",
+    "categoryLabel": "Teaching",
+    "title": "J&K Teacher Eligibility Test (JKTET)",
+    "org": "Board of School Education",
+    "qualification": "Graduate/B.Ed",
+    "badgeClass": "tcb-g",
+    "qualBadgeClass": "tcb-g",
+    "description": "Eligibility test for teaching positions in Jammu & Kashmir Government schools, conducted by JKBOSE.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://jkbose.nic.in"
+  },
+  {
+    "id": "jk-lecturer-higher-education",
+    "category": "jkteaching",
+    "categoryLabel": "Teaching",
+    "title": "JK Lecturer Recruitment",
+    "org": "Higher Education Department",
+    "qualification": "PG/NET",
+    "badgeClass": "tcb-g",
+    "qualBadgeClass": "tcb-b",
+    "description": "Lecturer recruitment across Government degree colleges in Jammu & Kashmir through JKPSC/SSB channels.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://jkhed.nic.in"
+  },
+  {
+    "id": "skims-staff-nurse",
+    "category": "jkhealth",
+    "categoryLabel": "Health",
+    "title": "SKIMS Staff Nurse Recruitment",
+    "org": "Sher-i-Kashmir Institute of Medical Sciences",
+    "qualification": "BSc/GNM",
+    "badgeClass": "tcb-y",
+    "qualBadgeClass": "tcb-g",
+    "description": "Staff Nurse recruitment at SKIMS Srinagar & Soura through written test & document verification.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://skims.ac.in"
+  },
+  {
+    "id": "gmc-jammu-kashmir-paramedical",
+    "category": "jkhealth",
+    "categoryLabel": "Health",
+    "title": "GMC Paramedical Staff Recruitment",
+    "org": "Govt Medical Colleges, J&K",
+    "qualification": "Diploma/Degree",
+    "badgeClass": "tcb-y",
+    "qualBadgeClass": "tcb-b",
+    "description": "Paramedical & technical staff recruitment across Government Medical Colleges in Jammu & Kashmir.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://jkhealth.org"
+  },
+  {
+    "id": "jk-multi-purpose-health-worker",
+    "category": "jkhealth",
+    "categoryLabel": "Health",
+    "title": "JK Multi Purpose Health Worker",
+    "org": "Directorate of Health Services",
+    "qualification": "12th Pass (Science)",
+    "badgeClass": "tcb-y",
+    "qualBadgeClass": "tcb-y",
+    "description": "Multi Purpose Health Worker recruitment under the Directorate of Health Services, Jammu & Kashmir.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://jkhealth.org"
+  },
+  {
+    "id": "university-of-kashmir-non-teaching",
+    "category": "jkuniversity",
+    "categoryLabel": "University",
+    "title": "University of Kashmir Non-Teaching Staff",
+    "org": "Administrative & Technical Posts",
+    "qualification": "Graduate",
+    "badgeClass": "tcb-p",
+    "qualBadgeClass": "tcb-g",
+    "description": "Non-teaching recruitment for administrative & technical posts at the University of Kashmir, Srinagar.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://kashmiruniversity.net"
+  },
+  {
+    "id": "university-of-jammu-assistant-professor",
+    "category": "jkuniversity",
+    "categoryLabel": "University",
+    "title": "University of Jammu Assistant Professor",
+    "org": "Faculty Positions",
+    "qualification": "PG/NET/PhD",
+    "badgeClass": "tcb-p",
+    "qualBadgeClass": "tcb-b",
+    "description": "Assistant Professor recruitment across departments at the University of Jammu.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://jammuuniversity.ac.in"
+  },
+  {
+    "id": "central-university-kashmir-recruitment",
+    "category": "jkuniversity",
+    "categoryLabel": "University",
+    "title": "Central University of Kashmir Recruitment",
+    "org": "Teaching & Non-Teaching",
+    "qualification": "Graduate/PG",
+    "badgeClass": "tcb-p",
+    "qualBadgeClass": "tcb-g",
+    "description": "Teaching & non-teaching recruitment drives at the Central University of Kashmir, Ganderbal.",
+    "lastDate": "--/--/----",
+    "applyLink": "#",
+    "notificationLink": "#",
+    "officialLink": "https://cukashmir.ac.in"
   }
 ]
