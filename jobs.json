@@ -7,10 +7,10 @@
     "desc": "Mass recruitment for Class-IV Multi-Tasking Staff (MTS) and Sanitation Worker profiles across different UT administration departments.",
     "badges": [{"label": "Advt 09 of 2026", "cls": "tcb-p"}, {"label": "8th / Matric to 10+2", "cls": "tcb-b"}],
     "lastDate": "03/11/2026",
-    "applyLink": "https://jkssb.nic.in",
-    "notificationLink": "https://jkssb.nic.in",
+    "applyLink": "https://jkssb.nic.in/dynamic-jkssb-test/pages/login.aspx",
+    "notificationLink": "https://jkssb.nic.in/Advertisement.html",
     "officialLink": "https://jkssb.nic.in",
-    "scrapedAt": "2026-09-06T19:31:00"
+    "scrapedAt": "2026-09-06T19:35:00"
   },
   {
     "id": "jkssb-2026-002",
@@ -20,10 +20,10 @@
     "desc": "Recruitment for technical roles including Junior Pharmacist, Junior Staff Nurse, Junior Lab Technician, and Horticulture Technician Grade-IV.",
     "badges": [{"label": "Advt 08 of 2026", "cls": "tcb-p"}, {"label": "Diploma / Degree / Medical Tech", "cls": "tcb-b"}],
     "lastDate": "09/10/2026",
-    "applyLink": "https://jkssb.nic.in",
-    "notificationLink": "https://jkssb.nic.in",
+    "applyLink": "https://jkssb.nic.in/dynamic-jkssb-test/pages/login.aspx",
+    "notificationLink": "https://jkssb.nic.in/Advertisement.html",
     "officialLink": "https://jkssb.nic.in",
-    "scrapedAt": "2026-09-06T19:31:00"
+    "scrapedAt": "2026-09-06T19:35:00"
   },
   {
     "id": "jkssb-2026-003",
@@ -33,9 +33,9 @@
     "desc": "Direct recruitment for Warder vacancies inside the Home Department's prison administration layout.",
     "badges": [{"label": "Advt 05 of 2026", "cls": "tcb-p"}, {"label": "10+2 / Matric", "cls": "tcb-b"}],
     "lastDate": "25/08/2026",
-    "applyLink": "https://jkssb.nic.in",
+    "applyLink": "https://jkssb.nic.in/dynamic-jkssb-test/pages/login.aspx",
     "notificationLink": "https://www.jkssb.nic.in/Pdf/Advt_05OF2026_06072026.pdf",
     "officialLink": "https://jkssb.nic.in",
-    "scrapedAt": "2026-09-06T19:31:00"
+    "scrapedAt": "2026-09-06T19:35:00"
   }
 ]
