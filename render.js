@@ -1,12 +1,9 @@
 /* Valley Desk — dynamic content renderer
-   Reads jobs.json (the only feed the scraper produces) and splits every
-   entry into exactly ONE of three buckets — Job Listing, Admit Card, or
-   Result — based on what the post is actually about. Nothing else is
-   ever shown: no placeholder/demo rows, no rows missing a real title
-   (the old "undefined" bug), no duplicate scrapes. Category job-counts,
-   the "Browse by Category" numbers and the header's "Updated" tag are
-   all recomputed from this same data so the numbers never drift out of
-   sync with what's actually on the page. */
+   Fetches jobs.json, admitcards.json, and results.json, and fills the
+   theme's three empty sections (#jobsContainer, #admitCardSection,
+   #resultSection) using the SAME classes the theme's CSS and
+   filterCat()/liveSearch() functions already expect. index.html only
+   needs the empty containers — this script does the rest. */
 
 const CATEGORY_META = {
   jkssb:        { icon: "📋", title: "JKSSB Recruitment",       desc: "J&K Services Selection Board",              color: "#0ac16c" },
@@ -19,125 +16,43 @@ const CATEGORY_META = {
   jkuniversity: { icon: "🎓", title: "JK University Recruitment", desc: "University of Kashmir & University of Jammu", color: "#e879f9" },
 };
 
-// Only posts matching one of these belong in Admit Card / Result.
-// Everything else that still has a valid title stays a plain Job Listing.
-const ADMIT_CARD_RE = /admit\s*card|hall\s*ticket|call\s*letter/i;
-const RESULT_RE = /\bresults?\b|merit\s*list|selection\s*list|declared/i;
-
 function escapeAttr(str) {
   return String(str).replace(/"/g, "&quot;").toLowerCase();
 }
 
-function escapeHtml(str) {
-  return String(str).replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
-}
-
-function formatDate(iso) {
-  if (!iso) return null;
-  const d = new Date(iso);
-  if (isNaN(d.getTime())) return null;
-  const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-  return `${String(d.getDate()).padStart(2, "0")} ${months[d.getMonth()]} ${d.getFullYear()}`;
-}
-
-/* ---------- Load, validate, classify ---------- */
+/* ---------- JOBS (#jobsContainer) ---------- */
 
 async function loadJobs() {
   try {
     const res = await fetch("jobs.json?_=" + Date.now());
-    const raw = await res.json();
-    const { jobs, admitCards, results } = processFeed(raw);
+    const jobs = await res.json();
     renderJobs(jobs);
-    renderAdmitCards(admitCards);
-    renderResults(results);
-    updateHeaderStats(jobs, admitCards, results);
   } catch (e) {
     console.error("Could not load jobs.json", e);
   }
 }
 
-/* Normalizes a raw feed entry into a clean post object, or returns null
-   if the entry has no real title — this is what previously showed up
-   as a literal "undefined" post on the page. Only entries with a
-   proper name AND a known category are kept, so nothing unrecognized
-   or half-formed ever reaches the page. */
-function normalizePost(raw) {
-  const name = (raw && raw.name ? String(raw.name) : "").trim();
-  if (!name) return null;
-  if (!raw.category || !CATEGORY_META[raw.category]) return null;
-
-  return {
-    id: raw.id || null,
-    category: raw.category,
-    name,
-    subtitle: (raw.subtitle || "").trim(),
-    desc: (raw.desc || `${name} — posted by ${raw.subtitle || "the department"}.`).trim(),
-    badges: Array.isArray(raw.badges) ? raw.badges : [],
-    lastDate: raw.lastDate || "--/--/----",
-    applyLink: raw.applyLink || "#",
-    notificationLink: raw.notificationLink || "#",
-    officialLink: raw.officialLink || "#",
-    scrapedAt: raw.scrapedAt || null,
-  };
-}
-
-function classify(post) {
-  const text = `${post.name} ${post.desc}`;
-  if (ADMIT_CARD_RE.test(text)) return "admitcard";
-  if (RESULT_RE.test(text)) return "result";
-  return "job";
-}
-
-/* Splits the raw feed into jobs / admitCards / results, dropping
-   invalid rows and de-duplicating repeated scrapes of the same post
-   (the feed sometimes contains the exact same posting more than once). */
-function processFeed(raw) {
-  const list = Array.isArray(raw) ? raw : [];
-  const seen = new Set();
-  const jobs = [], admitCards = [], results = [];
-
-  list.forEach((entry) => {
-    const post = normalizePost(entry);
-    if (!post) return; // no real title — never shown, anywhere
-
-    const dedupeKey = `${post.category}|${post.name}|${post.notificationLink}`;
-    if (seen.has(dedupeKey)) return;
-    seen.add(dedupeKey);
-
-    const bucket = classify(post);
-    if (bucket === "admitcard") admitCards.push(post);
-    else if (bucket === "result") results.push(post);
-    else jobs.push(post);
-  });
-
-  const byRecency = (a, b) => new Date(b.scrapedAt || 0) - new Date(a.scrapedAt || 0);
-  admitCards.sort(byRecency);
-  results.sort(byRecency);
-
-  return { jobs, admitCards, results };
-}
-
-/* ---------- JOBS (#jobsContainer) ---------- */
-
 function buildJobCard(job) {
-  const badges = job.badges.map((b) => `<span class="tcb ${b.cls}">${b.label}</span>`).join("");
+  const badges = (job.badges || [])
+    .map((b) => `<span class="tcb ${b.cls}">${b.label}</span>`)
+    .join("");
   return `
     <div class="tool-card" data-cat="${job.category}" data-name="${escapeAttr(job.name)}">
       <div class="tc-body">
         <div class="tc-top">
           <div class="tc-name-wrap">
-            <div class="tc-name">${escapeHtml(job.name)}</div>
-            <div class="tc-ver">${escapeHtml(job.subtitle)}</div>
+            <div class="tc-name">${job.name}</div>
+            <div class="tc-ver">${job.subtitle || ""}</div>
           </div>
           <div class="tc-badges">${badges}</div>
         </div>
-        <div class="tc-desc">${escapeHtml(job.desc)}</div>
+        <div class="tc-desc">${job.desc || ""}</div>
         <div class="tc-foot">
-          <div class="tc-dates"><span class="tc-date tc-date-reg"><i class="fa fa-calendar-xmark"></i> Last Date Of Applying: ${job.lastDate}</span></div>
+          <div class="tc-dates"><span class="tc-date tc-date-reg"><i class="fa fa-calendar-xmark"></i> Last Date Of Applying: ${job.lastDate || "--/--/----"}</span></div>
           <div class="tc-actions">
-            <a href="${job.applyLink}" class="tc-btn tc-btn-g" target="_blank"><i class="fa fa-paper-plane"></i> Apply Now</a>
-            <a href="${job.notificationLink}" class="tc-btn tc-btn-b" target="_blank"><i class="fa fa-file-pdf"></i> Notification</a>
-            <a href="${job.officialLink}" class="tc-btn tc-btn-o" target="_blank"><i class="fa fa-globe"></i> Official Website</a>
+            <a href="${job.applyLink || "#"}" class="tc-btn tc-btn-g" target="_blank"><i class="fa fa-paper-plane"></i> Apply Now</a>
+            <a href="${job.notificationLink || "#"}" class="tc-btn tc-btn-b" target="_blank"><i class="fa fa-file-pdf"></i> Notification</a>
+            <a href="${job.officialLink || "#"}" class="tc-btn tc-btn-o" target="_blank"><i class="fa fa-globe"></i> Official Website</a>
           </div>
         </div>
       </div>
@@ -176,7 +91,6 @@ function renderJobs(jobs) {
 
   Object.keys(CATEGORY_META).forEach((catKey) => {
     const catJobs = byCat[catKey];
-    updateCategoryGridCount(catKey, catJobs ? catJobs.length : 0);
     if (!catJobs || !catJobs.length) return;
     anyJobs = true;
     const meta = CATEGORY_META[catKey];
@@ -184,7 +98,7 @@ function renderJobs(jobs) {
       <div class="cat-section-hd" data-section="${catKey}" style="background:${meta.color}29;border:1px solid ${meta.color}66;border-left-color:${meta.color};box-shadow:0 3px 12px ${meta.color}2e">
         <div class="csh-icon">${meta.icon}</div>
         <div class="csh-info"><div class="csh-title">${meta.title}</div><div class="csh-desc">${meta.desc}</div></div>
-        <div class="csh-count" style="color:${meta.color}">${catJobs.length} Job${catJobs.length === 1 ? "" : "s"}</div>
+        <div class="csh-count" style="color:${meta.color}">${catJobs.length} Jobs</div>
       </div>
       <div class="tools-list">${catJobs.map(buildJobCard).join("")}</div>`;
   });
@@ -195,31 +109,35 @@ function renderJobs(jobs) {
   if (noResults) noResults.style.display = anyJobs ? "none" : "block";
 }
 
-/* Keeps the "Browse by Category" grid counts (cgcCount-<cat>) in sync
-   with the real number of job listings in each category. */
-function updateCategoryGridCount(catKey, count) {
-  const el = document.getElementById(`cgcCount-${catKey}`);
-  if (el) el.textContent = `${count} Job${count === 1 ? "" : "s"}`;
-}
-
 /* ---------- ADMIT CARDS (#admitCardSection) ---------- */
 
+async function loadAdmitCards() {
+  try {
+    const res = await fetch("admitcards.json?_=" + Date.now());
+    const cards = await res.json();
+    renderAdmitCards(cards);
+  } catch (e) {
+    console.error("Could not load admitcards.json", e);
+  }
+}
+
 function buildAdmitCard(item) {
-  const badges = item.badges.map((b) => `<span class="tcb ${b.cls}">${b.label}</span>`).join("");
-  const added = formatDate(item.scrapedAt);
+  const badges = (item.badges || [])
+    .map((b) => `<span class="tcb ${b.cls}">${b.label}</span>`)
+    .join("");
   return `
-    <div class="tool-card" data-cat="${item.category}" data-name="${escapeAttr(item.name)}">
+    <div class="tool-card" data-name="${escapeAttr(item.name)}">
       <div class="tc-body">
         <div class="tc-top">
-          <div class="tc-name-wrap"><div class="tc-name">${escapeHtml(item.name)}</div><div class="tc-ver">${escapeHtml(item.subtitle)}</div></div>
-          <div class="tc-badges">${badges}<span class="tcb tcb-g">Released</span></div>
+          <div class="tc-name-wrap"><div class="tc-name">${item.name}</div><div class="tc-ver">${item.subtitle || ""}</div></div>
+          <div class="tc-badges">${badges}</div>
         </div>
-        <div class="tc-desc">${escapeHtml(item.desc)}</div>
+        <div class="tc-desc">${item.desc || ""}</div>
         <div class="tc-foot">
-          <div class="tc-dates">${added ? `<span class="tc-date tc-date-start"><i class="fa fa-calendar-plus"></i> Added: ${added}</span>` : ""}<span class="tc-date tc-date-reg"><i class="fa fa-calendar-check"></i> Notification Date: ${item.lastDate}</span></div>
+          <div class="tc-dates"><span class="tc-date tc-date-start"><i class="fa fa-calendar-plus"></i> Released On: ${item.releasedOn || "--/--/----"}</span><span class="tc-date tc-date-reg"><i class="fa fa-calendar-check"></i> Exam Date: ${item.examDate || "--/--/----"}</span></div>
           <div class="tc-actions">
-            <a href="${item.notificationLink}" class="tc-btn tc-btn-g" target="_blank"><i class="fa fa-download"></i> Download Admit Card</a>
-            <a href="${item.officialLink}" class="tc-btn tc-btn-o" target="_blank"><i class="fa fa-globe"></i> Official Website</a>
+            <a href="${item.downloadLink || "#"}" class="tc-btn tc-btn-g" target="_blank"><i class="fa fa-download"></i> Download Admit Card</a>
+            <a href="${item.officialLink || "#"}" class="tc-btn tc-btn-o" target="_blank"><i class="fa fa-globe"></i> Official Website</a>
           </div>
         </div>
       </div>
@@ -229,31 +147,40 @@ function buildAdmitCard(item) {
 function renderAdmitCards(cards) {
   const list = document.getElementById("admitCardList");
   const count = document.getElementById("admitCardCount");
-  const empty = document.getElementById("noAdmitCards");
   if (!list) return;
   list.innerHTML = cards.map(buildAdmitCard).join("");
   if (count) count.textContent = `${cards.length} Released`;
-  if (empty) empty.style.display = cards.length ? "none" : "block";
 }
 
 /* ---------- RESULTS (#resultSection) ---------- */
 
+async function loadResults() {
+  try {
+    const res = await fetch("results.json?_=" + Date.now());
+    const results = await res.json();
+    renderResults(results);
+  } catch (e) {
+    console.error("Could not load results.json", e);
+  }
+}
+
 function buildResultCard(item) {
-  const badges = item.badges.map((b) => `<span class="tcb ${b.cls}">${b.label}</span>`).join("");
-  const added = formatDate(item.scrapedAt);
+  const badges = (item.badges || [])
+    .map((b) => `<span class="tcb ${b.cls}">${b.label}</span>`)
+    .join("");
   return `
-    <div class="tool-card" data-cat="${item.category}" data-name="${escapeAttr(item.name)}">
+    <div class="tool-card" data-name="${escapeAttr(item.name)}">
       <div class="tc-body">
         <div class="tc-top">
-          <div class="tc-name-wrap"><div class="tc-name">${escapeHtml(item.name)}</div><div class="tc-ver">${escapeHtml(item.subtitle)}</div></div>
-          <div class="tc-badges">${badges}<span class="tcb tcb-g">Declared</span></div>
+          <div class="tc-name-wrap"><div class="tc-name">${item.name}</div><div class="tc-ver">${item.subtitle || ""}</div></div>
+          <div class="tc-badges">${badges}</div>
         </div>
-        <div class="tc-desc">${escapeHtml(item.desc)}</div>
+        <div class="tc-desc">${item.desc || ""}</div>
         <div class="tc-foot">
-          <div class="tc-dates">${added ? `<span class="tc-date tc-date-start"><i class="fa fa-calendar-plus"></i> Added: ${added}</span>` : ""}<span class="tc-date tc-date-reg"><i class="fa fa-calendar-check"></i> Notification Date: ${item.lastDate}</span></div>
+          <div class="tc-dates"><span class="tc-date tc-date-start"><i class="fa fa-calendar-plus"></i> Declared On: ${item.declaredOn || "--/--/----"}</span><span class="tc-date tc-date-reg"><i class="fa fa-calendar-check"></i> Next Stage: ${item.nextStage || "--"}</span></div>
           <div class="tc-actions">
-            <a href="${item.notificationLink}" class="tc-btn tc-btn-g" target="_blank"><i class="fa fa-trophy"></i> Check Result</a>
-            <a href="${item.officialLink}" class="tc-btn tc-btn-o" target="_blank"><i class="fa fa-globe"></i> Official Website</a>
+            <a href="${item.resultLink || "#"}" class="tc-btn tc-btn-g" target="_blank"><i class="fa fa-trophy"></i> Check Result</a>
+            <a href="${item.officialLink || "#"}" class="tc-btn tc-btn-o" target="_blank"><i class="fa fa-globe"></i> Official Website</a>
           </div>
         </div>
       </div>
@@ -263,38 +190,19 @@ function buildResultCard(item) {
 function renderResults(results) {
   const list = document.getElementById("resultList");
   const count = document.getElementById("resultCount");
-  const empty = document.getElementById("noResultsFound");
   if (!list) return;
   list.innerHTML = results.map(buildResultCard).join("");
   if (count) count.textContent = `${results.length} Declared`;
-  if (empty) empty.style.display = results.length ? "none" : "block";
-}
-
-/* ---------- Header stats: "Updated <Month Year> · N+ live openings",
-   "Jobs Listed" counter ---------- */
-
-function updateHeaderStats(jobs, admitCards, results) {
-  const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-  const now = new Date();
-
-  const tag = document.getElementById("heroUpdatedTag");
-  if (tag) tag.textContent = `${months[now.getMonth()]} ${now.getFullYear()}`;
-
-  const total = jobs.length + admitCards.length + results.length;
-  const openCount = document.getElementById("heroOpenCount");
-  if (openCount) openCount.textContent = `${total}+`;
-
-  const statEl = document.getElementById("statJobsListed");
-  if (statEl) {
-    statEl.setAttribute("data-target", String(jobs.length));
-    // If the counter animation already ran (element was in view before
-    // this data arrived), correct the displayed number directly too.
-    if (!isNaN(parseInt(statEl.textContent, 10))) statEl.textContent = String(jobs.length);
-  }
 }
 
 /* ---------- Boot + periodic refresh ---------- */
 
-document.addEventListener("DOMContentLoaded", loadJobs);
+function loadAll() {
+  loadJobs();
+  loadAdmitCards();
+  loadResults();
+}
+
+document.addEventListener("DOMContentLoaded", loadAll);
 // Re-check for freshly scraped content every 15 minutes without a page reload
-setInterval(loadJobs, 15 * 60 * 1000);
+setInterval(loadAll, 15 * 60 * 1000);
