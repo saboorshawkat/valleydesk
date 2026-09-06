@@ -9,10 +9,6 @@
 <meta property="og:site_name" content="Valley Desk"/>
 <meta property="og:title" content="Valley Desk | J&amp;K Govt Jobs — JKSSB, JKPSC &amp; More"/>
 <meta property="og:url" content="https://valleydesk.in/"/>
-<meta property="og:image" content="VD_Logo.png"/>
-<link rel="icon" type="image/png" href="VD_Logo.png"/>
-<link rel="shortcut icon" type="image/png" href="VD_Logo.png"/>
-<link rel="apple-touch-icon" href="VD_Logo.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700;800;900&family=Sora:wght@400;500;600;700;800&family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet"/>
@@ -257,7 +253,6 @@ button{cursor:pointer;font-family:var(--mono)}
 .tc-btn-o{background:transparent;color:var(--t2);border-color:var(--bg4)}
 .tc-btn-o:hover{color:var(--t1);border-color:var(--t3);transform:translateY(-1px)}
 #noResults{display:none;text-align:center;padding:34px 0;color:var(--t3);font-size:10px}
-.empty-note{display:none;text-align:center;padding:34px 0;color:var(--t3);font-size:10px}
 
 /* INFO BOX */
 .info-box{background:rgba(34,158,217,.07);border:1px solid rgba(34,158,217,.2);border-radius:var(--rad2);padding:10px 12px;margin:15px 0;display:flex;align-items:flex-start;gap:8px}
@@ -351,9 +346,9 @@ footer{margin-top:24px;background:var(--bg1);border-top:1px solid var(--bg4);pos
       <div class="live-pill"><span class="live-dot"></span>LIVE UPDATES</div>
     </div>
     <div class="tb-right">
-      <a href="#admitCardSection" onclick="document.getElementById('admitCardSection').scrollIntoView({behavior:'smooth'});return false;">Admit Cards</a>
+      <a href="#" onclick="showToast('Admit card section opening soon!')">Admit Cards</a>
       <div class="tb-sep2"></div>
-      <a href="#resultSection" onclick="document.getElementById('resultSection').scrollIntoView({behavior:'smooth'});return false;">Results</a>
+      <a href="#" onclick="showToast('Results section coming soon!')">Results</a>
       <div class="tb-sep2"></div>
       <a href="#" onclick="showToast('Subscribed for daily job alerts!')">Job Alerts</a>
     </div>
@@ -364,7 +359,7 @@ footer{margin-top:24px;background:var(--bg1);border-top:1px solid var(--bg4);pos
 <div class="masthead">
   <div class="mast-w">
     <div class="logo-wrap">
-      <div class="logo-box"><img src="VD_Logo.png" alt="Valley Desk Logo" style="width:100%;height:100%;object-fit:contain;border-radius:9px"/></div>
+      <div class="logo-box"><i class="fa fa-graduation-cap"></i></div>
       <div class="logo-text">
         <span class="logo-main">VALLEY<span>DESK</span></span>
         <span class="logo-sub">valleydesk.in · J&amp;K Govt Jobs</span>
@@ -377,7 +372,7 @@ footer{margin-top:24px;background:var(--bg1);border-top:1px solid var(--bg4);pos
     </div>
     <div class="mast-right">
       <div class="mstat"><span class="mstat-n counter" data-target="320">0</span><span class="mstat-l">K Visitors</span></div>
-      <div class="mstat"><span class="mstat-n counter" id="statJobsListed" data-target="180">0</span><span class="mstat-l">Jobs Listed</span></div>
+      <div class="mstat"><span class="mstat-n counter" data-target="180">0</span><span class="mstat-l">Jobs Listed</span></div>
       <div class="mstat"><span class="mstat-n counter" data-target="8">0</span><span class="mstat-l">Categories</span></div>
     </div>
     <div class="mast-sep"></div>
@@ -417,7 +412,7 @@ footer{margin-top:24px;background:var(--bg1);border-top:1px solid var(--bg4);pos
   <div class="hero-inner">
     <div class="hero-eyebrow">
       <span class="hero-eyebrow-ico"><i class="fa fa-bolt"></i></span>
-      <span class="hero-eyebrow-tag">Updated <b id="heroUpdatedTag">June 2026</b> · <span id="heroOpenCount">180+</span> live J&amp;K openings</span>
+      <span class="hero-eyebrow-tag">Updated <b>June 2026</b> · 180+ live J&amp;K openings</span>
     </div>
     <h1 class="hero-title">
       <span class="hero-title-main">Find Your Next <span class="hero-title-grad">J&amp;K&nbsp;Govt&nbsp;Job</span></span>
@@ -458,42 +453,42 @@ footer{margin-top:24px;background:var(--bg1);border-top:1px solid var(--bg4);pos
     <div class="cat-grid">
       <div class="cat-grid-card" onclick="filterCat('jkssb',null);document.getElementById('jobsContainer').scrollIntoView({behavior:'smooth'})">
         <div class="cgc-icon" style="--cgc:#b060ff;background:rgba(176,96,255,.1);border-color:rgba(176,96,255,.2)">🏔️</div>
-        <div class="cgc-body"><div class="cgc-name">JKSSB</div><div class="cgc-desc">J&amp;K Services Selection Board</div><div class="cgc-count" id="cgcCount-jkssb" style="color:#b060ff">4 Jobs</div></div>
+        <div class="cgc-body"><div class="cgc-name">JKSSB</div><div class="cgc-desc">J&amp;K Services Selection Board</div><div class="cgc-count" style="color:#b060ff">4 Jobs</div></div>
         <div class="cgc-arrow" style="color:#b060ff"><i class="fa fa-arrow-right"></i></div>
       </div>
       <div class="cat-grid-card" onclick="filterCat('jkpsc',null);document.getElementById('jobsContainer').scrollIntoView({behavior:'smooth'})">
         <div class="cgc-icon" style="--cgc:#34d399;background:rgba(52,211,153,.1);border-color:rgba(52,211,153,.2)">⚖️</div>
-        <div class="cgc-body"><div class="cgc-name">JKPSC</div><div class="cgc-desc">KAS, Combined Competitive Exam</div><div class="cgc-count" id="cgcCount-jkpsc" style="color:#34d399">3 Jobs</div></div>
+        <div class="cgc-body"><div class="cgc-name">JKPSC</div><div class="cgc-desc">KAS, Combined Competitive Exam</div><div class="cgc-count" style="color:#34d399">3 Jobs</div></div>
         <div class="cgc-arrow" style="color:#34d399"><i class="fa fa-arrow-right"></i></div>
       </div>
       <div class="cat-grid-card" onclick="filterCat('jkpolice',null);document.getElementById('jobsContainer').scrollIntoView({behavior:'smooth'})">
         <div class="cgc-icon" style="--cgc:#ff7f50;background:rgba(255,127,80,.1);border-color:rgba(255,127,80,.2)">👮</div>
-        <div class="cgc-body"><div class="cgc-name">JK Police</div><div class="cgc-desc">Constable, SI, SPO</div><div class="cgc-count" id="cgcCount-jkpolice" style="color:#ff7f50">3 Jobs</div></div>
+        <div class="cgc-body"><div class="cgc-name">JK Police</div><div class="cgc-desc">Constable, SI, SPO</div><div class="cgc-count" style="color:#ff7f50">3 Jobs</div></div>
         <div class="cgc-arrow" style="color:#ff7f50"><i class="fa fa-arrow-right"></i></div>
       </div>
       <div class="cat-grid-card" onclick="filterCat('jkbank',null);document.getElementById('jobsContainer').scrollIntoView({behavior:'smooth'})">
         <div class="cgc-icon" style="--cgc:#f5c518;background:rgba(245,197,24,.1);border-color:rgba(245,197,24,.2)">🏦</div>
-        <div class="cgc-body"><div class="cgc-name">J&amp;K Bank</div><div class="cgc-desc">PO, Banking Associate, Apprentice</div><div class="cgc-count" id="cgcCount-jkbank" style="color:#f5c518">3 Jobs</div></div>
+        <div class="cgc-body"><div class="cgc-name">J&amp;K Bank</div><div class="cgc-desc">PO, Banking Associate, Apprentice</div><div class="cgc-count" style="color:#f5c518">3 Jobs</div></div>
         <div class="cgc-arrow" style="color:#f5c518"><i class="fa fa-arrow-right"></i></div>
       </div>
       <div class="cat-grid-card" onclick="filterCat('jkjudiciary',null);document.getElementById('jobsContainer').scrollIntoView({behavior:'smooth'})">
         <div class="cgc-icon" style="--cgc:#38bdf8;background:rgba(56,189,248,.1);border-color:rgba(56,189,248,.2)">🏛️</div>
-        <div class="cgc-body"><div class="cgc-name">Judiciary</div><div class="cgc-desc">J&amp;K High Court, District Courts</div><div class="cgc-count" id="cgcCount-jkjudiciary" style="color:#38bdf8">3 Jobs</div></div>
+        <div class="cgc-body"><div class="cgc-name">Judiciary</div><div class="cgc-desc">J&amp;K High Court, District Courts</div><div class="cgc-count" style="color:#38bdf8">3 Jobs</div></div>
         <div class="cgc-arrow" style="color:#38bdf8"><i class="fa fa-arrow-right"></i></div>
       </div>
       <div class="cat-grid-card" onclick="filterCat('jkteaching',null);document.getElementById('jobsContainer').scrollIntoView({behavior:'smooth'})">
         <div class="cgc-icon" style="--cgc:#25D366;background:rgba(37,211,102,.1);border-color:rgba(37,211,102,.2)">📘</div>
-        <div class="cgc-body"><div class="cgc-name">Teaching</div><div class="cgc-desc">SED, ReT, Lecturers</div><div class="cgc-count" id="cgcCount-jkteaching" style="color:#25D366">3 Jobs</div></div>
+        <div class="cgc-body"><div class="cgc-name">Teaching</div><div class="cgc-desc">SED, ReT, Lecturers</div><div class="cgc-count" style="color:#25D366">3 Jobs</div></div>
         <div class="cgc-arrow" style="color:#25D366"><i class="fa fa-arrow-right"></i></div>
       </div>
       <div class="cat-grid-card" onclick="filterCat('jkhealth',null);document.getElementById('jobsContainer').scrollIntoView({behavior:'smooth'})">
         <div class="cgc-icon" style="--cgc:#fb923c;background:rgba(251,146,60,.1);border-color:rgba(251,146,60,.2)">🩺</div>
-        <div class="cgc-body"><div class="cgc-name">Health Dept</div><div class="cgc-desc">SKIMS, GMC, Paramedical</div><div class="cgc-count" id="cgcCount-jkhealth" style="color:#fb923c">3 Jobs</div></div>
+        <div class="cgc-body"><div class="cgc-name">Health Dept</div><div class="cgc-desc">SKIMS, GMC, Paramedical</div><div class="cgc-count" style="color:#fb923c">3 Jobs</div></div>
         <div class="cgc-arrow" style="color:#fb923c"><i class="fa fa-arrow-right"></i></div>
       </div>
       <div class="cat-grid-card" onclick="filterCat('jkuniversity',null);document.getElementById('jobsContainer').scrollIntoView({behavior:'smooth'})">
         <div class="cgc-icon" style="--cgc:#e879f9;background:rgba(232,121,249,.1);border-color:rgba(232,121,249,.2)">🎓</div>
-        <div class="cgc-body"><div class="cgc-name">University</div><div class="cgc-desc">Kashmir &amp; Jammu University</div><div class="cgc-count" id="cgcCount-jkuniversity" style="color:#e879f9">3 Jobs</div></div>
+        <div class="cgc-body"><div class="cgc-name">University</div><div class="cgc-desc">Kashmir &amp; Jammu University</div><div class="cgc-count" style="color:#e879f9">3 Jobs</div></div>
         <div class="cgc-arrow" style="color:#e879f9"><i class="fa fa-arrow-right"></i></div>
       </div>
     </div>
@@ -514,6 +509,7 @@ footer{margin-top:24px;background:var(--bg1);border-top:1px solid var(--bg4);pos
   </div>
 </div>
 
+
 <!-- ADMIT CARD SECTION -->
 <div class="wrap" id="admitCardSection">
   <div class="cat-section-hd" style="background:rgba(34,158,217,.16);border:1px solid rgba(34,158,217,.4);border-left-color:rgb(34,158,217);box-shadow:0 3px 12px rgba(34,158,217,.18)">
@@ -522,7 +518,6 @@ footer{margin-top:24px;background:var(--bg1);border-top:1px solid var(--bg4);pos
     <div class="csh-count" id="admitCardCount" style="color:#229ED9">0 Released</div>
   </div>
   <div class="tools-list" id="admitCardList"></div>
-  <div class="empty-note" id="noAdmitCards"><i class="fa fa-folder-open" style="font-size:28px;display:block;margin-bottom:10px"></i>No admit cards released yet. Check back soon.</div>
 </div>
 
 <!-- RESULT SECTION -->
@@ -533,7 +528,6 @@ footer{margin-top:24px;background:var(--bg1);border-top:1px solid var(--bg4);pos
     <div class="csh-count" id="resultCount" style="color:var(--g)">0 Declared</div>
   </div>
   <div class="tools-list" id="resultList"></div>
-  <div class="empty-note" id="noResultsFound"><i class="fa fa-folder-open" style="font-size:28px;display:block;margin-bottom:10px"></i>No results declared yet. Check back soon.</div>
 </div>
 
 <!-- JOIN CHANNELS SECTION -->
@@ -575,7 +569,7 @@ footer{margin-top:24px;background:var(--bg1);border-top:1px solid var(--bg4);pos
   <div class="footer-top">
     <div>
       <div class="logo-wrap">
-        <div class="logo-box"><img src="VD_Logo.png" alt="Valley Desk Logo" style="width:100%;height:100%;object-fit:contain;border-radius:9px"/></div>
+        <div class="logo-box"><i class="fa fa-graduation-cap"></i></div>
         <div class="logo-text"><span class="logo-main">VALLEY<span>DESK</span></span></div>
       </div>
       <p class="fb-desc">Jammu &amp; Kashmir's trusted portal for Govt Job Notifications, Exam Results &amp; Admit Cards — JKSSB, JKPSC, JK Police &amp; more. Updated daily, 100% free. Visit us at <a href="https://valleydesk.in" style="color:var(--g);font-weight:700">valleydesk.in</a></p>
