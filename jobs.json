@@ -2,10 +2,19 @@
   {
     "id": "jkssb-2026-001",
     "category": "jkssb",
-    "name": "JKSSB Multi-Tasking Staff (MTS) & Sanitation Worker Recruitment",
-    "subtitle": "Various UT, Divisional, and District Cadre Departments",
-    "desc": "Mass recruitment for Class-IV Multi-Tasking Staff (MTS) and Sanitation Worker profiles across different UT administration departments.",
-    "badges": [{"label": "Advt 09 of 2026", "cls": "tcb-p"}, {"label": "8th / Matric to 10+2", "cls": "tcb-b"}],
+    "name": "JKSSB Multi-Tasking Staff (MTS) Recruitment",
+    "subtitle": "Various UT Cadre Departments",
+    "desc": "Mass recruitment for Class-IV Multi-Tasking Staff (MTS) profiles across different UT administration departments.",
+    "badges": [
+      {
+        "label": "Advt 09 of 2026",
+        "cls": "tcb-p"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
     "lastDate": "03/11/2026",
     "applyLink": "https://jkssb.nic.in/dynamic-jkssb-test/pages/login.aspx",
     "notificationLink": "https://jkssb.nic.in/Advertisement.html",
@@ -15,11 +24,20 @@
   {
     "id": "jkssb-2026-002",
     "category": "jkssb",
-    "name": "JKSSB Paramedical & Technical Cadre Recruitment",
-    "subtitle": "Health and Medical Education / Agriculture Production Departments",
-    "desc": "Recruitment for technical roles including Junior Pharmacist, Junior Staff Nurse, Junior Lab Technician, and Horticulture Technician Grade-IV.",
-    "badges": [{"label": "Advt 08 of 2026", "cls": "tcb-p"}, {"label": "Diploma / Degree / Medical Tech", "cls": "tcb-b"}],
-    "lastDate": "09/10/2026",
+    "name": "JKSSB Sanitation Worker Recruitment",
+    "subtitle": "Housing & Urban Development Department",
+    "desc": "Recruitment track for Sanitation Workers across various municipal committees and corporations in J&K.",
+    "badges": [
+      {
+        "label": "Advt 09 of 2026",
+        "cls": "tcb-p"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "03/11/2026",
     "applyLink": "https://jkssb.nic.in/dynamic-jkssb-test/pages/login.aspx",
     "notificationLink": "https://jkssb.nic.in/Advertisement.html",
     "officialLink": "https://jkssb.nic.in",
@@ -28,13 +46,506 @@
   {
     "id": "jkssb-2026-003",
     "category": "jkssb",
-    "name": "JKSSB Warder Recruitment",
-    "subtitle": "Home Department (Jail Cadre)",
-    "desc": "Direct recruitment for Warder vacancies inside the Home Department's prison administration layout.",
-    "badges": [{"label": "Advt 05 of 2026", "cls": "tcb-p"}, {"label": "10+2 / Matric", "cls": "tcb-b"}],
-    "lastDate": "25/08/2026",
+    "name": "JKSSB Junior Pharmacist Recruitment",
+    "subtitle": "Health and Medical Education Department",
+    "desc": "Technical recruitment for certified Pharmacists across divisional and district cadres.",
+    "badges": [
+      {
+        "label": "Advt 08 of 2026",
+        "cls": "tcb-p"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "09/10/2026",
     "applyLink": "https://jkssb.nic.in/dynamic-jkssb-test/pages/login.aspx",
-    "notificationLink": "https://www.jkssb.nic.in/Pdf/Advt_05OF2026_06072026.pdf",
+    "notificationLink": "https://jkssb.nic.in/Advertisement.html",
+    "officialLink": "https://jkssb.nic.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "jkssb-2026-004",
+    "category": "jkssb",
+    "name": "JKSSB Junior Staff Nurse Recruitment",
+    "subtitle": "Health and Medical Education Department",
+    "desc": "Recruitment for registered staff nurses across various Government Medical Colleges (GMCs) and Associated Hospitals.",
+    "badges": [
+      {
+        "label": "Advt 08 of 2026",
+        "cls": "tcb-p"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "09/10/2026",
+    "applyLink": "https://jkssb.nic.in/dynamic-jkssb-test/pages/login.aspx",
+    "notificationLink": "https://jkssb.nic.in/Advertisement.html",
+    "officialLink": "https://jkssb.nic.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "jkssb-2026-005",
+    "category": "jkssb",
+    "name": "JKSSB Junior Lab Technician Recruitment",
+    "subtitle": "Health and Medical Education Department",
+    "desc": "Selection process for laboratory technical support personnel in regional medical blocks.",
+    "badges": [
+      {
+        "label": "Advt 08 of 2026",
+        "cls": "tcb-p"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "09/10/2026",
+    "applyLink": "https://jkssb.nic.in/dynamic-jkssb-test/pages/login.aspx",
+    "notificationLink": "https://jkssb.nic.in/Advertisement.html",
+    "officialLink": "https://jkssb.nic.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "jkssb-2026-006",
+    "category": "jkssb",
+    "name": "JKSSB Horticulture Technician Grade-IV",
+    "subtitle": "Agriculture Production Department",
+    "desc": "Hiring track for field technicians specialized in orchard operations and crop supervision.",
+    "badges": [
+      {
+        "label": "Advt 08 of 2026",
+        "cls": "tcb-p"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "09/10/2026",
+    "applyLink": "https://jkssb.nic.in/dynamic-jkssb-test/pages/login.aspx",
+    "notificationLink": "https://jkssb.nic.in/Advertisement.html",
+    "officialLink": "https://jkssb.nic.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "jkssb-2026-007",
+    "category": "jkssb",
+    "name": "JKSSB Assistant Compiler Recruitment",
+    "subtitle": "Finance Department (J&K Funds Organisation)",
+    "desc": "Selection track for account management and record compiling assistants within regional treasuries.",
+    "badges": [
+      {
+        "label": "Finance Dept",
+        "cls": "tcb-p"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "30/09/2026",
+    "applyLink": "https://jkssb.nic.in/dynamic-jkssb-test/pages/login.aspx",
+    "notificationLink": "https://jkssb.nic.in/Advertisement.html",
+    "officialLink": "https://jkssb.nic.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "jkssb-2026-008",
+    "category": "jkssb",
+    "name": "JKSSB Junior Engineer (Electrical) Recruitment",
+    "subtitle": "Power Development Department (PDD)",
+    "desc": "Technical track for Diploma/B.E. graduates specializing in grid infrastructure maintenance and distribution.",
+    "badges": [
+      {
+        "label": "PDD Recruitment",
+        "cls": "tcb-p"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "15/10/2026",
+    "applyLink": "https://jkssb.nic.in/dynamic-jkssb-test/pages/login.aspx",
+    "notificationLink": "https://jkssb.nic.in/Advertisement.html",
+    "officialLink": "https://jkssb.nic.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "iust-2026-001",
+    "category": "education",
+    "name": "IUST Technical & Research Faculty Recruitment",
+    "subtitle": "Islamic University of Science & Technology",
+    "desc": "Academic and administrative recruitment tracks for technical staff and research profiles across multiple scientific departments.",
+    "badges": [
+      {
+        "label": "IUST Vacancies",
+        "cls": "tcb-p"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "24/09/2026",
+    "applyLink": "https://jkadworld.com/category/jammu-kashmir-jobs/jobs-in-kashmir/",
+    "notificationLink": "https://jkadworld.com/",
+    "officialLink": "https://www.iust.ac.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "pvt-2026-001",
+    "category": "private",
+    "name": "M/S Vimal Enterprises Plant Fitter Recruitment",
+    "subtitle": "Bari Brahmana Industrial Estate, Jammu",
+    "desc": "Industrial hiring track for structural fitters and assembly operators within the plant facility.",
+    "badges": [
+      {
+        "label": "Industrial",
+        "cls": "tcb-p"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "30/09/2026",
+    "applyLink": "https://www.naukri.com/jobs-in-jammu-and-kashmir",
+    "notificationLink": "https://www.naukri.com/jobs-in-jammu-and-kashmir",
+    "officialLink": "https://www.naukri.com",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "pvt-2026-002",
+    "category": "private",
+    "name": "HP Adhesives Area Sales Manager Recruitment",
+    "subtitle": "Corporate Field Operations - Jammu Division",
+    "desc": "Hiring professional assets for regional business development and distribution network scaling.",
+    "badges": [
+      {
+        "label": "Sales Track",
+        "cls": "tcb-p"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "25/09/2026",
+    "applyLink": "https://www.naukri.com/jobs-in-jammu-and-kashmir",
+    "notificationLink": "https://www.naukri.com/jobs-in-jammu-and-kashmir",
+    "officialLink": "https://www.naukri.com",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "pvt-2026-003",
+    "category": "private",
+    "name": "Putzmeister Concrete Machines Diploma Engineer Trainee",
+    "subtitle": "Technical Field Service Unit - Srinagar",
+    "desc": "Hiring field operators and trainee engineers for maintenance of concrete pumping infrastructure.",
+    "badges": [
+      {
+        "label": "Engineering Trainee",
+        "cls": "tcb-p"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "28/09/2026",
+    "applyLink": "https://in.indeed.com/l-jammu-and-kashmir-jobs.html",
+    "notificationLink": "https://in.indeed.com/l-jammu-and-kashmir-jobs.html",
+    "officialLink": "https://in.indeed.com",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "pvt-2026-004",
+    "category": "private",
+    "name": "Swiggy Delivery Operations Field Executive",
+    "subtitle": "Logistics & Fleet Operations - Jammu City",
+    "desc": "Onboarding operational team executives to manage delivery networks and localized rider hubs.",
+    "badges": [
+      {
+        "label": "Logistics",
+        "cls": "tcb-p"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "05/10/2026",
+    "applyLink": "https://in.indeed.com/l-jammu-and-kashmir-jobs.html",
+    "notificationLink": "https://in.indeed.com/l-jammu-and-kashmir-jobs.html",
+    "officialLink": "https://in.indeed.com",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "edu-2026-002",
+    "category": "education",
+    "name": "Govt Polytechnic College Poonch Guest Faculty Recruitment",
+    "subtitle": "Academic Department - Poonch",
+    "desc": "Walk-in application recruitment for specialized guest lecturers and engineering laboratory instructors.",
+    "badges": [
+      {
+        "label": "Polytechnic",
+        "cls": "tcb-p"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "20/09/2026",
+    "applyLink": "https://jkadworld.com/",
+    "notificationLink": "https://jkadworld.com/",
+    "officialLink": "https://jkadworld.com/",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "edu-2026-003",
+    "category": "education",
+    "name": "Govt Polytechnic College Doda Vocational Instructor Hiring",
+    "subtitle": "Vocational Training Wing - Doda",
+    "desc": "Hiring technical skill trainers for mechanical, electronic, and computer application trades.",
+    "badges": [
+      {
+        "label": "Skill Wing",
+        "cls": "tcb-p"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "22/09/2026",
+    "applyLink": "https://jkadworld.com/",
+    "notificationLink": "https://jkadworld.com/",
+    "officialLink": "https://jkadworld.com/",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "pvt-2026-005",
+    "category": "private",
+    "name": "Airtel J&K Territory Sales Manager Recruitment",
+    "subtitle": "Commercial Operations Hub - Srinagar",
+    "desc": "Corporate hiring for handling distributor pipelines, target scaling, and retail market growth operations.",
+    "badges": [
+      {
+        "label": "Telecom",
+        "cls": "tcb-p"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "12/10/2026",
+    "applyLink": "https://www.naukri.com/jobs-in-jammu-and-kashmir",
+    "notificationLink": "https://www.naukri.com/jobs-in-jammu-and-kashmir",
+    "officialLink": "https://www.naukri.com",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "pvt-2026-006",
+    "category": "private",
+    "name": "HDFC Bank Regional Operations Executive",
+    "subtitle": "Retail Banking Unit - Kathua Branch",
+    "desc": "Management of customer clearings, cash vault operations, and local operational desk compliance.",
+    "badges": [
+      {
+        "label": "Banking Sector",
+        "cls": "tcb-p"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "02/10/2026",
+    "applyLink": "https://www.naukri.com/jobs-in-jammu-and-kashmir",
+    "notificationLink": "https://www.naukri.com/jobs-in-jammu-and-kashmir",
+    "officialLink": "https://www.naukri.com",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "pvt-2026-007",
+    "category": "private",
+    "name": "Khyber Agro Plant Quality Control Officer",
+    "subtitle": "Manufacturing Facility - Avantipora",
+    "desc": "Recruitment for food technology experts to conduct lab testing, batch sampling, and hygiene validations.",
+    "badges": [
+      {
+        "label": "Quality Control",
+        "cls": "tcb-p"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "29/09/2026",
+    "applyLink": "https://in.indeed.com/l-jammu-and-kashmir-jobs.html",
+    "notificationLink": "https://in.indeed.com/l-jammu-and-kashmir-jobs.html",
+    "officialLink": "https://in.indeed.com",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "pvt-2026-008",
+    "category": "private",
+    "name": "Jammu Motors Automobile Service Advisor",
+    "subtitle": "Technical Workshop Layout - Jammu",
+    "desc": "Hiring technical coordinators to diagnose automobile faults, handle customer invoicing, and schedule mechanics.",
+    "badges": [
+      {
+        "label": "Automobile",
+        "cls": "tcb-p"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "26/09/2026",
+    "applyLink": "https://jkadworld.com/",
+    "notificationLink": "https://jkadworld.com/",
+    "officialLink": "https://jkadworld.com/",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "pvt-2026-009",
+    "category": "private",
+    "name": "SpiceJet Ground Operations Customer Executive",
+    "subtitle": "Airport Management - Jammu Airport (IXJ)",
+    "desc": "Hiring terminal security agents and guest handling teams for scheduled domestic flights.",
+    "badges": [
+      {
+        "label": "Aviation",
+        "cls": "tcb-p"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "04/10/2026",
+    "applyLink": "https://www.naukri.com/jobs-in-jammu-and-kashmir",
+    "notificationLink": "https://www.naukri.com/jobs-in-jammu-and-kashmir",
+    "officialLink": "https://www.naukri.com",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "jkssb-admit-2026-001",
+    "category": "jkssb-admit-card",
+    "name": "JKSSB Junior Stenographer E-Admit Card Released",
+    "subtitle": "Short Hand Skill Test Phase",
+    "desc": "Admit cards officially available for download for shorthand skill tests starting September 1, 2026, at NIELIT Jammu/Srinagar.",
+    "badges": [
+      {
+        "label": "Admit Card",
+        "cls": "tcb-admit"
+      },
+      {
+        "label": "Skill Test",
+        "cls": "tcb-b"
+      }
+    ],
+    "lastDate": "19/09/2026",
+    "applyLink": "https://jkssb.nic.in/dynamic-jkssb-test/pages/login.aspx",
+    "notificationLink": "https://jkssb.nic.in",
+    "officialLink": "https://jkssb.nic.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "jkssb-admit-2026-002",
+    "category": "jkssb-admit-card",
+    "name": "JKSSB Forest Guard Physical Test Roll Number Download",
+    "subtitle": "PST / PET Events Portal",
+    "desc": "Download link active for downloading call letters for physical standard and endurance tracks.",
+    "badges": [
+      {
+        "label": "Physical Test",
+        "cls": "tcb-admit"
+      },
+      {
+        "label": "Forest Guard",
+        "cls": "tcb-b"
+      }
+    ],
+    "lastDate": "30/09/2026",
+    "applyLink": "https://jkssb.apply-gov.in/",
+    "notificationLink": "https://jkssb.apply-gov.in/",
+    "officialLink": "https://jkssb.nic.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "jkssb-result-2026-001",
+    "category": "jkssb-result",
+    "name": "JKSSB Junior Assistant OMR Merit List Result",
+    "subtitle": "Notification No. 08 of 2025 Track",
+    "desc": "Official written merit list scorecards released mapping out the 12,498 candidates qualifying for the upcoming NIELIT skill test parameters.",
+    "badges": [
+      {
+        "label": "Result Out",
+        "cls": "tcb-r"
+      },
+      {
+        "label": "Merit List PDF",
+        "cls": "tcb-b"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkssb.nic.in/Whatsnew.html",
+    "notificationLink": "https://jkssb.nic.in/Whatsnew.html",
+    "officialLink": "https://jkssb.nic.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "jkssb-result-2026-002",
+    "category": "jkssb-result",
+    "name": "JKSSB Social Forestry Worker Scorecard & Selection Panel",
+    "subtitle": "Forest, Ecology and Environment Department",
+    "desc": "Official written scorecards published for the examination held on May 17, 2026; next stage maps out physical standard verifications.",
+    "badges": [
+      {
+        "label": "Result Out",
+        "cls": "tcb-r"
+      },
+      {
+        "label": "Scorecard",
+        "cls": "tcb-b"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkssb.nic.in/Whatsnew.html",
+    "notificationLink": "https://jkssb.nic.in/Whatsnew.html",
+    "officialLink": "https://jkssb.nic.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "jkssb-result-2026-003",
+    "category": "jkssb-result",
+    "name": "JKSSB Junior Engineer (Civil) Final Merit Placement Panel",
+    "subtitle": "Jal Shakti Department",
+    "desc": "Final recruitment appointment panel allocations and document verification logs compiled for the core engineering track.",
+    "badges": [
+      {
+        "label": "Final Result",
+        "cls": "tcb-r"
+      },
+      {
+        "label": "DV Complete",
+        "cls": "tcb-b"
+      }
+    ],
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkssb.nic.in/Whatsnew.html",
+    "notificationLink": "https://jkssb.nic.in/Whatsnew.html",
     "officialLink": "https://jkssb.nic.in",
     "scrapedAt": "2026-09-06T19:35:00"
   }
