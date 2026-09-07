@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script>try{var t=localStorage.getItem("vd-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
 <title>Valley Desk | J&amp;K Govt Jobs — JKSSB, JKPSC, JK Police &amp; More</title>
 <meta name="description" content="Valley Desk (valleydesk.in) is Jammu &amp; Kashmir's dedicated govt job portal — JKSSB, JKPSC, JK Police, J&amp;K Bank, Judiciary, Teaching, Health &amp; University recruitment, results and admit cards."/>
 <link rel="canonical" href="https://valleydesk.in/"/>
@@ -22,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700;800;900&family=Sora:wght@400;500;600;700;800&family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
 
@@ -83,16 +84,16 @@
 
 <!-- CAT STRIP -->
 <div class="cat-strip">
-  <div class="cs-inner">
-    <div class="cs-btn act" onclick="filterCat('all',this)"><span class="cs-dot" style="background:var(--g)"></span>All Jobs</div>
-    <div class="cs-btn" onclick="filterCat('jkssb',this)"><span class="cs-dot" style="background:#b060ff"></span>JKSSB</div>
-    <div class="cs-btn" onclick="filterCat('jkpsc',this)"><span class="cs-dot" style="background:#34d399"></span>JKPSC</div>
-    <div class="cs-btn" onclick="filterCat('jkpolice',this)"><span class="cs-dot" style="background:#ff7f50"></span>JK Police</div>
-    <div class="cs-btn" onclick="filterCat('jkbank',this)"><span class="cs-dot" style="background:#f5c518"></span>J&amp;K Bank</div>
-    <div class="cs-btn" onclick="filterCat('jkjudiciary',this)"><span class="cs-dot" style="background:#38bdf8"></span>Judiciary</div>
-    <div class="cs-btn" onclick="filterCat('jkteaching',this)"><span class="cs-dot" style="background:#25D366"></span>Teaching</div>
-    <div class="cs-btn" onclick="filterCat('jkhealth',this)"><span class="cs-dot" style="background:#fb923c"></span>Health</div>
-    <div class="cs-btn" onclick="filterCat('jkuniversity',this)"><span class="cs-dot" style="background:#e879f9"></span>University</div>
+  <div class="cs-inner" id="catStrip">
+    <div class="cs-btn act" data-cat="all" onclick="jumpToCat('all',this)"><span class="cs-dot" style="background:var(--g)"></span>All Jobs</div>
+    <div class="cs-btn" data-cat="jkssb" onclick="jumpToCat('jkssb',this)"><span class="cs-dot" style="background:#b060ff"></span>JKSSB</div>
+    <div class="cs-btn" data-cat="jkpsc" onclick="jumpToCat('jkpsc',this)"><span class="cs-dot" style="background:#34d399"></span>JKPSC</div>
+    <div class="cs-btn" data-cat="jkpolice" onclick="jumpToCat('jkpolice',this)"><span class="cs-dot" style="background:#ff7f50"></span>JK Police</div>
+    <div class="cs-btn" data-cat="jkbank" onclick="jumpToCat('jkbank',this)"><span class="cs-dot" style="background:#f5c518"></span>J&amp;K Bank</div>
+    <div class="cs-btn" data-cat="jkjudiciary" onclick="jumpToCat('jkjudiciary',this)"><span class="cs-dot" style="background:#38bdf8"></span>Judiciary</div>
+    <div class="cs-btn" data-cat="jkteaching" onclick="jumpToCat('jkteaching',this)"><span class="cs-dot" style="background:#25D366"></span>Teaching</div>
+    <div class="cs-btn" data-cat="jkhealth" onclick="jumpToCat('jkhealth',this)"><span class="cs-dot" style="background:#fb923c"></span>Health</div>
+    <div class="cs-btn" data-cat="jkuniversity" onclick="jumpToCat('jkuniversity',this)"><span class="cs-dot" style="background:#e879f9"></span>University</div>
   </div>
 </div>
 
@@ -118,11 +119,11 @@
       <a href="#jobsContainer" class="hero-search-btn"><i class="fa fa-layer-group"></i> <span>Browse</span></a>
     </div>
     <div class="hero-quicklinks">
-      <span class="hero-ql" onclick="filterCat('jkssb',document.querySelector('.cs-btn'))">🏔️ JKSSB</span>
-      <span class="hero-ql" onclick="filterCat('jkpsc',document.querySelector('.cs-btn'))">⚖️ JKPSC</span>
-      <span class="hero-ql" onclick="filterCat('jkpolice',document.querySelector('.cs-btn'))">🛡️ JK Police</span>
-      <span class="hero-ql" onclick="filterCat('jkbank',document.querySelector('.cs-btn'))">🏦 J&amp;K Bank</span>
-      <span class="hero-ql" onclick="filterCat('jkteaching',document.querySelector('.cs-btn'))">📘 Teaching</span>
+      <span class="hero-ql" onclick="jumpToCat('jkssb')">🏔️ JKSSB</span>
+      <span class="hero-ql" onclick="jumpToCat('jkpsc')">⚖️ JKPSC</span>
+      <span class="hero-ql" onclick="jumpToCat('jkpolice')">🛡️ JK Police</span>
+      <span class="hero-ql" onclick="jumpToCat('jkbank')">🏦 J&amp;K Bank</span>
+      <span class="hero-ql" onclick="jumpToCat('jkteaching')">📘 Teaching</span>
     </div>
   </div>
   <div class="hero-wave">
@@ -144,42 +145,42 @@
       <p class="cgs-sub">Tap a category to jump straight to those Jammu &amp; Kashmir job listings</p>
     </div>
     <div class="cat-grid">
-      <div class="cat-grid-card" onclick="filterCat('jkssb',null);document.getElementById('jobsContainer').scrollIntoView({behavior:'smooth'})">
+      <div class="cat-grid-card" onclick="jumpToCat('jkssb')">
         <div class="cgc-icon" style="--cgc:#b060ff;background:rgba(176,96,255,.1);border-color:rgba(176,96,255,.2)">🏔️</div>
         <div class="cgc-body"><div class="cgc-name">JKSSB</div><div class="cgc-desc">J&amp;K Services Selection Board</div><div class="cgc-count" style="color:#b060ff">4 Jobs</div></div>
         <div class="cgc-arrow" style="color:#b060ff"><i class="fa fa-arrow-right"></i></div>
       </div>
-      <div class="cat-grid-card" onclick="filterCat('jkpsc',null);document.getElementById('jobsContainer').scrollIntoView({behavior:'smooth'})">
+      <div class="cat-grid-card" onclick="jumpToCat('jkpsc')">
         <div class="cgc-icon" style="--cgc:#34d399;background:rgba(52,211,153,.1);border-color:rgba(52,211,153,.2)">⚖️</div>
         <div class="cgc-body"><div class="cgc-name">JKPSC</div><div class="cgc-desc">KAS, Combined Competitive Exam</div><div class="cgc-count" style="color:#34d399">3 Jobs</div></div>
         <div class="cgc-arrow" style="color:#34d399"><i class="fa fa-arrow-right"></i></div>
       </div>
-      <div class="cat-grid-card" onclick="filterCat('jkpolice',null);document.getElementById('jobsContainer').scrollIntoView({behavior:'smooth'})">
+      <div class="cat-grid-card" onclick="jumpToCat('jkpolice')">
         <div class="cgc-icon" style="--cgc:#ff7f50;background:rgba(255,127,80,.1);border-color:rgba(255,127,80,.2)">👮</div>
         <div class="cgc-body"><div class="cgc-name">JK Police</div><div class="cgc-desc">Constable, SI, SPO</div><div class="cgc-count" style="color:#ff7f50">3 Jobs</div></div>
         <div class="cgc-arrow" style="color:#ff7f50"><i class="fa fa-arrow-right"></i></div>
       </div>
-      <div class="cat-grid-card" onclick="filterCat('jkbank',null);document.getElementById('jobsContainer').scrollIntoView({behavior:'smooth'})">
+      <div class="cat-grid-card" onclick="jumpToCat('jkbank')">
         <div class="cgc-icon" style="--cgc:#f5c518;background:rgba(245,197,24,.1);border-color:rgba(245,197,24,.2)">🏦</div>
         <div class="cgc-body"><div class="cgc-name">J&amp;K Bank</div><div class="cgc-desc">PO, Banking Associate, Apprentice</div><div class="cgc-count" style="color:#f5c518">3 Jobs</div></div>
         <div class="cgc-arrow" style="color:#f5c518"><i class="fa fa-arrow-right"></i></div>
       </div>
-      <div class="cat-grid-card" onclick="filterCat('jkjudiciary',null);document.getElementById('jobsContainer').scrollIntoView({behavior:'smooth'})">
+      <div class="cat-grid-card" onclick="jumpToCat('jkjudiciary')">
         <div class="cgc-icon" style="--cgc:#38bdf8;background:rgba(56,189,248,.1);border-color:rgba(56,189,248,.2)">🏛️</div>
         <div class="cgc-body"><div class="cgc-name">Judiciary</div><div class="cgc-desc">J&amp;K High Court, District Courts</div><div class="cgc-count" style="color:#38bdf8">3 Jobs</div></div>
         <div class="cgc-arrow" style="color:#38bdf8"><i class="fa fa-arrow-right"></i></div>
       </div>
-      <div class="cat-grid-card" onclick="filterCat('jkteaching',null);document.getElementById('jobsContainer').scrollIntoView({behavior:'smooth'})">
+      <div class="cat-grid-card" onclick="jumpToCat('jkteaching')">
         <div class="cgc-icon" style="--cgc:#25D366;background:rgba(37,211,102,.1);border-color:rgba(37,211,102,.2)">📘</div>
         <div class="cgc-body"><div class="cgc-name">Teaching</div><div class="cgc-desc">SED, ReT, Lecturers</div><div class="cgc-count" style="color:#25D366">3 Jobs</div></div>
         <div class="cgc-arrow" style="color:#25D366"><i class="fa fa-arrow-right"></i></div>
       </div>
-      <div class="cat-grid-card" onclick="filterCat('jkhealth',null);document.getElementById('jobsContainer').scrollIntoView({behavior:'smooth'})">
+      <div class="cat-grid-card" onclick="jumpToCat('jkhealth')">
         <div class="cgc-icon" style="--cgc:#fb923c;background:rgba(251,146,60,.1);border-color:rgba(251,146,60,.2)">🩺</div>
         <div class="cgc-body"><div class="cgc-name">Health Dept</div><div class="cgc-desc">SKIMS, GMC, Paramedical</div><div class="cgc-count" style="color:#fb923c">3 Jobs</div></div>
         <div class="cgc-arrow" style="color:#fb923c"><i class="fa fa-arrow-right"></i></div>
       </div>
-      <div class="cat-grid-card" onclick="filterCat('jkuniversity',null);document.getElementById('jobsContainer').scrollIntoView({behavior:'smooth'})">
+      <div class="cat-grid-card" onclick="jumpToCat('jkuniversity')">
         <div class="cgc-icon" style="--cgc:#e879f9;background:rgba(232,121,249,.1);border-color:rgba(232,121,249,.2)">🎓</div>
         <div class="cgc-body"><div class="cgc-name">University</div><div class="cgc-desc">Kashmir &amp; Jammu University</div><div class="cgc-count" style="color:#e879f9">3 Jobs</div></div>
         <div class="cgc-arrow" style="color:#e879f9"><i class="fa fa-arrow-right"></i></div>
@@ -275,20 +276,20 @@
     <div>
       <div class="fc-t">Categories</div>
       <ul class="f-links">
-        <li><a href="#" onclick="filterCat('jkssb',null)"><i class="fa fa-angle-right"></i>JKSSB</a></li>
-        <li><a href="#" onclick="filterCat('jkpsc',null)"><i class="fa fa-angle-right"></i>JKPSC</a></li>
-        <li><a href="#" onclick="filterCat('jkpolice',null)"><i class="fa fa-angle-right"></i>JK Police</a></li>
-        <li><a href="#" onclick="filterCat('jkbank',null)"><i class="fa fa-angle-right"></i>J&amp;K Bank</a></li>
-        <li><a href="#" onclick="filterCat('jkjudiciary',null)"><i class="fa fa-angle-right"></i>Judiciary</a></li>
+        <li><a href="#" onclick="jumpToCat('jkssb');return false;"><i class="fa fa-angle-right"></i>JKSSB</a></li>
+        <li><a href="#" onclick="jumpToCat('jkpsc');return false;"><i class="fa fa-angle-right"></i>JKPSC</a></li>
+        <li><a href="#" onclick="jumpToCat('jkpolice');return false;"><i class="fa fa-angle-right"></i>JK Police</a></li>
+        <li><a href="#" onclick="jumpToCat('jkbank');return false;"><i class="fa fa-angle-right"></i>J&amp;K Bank</a></li>
+        <li><a href="#" onclick="jumpToCat('jkjudiciary');return false;"><i class="fa fa-angle-right"></i>Judiciary</a></li>
       </ul>
     </div>
     <div>
       <div class="fc-t">More</div>
       <ul class="f-links">
-        <li><a href="#" onclick="filterCat('jkteaching',null)"><i class="fa fa-angle-right"></i>Teaching (ReT/JKTET)</a></li>
-        <li><a href="#" onclick="filterCat('jkhealth',null)"><i class="fa fa-angle-right"></i>Health Dept / SKIMS</a></li>
-        <li><a href="#" onclick="filterCat('jkuniversity',null)"><i class="fa fa-angle-right"></i>University Jobs</a></li>
-        <li><a href="#" onclick="filterCat('all',null)"><i class="fa fa-angle-right"></i>All J&amp;K Jobs</a></li>
+        <li><a href="#" onclick="jumpToCat('jkteaching');return false;"><i class="fa fa-angle-right"></i>Teaching (ReT/JKTET)</a></li>
+        <li><a href="#" onclick="jumpToCat('jkhealth');return false;"><i class="fa fa-angle-right"></i>Health Dept / SKIMS</a></li>
+        <li><a href="#" onclick="jumpToCat('jkuniversity');return false;"><i class="fa fa-angle-right"></i>University Jobs</a></li>
+        <li><a href="#" onclick="jumpToCat('all');return false;"><i class="fa fa-angle-right"></i>All J&amp;K Jobs</a></li>
       </ul>
     </div>
     <div>
@@ -304,23 +305,23 @@
     </div>
   </div>
   <div class="footer-bot">
-    <div class="fb-l">© 2026 Valley Desk (valleydesk.in). All Rights Reserved.</div>
+    <div class="fb-l">© 2026 Valley Desk (valleydesk.in). All Rights Reserved. <span class="fb-credit">Created by Saboor Shawkat</span></div>
     <div class="fb-r"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Disclaimer</a></div>
   </div>
 </footer>
 
 <!-- MOBILE BOTTOM NAV -->
 <div class="mobile-nav" id="mobileNav">
-  <a href="#" class="mn-item act" onclick="window.scrollTo({top:0,behavior:'smooth'});setMobileNavAct(this)"><span class="mn-ic"><i class="fa-solid fa-house"></i></span>Home</a>
-  <a href="#" class="mn-item" onclick="filterCat('all',null);document.getElementById('jobsContainer').scrollIntoView({behavior:'smooth'});setMobileNavAct(this)"><span class="mn-ic"><i class="fa-solid fa-border-all"></i></span>Categories</a>
-  <a href="#" class="mn-item" onclick="document.getElementById('admitCardSection').scrollIntoView({behavior:'smooth'});setMobileNavAct(this)"><span class="mn-ic"><i class="fa-solid fa-id-card-clip"></i></span>Admit Card</a>
-  <a href="#" class="mn-item" onclick="document.getElementById('resultSection').scrollIntoView({behavior:'smooth'});setMobileNavAct(this)"><span class="mn-ic"><i class="fa-solid fa-trophy"></i></span>Result</a>
-  <a href="#" class="mn-item" onclick="document.getElementById('heroSearch').scrollIntoView({behavior:'smooth'});document.getElementById('heroSearch').focus();setMobileNavAct(this)"><span class="mn-ic"><i class="fa-solid fa-magnifying-glass"></i></span>Search</a>
+  <a href="#" class="mn-item act" onclick="window.scrollTo({top:0,behavior:'smooth'});setMobileNavAct(this);return false;"><span class="mn-ic"><i class="fa-solid fa-house"></i></span>Home</a>
+  <a href="#" class="mn-item" onclick="jumpToCat('all');setMobileNavAct(this);return false;"><span class="mn-ic"><i class="fa-solid fa-border-all"></i></span>Categories</a>
+  <a href="#" class="mn-item" onclick="document.getElementById('admitCardSection').scrollIntoView({behavior:'smooth'});setMobileNavAct(this);return false;"><span class="mn-ic"><i class="fa-solid fa-id-card-clip"></i></span>Admit Card</a>
+  <a href="#" class="mn-item" onclick="document.getElementById('resultSection').scrollIntoView({behavior:'smooth'});setMobileNavAct(this);return false;"><span class="mn-ic"><i class="fa-solid fa-trophy"></i></span>Result</a>
+  <a href="#" class="mn-item" onclick="document.getElementById('heroSearch').scrollIntoView({behavior:'smooth'});document.getElementById('heroSearch').focus();setMobileNavAct(this);return false;"><span class="mn-ic"><i class="fa-solid fa-magnifying-glass"></i></span>Search</a>
 </div>
 
 <div id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fa fa-arrow-up"></i></div>
 
-<script src="common.js"></script>
-<script src="render.js"></script>
+<script src="js/common.js"></script>
+<script src="js/render.js"></script>
 </body>
 </html>
