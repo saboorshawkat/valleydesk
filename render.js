@@ -1,24 +1,13 @@
-/* Valley Desk — dynamic content renderer
-   Fetches jobs.json, admitcards.json, and results.json, and fills the
-   theme's three empty sections (#jobsContainer, #admitCardSection,
-   #resultSection) using the SAME classes the theme's CSS and
-   filterCat()/liveSearch() functions already expect. index.html only
-   needs the empty containers — this script does the rest. */
+/* Valley Desk — home page (index.html) renderer.
+   Fetches jobs.json, admitcards.json, and results.json, fills the
+   theme's three sections, keeps the Browse-by-Category counts in sync
+   with the real data, and caps each home section to 10 cards — with a
+   "View All" link to the dedicated jobs.html / results.html /
+   admitcards.html pages (which paginate the full list) once a section
+   has more than that. Shared helpers (CATEGORY_META, card builders,
+   theme/clock/etc.) live in common.js, loaded before this file. */
 
-const CATEGORY_META = {
-  jkssb:        { icon: "📋", title: "JKSSB Recruitment",       desc: "J&K Services Selection Board",              color: "#0ac16c" },
-  jkpsc:        { icon: "⚖️", title: "JKPSC Recruitment",       desc: "Jammu & Kashmir Public Service Commission", color: "#34d399" },
-  jkpolice:     { icon: "👮", title: "JK Police Recruitment",   desc: "Jammu & Kashmir Police Department",         color: "#ff7f50" },
-  jkbank:       { icon: "🏦", title: "J&K Bank Recruitment",    desc: "Jammu & Kashmir Bank Ltd",                  color: "#f5c518" },
-  jkjudiciary:  { icon: "🏛️", title: "JK Judiciary Recruitment", desc: "J&K High Court & District Courts",         color: "#38bdf8" },
-  jkteaching:   { icon: "📘", title: "JK Teaching Recruitment", desc: "School Education Department, J&K",          color: "#25d366" },
-  jkhealth:     { icon: "🩺", title: "JK Health Dept Recruitment", desc: "SKIMS, GMC & Directorate of Health Services", color: "#fb923c" },
-  jkuniversity: { icon: "🎓", title: "JK University Recruitment", desc: "University of Kashmir & University of Jammu", color: "#e879f9" },
-};
-
-function escapeAttr(str) {
-  return String(str).replace(/"/g, "&quot;").toLowerCase();
-}
+const HOME_SECTION_LIMIT = 10;
 
 /* ---------- JOBS (#jobsContainer) ---------- */
 
@@ -27,36 +16,10 @@ async function loadJobs() {
     const res = await fetch("jobs.json?_=" + Date.now());
     const jobs = await res.json();
     renderJobs(jobs);
+    updateCategoryGridCounts(jobs);
   } catch (e) {
     console.error("Could not load jobs.json", e);
   }
-}
-
-function buildJobCard(job) {
-  const badges = (job.badges || [])
-    .map((b) => `<span class="tcb ${b.cls}">${b.label}</span>`)
-    .join("");
-  return `
-    <div class="tool-card" data-cat="${job.category}" data-name="${escapeAttr(job.name)}">
-      <div class="tc-body">
-        <div class="tc-top">
-          <div class="tc-name-wrap">
-            <div class="tc-name">${job.name}</div>
-            <div class="tc-ver">${job.subtitle || ""}</div>
-          </div>
-          <div class="tc-badges">${badges}</div>
-        </div>
-        <div class="tc-desc">${job.desc || ""}</div>
-        <div class="tc-foot">
-          <div class="tc-dates"><span class="tc-date tc-date-reg"><i class="fa fa-calendar-xmark"></i> Last Date Of Applying: ${job.lastDate || "--/--/----"}</span></div>
-          <div class="tc-actions">
-            <a href="${job.applyLink || "#"}" class="tc-btn tc-btn-g" target="_blank"><i class="fa fa-paper-plane"></i> Apply Now</a>
-            <a href="${job.notificationLink || "#"}" class="tc-btn tc-btn-b" target="_blank"><i class="fa fa-file-pdf"></i> Notification</a>
-            <a href="${job.officialLink || "#"}" class="tc-btn tc-btn-o" target="_blank"><i class="fa fa-globe"></i> Official Website</a>
-          </div>
-        </div>
-      </div>
-    </div>`;
 }
 
 /* Creates (once) a dedicated slot inside the theme's ".wrap" — the element
@@ -86,27 +49,74 @@ function renderJobs(jobs) {
   const byCat = {};
   jobs.forEach((j) => (byCat[j.category] = byCat[j.category] || []).push(j));
 
+  // Preserve the curated CATEGORY_META order first, then append any
+  // category the data introduces that isn't in that list yet.
+  const catOrder = Object.keys(CATEGORY_META).concat(
+    Object.keys(byCat).filter((c) => !CATEGORY_META[c])
+  );
+
   let html = "";
   let anyJobs = false;
+  let shown = 0;
+  const totalJobs = jobs.length;
 
-  Object.keys(CATEGORY_META).forEach((catKey) => {
+  catOrder.forEach((catKey) => {
+    if (shown >= HOME_SECTION_LIMIT) return;
     const catJobs = byCat[catKey];
     if (!catJobs || !catJobs.length) return;
     anyJobs = true;
-    const meta = CATEGORY_META[catKey];
+    const meta = categoryMetaFor(catKey);
+    const room = HOME_SECTION_LIMIT - shown;
+    const slice = catJobs.slice(0, room);
+    shown += slice.length;
     html += `
       <div class="cat-section-hd" data-section="${catKey}" style="background:${meta.color}29;border:1px solid ${meta.color}66;border-left-color:${meta.color};box-shadow:0 3px 12px ${meta.color}2e">
         <div class="csh-icon">${meta.icon}</div>
         <div class="csh-info"><div class="csh-title">${meta.title}</div><div class="csh-desc">${meta.desc}</div></div>
         <div class="csh-count" style="color:${meta.color}">${catJobs.length} Jobs</div>
       </div>
-      <div class="tools-list">${catJobs.map(buildJobCard).join("")}</div>`;
+      <div class="tools-list">${slice.map(buildJobCard).join("")}</div>`;
   });
+
+  if (totalJobs > HOME_SECTION_LIMIT) {
+    html += `
+      <div class="view-all-wrap">
+        <a class="view-all-btn" href="jobs.html"><i class="fa fa-layer-group"></i> View All ${totalJobs} Jobs</a>
+      </div>`;
+  }
 
   slot.innerHTML = html;
 
   const noResults = document.getElementById("noResults");
   if (noResults) noResults.style.display = anyJobs ? "none" : "block";
+}
+
+/* Keeps the "Browse by Category" grid's counts (cgc-count) synced to the
+   real job counts instead of the static numbers baked into the HTML. */
+function updateCategoryGridCounts(jobs) {
+  const counts = {};
+  jobs.forEach((j) => (counts[j.category] = (counts[j.category] || 0) + 1));
+
+  document.querySelectorAll(".cat-grid-card").forEach((card) => {
+    const onclick = card.getAttribute("onclick") || "";
+    const m = onclick.match(/filterCat\('([^']+)'/);
+    if (!m) return;
+    const cat = m[1];
+    const countEl = card.querySelector(".cgc-count");
+    if (countEl) countEl.textContent = `${counts[cat] || 0} Jobs`;
+  });
+
+  const sections = new Set(jobs.map((j) => j.category)).size;
+
+  const chip = document.querySelector(".cgs-chip");
+  if (chip) chip.textContent = `${sections} Sections`;
+
+  // Masthead stats ("Jobs Listed" / "Categories") reflect the real data
+  // instead of the numbers baked into the HTML.
+  const jobsListedEl = document.getElementById("statJobsListed");
+  if (jobsListedEl) jobsListedEl.textContent = jobs.length;
+  const categoriesEl = document.getElementById("statCategories");
+  if (categoriesEl) categoriesEl.textContent = sections;
 }
 
 /* ---------- ADMIT CARDS (#admitCardSection) ---------- */
@@ -121,34 +131,18 @@ async function loadAdmitCards() {
   }
 }
 
-function buildAdmitCard(item) {
-  const badges = (item.badges || [])
-    .map((b) => `<span class="tcb ${b.cls}">${b.label}</span>`)
-    .join("");
-  return `
-    <div class="tool-card" data-name="${escapeAttr(item.name)}">
-      <div class="tc-body">
-        <div class="tc-top">
-          <div class="tc-name-wrap"><div class="tc-name">${item.name}</div><div class="tc-ver">${item.subtitle || ""}</div></div>
-          <div class="tc-badges">${badges}</div>
-        </div>
-        <div class="tc-desc">${item.desc || ""}</div>
-        <div class="tc-foot">
-          <div class="tc-dates"><span class="tc-date tc-date-start"><i class="fa fa-calendar-plus"></i> Released On: ${item.releasedOn || "--/--/----"}</span><span class="tc-date tc-date-reg"><i class="fa fa-calendar-check"></i> Exam Date: ${item.examDate || "--/--/----"}</span></div>
-          <div class="tc-actions">
-            <a href="${item.downloadLink || "#"}" class="tc-btn tc-btn-g" target="_blank"><i class="fa fa-download"></i> Download Admit Card</a>
-            <a href="${item.officialLink || "#"}" class="tc-btn tc-btn-o" target="_blank"><i class="fa fa-globe"></i> Official Website</a>
-          </div>
-        </div>
-      </div>
-    </div>`;
-}
-
 function renderAdmitCards(cards) {
   const list = document.getElementById("admitCardList");
   const count = document.getElementById("admitCardCount");
   if (!list) return;
-  list.innerHTML = cards.map(buildAdmitCard).join("");
+  const shown = cards.slice(0, HOME_SECTION_LIMIT);
+  list.innerHTML = shown.map(buildAdmitCard).join("");
+  if (cards.length > HOME_SECTION_LIMIT) {
+    list.innerHTML += `
+      <div class="view-all-wrap">
+        <a class="view-all-btn" href="admitcards.html"><i class="fa fa-id-card-clip"></i> View All ${cards.length} Admit Cards</a>
+      </div>`;
+  }
   if (count) count.textContent = `${cards.length} Released`;
 }
 
@@ -164,36 +158,85 @@ async function loadResults() {
   }
 }
 
-function buildResultCard(item) {
-  const badges = (item.badges || [])
-    .map((b) => `<span class="tcb ${b.cls}">${b.label}</span>`)
-    .join("");
-  return `
-    <div class="tool-card" data-name="${escapeAttr(item.name)}">
-      <div class="tc-body">
-        <div class="tc-top">
-          <div class="tc-name-wrap"><div class="tc-name">${item.name}</div><div class="tc-ver">${item.subtitle || ""}</div></div>
-          <div class="tc-badges">${badges}</div>
-        </div>
-        <div class="tc-desc">${item.desc || ""}</div>
-        <div class="tc-foot">
-          <div class="tc-dates"><span class="tc-date tc-date-start"><i class="fa fa-calendar-plus"></i> Declared On: ${item.declaredOn || "--/--/----"}</span><span class="tc-date tc-date-reg"><i class="fa fa-calendar-check"></i> Next Stage: ${item.nextStage || "--"}</span></div>
-          <div class="tc-actions">
-            <a href="${item.resultLink || "#"}" class="tc-btn tc-btn-g" target="_blank"><i class="fa fa-trophy"></i> Check Result</a>
-            <a href="${item.officialLink || "#"}" class="tc-btn tc-btn-o" target="_blank"><i class="fa fa-globe"></i> Official Website</a>
-          </div>
-        </div>
-      </div>
-    </div>`;
-}
-
 function renderResults(results) {
   const list = document.getElementById("resultList");
   const count = document.getElementById("resultCount");
   if (!list) return;
-  list.innerHTML = results.map(buildResultCard).join("");
+  const shown = results.slice(0, HOME_SECTION_LIMIT);
+  list.innerHTML = shown.map(buildResultCard).join("");
+  if (results.length > HOME_SECTION_LIMIT) {
+    list.innerHTML += `
+      <div class="view-all-wrap">
+        <a class="view-all-btn" href="results.html"><i class="fa fa-trophy"></i> View All ${results.length} Results</a>
+      </div>`;
+  }
   if (count) count.textContent = `${results.length} Declared`;
 }
+
+/* ---------- Category strip / search (homepage-only interactions) ---------- */
+
+function filterCat(cat, clickedEl) {
+  document.querySelectorAll(".cs-btn").forEach(function (b) {
+    b.classList.remove("act");
+  });
+  if (clickedEl) clickedEl.classList.add("act");
+
+  const allCards = document.querySelectorAll("[data-cat]");
+  let anyVisible = false;
+  allCards.forEach(function (card) {
+    if (cat === "all" || card.getAttribute("data-cat") === cat) {
+      card.style.display = "";
+      anyVisible = true;
+    } else {
+      card.style.display = "none";
+    }
+  });
+
+  document.querySelectorAll(".cat-section-hd").forEach(function (hd) {
+    const sec = hd.getAttribute("data-section");
+    hd.style.display = cat === "all" || cat === sec ? "" : "none";
+  });
+
+  const noResults = document.getElementById("noResults");
+  if (noResults) noResults.style.display = anyVisible ? "none" : "block";
+  const jc = document.getElementById("jobsContainer");
+  if (jc) jc.scrollIntoView({ behavior: "smooth" });
+}
+
+function liveSearch(q) {
+  q = q.toLowerCase().trim();
+  const allCards = document.querySelectorAll("[data-cat]");
+  let anyVisible = false;
+  allCards.forEach(function (card) {
+    const name = (card.getAttribute("data-name") || "").toLowerCase();
+    const desc = (card.querySelector(".tc-desc") || { innerText: "" }).innerText.toLowerCase();
+    const match = !q || name.includes(q) || desc.includes(q);
+    card.style.display = match ? "" : "none";
+    if (match) anyVisible = true;
+  });
+  document.querySelectorAll(".cat-section-hd").forEach(function (el) {
+    el.style.display = q ? "none" : "";
+  });
+  const noResults = document.getElementById("noResults");
+  if (noResults) noResults.style.display = anyVisible ? "none" : "block";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const heroSearch = document.getElementById("heroSearch");
+  const navSearch = document.querySelector(".nsearch input");
+  if (heroSearch) {
+    heroSearch.addEventListener("input", function () {
+      liveSearch(this.value);
+      if (navSearch) navSearch.value = this.value;
+    });
+  }
+  if (navSearch) {
+    navSearch.addEventListener("input", function () {
+      liveSearch(this.value);
+      if (heroSearch) heroSearch.value = this.value;
+    });
+  }
+});
 
 /* ---------- Boot + periodic refresh ---------- */
 
