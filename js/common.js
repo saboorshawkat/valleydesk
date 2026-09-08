@@ -182,6 +182,67 @@ function showToast(msg) {
   }, 3000);
 }
 
+/* ---------- Off-canvas menu panel (header hamburger, all pages) ---------- */
+
+function toggleOffcanvas() {
+  const panel = document.getElementById("offcanvasMenu");
+  const backdrop = document.getElementById("offcanvasBackdrop");
+  if (!panel || !backdrop) return;
+  const opening = !panel.classList.contains("show");
+  panel.classList.toggle("show", opening);
+  backdrop.classList.toggle("show", opening);
+  document.body.classList.toggle("oc-lock", opening);
+  const btn = document.getElementById("menuBtn");
+  if (btn) btn.setAttribute("aria-expanded", opening ? "true" : "false");
+}
+
+function closeOffcanvas() {
+  const panel = document.getElementById("offcanvasMenu");
+  const backdrop = document.getElementById("offcanvasBackdrop");
+  if (!panel || !backdrop) return;
+  panel.classList.remove("show");
+  backdrop.classList.remove("show");
+  document.body.classList.remove("oc-lock");
+  const btn = document.getElementById("menuBtn");
+  if (btn) btn.setAttribute("aria-expanded", "false");
+}
+
+/* Category links inside the panel work from any page: on index.html they
+   filter in place, everywhere else they follow the href to
+   index.html#<cat> where render.js picks the hash up on load. */
+function handleOcCategory(cat, evt) {
+  if (typeof jumpToCat === "function") {
+    if (evt) evt.preventDefault();
+    jumpToCat(cat);
+    closeOffcanvas();
+    return false;
+  }
+  closeOffcanvas();
+  return true;
+}
+
+/* Highlights whichever panel link matches the current page and wires up
+   the backdrop click / Esc-to-close behaviour. Runs on every page since
+   common.js is shared. */
+document.addEventListener("DOMContentLoaded", function () {
+  const backdrop = document.getElementById("offcanvasBackdrop");
+  if (backdrop) backdrop.addEventListener("click", closeOffcanvas);
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeOffcanvas();
+  });
+
+  const here = location.pathname.split("/").pop() || "index.html";
+  document.querySelectorAll(".oc-link[data-page]").forEach(function (a) {
+    if (a.getAttribute("data-page") === here) a.classList.add("oc-cur");
+  });
+
+  const themeSwitch = document.getElementById("ocThemeSwitch");
+  if (themeSwitch) {
+    themeSwitch.addEventListener("click", toggleTheme);
+  }
+});
+
 function setMobileNavAct(el) {
   document.querySelectorAll(".mn-item").forEach(function (i) {
     i.classList.remove("act");
