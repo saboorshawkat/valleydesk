@@ -4,7 +4,6 @@
    Kept in a separate file so the core styles.css stays untouched.
 =================================================================== */
 
-/* ---------- Generic content section wrapper ---------- */
 .content-section{padding:26px 0}
 .content-section + .content-section{padding-top:4px}
 .section-head{margin-bottom:16px}
