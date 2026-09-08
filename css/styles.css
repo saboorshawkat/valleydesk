@@ -374,7 +374,7 @@ footer{margin-top:24px;background:var(--bg1);border-top:1px solid var(--bg4);pos
 .dropzone i{font-size:22px;color:var(--g);margin-bottom:8px;display:block}
 .dropzone-text{font-size:10px;font-weight:700;color:var(--t1)}
 .dropzone-sub{font-size:8px;color:var(--t3);margin-top:3px}
-.dropzone input[type="file"]{position:absolute;inset:0;opacity:0;cursor:pointer}
+.dropzone input[type="file"]{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
 .compressor-body{display:none;margin-top:14px}
 .compressor-body.active{display:block}
