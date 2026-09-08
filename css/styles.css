@@ -304,12 +304,11 @@ footer{margin-top:24px;background:var(--bg1);border-top:1px solid var(--bg4);pos
 .mn-item.act{color:var(--g)}
 .mn-item:active{background:var(--bg3)}
 
-/* Centre "Menu" item — raised FAB-style button that opens the off-canvas panel */
-.mn-item-menu{position:relative}
-.mn-item-menu .mn-ic{width:42px;height:42px;border-radius:50%;background:linear-gradient(150deg,var(--g),var(--g2));color:#fff;box-shadow:0 6px 16px var(--g3),0 0 0 4px var(--bg2);transform:translateY(-13px);transition:transform .18s}
-.mn-item-menu .mn-ic i{font-size:16px}
-.mn-item-menu:active .mn-ic{transform:translateY(-13px) scale(.92)}
-.mn-item-menu span.mn-lbl{margin-top:-9px}
+/* Centre "Menu" item — same size as the other bottom-nav icons, using a
+   four-circle grid glyph instead of a raised FAB so it sits flush in line
+   with Home / All Jobs / Admit Card / Result. */
+.mn-menu-dots{display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(2,1fr);gap:2.5px;width:12px;height:12px}
+.mn-menu-dots span{background:currentColor;border-radius:50%;width:100%;height:100%}
 
 /* ===================================================================
    OFF-CANVAS MENU PANEL (desktop + mobile — opened from the header
