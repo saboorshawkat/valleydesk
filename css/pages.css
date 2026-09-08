@@ -41,12 +41,49 @@
 .step-title{font-size:10.5px;font-weight:700;color:var(--t1);margin-top:8px}
 .step-desc{font-size:9px;color:var(--t3);margin-top:4px;line-height:1.6}
 
-/* ---------- Founder / credit card ---------- */
+/* ---------- Founder / credit card (compact, inline use) ---------- */
 .credit-card{display:flex;align-items:center;gap:14px;background:var(--glass-bg);border:1px solid var(--glass-brd);border-radius:var(--rad3);padding:16px;margin-top:18px;box-shadow:var(--glass-shadow)}
 .credit-avatar{width:46px;height:46px;border-radius:50%;background:linear-gradient(150deg,var(--g),var(--g2));display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--head);font-weight:800;font-size:15px;flex-shrink:0}
 .credit-name{font-size:11px;font-weight:700;color:var(--t1)}
 .credit-role{font-size:8.5px;color:var(--t3);margin-top:2px;text-transform:uppercase;letter-spacing:0.5px;font-weight:700}
 .credit-desc{font-size:9px;color:var(--t2);margin-top:5px;line-height:1.6}
+
+/* ---------- Author / Creator spotlight section ---------- */
+.author-section{padding:8px 0 26px}
+.author-card{position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:center;gap:26px;
+  background:var(--glass-bg);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);
+  border:1px solid var(--glass-brd);border-radius:22px;padding:26px 30px;box-shadow:var(--glass-shadow)}
+.author-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--g5),transparent 55%);pointer-events:none;z-index:0}
+.author-glow{position:absolute;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,var(--g3),transparent 70%);filter:blur(10px);top:-90px;right:-60px;pointer-events:none;z-index:0;animation:authorPulse 6s ease-in-out infinite}
+@keyframes authorPulse{0%,100%{transform:scale(1);opacity:.8}50%{transform:scale(1.15);opacity:1}}
+.author-card>*{position:relative;z-index:1}
+
+.author-avatar-wrap{flex-shrink:0;position:relative}
+.author-avatar{width:88px;height:88px;border-radius:24px;background:linear-gradient(155deg,var(--g),var(--navy2));display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--head);font-weight:800;font-size:28px;box-shadow:0 10px 26px rgba(10,193,108,.3),0 0 0 4px var(--bg1);letter-spacing:-1px}
+.author-status{position:absolute;bottom:-3px;right:-3px;width:22px;height:22px;border-radius:50%;background:var(--g);border:3px solid var(--bg1);display:flex;align-items:center;justify-content:center;color:#fff;font-size:9px}
+
+.author-body{flex:1;min-width:0}
+.author-eyebrow{display:inline-flex;align-items:center;gap:5px;font-size:7.5px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;color:var(--g);margin-bottom:6px}
+.author-eyebrow i{font-size:7px}
+.author-name-row{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.author-name{font-family:var(--head);font-size:19px;font-weight:800;color:var(--t1);letter-spacing:-0.3px}
+.author-badge{display:inline-flex;align-items:center;gap:4px;font-size:7px;font-weight:800;letter-spacing:0.5px;text-transform:uppercase;padding:3px 9px;border-radius:20px;background:var(--g5);border:1px solid var(--g3);color:var(--g)}
+.author-role{font-size:9.5px;color:var(--t2);margin-top:4px;font-weight:600}
+.author-bio{font-size:9.5px;color:var(--t3);margin-top:9px;line-height:1.75;max-width:560px}
+
+.author-social{display:flex;align-items:center;gap:8px;margin-top:15px;flex-wrap:wrap}
+.author-social a{width:30px;height:30px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:12px;background:var(--bg2);border:1px solid var(--bg4);color:var(--t2);transition:all .18s}
+.author-social a:hover{background:var(--g);border-color:var(--g);color:#fff;transform:translateY(-2px);box-shadow:0 6px 14px var(--g3)}
+
+.author-quote{flex-shrink:0;max-width:190px;border-left:2px solid var(--g3);padding-left:16px;font-family:var(--serif);font-style:italic;font-size:11px;color:var(--t2);line-height:1.6;display:none}
+
+@media(min-width:900px){.author-quote{display:block}}
+@media(max-width:768px){
+  .author-card{flex-direction:column;text-align:center;padding:24px 20px;gap:16px}
+  .author-name-row{justify-content:center}
+  .author-bio{max-width:100%}
+  .author-social{justify-content:center}
+}
 
 /* ---------- Contact info cards ---------- */
 .contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
