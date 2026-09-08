@@ -11,12 +11,21 @@ const HOME_SECTION_LIMIT = 10;
 
 /* ---------- JOBS (#jobsContainer) ---------- */
 
+let _hashJumpDone = false;
+
 async function loadJobs() {
   try {
     const res = await fetch("jobs.json?_=" + Date.now());
     const jobs = await res.json();
     renderJobs(jobs);
     updateCategoryGridCounts(jobs);
+    /* Deep link from the off-canvas menu / other pages, e.g. jobs.json
+       finished rendering and the URL says index.html#jkssb — filter to
+       that category once, the first time jobs load. */
+    if (!_hashJumpDone && location.hash) {
+      _hashJumpDone = true;
+      jumpToCat(location.hash.slice(1));
+    }
   } catch (e) {
     console.error("Could not load jobs.json", e);
   }
