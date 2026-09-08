@@ -93,6 +93,16 @@
     );
   }
 
+  dropzone.addEventListener("click", function () {
+    imgInput.click();
+  });
+  dropzone.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      imgInput.click();
+    }
+  });
+
   dropzone.addEventListener("dragover", function (e) {
     e.preventDefault();
     dropzone.classList.add("dragover");
