@@ -7,7 +7,7 @@
     "desc": "Mass recruitment for Class-IV Multi-Tasking Staff (MTS) profiles across different UT administration departments.",
     "badges": [
       {
-        "label": "Advt 09 of 2026",
+        "label": "Advt 09 Of 2026",
         "cls": "tcb-p"
       },
       {
@@ -29,7 +29,7 @@
     "desc": "Recruitment track for Sanitation Workers across various municipal committees and corporations in J&K.",
     "badges": [
       {
-        "label": "Advt 09 of 2026",
+        "label": "Advt 09 Of 2026",
         "cls": "tcb-p"
       },
       {
@@ -47,11 +47,11 @@
     "id": "jkssb-2026-003",
     "category": "jkssb",
     "name": "JKSSB Junior Pharmacist Recruitment",
-    "subtitle": "Health and Medical Education Department",
+    "subtitle": "Health And Medical Education Department",
     "desc": "Technical recruitment for certified Pharmacists across divisional and district cadres.",
     "badges": [
       {
-        "label": "Advt 08 of 2026",
+        "label": "Advt 08 Of 2026",
         "cls": "tcb-p"
       },
       {
@@ -69,11 +69,11 @@
     "id": "jkssb-2026-004",
     "category": "jkssb",
     "name": "JKSSB Junior Staff Nurse Recruitment",
-    "subtitle": "Health and Medical Education Department",
+    "subtitle": "Health And Medical Education Department",
     "desc": "Recruitment for registered staff nurses across various Government Medical Colleges (GMCs) and Associated Hospitals.",
     "badges": [
       {
-        "label": "Advt 08 of 2026",
+        "label": "Advt 08 Of 2026",
         "cls": "tcb-p"
       },
       {
@@ -91,11 +91,11 @@
     "id": "jkssb-2026-005",
     "category": "jkssb",
     "name": "JKSSB Junior Lab Technician Recruitment",
-    "subtitle": "Health and Medical Education Department",
+    "subtitle": "Health And Medical Education Department",
     "desc": "Selection process for laboratory technical support personnel in regional medical blocks.",
     "badges": [
       {
-        "label": "Advt 08 of 2026",
+        "label": "Advt 08 Of 2026",
         "cls": "tcb-p"
       },
       {
@@ -117,7 +117,7 @@
     "desc": "Hiring track for field technicians specialized in orchard operations and crop supervision.",
     "badges": [
       {
-        "label": "Advt 08 of 2026",
+        "label": "Advt 08 Of 2026",
         "cls": "tcb-p"
       },
       {
@@ -179,7 +179,7 @@
     "id": "iust-2026-001",
     "category": "education",
     "name": "IUST Technical & Research Faculty Recruitment",
-    "subtitle": "Islamic University of Science & Technology",
+    "subtitle": "Islamic University Of Science & Technology",
     "desc": "Academic and administrative recruitment tracks for technical staff and research profiles across multiple scientific departments.",
     "badges": [
       {
@@ -487,7 +487,7 @@
     "id": "jkssb-result-2026-001",
     "category": "jkssb-result",
     "name": "JKSSB Junior Assistant OMR Merit List Result",
-    "subtitle": "Notification No. 08 of 2025 Track",
+    "subtitle": "Notification No. 08 Of 2025 Track",
     "desc": "Official written merit list scorecards released mapping out the 12,498 candidates qualifying for the upcoming NIELIT skill test parameters.",
     "badges": [
       {
@@ -509,7 +509,7 @@
     "id": "jkssb-result-2026-002",
     "category": "jkssb-result",
     "name": "JKSSB Social Forestry Worker Scorecard & Selection Panel",
-    "subtitle": "Forest, Ecology and Environment Department",
+    "subtitle": "Forest, Ecology And Environment Department",
     "desc": "Official written scorecards published for the examination held on May 17, 2026; next stage maps out physical standard verifications.",
     "badges": [
       {
