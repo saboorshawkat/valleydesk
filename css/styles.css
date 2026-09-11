@@ -462,3 +462,30 @@ input[type="range"]::-moz-range-thumb{width:15px;height:15px;border-radius:50%;b
 .tool-grid-card.coming-soon{opacity:.72}
 .tool-grid-card.coming-soon .cgc-count{color:var(--t3)!important}
 @media(max-width:480px){.compress-preview{grid-template-columns:1fr}}
+
+/* ===================================================================
+   Notification bell + dropdown panel (masthead, every page)
+=================================================================== */
+.notif-wrap{position:relative;flex-shrink:0}
+.notif-panel{position:absolute;top:calc(100% + 10px);right:0;width:320px;max-width:88vw;background:var(--bg1);border:1px solid var(--bg4);border-radius:var(--rad3);box-shadow:0 20px 45px rgba(7,59,40,.18);z-index:400;opacity:0;visibility:hidden;transform:translateY(-6px);transition:all .18s;overflow:hidden}
+[data-theme="dark"] .notif-panel{box-shadow:0 20px 45px rgba(0,0,0,.5)}
+.notif-panel.show{opacity:1;visibility:visible;transform:translateY(0)}
+.notif-panel::before{content:"";position:absolute;top:-5px;right:11px;width:9px;height:9px;background:var(--bg1);border-left:1px solid var(--bg4);border-top:1px solid var(--bg4);transform:rotate(45deg)}
+.notif-head{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border-bottom:1px solid var(--bg4);font-size:10px;font-weight:800;letter-spacing:0.4px;text-transform:uppercase;color:var(--t1)}
+.notif-count{background:var(--g5);border:1px solid var(--g3);color:var(--g);font-size:8px;font-weight:800;padding:2px 7px;border-radius:20px}
+.notif-list{max-height:340px;overflow-y:auto}
+.notif-item{display:flex;gap:10px;padding:12px 14px;border-bottom:1px solid var(--bg4);text-decoration:none;transition:background .15s}
+.notif-item:last-child{border-bottom:none}
+.notif-item:hover{background:var(--bg2)}
+.notif-ico{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0;margin-top:1px}
+.notif-body{flex:1;min-width:0}
+.notif-title{font-size:10px;font-weight:700;color:var(--t1);line-height:1.4}
+.notif-msg{font-size:9px;color:var(--t3);line-height:1.6;margin-top:2px}
+.notif-date{font-size:7.5px;color:var(--t3);letter-spacing:0.4px;text-transform:uppercase;font-weight:700;margin-top:5px}
+.notif-empty{padding:26px 14px;text-align:center;font-size:9.5px;color:var(--t3);line-height:1.6}
+.notif-empty i{display:block;font-size:18px;color:var(--bg4);margin-bottom:8px}
+@media(max-width:480px){
+  .notif-panel{position:fixed;top:auto;bottom:0;left:0;right:0;width:100%;max-width:100%;border-radius:16px 16px 0 0;transform:translateY(100%)}
+  .notif-panel.show{transform:translateY(0)}
+  .notif-panel::before{display:none}
+}
