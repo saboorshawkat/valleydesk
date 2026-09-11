@@ -1,12 +1,40 @@
 [
   {
-    "name": "JKSSB Finance Assistant Admit Card 2026",
-    "subtitle": "J&K Services Selection Board",
-    "desc": "Download your JKSSB Finance Accounts Assistant hall ticket. Carry a valid photo ID along with the printed admit card to the exam centre.",
-    "badges": [{ "label": "JKSSB", "cls": "tcb-p" }, { "label": "Released", "cls": "tcb-g" }],
+    "name": "JKSSB Junior Stenographer E-Admit Card Released",
+    "subtitle": "Short Hand Skill Test Phase",
+    "desc": "Admit cards officially available for download for shorthand skill tests starting September 1, 2026, at NIELIT Jammu/Srinagar.",
+    "badges": [
+      {
+        "label": "Admit Card",
+        "cls": "tcb-admit"
+      },
+      {
+        "label": "Skill Test",
+        "cls": "tcb-b"
+      }
+    ],
     "releasedOn": "--/--/----",
-    "examDate": "--/--/----",
-    "downloadLink": "https://jkssb.nic.in",
+    "examDate": "19/09/2026",
+    "downloadLink": "https://jkssb.nic.in/dynamic-jkssb-test/pages/login.aspx",
+    "officialLink": "https://jkssb.nic.in"
+  },
+  {
+    "name": "JKSSB Forest Guard Physical Test Roll Number Download",
+    "subtitle": "PST / PET Events Portal",
+    "desc": "Download link active for downloading call letters for physical standard and endurance tracks.",
+    "badges": [
+      {
+        "label": "Physical Test",
+        "cls": "tcb-admit"
+      },
+      {
+        "label": "Forest Guard",
+        "cls": "tcb-b"
+      }
+    ],
+    "releasedOn": "--/--/----",
+    "examDate": "30/09/2026",
+    "downloadLink": "https://jkssb.apply-gov.in/",
     "officialLink": "https://jkssb.nic.in"
   }
 ]
