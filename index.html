@@ -147,7 +147,13 @@
         <i class="fa fa-sun i-sun"></i>
         <i class="fa fa-moon i-moon"></i>
       </div>
-      <div class="icon-btn" onclick="showToast('No new notifications')"><i class="fa fa-bell"></i><span class="dot"></span></div>
+      <div class="notif-wrap">
+        <div class="icon-btn" id="notifBtn" onclick="toggleNotifPanel(event)" role="button" aria-label="Notifications" aria-expanded="false" aria-haspopup="true"><i class="fa fa-bell"></i><span class="dot" id="notifDot" style="display:none"></span></div>
+        <div class="notif-panel" id="notifPanel">
+          <div class="notif-head"><span>Notifications</span><span class="notif-count" id="notifCount">0</span></div>
+          <div class="notif-list" id="notifList"><div class="notif-empty"><i class="fa-solid fa-spinner fa-spin"></i>Loading…</div></div>
+        </div>
+      </div>
       <div class="icon-btn" onclick="showToast('Jobs saved locally')"><i class="fa fa-bookmark"></i></div>
     </div>
     <a href="#" class="mast-cta" onclick="showToast('Sign in coming soon!');return false;"><i class="fa fa-user-circle"></i> Sign In</a>
