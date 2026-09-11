@@ -31,73 +31,6 @@
 
 <div id="toastContainer"></div>
 
-<!-- OFF-CANVAS MENU -->
-<div class="offcanvas-backdrop" id="offcanvasBackdrop"></div>
-<aside class="offcanvas" id="offcanvasMenu">
-  <div class="oc-head">
-    <div class="logo-wrap">
-      <div class="logo-box"><img src="assets/VD_Logo.png" alt="Valley Desk Logo" class="logo-img"/></div>
-      <div class="logo-text"><span class="logo-main">VALLEY<span>DESK</span></span></div>
-    </div>
-    <div class="oc-close" onclick="closeOffcanvas()" role="button" aria-label="Close menu"><i class="fa fa-xmark"></i></div>
-  </div>
-  <div class="oc-body">
-    <div class="oc-section">
-      <div class="oc-section-t">Menu</div>
-      <ul class="oc-links">
-        <li><a href="index.html" class="oc-link" data-page="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
-        <li><a href="jobs.html" class="oc-link" data-page="jobs.html"><i class="fa-solid fa-briefcase"></i>All Jobs</a></li>
-        <li><a href="admitcards.html" class="oc-link" data-page="admitcards.html"><i class="fa-solid fa-id-card-clip"></i>Admit Cards</a></li>
-        <li><a href="results.html" class="oc-link" data-page="results.html"><i class="fa-solid fa-trophy"></i>Results</a></li>
-        <li><a href="tools.html" class="oc-link" data-page="tools.html"><i class="fa-solid fa-toolbox"></i>Tools</a></li>
-        <li><a href="about.html" class="oc-link" data-page="about.html"><i class="fa-solid fa-circle-info"></i>About Us</a></li>
-        <li><a href="contact.html" class="oc-link" data-page="contact.html"><i class="fa-solid fa-envelope"></i>Contact Us</a></li>
-      </ul>
-    </div>
-    <div class="oc-section">
-      <div class="oc-section-t">Browse By Category</div>
-      <ul class="oc-links">
-        <li><a href="index.html#jkssb" class="oc-link" onclick="return handleOcCategory('jkssb',event)"><span class="cs-dot" style="background:#b060ff"></span>JKSSB</a></li>
-        <li><a href="index.html#jkpsc" class="oc-link" onclick="return handleOcCategory('jkpsc',event)"><span class="cs-dot" style="background:#34d399"></span>JKPSC</a></li>
-        <li><a href="index.html#jkpolice" class="oc-link" onclick="return handleOcCategory('jkpolice',event)"><span class="cs-dot" style="background:#ff7f50"></span>JK Police</a></li>
-        <li><a href="index.html#jkbank" class="oc-link" onclick="return handleOcCategory('jkbank',event)"><span class="cs-dot" style="background:#f5c518"></span>J&amp;K Bank</a></li>
-        <li><a href="index.html#jkjudiciary" class="oc-link" onclick="return handleOcCategory('jkjudiciary',event)"><span class="cs-dot" style="background:#38bdf8"></span>Judiciary</a></li>
-        <li><a href="index.html#jkteaching" class="oc-link" onclick="return handleOcCategory('jkteaching',event)"><span class="cs-dot" style="background:#25D366"></span>Teaching</a></li>
-        <li><a href="index.html#jkhealth" class="oc-link" onclick="return handleOcCategory('jkhealth',event)"><span class="cs-dot" style="background:#fb923c"></span>Health</a></li>
-        <li><a href="index.html#jkuniversity" class="oc-link" onclick="return handleOcCategory('jkuniversity',event)"><span class="cs-dot" style="background:#e879f9"></span>University</a></li>
-      </ul>
-    </div>
-    <div class="oc-section">
-      <div class="oc-section-t">Preferences</div>
-      <div class="oc-toggle-row">
-        <span class="oc-toggle-label"><i class="fa-solid fa-moon"></i>Dark Mode</span>
-        <span class="oc-switch" id="ocThemeSwitch" role="button" aria-label="Toggle dark mode"></span>
-      </div>
-    </div>
-    <div class="oc-section">
-      <div class="oc-section-t">Stay Updated</div>
-      <div class="oc-join">
-        <a href="https://t.me/" target="_blank" class="oc-join-tg"><i class="fa-brands fa-telegram"></i> Join Telegram Channel</a>
-        <a href="https://wa.me/" target="_blank" class="oc-join-wa"><i class="fa-brands fa-whatsapp"></i> Join WhatsApp Channel</a>
-      </div>
-    </div>
-    <div class="oc-section">
-      <div class="oc-section-t">Follow Us</div>
-      <div class="oc-social-row">
-        <div class="soc-btn"><i class="fab fa-facebook-f"></i></div>
-        <div class="soc-btn"><i class="fab fa-twitter"></i></div>
-        <div class="soc-btn"><i class="fab fa-telegram"></i></div>
-        <div class="soc-btn"><i class="fab fa-youtube"></i></div>
-        <div class="soc-btn"><i class="fab fa-whatsapp"></i></div>
-      </div>
-    </div>
-  </div>
-  <div class="oc-foot">
-    <div class="oc-foot-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Disclaimer</a></div>
-    <div class="oc-foot-credit">© 2026 Valley Desk · <b>Created by Saboor Shawkat</b></div>
-  </div>
-</aside>
-
 <!-- TOPBAR -->
 <div class="topbar">
   <div class="topbar-w">
@@ -142,7 +75,6 @@
     </div>
     <div class="mast-sep"></div>
     <div class="mast-icons">
-      <div class="icon-btn" id="menuBtn" onclick="toggleOffcanvas()" role="button" aria-label="Open menu" aria-expanded="false" aria-controls="offcanvasMenu"><i class="fa-solid fa-bars"></i></div>
       <div class="icon-btn" id="themeBtn" onclick="toggleTheme()">
         <i class="fa fa-sun i-sun"></i>
         <i class="fa fa-moon i-moon"></i>
@@ -181,10 +113,10 @@
       <span class="hero-eyebrow-tag">Updated <b>September 2026</b> · 180+ live J&amp;K openings</span>
     </div>
     <h1 class="hero-title">
-      <span class="hero-title-main">Your Shortcut To Every <span class="hero-title-grad">J&amp;K&nbsp;Govt&nbsp;Job</span></span>
-      <span class="hero-title-main"></span>
+      <span class="hero-title-main">Your Shortcut to Every <span class="hero-title-grad">J&amp;K&nbsp;Govt&nbsp;Job</span></span>
+      <span class="hero-title-main">One Feed. Zero Missed Deadlines.</span>
     </h1>
-    <p class="hero-desc">JKSSB, JKPSC, JK Police, J&amp;K Bank, Judiciary, Teaching, Health &amp; University Recruitment Across Jammu &amp; Kashmir. Every Notification, Result And Admit Card Tracked In One Clean Feed.</p>
+    <p class="hero-desc">JKSSB, JKPSC, JK Police, J&amp;K Bank, Judiciary, Teaching, Health &amp; University recruitment across Jammu &amp; Kashmir — every notification, result and admit card, tracked in one clean feed.</p>
     <div class="hero-search-wrap">
       <i class="fa fa-search" style="color:var(--t3);font-size:12px;flex-shrink:0"></i>
       <input type="text" class="hero-search-input" placeholder="Search — JKSSB, JKPSC, JK Police..." id="heroSearch" oninput="liveSearch(this.value)"/>
@@ -267,10 +199,10 @@
 
     <div class="info-box">
       <i class="fa fa-circle-info"></i>
-      <p><strong>Disclaimer:</strong> Valley Desk Aggregates Publicly Available Recruitment Information For Jammu &amp; Kashmir Govt Jobs Only. Always Verify Dates And Eligibility On The Official Website Before Applying.</p>
+      <p><strong>Disclaimer:</strong> Valley Desk aggregates publicly available recruitment information for Jammu &amp; Kashmir govt jobs only. Always verify dates and eligibility on the official website before applying.</p>
     </div>
 
-    <div id="noResults"><i class="fa fa-folder-open" style="font-size:28px;display:block;margin-bottom:10px"></i>No Matching Jobs Found. Try A Different Search Term.</div>
+    <div id="noResults"><i class="fa fa-folder-open" style="font-size:28px;display:block;margin-bottom:10px"></i>No matching jobs found. Try a different search term.</div>
 
   </div>
 </div>
@@ -280,7 +212,7 @@
 <div class="wrap" id="admitCardSection">
   <div class="cat-section-hd" style="background:rgba(34,158,217,.16);border:1px solid rgba(34,158,217,.4);border-left-color:rgb(34,158,217);box-shadow:0 3px 12px rgba(34,158,217,.18)">
     <div class="csh-icon">🎫</div>
-    <div class="csh-info"><div class="csh-title">Admit Card</div><div class="csh-desc">Download Your Hall Ticket / Admit Card Before Exam Day</div></div>
+    <div class="csh-info"><div class="csh-title">Admit Card</div><div class="csh-desc">Download your hall ticket / admit card before exam day</div></div>
     <div class="csh-count" id="admitCardCount" style="color:#229ED9">0 Released</div>
   </div>
   <div class="tools-list" id="admitCardList"></div>
@@ -290,7 +222,7 @@
 <div class="wrap" id="resultSection">
   <div class="cat-section-hd" style="background:rgba(37,211,102,.16);border:1px solid rgba(37,211,102,.4);border-left-color:rgb(37,211,102);box-shadow:0 3px 12px rgba(37,211,102,.18)">
     <div class="csh-icon">🏆</div>
-    <div class="csh-info"><div class="csh-title">Result</div><div class="csh-desc">Latest Declared Results &amp; Merit Lists</div></div>
+    <div class="csh-info"><div class="csh-title">Result</div><div class="csh-desc">Latest declared results &amp; merit lists</div></div>
     <div class="csh-count" id="resultCount" style="color:var(--g)">0 Declared</div>
   </div>
   <div class="tools-list" id="resultList"></div>
@@ -301,7 +233,7 @@
   <div class="wrap">
     <div class="author-card">
       <div class="author-avatar-wrap">
-        <div class="author-avatar"><img src="assets/profile.png" alt="Saboor Shawkat" class="author-avatar-img" onerror="this.remove();this.parentElement.textContent='SS';"/></div>
+        <div class="author-avatar">SS</div>
         <div class="author-status"><i class="fa fa-check"></i></div>
       </div>
       <div class="author-body">
@@ -310,13 +242,13 @@
           <span class="author-badge"><i class="fa fa-bolt"></i> Solo Dev</span>
         </div>
         <div class="author-role">Founder &amp; Developer, Valley Desk</div>
-        <p class="author-bio">One Person Team, Based In J&amp;K. Tracks, Verifies &amp; Publishes Every Notification You See Here, By Hand, Every Day.</p>
+        <p class="author-bio">One-person team, based in J&amp;K — tracks, verifies &amp; publishes every notification you see here, by hand, every day.</p>
       </div>
       <div class="author-social">
         <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
         <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         <a href="https://twitter.com/" target="_blank" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
-        <a href="https://t.me/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://t.me/" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
         <a href="mailto:hello@valleydesk.in" aria-label="Email"><i class="fa fa-envelope"></i></a>
       </div>
     </div>
@@ -333,14 +265,14 @@
         <span class="cgs-title">Never Miss An Update</span>
         <span class="cgs-chip">Join Free</span>
       </div>
-      <p class="cgs-sub">Get Instant Alerts For New J&amp;K Job Notifications, Results &amp; Admit Cards Straight To Your Phone</p>
+      <p class="cgs-sub">Get instant alerts for new J&amp;K job notifications, results &amp; admit cards — straight to your phone</p>
     </div>
     <div class="join-grid">
       <a href="https://t.me/" target="_blank" class="join-card join-tg">
         <div class="join-icon"><i class="fa-brands fa-telegram"></i></div>
         <div class="join-body">
           <div class="join-title">Join Telegram Channel</div>
-          <div class="join-sub">Instant Job Alerts, PDF Notifications &amp; Daily Updates First.</div>
+          <div class="join-sub">Instant job alerts, PDF notifications &amp; daily updates first.</div>
         </div>
         <span class="join-btn join-btn-tg"><i class="fa-brands fa-telegram"></i> Join Now</span>
       </a>
@@ -348,7 +280,7 @@
         <div class="join-icon"><i class="fa-brands fa-whatsapp"></i></div>
         <div class="join-body">
           <div class="join-title">Join WhatsApp Channel</div>
-          <div class="join-sub">Quick Job Updates &amp; Reminders Directly On WhatsApp.</div>
+          <div class="join-sub">Quick job updates &amp; reminders directly on WhatsApp.</div>
         </div>
         <span class="join-btn join-btn-wa"><i class="fa-brands fa-whatsapp"></i> Join Now</span>
       </a>
@@ -364,7 +296,7 @@
         <div class="logo-box"><img src="assets/VD_Logo.png" alt="Valley Desk Logo" class="logo-img"/></div>
         <div class="logo-text"><span class="logo-main">VALLEY<span>DESK</span></span></div>
       </div>
-      <p class="fb-desc">Jammu &amp; Kashmir's Trusted Portal For Govt Job Notifications, Exam Results &amp; Admit Cards. JKSSB, JKPSC, JK Police &amp; More. Updated Daily, 100% Free. Visit Us At <a href="https://valleydesk.in" style="color:var(--g);font-weight:700">valleydesk.in</a></p>
+      <p class="fb-desc">Jammu &amp; Kashmir's trusted portal for Govt Job Notifications, Exam Results &amp; Admit Cards — JKSSB, JKPSC, JK Police &amp; more. Updated daily, 100% free. Visit us at <a href="https://valleydesk.in" style="color:var(--g);font-weight:700">valleydesk.in</a></p>
       <div class="soc-row">
         <div class="soc-btn"><i class="fab fa-facebook-f"></i></div>
         <div class="soc-btn"><i class="fab fa-twitter"></i></div>
@@ -408,17 +340,17 @@
   </div>
   <div class="footer-bot">
     <div class="fb-l">© 2026 Valley Desk. All Rights Reserved. <span class="fb-credit">Created by Saboor Shawkat</span></div>
-    <div class="fb-r"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Disclaimer</a></div>
+    <div class="fb-r"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-conditions.html">Terms of Use</a><a href="disclaimer.html">Disclaimer</a><a href="dmca-policy.html">DMCA</a></div>
   </div>
 </footer>
 
 <!-- MOBILE BOTTOM NAV -->
 <div class="mobile-nav" id="mobileNav">
   <a href="#" class="mn-item act" onclick="window.scrollTo({top:0,behavior:'smooth'});setMobileNavAct(this);return false;"><span class="mn-ic"><i class="fa-solid fa-house"></i></span>Home</a>
-  <a href="jobs.html" class="mn-item"><span class="mn-ic"><i class="fa-solid fa-briefcase"></i></span>All Jobs</a>
-  <a href="#" class="mn-item" onclick="toggleOffcanvas();return false;" aria-label="Open menu"><span class="mn-ic"><span class="mn-menu-dots"><span></span><span></span><span></span><span></span></span></span>Menu</a>
+  <a href="tools.html" class="mn-item"><span class="mn-ic"><i class="fa-solid fa-toolbox"></i></span>Tools</a>
   <a href="admitcards.html" class="mn-item" onclick="document.getElementById('admitCardSection').scrollIntoView({behavior:'smooth'});setMobileNavAct(this);return false;"><span class="mn-ic"><i class="fa-solid fa-id-card-clip"></i></span>Admit Card</a>
   <a href="results.html" class="mn-item" onclick="document.getElementById('resultSection').scrollIntoView({behavior:'smooth'});setMobileNavAct(this);return false;"><span class="mn-ic"><i class="fa-solid fa-trophy"></i></span>Result</a>
+  <a href="#" class="mn-item" onclick="document.getElementById('heroSearch').scrollIntoView({behavior:'smooth'});document.getElementById('heroSearch').focus();setMobileNavAct(this);return false;"><span class="mn-ic"><i class="fa-solid fa-magnifying-glass"></i></span>Search</a>
 </div>
 
 <div id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fa fa-arrow-up"></i></div>
