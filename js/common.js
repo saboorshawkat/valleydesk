@@ -243,6 +243,108 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+/* ---------- Notification bell (masthead, every page) ----------
+   Reads notifications.json (same fetch pattern as jobs.json /
+   results.json / admitcards.json) and renders it into the dropdown
+   below the bell icon. To publish a new notice later, just add a new
+   object to the top of notifications.json — no code changes needed:
+
+   { "id": "n002", "type": "info", "title": "...", "message": "...",
+     "date": "2026-09-20", "link": "jobs.html" }
+
+   "type" controls the icon/colour: "info" | "alert" | "success" | "job".
+   "link" is optional — omit it for a plain announcement. */
+
+const NOTIF_ICON_META = {
+  info:    { icon: "fa-circle-info",         color: "#38bdf8" },
+  alert:   { icon: "fa-triangle-exclamation", color: "#ff7f50" },
+  success: { icon: "fa-circle-check",        color: "#0ac16c" },
+  job:     { icon: "fa-briefcase",           color: "#b060ff" },
+};
+
+function notifMetaFor(type) {
+  return NOTIF_ICON_META[type] || { icon: "fa-bell", color: "#0ac16c" };
+}
+
+function formatNotifDate(dateStr) {
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const d = new Date(dateStr);
+  if (isNaN(d.getTime())) return dateStr || "";
+  return d.getDate() + " " + months[d.getMonth()] + " " + d.getFullYear();
+}
+
+function buildNotifItem(n) {
+  const meta = notifMetaFor(n.type);
+  const tag = n.link ? "a" : "div";
+  const hrefAttr = n.link ? `href="${n.link}"` : "";
+  const targetAttr = n.link && /^https?:\/\//i.test(n.link) ? 'target="_blank" rel="noopener"' : "";
+  return `
+    <${tag} class="notif-item" ${hrefAttr} ${targetAttr}>
+      <div class="notif-ico" style="background:${meta.color}1a;border:1px solid ${meta.color}40;color:${meta.color}"><i class="fa-solid ${meta.icon}"></i></div>
+      <div class="notif-body">
+        <div class="notif-title">${n.title || ""}</div>
+        <div class="notif-msg">${n.message || ""}</div>
+        <div class="notif-date"><i class="fa-regular fa-clock"></i> ${formatNotifDate(n.date)}</div>
+      </div>
+    </${tag}>`;
+}
+
+async function initNotifications() {
+  const listEl = document.getElementById("notifList");
+  const countEl = document.getElementById("notifCount");
+  const dotEl = document.getElementById("notifDot");
+  if (!listEl) return;
+
+  let items = [];
+  try {
+    const res = await fetch("notifications.json?_=" + Date.now());
+    items = await res.json();
+  } catch (e) {
+    console.error("Could not load notifications.json", e);
+    items = [];
+  }
+
+  if (!Array.isArray(items) || items.length === 0) {
+    listEl.innerHTML = '<div class="notif-empty"><i class="fa-regular fa-bell-slash"></i>No notifications right now</div>';
+    if (countEl) countEl.textContent = "0";
+    if (dotEl) dotEl.style.display = "none";
+    return;
+  }
+
+  listEl.innerHTML = items.map(buildNotifItem).join("");
+  if (countEl) countEl.textContent = String(items.length);
+  if (dotEl) dotEl.style.display = "block";
+}
+
+function toggleNotifPanel(evt) {
+  if (evt) evt.stopPropagation();
+  const panel = document.getElementById("notifPanel");
+  const btn = document.getElementById("notifBtn");
+  if (!panel) return;
+  const opening = !panel.classList.contains("show");
+  panel.classList.toggle("show", opening);
+  if (btn) btn.setAttribute("aria-expanded", opening ? "true" : "false");
+}
+
+function closeNotifPanel() {
+  const panel = document.getElementById("notifPanel");
+  const btn = document.getElementById("notifBtn");
+  if (!panel) return;
+  panel.classList.remove("show");
+  if (btn) btn.setAttribute("aria-expanded", "false");
+}
+
+document.addEventListener("DOMContentLoaded", initNotifications);
+
+document.addEventListener("click", function (e) {
+  const wrap = document.querySelector(".notif-wrap");
+  if (wrap && !wrap.contains(e.target)) closeNotifPanel();
+});
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") closeNotifPanel();
+});
+
 function setMobileNavAct(el) {
   document.querySelectorAll(".mn-item").forEach(function (i) {
     i.classList.remove("act");
