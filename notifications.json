@@ -2,9 +2,49 @@
   {
     "id": "n001",
     "type": "info",
-    "title": "Welcome By Saboor Shawkat",
-    "message": "This Website Is Still In Mantainance, Make Sure To Report The Issues If Any Faced",
+    "title": "Welcome To Valley Desk",
+    "message": "Track every JKSSB, JKPSC, JK Police, J&K Bank, Judiciary, Teaching, Health & University notification in one place — verified daily.",
     "date": "2026-09-11",
     "link": "jobs.html"
+  },
+  {
+    "id": "n002",
+    "type": "job",
+    "title": "JKSSB MTS & Sanitation Worker Recruitment 2026",
+    "message": "JKSSB has opened applications for 2,863 Class-IV (MTS) and Sanitation Worker posts under Advt 09 of 2026. Last date to apply is 03/11/2026.",
+    "date": "2026-09-01",
+    "link": "jobs.html"
+  },
+  {
+    "id": "n003",
+    "type": "admit-card",
+    "title": "JKSSB Junior Stenographer E-Admit Card Released",
+    "message": "Admit cards for the Junior Stenographer shorthand skill test are now live for download at NIELIT Jammu/Srinagar centres.",
+    "date": "2026-09-06",
+    "link": "admitcards.html"
+  },
+  {
+    "id": "n004",
+    "type": "result",
+    "title": "JKPSC KAS Prelims Result 2026 Declared",
+    "message": "JKPSC has declared the KAS Prelims result. Shortlisted candidates can now register for the Mains examination on the official portal.",
+    "date": "2026-09-10",
+    "link": "results.html"
+  },
+  {
+    "id": "n005",
+    "type": "alert",
+    "title": "JKSSB Junior Pharmacist Recruitment 2026 Applications Open",
+    "message": "216 Junior Pharmacist posts are up for grabs under Advt 08 of 2026 in the Health & Medical Education Department. Applications close 09/10/2026.",
+    "date": "2026-09-10",
+    "link": "jobs.html"
+  },
+  {
+    "id": "n006",
+    "type": "admit-card",
+    "title": "JKSSB Forest Guard Physical Test Roll Number Out",
+    "message": "Roll numbers and call letters for the Forest Guard Physical Standard and Endurance Tests are now available for download.",
+    "date": "2026-09-08",
+    "link": "admitcards.html"
   }
 ]
