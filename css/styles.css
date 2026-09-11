@@ -47,7 +47,7 @@ button{cursor:pointer;font-family:var(--mono)}
 .tb-sep2{width:1px;height:8px;background:rgba(255,255,255,.18)}
 
 /* MASTHEAD */
-.masthead{background:var(--bg1);border-bottom:1px solid var(--bg4);padding:10px 0;position:relative}
+.masthead{background:var(--bg1);border-bottom:1px solid var(--bg4);padding:10px 0;position:relative;overflow:visible}
 .masthead::after{content:'';position:absolute;left:0;right:0;bottom:-1px;height:2.5px;background:linear-gradient(90deg,var(--g) 0%,var(--b) 100%)}
 .mast-w{max-width:1320px;margin:0 auto;padding:0 12px;display:flex;align-items:center;gap:12px;flex-wrap:nowrap;width:100%}
 .logo-wrap{display:flex;align-items:center;gap:8px;flex-shrink:0}
@@ -467,7 +467,7 @@ input[type="range"]::-moz-range-thumb{width:15px;height:15px;border-radius:50%;b
    Notification bell + dropdown panel (masthead, every page)
 =================================================================== */
 .notif-wrap{position:relative;flex-shrink:0}
-.notif-panel{position:absolute;top:calc(100% + 10px);right:0;width:320px;max-width:88vw;background:var(--bg1);border:1px solid var(--bg4);border-radius:var(--rad3);box-shadow:0 20px 45px rgba(7,59,40,.18);z-index:400;opacity:0;visibility:hidden;transform:translateY(-6px);transition:all .18s;overflow:hidden}
+.notif-panel{position:absolute;top:calc(100% + 10px);right:0;width:320px;max-width:88vw;background:var(--bg1);border:1px solid var(--bg4);border-radius:var(--rad3);box-shadow:0 20px 45px rgba(7,59,40,.18);z-index:920;opacity:0;visibility:hidden;transform:translateY(-6px);transition:all .18s;overflow:hidden}
 [data-theme="dark"] .notif-panel{box-shadow:0 20px 45px rgba(0,0,0,.5)}
 .notif-panel.show{opacity:1;visibility:visible;transform:translateY(0)}
 .notif-panel::before{content:"";position:absolute;top:-5px;right:11px;width:9px;height:9px;background:var(--bg1);border-left:1px solid var(--bg4);border-top:1px solid var(--bg4);transform:rotate(45deg)}
@@ -485,7 +485,8 @@ input[type="range"]::-moz-range-thumb{width:15px;height:15px;border-radius:50%;b
 .notif-empty{padding:26px 14px;text-align:center;font-size:9.5px;color:var(--t3);line-height:1.6}
 .notif-empty i{display:block;font-size:18px;color:var(--bg4);margin-bottom:8px}
 @media(max-width:480px){
-  .notif-panel{position:fixed;top:auto;bottom:0;left:0;right:0;width:100%;max-width:100%;border-radius:16px 16px 0 0;transform:translateY(100%)}
+  .notif-panel{position:fixed;top:auto;bottom:calc(58px + env(safe-area-inset-bottom));left:0;right:0;width:100%;max-width:100%;border-radius:16px 16px 0 0;transform:translateY(20px);z-index:920;max-height:min(420px,60vh)}
   .notif-panel.show{transform:translateY(0)}
   .notif-panel::before{display:none}
+  .notif-list{max-height:min(340px,48vh)}
 }
