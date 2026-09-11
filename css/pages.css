@@ -141,3 +141,49 @@
   .section-title{font-size:16px}
   .about-lead{font-size:13px}
 }
+
+/* ===================================================================
+   Valley Desk — Legal pages (Privacy Policy / Terms / Disclaimer / DMCA)
+=================================================================== */
+
+.legal-shell{display:grid;grid-template-columns:220px 1fr;gap:22px;align-items:start;margin-top:6px}
+.legal-meta-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.legal-chip{display:inline-flex;align-items:center;gap:6px;font-size:8.5px;font-weight:700;letter-spacing:0.4px;color:var(--t2);background:var(--bg2);border:1px solid var(--bg4);padding:5px 11px;border-radius:20px}
+.legal-chip i{color:var(--g)}
+
+.legal-toc{position:sticky;top:70px;background:var(--bg2);border:1px solid var(--bg4);border-radius:var(--rad2);padding:14px}
+.legal-toc-t{font-size:8px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:var(--t3);margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--bg4)}
+.legal-toc ol{list-style:none;counter-reset:vd-toc;display:flex;flex-direction:column;gap:2px}
+.legal-toc li{counter-increment:vd-toc}
+.legal-toc a{display:flex;align-items:baseline;gap:7px;font-size:9.5px;color:var(--t2);padding:6px 4px;border-radius:6px;line-height:1.4;transition:all .15s}
+.legal-toc a::before{content:counter(vd-toc);flex-shrink:0;width:15px;height:15px;border-radius:5px;background:var(--bg3);border:1px solid var(--bg4);color:var(--t3);font-size:7.5px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.legal-toc a:hover{color:var(--g);background:var(--g5)}
+.legal-toc a:hover::before{border-color:var(--g3);color:var(--g)}
+
+.legal-article{max-width:780px}
+.legal-lead{font-size:10.5px;color:var(--t2);line-height:1.85;margin-bottom:6px}
+.legal-section{padding-top:20px;margin-top:20px;border-top:1px solid var(--bg4);scroll-margin-top:75px}
+.legal-section:first-of-type{border-top:none;margin-top:8px;padding-top:8px}
+.legal-h2{display:flex;align-items:center;gap:9px;font-family:var(--head);font-size:14px;font-weight:800;color:var(--t1);margin-bottom:10px}
+.legal-h2 .legal-num{width:24px;height:24px;border-radius:8px;background:var(--g5);border:1px solid var(--g3);color:var(--g);display:flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:800;flex-shrink:0}
+.legal-p{font-size:9.8px;color:var(--t2);line-height:1.85;margin-bottom:10px}
+.legal-p:last-child{margin-bottom:0}
+.legal-p b,.legal-p strong{color:var(--t1)}
+.legal-list{margin:10px 0 14px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:7px}
+.legal-list li{font-size:9.8px;color:var(--t2);line-height:1.7;padding-left:17px;position:relative}
+.legal-list li::before{content:"\f105";font-family:"Font Awesome 6 Free";font-weight:900;color:var(--g);position:absolute;left:0;top:1px;font-size:9px}
+.legal-note{display:flex;gap:10px;background:var(--g5);border:1px solid var(--g3);border-left:3px solid var(--g);border-radius:var(--rad2);padding:12px 14px;margin:14px 0;font-size:9.5px;color:var(--t2);line-height:1.7}
+.legal-note i{color:var(--g);font-size:12px;margin-top:1px;flex-shrink:0}
+.legal-warn{display:flex;gap:10px;background:rgba(239,68,68,.07);border:1px solid rgba(239,68,68,.28);border-left:3px solid #ef4444;border-radius:var(--rad2);padding:12px 14px;margin:14px 0;font-size:9.5px;color:var(--t2);line-height:1.7}
+.legal-warn i{color:#ef4444;font-size:12px;margin-top:1px;flex-shrink:0}
+.legal-contact-box{background:var(--glass-bg);border:1px solid var(--glass-brd);border-radius:var(--rad3);padding:16px 17px;margin-top:8px;box-shadow:var(--glass-shadow)}
+.legal-contact-row{display:flex;align-items:center;gap:10px;margin-top:9px;font-size:9.8px;color:var(--t2)}
+.legal-contact-row:first-of-type{margin-top:10px}
+.legal-contact-row i{width:26px;height:26px;border-radius:8px;background:var(--g5);border:1px solid var(--g3);color:var(--g);display:flex;align-items:center;justify-content:center;font-size:10px;flex-shrink:0}
+.legal-contact-row a{color:var(--t1);font-weight:700}
+
+@media(max-width:900px){
+  .legal-shell{grid-template-columns:1fr}
+  .legal-toc{position:static;order:2}
+  .legal-article{order:1}
+}
