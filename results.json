@@ -1,12 +1,59 @@
 [
   {
-    "name": "JKPSC KAS Prelims Result 2026",
-    "subtitle": "J&K Public Service Commission",
-    "desc": "JKPSC KAS Prelims result is out. Shortlisted candidates can now register for the Mains exam through the official JKPSC portal.",
-    "badges": [{ "label": "JKPSC", "cls": "tcb-g" }, { "label": "Declared", "cls": "tcb-g" }],
+    "name": "JKSSB Junior Assistant OMR Merit List Result",
+    "subtitle": "Notification No. 08 of 2025 Track",
+    "desc": "Official written merit list scorecards released mapping out the 12,498 candidates qualifying for the upcoming NIELIT skill test parameters.",
+    "badges": [
+      {
+        "label": "Result Out",
+        "cls": "tcb-r"
+      },
+      {
+        "label": "Merit List PDF",
+        "cls": "tcb-b"
+      }
+    ],
     "declaredOn": "--/--/----",
-    "nextStage": "Mains",
-    "resultLink": "https://jkpsc.nic.in",
-    "officialLink": "https://jkpsc.nic.in"
+    "nextStage": "Skill Test",
+    "resultLink": "https://jkssb.nic.in/Whatsnew.html",
+    "officialLink": "https://jkssb.nic.in"
+  },
+  {
+    "name": "JKSSB Social Forestry Worker Scorecard & Selection Panel",
+    "subtitle": "Forest, Ecology and Environment Department",
+    "desc": "Official written scorecards published for the examination held on May 17, 2026; next stage maps out physical standard verifications.",
+    "badges": [
+      {
+        "label": "Result Out",
+        "cls": "tcb-r"
+      },
+      {
+        "label": "Scorecard",
+        "cls": "tcb-b"
+      }
+    ],
+    "declaredOn": "--/--/----",
+    "nextStage": "Physical Standard Test (PST)",
+    "resultLink": "https://jkssb.nic.in/Whatsnew.html",
+    "officialLink": "https://jkssb.nic.in"
+  },
+  {
+    "name": "JKSSB Junior Engineer (Civil) Final Merit Placement Panel",
+    "subtitle": "Jal Shakti Department",
+    "desc": "Final recruitment appointment panel allocations and document verification logs compiled for the core engineering track.",
+    "badges": [
+      {
+        "label": "Final Result",
+        "cls": "tcb-r"
+      },
+      {
+        "label": "DV Complete",
+        "cls": "tcb-b"
+      }
+    ],
+    "declaredOn": "--/--/----",
+    "nextStage": "Appointment",
+    "resultLink": "https://jkssb.nic.in/Whatsnew.html",
+    "officialLink": "https://jkssb.nic.in"
   }
 ]
