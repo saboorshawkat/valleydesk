@@ -30,6 +30,73 @@
 
 <div id="toastContainer"></div>
 
+<!-- OFF-CANVAS MENU -->
+<div class="offcanvas-backdrop" id="offcanvasBackdrop"></div>
+<aside class="offcanvas" id="offcanvasMenu">
+  <div class="oc-head">
+    <div class="logo-wrap">
+      <div class="logo-box"><img src="assets/VD_Logo.png" alt="Valley Desk Logo" class="logo-img"/></div>
+      <div class="logo-text"><span class="logo-main">VALLEY<span>DESK</span></span></div>
+    </div>
+    <div class="oc-close" onclick="closeOffcanvas()" role="button" aria-label="Close menu"><i class="fa fa-xmark"></i></div>
+  </div>
+  <div class="oc-body">
+    <div class="oc-section">
+      <div class="oc-section-t">Menu</div>
+      <ul class="oc-links">
+        <li><a href="index.html" class="oc-link" data-page="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a href="jobs.html" class="oc-link" data-page="jobs.html"><i class="fa-solid fa-briefcase"></i>All Jobs</a></li>
+        <li><a href="admitcards.html" class="oc-link" data-page="admitcards.html"><i class="fa-solid fa-id-card-clip"></i>Admit Cards</a></li>
+        <li><a href="results.html" class="oc-link" data-page="results.html"><i class="fa-solid fa-trophy"></i>Results</a></li>
+        <li><a href="tools.html" class="oc-link" data-page="tools.html"><i class="fa-solid fa-toolbox"></i>Tools</a></li>
+        <li><a href="about.html" class="oc-link" data-page="about.html"><i class="fa-solid fa-circle-info"></i>About Us</a></li>
+        <li><a href="contact.html" class="oc-link" data-page="contact.html"><i class="fa-solid fa-envelope"></i>Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="oc-section">
+      <div class="oc-section-t">Browse By Category</div>
+      <ul class="oc-links">
+        <li><a href="index.html#jkssb" class="oc-link" onclick="return handleOcCategory('jkssb',event)"><span class="cs-dot" style="background:#b060ff"></span>JKSSB</a></li>
+        <li><a href="index.html#jkpsc" class="oc-link" onclick="return handleOcCategory('jkpsc',event)"><span class="cs-dot" style="background:#34d399"></span>JKPSC</a></li>
+        <li><a href="index.html#jkpolice" class="oc-link" onclick="return handleOcCategory('jkpolice',event)"><span class="cs-dot" style="background:#ff7f50"></span>JK Police</a></li>
+        <li><a href="index.html#jkbank" class="oc-link" onclick="return handleOcCategory('jkbank',event)"><span class="cs-dot" style="background:#f5c518"></span>J&amp;K Bank</a></li>
+        <li><a href="index.html#jkjudiciary" class="oc-link" onclick="return handleOcCategory('jkjudiciary',event)"><span class="cs-dot" style="background:#38bdf8"></span>Judiciary</a></li>
+        <li><a href="index.html#jkteaching" class="oc-link" onclick="return handleOcCategory('jkteaching',event)"><span class="cs-dot" style="background:#25D366"></span>Teaching</a></li>
+        <li><a href="index.html#jkhealth" class="oc-link" onclick="return handleOcCategory('jkhealth',event)"><span class="cs-dot" style="background:#fb923c"></span>Health</a></li>
+        <li><a href="index.html#jkuniversity" class="oc-link" onclick="return handleOcCategory('jkuniversity',event)"><span class="cs-dot" style="background:#e879f9"></span>University</a></li>
+      </ul>
+    </div>
+    <div class="oc-section">
+      <div class="oc-section-t">Preferences</div>
+      <div class="oc-toggle-row">
+        <span class="oc-toggle-label"><i class="fa-solid fa-moon"></i>Dark Mode</span>
+        <span class="oc-switch" id="ocThemeSwitch" role="button" aria-label="Toggle dark mode"></span>
+      </div>
+    </div>
+    <div class="oc-section">
+      <div class="oc-section-t">Stay Updated</div>
+      <div class="oc-join">
+        <a href="https://t.me/" target="_blank" class="oc-join-tg"><i class="fa-brands fa-telegram"></i> Join Telegram Channel</a>
+        <a href="https://wa.me/" target="_blank" class="oc-join-wa"><i class="fa-brands fa-whatsapp"></i> Join WhatsApp Channel</a>
+      </div>
+    </div>
+    <div class="oc-section">
+      <div class="oc-section-t">Follow Us</div>
+      <div class="oc-social-row">
+        <div class="soc-btn"><i class="fab fa-facebook-f"></i></div>
+        <div class="soc-btn"><i class="fab fa-twitter"></i></div>
+        <div class="soc-btn"><i class="fab fa-telegram"></i></div>
+        <div class="soc-btn"><i class="fab fa-youtube"></i></div>
+        <div class="soc-btn"><i class="fab fa-whatsapp"></i></div>
+      </div>
+    </div>
+  </div>
+  <div class="oc-foot">
+    <div class="oc-foot-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Disclaimer</a></div>
+    <div class="oc-foot-credit">© 2026 Valley Desk · <b>Created by Saboor Shawkat</b></div>
+  </div>
+</aside>
+
 <!-- TOPBAR -->
 <div class="topbar">
   <div class="topbar-w">
@@ -74,6 +141,7 @@
     </div>
     <div class="mast-sep"></div>
     <div class="mast-icons">
+      <div class="icon-btn" id="menuBtn" onclick="toggleOffcanvas()" role="button" aria-label="Open menu" aria-expanded="false" aria-controls="offcanvasMenu"><i class="fa-solid fa-bars"></i></div>
       <div class="icon-btn" id="themeBtn" onclick="toggleTheme()">
         <i class="fa fa-sun i-sun"></i>
         <i class="fa fa-moon i-moon"></i>
@@ -163,17 +231,17 @@
   </div>
   <div class="footer-bot">
     <div class="fb-l">© 2026 Valley Desk. All Rights Reserved. <span class="fb-credit">Created by Saboor Shawkat</span></div>
-    <div class="fb-r"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-conditions.html">Terms of Use</a><a href="disclaimer.html">Disclaimer</a><a href="dmca-policy.html">DMCA</a></div>
+    <div class="fb-r"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Disclaimer</a></div>
   </div>
 </footer>
 
 <!-- MOBILE BOTTOM NAV -->
 <div class="mobile-nav" id="mobileNav">
   <a href="index.html" class="mn-item"><span class="mn-ic"><i class="fa-solid fa-house"></i></span>Home</a>
-  <a href="jobs.html" class="mn-item"><span class="mn-ic"><i class="fa-solid fa-border-all"></i></span>Jobs</a>
+  <a href="jobs.html" class="mn-item"><span class="mn-ic"><i class="fa-solid fa-briefcase"></i></span>All Jobs</a>
+  <a href="#" class="mn-item" onclick="toggleOffcanvas();return false;" aria-label="Open menu"><span class="mn-ic"><span class="mn-menu-dots"><span></span><span></span><span></span><span></span></span></span>Menu</a>
   <a href="admitcards.html" class="mn-item act"><span class="mn-ic"><i class="fa-solid fa-id-card-clip"></i></span>Admit Card</a>
   <a href="results.html" class="mn-item"><span class="mn-ic"><i class="fa-solid fa-trophy"></i></span>Result</a>
-  <a href="tools.html" class="mn-item"><span class="mn-ic"><i class="fa-solid fa-toolbox"></i></span>Tools</a>
 </div>
 
 <div id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fa fa-arrow-up"></i></div>
