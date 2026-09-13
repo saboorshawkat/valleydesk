@@ -1,0 +1,77 @@
+[
+  {
+    "id": "exam-2026-001",
+    "name": "JEE Main 2027 Session 1 Registration",
+    "subtitle": "National Testing Agency (NTA)",
+    "desc": "Online registration window open for engineering aspirants across Jammu & Kashmir for the first session of JEE Main 2027.",
+    "badges": [
+      { "label": "Session 1", "cls": "tcb-p" }
+    ],
+    "examDate": "24/01/2027",
+    "lastDate": "16/09/2026",
+    "applyLink": "https://jeemain.nta.nic.in",
+    "notificationLink": "https://jeemain.nta.nic.in",
+    "officialLink": "https://jeemain.nta.nic.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "exam-2026-002",
+    "name": "UGC NET December 2026 Cycle",
+    "subtitle": "National Testing Agency (NTA)",
+    "desc": "Application window open for the UGC NET December 2026 cycle covering Kashmir & Jammu University candidates for JRF and Assistant Professor eligibility.",
+    "badges": [
+      { "label": "JRF + Asst Prof", "cls": "tcb-b" }
+    ],
+    "examDate": "08/12/2026",
+    "lastDate": "20/09/2026",
+    "applyLink": "https://ugcnet.nta.nic.in",
+    "notificationLink": "https://ugcnet.nta.nic.in",
+    "officialLink": "https://ugcnet.nta.nic.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "exam-2026-003",
+    "name": "JKBOSE Class 12th Annual (Regular) Practical Exams",
+    "subtitle": "J&K Board of School Education",
+    "desc": "Schedule released for practical examinations ahead of the Class 12 annual theory papers across Kashmir and Jammu divisions.",
+    "badges": [
+      { "label": "Datesheet Out", "cls": "tcb-b" }
+    ],
+    "examDate": "25/09/2026",
+    "lastDate": "--/--/----",
+    "applyLink": "https://jkbose.nic.in",
+    "notificationLink": "https://jkbose.nic.in",
+    "officialLink": "https://jkbose.nic.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "exam-2026-004",
+    "name": "CUET UG 2027 Correction Window",
+    "subtitle": "National Testing Agency (NTA)",
+    "desc": "One-time correction facility opened for candidates who have already submitted the CUET UG 2027 application form, including J&K university aspirants.",
+    "badges": [
+      { "label": "Correction Window", "cls": "tcb-y" }
+    ],
+    "examDate": "15/05/2027",
+    "lastDate": "18/09/2026",
+    "applyLink": "https://cuet.nta.nic.in",
+    "notificationLink": "https://cuet.nta.nic.in",
+    "officialLink": "https://cuet.nta.nic.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "exam-2026-005",
+    "name": "JKSSB Naib Tehsildar Written Exam Date Announced",
+    "subtitle": "J&K Services Selection Board",
+    "desc": "Written examination date notified for the Naib Tehsildar recruitment track; admit cards to follow shortly on the JKSSB portal.",
+    "badges": [
+      { "label": "Advt 07 Of 2026", "cls": "tcb-p" }
+    ],
+    "examDate": "28/09/2026",
+    "lastDate": "10/09/2026",
+    "applyLink": "https://jkssb.nic.in/dynamic-jkssb-test/pages/login.aspx",
+    "notificationLink": "https://jkssb.nic.in/Whatsnew.html",
+    "officialLink": "https://jkssb.nic.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  }
+]

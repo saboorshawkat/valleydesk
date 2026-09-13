@@ -1,0 +1,72 @@
+[
+  {
+    "id": "adm-2026-001",
+    "name": "University of Kashmir UG Admissions 2026-27",
+    "subtitle": "University of Kashmir, Srinagar",
+    "desc": "Online admission portal open for undergraduate programmes across constituent and affiliated colleges for the 2026-27 academic session.",
+    "badges": [
+      { "label": "UG", "cls": "tcb-p" }
+    ],
+    "lastDate": "22/09/2026",
+    "applyLink": "https://kashmiruniversity.net",
+    "notificationLink": "https://kashmiruniversity.net",
+    "officialLink": "https://kashmiruniversity.net",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "adm-2026-002",
+    "name": "Jammu University PG Admissions 2026-27",
+    "subtitle": "University of Jammu",
+    "desc": "Postgraduate admission applications invited for various teaching departments and centres for the 2026-27 session.",
+    "badges": [
+      { "label": "PG", "cls": "tcb-b" }
+    ],
+    "lastDate": "25/09/2026",
+    "applyLink": "https://jammuuniversity.ac.in",
+    "notificationLink": "https://jammuuniversity.ac.in",
+    "officialLink": "https://jammuuniversity.ac.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "adm-2026-003",
+    "name": "SKUAST-Kashmir B.Sc Agriculture Admissions",
+    "subtitle": "Sher-e-Kashmir University of Agricultural Sciences",
+    "desc": "Admission notice for undergraduate agriculture, horticulture and forestry programmes through the ICAR AIEEA counselling route.",
+    "badges": [
+      { "label": "Professional Course", "cls": "tcb-g" }
+    ],
+    "lastDate": "30/09/2026",
+    "applyLink": "https://skuastkashmir.ac.in",
+    "notificationLink": "https://skuastkashmir.ac.in",
+    "officialLink": "https://skuastkashmir.ac.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "adm-2026-004",
+    "name": "GMC Srinagar Nursing (B.Sc / GNM) Admissions",
+    "subtitle": "Govt. Medical College, Srinagar",
+    "desc": "Admission process notified for nursing programmes at GMC Srinagar and associated hospitals for the current session.",
+    "badges": [
+      { "label": "Nursing", "cls": "tcb-o" }
+    ],
+    "lastDate": "14/09/2026",
+    "applyLink": "https://gmcsrinagar.edu.in",
+    "notificationLink": "https://gmcsrinagar.edu.in",
+    "officialLink": "https://gmcsrinagar.edu.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "adm-2026-005",
+    "name": "J&K Polytechnic Diploma Admissions (Lateral Entry)",
+    "subtitle": "Directorate of Technical Education, J&K",
+    "desc": "Lateral entry admission window for diploma engineering programmes across J&K polytechnic colleges has now closed for this cycle.",
+    "badges": [
+      { "label": "Diploma", "cls": "tcb-y" }
+    ],
+    "lastDate": "05/09/2026",
+    "applyLink": "https://jakdte.nic.in",
+    "notificationLink": "https://jakdte.nic.in",
+    "officialLink": "https://jakdte.nic.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  }
+]

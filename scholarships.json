@@ -1,0 +1,54 @@
+[
+  {
+    "id": "sch-2026-001",
+    "name": "Central Sector Scholarship Scheme",
+    "subtitle": "Ministry of Education, Govt of India",
+    "desc": "Central sector scholarship for college and university students from J&K who were meritorious in Class 12, subject to family income criteria.",
+    "badges": [
+      { "label": "Central Scheme", "cls": "tcb-g" }
+    ],
+    "lastDate": "30/10/2026",
+    "applyLink": "https://scholarships.gov.in",
+    "officialLink": "https://scholarships.gov.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "sch-2026-002",
+    "name": "J&K Prime Minister's Special Scholarship Scheme (PMSSS)",
+    "subtitle": "AICTE / J&K Government",
+    "desc": "Special scholarship scheme enabling J&K domicile students to pursue professional and undergraduate courses at institutes outside the Union Territory.",
+    "badges": [
+      { "label": "Domicile J&K", "cls": "tcb-p" }
+    ],
+    "lastDate": "20/09/2026",
+    "applyLink": "https://aicte-jk-nic.in",
+    "officialLink": "https://aicte-jk-nic.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "sch-2026-003",
+    "name": "National Means-cum-Merit Scholarship (NMMSS)",
+    "subtitle": "Ministry of Education",
+    "desc": "Scholarship for meritorious students of economically weaker sections studying in Classes 9 to 12 in J&K government schools.",
+    "badges": [
+      { "label": "Class 9-12", "cls": "tcb-b" }
+    ],
+    "lastDate": "12/09/2026",
+    "applyLink": "https://scholarships.gov.in",
+    "officialLink": "https://scholarships.gov.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  },
+  {
+    "id": "sch-2026-004",
+    "name": "J&K Post-Matric Scholarship for SC/ST/OBC Students",
+    "subtitle": "Social Welfare Department, J&K",
+    "desc": "State post-matric scholarship scheme covering tuition and maintenance allowance for eligible SC/ST/OBC students in J&K.",
+    "badges": [
+      { "label": "Post-Matric", "cls": "tcb-y" }
+    ],
+    "lastDate": "28/09/2026",
+    "applyLink": "https://jksocialwelfare.gov.in",
+    "officialLink": "https://jksocialwelfare.gov.in",
+    "scrapedAt": "2026-09-06T19:35:00"
+  }
+]
