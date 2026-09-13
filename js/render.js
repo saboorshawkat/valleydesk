@@ -182,6 +182,152 @@ function renderResults(results) {
   if (count) count.textContent = `${results.length} Declared`;
 }
 
+/* ---------- EXAMS (#examSection) ---------- */
+
+async function loadExams() {
+  try {
+    const res = await fetch("exams.json?_=" + Date.now());
+    const exams = await res.json();
+    renderExams(exams);
+  } catch (e) {
+    console.error("Could not load exams.json", e);
+  }
+}
+
+function renderExams(exams) {
+  const list = document.getElementById("examList");
+  const count = document.getElementById("examCount");
+  if (!list) return;
+  const shown = exams.slice(0, HOME_SECTION_LIMIT);
+  list.innerHTML = shown.map(buildExamCard).join("");
+  if (exams.length > HOME_SECTION_LIMIT) {
+    list.innerHTML += `
+      <div class="view-all-wrap">
+        <a class="view-all-btn" href="exams.html"><i class="fa fa-pen-to-square"></i> View All ${exams.length} Exams</a>
+      </div>`;
+  }
+  if (count) count.textContent = `${exams.length} Listed`;
+  return exams;
+}
+
+/* ---------- ADMISSIONS (#admissionSection) ---------- */
+
+async function loadAdmissions() {
+  try {
+    const res = await fetch("admissions.json?_=" + Date.now());
+    const admissions = await res.json();
+    renderAdmissions(admissions);
+    return admissions;
+  } catch (e) {
+    console.error("Could not load admissions.json", e);
+    return [];
+  }
+}
+
+function renderAdmissions(admissions) {
+  const list = document.getElementById("admissionList");
+  const count = document.getElementById("admissionCount");
+  if (!list) return;
+  const shown = admissions.slice(0, HOME_SECTION_LIMIT);
+  list.innerHTML = shown.map(buildAdmissionCard).join("");
+  if (admissions.length > HOME_SECTION_LIMIT) {
+    list.innerHTML += `
+      <div class="view-all-wrap">
+        <a class="view-all-btn" href="admissions.html"><i class="fa fa-graduation-cap"></i> View All ${admissions.length} Admissions</a>
+      </div>`;
+  }
+  if (count) count.textContent = `${admissions.length} Open`;
+}
+
+/* ---------- SCHOLARSHIPS (#scholarshipSection) ---------- */
+
+async function loadScholarships() {
+  try {
+    const res = await fetch("scholarships.json?_=" + Date.now());
+    const scholarships = await res.json();
+    renderScholarships(scholarships);
+  } catch (e) {
+    console.error("Could not load scholarships.json", e);
+  }
+}
+
+function renderScholarships(scholarships) {
+  const list = document.getElementById("scholarshipList");
+  const count = document.getElementById("scholarshipCount");
+  if (!list) return;
+  const shown = scholarships.slice(0, HOME_SECTION_LIMIT);
+  list.innerHTML = shown.map(buildScholarshipCard).join("");
+  if (scholarships.length > HOME_SECTION_LIMIT) {
+    list.innerHTML += `
+      <div class="view-all-wrap">
+        <a class="view-all-btn" href="scholarships.html"><i class="fa fa-coins"></i> View All ${scholarships.length} Scholarships</a>
+      </div>`;
+  }
+  if (count) count.textContent = `${scholarships.length} Open`;
+}
+
+/* ---------- CLOSING SOON (#closingSoonSection) ----------
+   Pulls the "lastDate" (application deadline) off jobs, exams and
+   admissions, keeps whatever is due to close within the next 7 days,
+   and lists it soonest-first — the auto-generated dashboard strip the
+   ValleyDesk notification-hub concept calls for, computed straight
+   from the same JSON the individual sections already use so there's
+   nothing extra to keep in sync by hand. */
+
+const CLOSING_SOON_WINDOW_DAYS = 7;
+
+function collectClosingSoon(jobs, exams, admissions) {
+  const pool = [
+    ...jobs.map((j) => ({ ...j, _kind: "Job", _icon: "fa-briefcase", _link: j.applyLink })),
+    ...exams.map((e) => ({ ...e, _kind: "Exam", _icon: "fa-pen-to-square", _link: e.applyLink })),
+    ...admissions.map((a) => ({ ...a, _kind: "Admission", _icon: "fa-graduation-cap", _link: a.applyLink })),
+  ];
+
+  return pool
+    .map((item) => ({ item, days: daysUntil(item.lastDate) }))
+    .filter((x) => x.days !== null && x.days >= 0 && x.days <= CLOSING_SOON_WINDOW_DAYS)
+    .sort((a, b) => a.days - b.days);
+}
+
+function buildClosingSoonRow({ item, days }) {
+  const dayLabel = days === 0 ? "Closes Today" : days === 1 ? "1 Day Left" : `${days} Days Left`;
+  const cls = days <= 2 ? "tcb-r" : "tcb-y";
+  return `
+    <div class="tool-card" data-name="${escapeAttr(item.name)}">
+      <div class="tc-body">
+        <div class="tc-top">
+          <div class="tc-name-wrap">
+            <div class="tc-name"><i class="fa-solid ${item._icon}" style="font-size:9px;margin-right:5px;color:var(--t3)"></i>${item.name}</div>
+            <div class="tc-ver">${item._kind} · ${item.subtitle || ""}</div>
+          </div>
+          <div class="tc-badges"><span class="tcb ${cls}">${dayLabel}</span></div>
+        </div>
+        <div class="tc-foot">
+          <div class="tc-dates"><span class="tc-date tc-date-reg"><i class="fa fa-calendar-xmark"></i> Last Date: ${item.lastDate}</span></div>
+          <div class="tc-actions">
+            <a href="${item._link || item.officialLink || "#"}" class="tc-btn tc-btn-g" target="_blank"><i class="fa fa-paper-plane"></i> Apply Now</a>
+          </div>
+        </div>
+      </div>
+    </div>`;
+}
+
+async function loadClosingSoon(jobs, exams, admissions) {
+  const wrap = document.getElementById("closingSoonSection");
+  const list = document.getElementById("closingSoonList");
+  const count = document.getElementById("closingSoonCount");
+  if (!wrap || !list) return;
+
+  const closing = collectClosingSoon(jobs || [], exams || [], admissions || []);
+  if (!closing.length) {
+    wrap.style.display = "none";
+    return;
+  }
+  wrap.style.display = "";
+  list.innerHTML = closing.map(buildClosingSoonRow).join("");
+  if (count) count.textContent = `${closing.length} Closing`;
+}
+
 /* ---------- Category strip / search (homepage-only interactions) ---------- */
 
 /* Used by every homepage element that jumps to a category (hero quicklinks,
@@ -262,10 +408,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* ---------- Boot + periodic refresh ---------- */
 
-function loadAll() {
+async function fetchJson(path) {
+  try {
+    const res = await fetch(path + "?_=" + Date.now());
+    return await res.json();
+  } catch (e) {
+    console.error("Could not load " + path, e);
+    return [];
+  }
+}
+
+async function loadAll() {
   loadJobs();
   loadAdmitCards();
   loadResults();
+  loadScholarships();
+
+  // Exams and admissions feed both their own homepage sections *and* the
+  // Closing Soon strip, so fetch them once here and reuse the data instead
+  // of hitting exams.json / admissions.json twice.
+  const [jobs, exams, admissions] = await Promise.all([
+    fetchJson("jobs.json"),
+    fetchJson("exams.json"),
+    fetchJson("admissions.json"),
+  ]);
+  renderExams(exams);
+  renderAdmissions(admissions);
+  loadClosingSoon(jobs, exams, admissions);
 }
 
 document.addEventListener("DOMContentLoaded", loadAll);
