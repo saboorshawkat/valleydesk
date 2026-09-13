@@ -68,6 +68,8 @@
         <li><a href="index.html#jkteaching" class="oc-link" onclick="return handleOcCategory('jkteaching',event)"><span class="cs-dot" style="background:#25D366"></span>Teaching</a></li>
         <li><a href="index.html#jkhealth" class="oc-link" onclick="return handleOcCategory('jkhealth',event)"><span class="cs-dot" style="background:#fb923c"></span>Health</a></li>
         <li><a href="index.html#jkuniversity" class="oc-link" onclick="return handleOcCategory('jkuniversity',event)"><span class="cs-dot" style="background:#e879f9"></span>University</a></li>
+        <li><a href="index.html#jkbopee" class="oc-link" onclick="return handleOcCategory('jkbopee',event)"><span class="cs-dot" style="background:#ef4444"></span>JKBOPEE</a></li>
+        <li><a href="index.html#jkbose" class="oc-link" onclick="return handleOcCategory('jkbose',event)"><span class="cs-dot" style="background:#14b8a6"></span>JKBOSE</a></li>
       </ul>
     </div>
     <div class="oc-section">
@@ -181,6 +183,8 @@
     <div class="cs-btn" data-cat="jkteaching" onclick="jumpToCat('jkteaching',this)"><span class="cs-dot" style="background:#25D366"></span>Teaching</div>
     <div class="cs-btn" data-cat="jkhealth" onclick="jumpToCat('jkhealth',this)"><span class="cs-dot" style="background:#fb923c"></span>Health</div>
     <div class="cs-btn" data-cat="jkuniversity" onclick="jumpToCat('jkuniversity',this)"><span class="cs-dot" style="background:#e879f9"></span>University</div>
+    <div class="cs-btn" data-cat="jkbopee" onclick="jumpToCat('jkbopee',this)"><span class="cs-dot" style="background:#ef4444"></span>JKBOPEE</div>
+    <div class="cs-btn" data-cat="jkbose" onclick="jumpToCat('jkbose',this)"><span class="cs-dot" style="background:#14b8a6"></span>JKBOSE</div>
   </div>
 </div>
 
@@ -197,7 +201,6 @@
     </div>
     <h1 class="hero-title">
       <span class="hero-title-main">One Place For Every <span class="hero-title-grad">J&amp;K&nbsp;Notification</span></span>
-      <span class="hero-title-main"></span>
     </h1>
     <p class="hero-desc">Govt Jobs, Exams, Admissions, Results, Admit Cards, Answer Keys &amp; Scholarships Across JKSSB, JKPSC, JKBOSE, Universities &amp; More — Verified, Categorised And Tracked In One Clean Feed So You Never Have To Check 20 Different Websites.</p>
     <div class="hero-search-wrap">
@@ -213,12 +216,14 @@
       <a href="results.html" class="hero-ql">📊 Results</a>
       <a href="scholarships.html" class="hero-ql">💰 Scholarships</a>
     </div>
-    <div class="hero-quicklinks" style="margin-top:6px">
+    <div class="hero-quicklinks hero-quicklinks-cat" style="margin-top:6px">
       <span class="hero-ql" onclick="jumpToCat('jkssb')">🏔️ JKSSB</span>
       <span class="hero-ql" onclick="jumpToCat('jkpsc')">⚖️ JKPSC</span>
       <span class="hero-ql" onclick="jumpToCat('jkpolice')">🛡️ JK Police</span>
       <span class="hero-ql" onclick="jumpToCat('jkbank')">🏦 J&amp;K Bank</span>
       <span class="hero-ql" onclick="jumpToCat('jkteaching')">📘 Teaching</span>
+      <span class="hero-ql" onclick="jumpToCat('jkbopee')">📐 JKBOPEE</span>
+      <span class="hero-ql" onclick="jumpToCat('jkbose')">📚 JKBOSE</span>
     </div>
   </div>
   <div class="hero-wave">
@@ -235,7 +240,7 @@
       <div class="cgs-title-wrap">
         <div class="cgs-bar"></div>
         <span class="cgs-title">Browse by Category</span>
-        <span class="cgs-chip">8 Sections</span>
+        <span class="cgs-chip">10 Sections</span>
       </div>
       <p class="cgs-sub">Tap a category to jump straight to those Jammu &amp; Kashmir job listings</p>
     </div>
@@ -279,6 +284,16 @@
         <div class="cgc-icon" style="--cgc:#e879f9;background:rgba(232,121,249,.1);border-color:rgba(232,121,249,.2)">🎓</div>
         <div class="cgc-body"><div class="cgc-name">University</div><div class="cgc-desc">Kashmir &amp; Jammu University</div><div class="cgc-count" style="color:#e879f9">3 Jobs</div></div>
         <div class="cgc-arrow" style="color:#e879f9"><i class="fa fa-arrow-right"></i></div>
+      </div>
+      <div class="cat-grid-card" onclick="jumpToCat('jkbopee')">
+        <div class="cgc-icon" style="--cgc:#ef4444;background:rgba(239,68,68,.1);border-color:rgba(239,68,68,.2)">📐</div>
+        <div class="cgc-body"><div class="cgc-name">JKBOPEE</div><div class="cgc-desc">Professional Entrance Examinations</div><div class="cgc-count" style="color:#ef4444">0 Jobs</div></div>
+        <div class="cgc-arrow" style="color:#ef4444"><i class="fa fa-arrow-right"></i></div>
+      </div>
+      <div class="cat-grid-card" onclick="jumpToCat('jkbose')">
+        <div class="cgc-icon" style="--cgc:#14b8a6;background:rgba(20,184,166,.1);border-color:rgba(20,184,166,.2)">📚</div>
+        <div class="cgc-body"><div class="cgc-name">JKBOSE</div><div class="cgc-desc">Board of School Education</div><div class="cgc-count" style="color:#14b8a6">0 Jobs</div></div>
+        <div class="cgc-arrow" style="color:#14b8a6"><i class="fa fa-arrow-right"></i></div>
       </div>
     </div>
   </div>
@@ -444,6 +459,7 @@
         <li><a href="#" onclick="jumpToCat('jkpolice');return false;"><i class="fa fa-angle-right"></i>JK Police</a></li>
         <li><a href="#" onclick="jumpToCat('jkbank');return false;"><i class="fa fa-angle-right"></i>J&amp;K Bank</a></li>
         <li><a href="#" onclick="jumpToCat('jkjudiciary');return false;"><i class="fa fa-angle-right"></i>Judiciary</a></li>
+        <li><a href="#" onclick="jumpToCat('jkbopee');return false;"><i class="fa fa-angle-right"></i>JKBOPEE</a></li>
       </ul>
     </div>
     <div>
@@ -452,6 +468,7 @@
         <li><a href="#" onclick="jumpToCat('jkteaching');return false;"><i class="fa fa-angle-right"></i>Teaching (ReT/JKTET)</a></li>
         <li><a href="#" onclick="jumpToCat('jkhealth');return false;"><i class="fa fa-angle-right"></i>Health Dept / SKIMS</a></li>
         <li><a href="#" onclick="jumpToCat('jkuniversity');return false;"><i class="fa fa-angle-right"></i>University Jobs</a></li>
+        <li><a href="#" onclick="jumpToCat('jkbose');return false;"><i class="fa fa-angle-right"></i>JKBOSE</a></li>
         <li><a href="#" onclick="jumpToCat('all');return false;"><i class="fa fa-angle-right"></i>All J&amp;K Jobs</a></li>
       </ul>
     </div>
