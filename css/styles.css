@@ -244,6 +244,8 @@ button{cursor:pointer;font-family:var(--mono)}
 .tcb-b{background:rgba(34,158,217,.12);color:#229ED9;border:1px solid rgba(34,158,217,.25)}
 .tcb-y{background:rgba(245,197,24,.12);color:#f5c518;border:1px solid rgba(245,197,24,.25)}
 .tcb-p{background:rgba(176,96,255,.12);color:#c98bff;border:1px solid rgba(176,96,255,.25)}
+.tcb-admit{background:rgba(34,158,217,.12);color:#229ED9;border:1px solid rgba(34,158,217,.25)}
+.tcb-o{background:rgba(255,140,0,.12);color:#ff8c00;border:1px solid rgba(255,140,0,.3)}
 .tc-desc{font-size:9px;color:var(--t2);line-height:1.6;margin:5px 0 8px}
 .tc-foot{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
 .tc-tags{display:flex;gap:4px;flex-wrap:wrap}
