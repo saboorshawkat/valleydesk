@@ -1,0 +1,170 @@
+[
+  {
+    "name": "JKSSB Junior Stenographer E-Admit Card Released",
+    "subtitle": "Short Hand Skill Test Phase",
+    "desc": "Admit cards officially available for download for shorthand skill tests starting September 1, 2026, at NIELIT Jammu/Srinagar.",
+    "badges": [
+      {
+        "label": "Admit Card",
+        "cls": "tcb-admit"
+      },
+      {
+        "label": "Skill Test",
+        "cls": "tcb-b"
+      }
+    ],
+    "releasedOn": "--/--/----",
+    "examDate": "19/09/2026",
+    "downloadLink": "https://jkssb.nic.in/dynamic-jkssb-test/pages/login.aspx",
+    "officialLink": "https://jkssb.nic.in",
+    "category": "jkssb"
+  },
+  {
+    "name": "JKSSB Forest Guard Physical Test Roll Number Download",
+    "subtitle": "PST / PET Events Portal",
+    "desc": "Download link active for downloading call letters for physical standard and endurance tracks.",
+    "badges": [
+      {
+        "label": "Physical Test",
+        "cls": "tcb-admit"
+      },
+      {
+        "label": "Forest Guard",
+        "cls": "tcb-b"
+      }
+    ],
+    "releasedOn": "--/--/----",
+    "examDate": "30/09/2026",
+    "downloadLink": "https://jkssb.apply-gov.in/",
+    "officialLink": "https://jkssb.nic.in",
+    "category": "jkssb"
+  },
+  {
+    "category": "jkpsc",
+    "name": "JKPSC KAS (Prelims) Admit Card 2026",
+    "subtitle": "Combined Competitive Examination",
+    "desc": "E-admit cards for the KAS (Preliminary) examination now available for download on the JKPSC candidate portal.",
+    "badges": [
+      {
+        "label": "Admit Card",
+        "cls": "tcb-admit"
+      }
+    ],
+    "releasedOn": "--/--/----",
+    "examDate": "11/10/2026",
+    "downloadLink": "https://jkpsc.nic.in",
+    "officialLink": "https://jkpsc.nic.in"
+  },
+  {
+    "category": "jkpsc",
+    "name": "JKPSC Assistant Professor Screening Test Admit Card",
+    "subtitle": "Higher Education Department",
+    "desc": "Admit cards released for the screening test for Assistant Professor recruitment across various subjects.",
+    "badges": [
+      {
+        "label": "Admit Card",
+        "cls": "tcb-admit"
+      }
+    ],
+    "releasedOn": "--/--/----",
+    "examDate": "05/10/2026",
+    "downloadLink": "https://jkpsc.nic.in",
+    "officialLink": "https://jkpsc.nic.in"
+  },
+  {
+    "category": "jkpolice",
+    "name": "JK Police Constable Physical Standard Test (PST) Call Letter",
+    "subtitle": "District-wise PST Schedule",
+    "desc": "Call letters for the Physical Standard Test released district-wise for Constable (Executive) recruitment candidates.",
+    "badges": [
+      {
+        "label": "Admit Card",
+        "cls": "tcb-admit"
+      }
+    ],
+    "releasedOn": "--/--/----",
+    "examDate": "29/09/2026",
+    "downloadLink": "https://jkpolice.gov.in",
+    "officialLink": "https://jkpolice.gov.in"
+  },
+  {
+    "category": "jkpolice",
+    "name": "JK Police SI (Unarmed) Written Test Admit Card",
+    "subtitle": "Executive Wing",
+    "desc": "Admit cards for the written examination for Sub-Inspector (Unarmed) posts now live on the official portal.",
+    "badges": [
+      {
+        "label": "Admit Card",
+        "cls": "tcb-admit"
+      }
+    ],
+    "releasedOn": "--/--/----",
+    "examDate": "02/10/2026",
+    "downloadLink": "https://jkpolice.gov.in",
+    "officialLink": "https://jkpolice.gov.in"
+  },
+  {
+    "category": "kashmir-university",
+    "name": "University Of Kashmir PG Entrance Test Admit Card",
+    "subtitle": "Common Entrance Test For PG Programmes",
+    "desc": "Admit cards for the PG entrance test available for download from the candidate login on the university website.",
+    "badges": [
+      {
+        "label": "Admit Card",
+        "cls": "tcb-admit"
+      }
+    ],
+    "releasedOn": "--/--/----",
+    "examDate": "27/09/2026",
+    "downloadLink": "https://kashmiruniversity.net",
+    "officialLink": "https://kashmiruniversity.net"
+  },
+  {
+    "category": "kashmir-university",
+    "name": "University Of Kashmir Non-Teaching Written Test Call Letter",
+    "subtitle": "Advt No. 09 of 2026",
+    "desc": "Call letters for the written screening test for non-teaching posts released for eligible candidates.",
+    "badges": [
+      {
+        "label": "Admit Card",
+        "cls": "tcb-admit"
+      }
+    ],
+    "releasedOn": "--/--/----",
+    "examDate": "08/10/2026",
+    "downloadLink": "https://kashmiruniversity.net",
+    "officialLink": "https://kashmiruniversity.net"
+  },
+  {
+    "category": "central-university",
+    "name": "Central University Of Kashmir Non-Teaching Written Test Admit Card",
+    "subtitle": "Group B & C Posts",
+    "desc": "Admit cards for the written test for various non-teaching posts released for shortlisted candidates.",
+    "badges": [
+      {
+        "label": "Admit Card",
+        "cls": "tcb-admit"
+      }
+    ],
+    "releasedOn": "--/--/----",
+    "examDate": "04/10/2026",
+    "downloadLink": "https://cukashmir.ac.in",
+    "officialLink": "https://cukashmir.ac.in"
+  },
+  {
+    "category": "central-university",
+    "name": "CUET-PG Admit Card \u2014 Central University Of Jammu",
+    "subtitle": "PG Admission Test",
+    "desc": "Admit cards for CUET-PG candidates opting for Central University of Jammu programmes are now available.",
+    "badges": [
+      {
+        "label": "Admit Card",
+        "cls": "tcb-admit"
+      }
+    ],
+    "releasedOn": "--/--/----",
+    "examDate": "30/09/2026",
+    "downloadLink": "https://cujammu.ac.in",
+    "officialLink": "https://cujammu.ac.in"
+  }
+]

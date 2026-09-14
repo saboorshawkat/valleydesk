@@ -1,0 +1,190 @@
+[
+  {
+    "name": "JKSSB Junior Assistant OMR Merit List Result",
+    "subtitle": "Notification No. 08 of 2025 Track",
+    "desc": "Official written merit list scorecards released mapping out the 12,498 candidates qualifying for the upcoming NIELIT skill test parameters.",
+    "badges": [
+      {
+        "label": "Result Out",
+        "cls": "tcb-r"
+      },
+      {
+        "label": "Merit List PDF",
+        "cls": "tcb-b"
+      }
+    ],
+    "declaredOn": "--/--/----",
+    "nextStage": "Skill Test",
+    "resultLink": "https://jkssb.nic.in/Whatsnew.html",
+    "officialLink": "https://jkssb.nic.in",
+    "category": "jkssb"
+  },
+  {
+    "name": "JKSSB Social Forestry Worker Scorecard & Selection Panel",
+    "subtitle": "Forest, Ecology and Environment Department",
+    "desc": "Official written scorecards published for the examination held on May 17, 2026; next stage maps out physical standard verifications.",
+    "badges": [
+      {
+        "label": "Result Out",
+        "cls": "tcb-r"
+      },
+      {
+        "label": "Scorecard",
+        "cls": "tcb-b"
+      }
+    ],
+    "declaredOn": "--/--/----",
+    "nextStage": "Physical Standard Test (PST)",
+    "resultLink": "https://jkssb.nic.in/Whatsnew.html",
+    "officialLink": "https://jkssb.nic.in",
+    "category": "jkssb"
+  },
+  {
+    "name": "JKSSB Junior Engineer (Civil) Final Merit Placement Panel",
+    "subtitle": "Jal Shakti Department",
+    "desc": "Final recruitment appointment panel allocations and document verification logs compiled for the core engineering track.",
+    "badges": [
+      {
+        "label": "Final Result",
+        "cls": "tcb-r"
+      },
+      {
+        "label": "DV Complete",
+        "cls": "tcb-b"
+      }
+    ],
+    "declaredOn": "--/--/----",
+    "nextStage": "Appointment",
+    "resultLink": "https://jkssb.nic.in/Whatsnew.html",
+    "officialLink": "https://jkssb.nic.in",
+    "category": "jkssb"
+  },
+  {
+    "category": "jkpsc",
+    "name": "JKPSC Assistant Professor (Physics) Final Result",
+    "subtitle": "Higher Education Department",
+    "desc": "Final select list declared for Assistant Professor (Physics) posts after interview based on merit.",
+    "badges": [
+      {
+        "label": "Result Out",
+        "cls": "tcb-r"
+      }
+    ],
+    "declaredOn": "--/--/----",
+    "nextStage": "Document Verification",
+    "resultLink": "https://jkpsc.nic.in",
+    "officialLink": "https://jkpsc.nic.in"
+  },
+  {
+    "category": "jkpsc",
+    "name": "JKPSC Medical Officer Written Test Result",
+    "subtitle": "Health & Medical Education Department",
+    "desc": "Written test result declared; shortlisted candidates called for interview round.",
+    "badges": [
+      {
+        "label": "Result Out",
+        "cls": "tcb-r"
+      }
+    ],
+    "declaredOn": "--/--/----",
+    "nextStage": "Interview",
+    "resultLink": "https://jkpsc.nic.in",
+    "officialLink": "https://jkpsc.nic.in"
+  },
+  {
+    "category": "jkpolice",
+    "name": "JK Police Constable PST Result",
+    "subtitle": "District-wise Qualifying List",
+    "desc": "Physical Standard Test qualifying list declared district-wise; qualified candidates to appear for written test.",
+    "badges": [
+      {
+        "label": "Result Out",
+        "cls": "tcb-r"
+      }
+    ],
+    "declaredOn": "--/--/----",
+    "nextStage": "Written Test",
+    "resultLink": "https://jkpolice.gov.in",
+    "officialLink": "https://jkpolice.gov.in"
+  },
+  {
+    "category": "jkpolice",
+    "name": "JK Police SI (Armed) Final Merit List",
+    "subtitle": "Executive Wing",
+    "desc": "Final merit list published for Sub-Inspector (Armed) recruitment after all stages of selection.",
+    "badges": [
+      {
+        "label": "Result Out",
+        "cls": "tcb-r"
+      }
+    ],
+    "declaredOn": "--/--/----",
+    "nextStage": "Document Verification",
+    "resultLink": "https://jkpolice.gov.in",
+    "officialLink": "https://jkpolice.gov.in"
+  },
+  {
+    "category": "kashmir-university",
+    "name": "University Of Kashmir PG Entrance Test Result",
+    "subtitle": "Common Entrance Test",
+    "desc": "Entrance test results declared with department-wise merit list for postgraduate admissions.",
+    "badges": [
+      {
+        "label": "Result Out",
+        "cls": "tcb-r"
+      }
+    ],
+    "declaredOn": "--/--/----",
+    "nextStage": "Counselling",
+    "resultLink": "https://kashmiruniversity.net",
+    "officialLink": "https://kashmiruniversity.net"
+  },
+  {
+    "category": "kashmir-university",
+    "name": "University Of Kashmir Non-Teaching Written Test Result",
+    "subtitle": "Advt No. 09 of 2026",
+    "desc": "Written test scorecards released for non-teaching recruitment candidates.",
+    "badges": [
+      {
+        "label": "Result Out",
+        "cls": "tcb-r"
+      }
+    ],
+    "declaredOn": "--/--/----",
+    "nextStage": "Skill Test",
+    "resultLink": "https://kashmiruniversity.net",
+    "officialLink": "https://kashmiruniversity.net"
+  },
+  {
+    "category": "central-university",
+    "name": "Central University Of Kashmir Non-Teaching Result",
+    "subtitle": "Group B & C Posts",
+    "desc": "Written test result declared for shortlisted candidates; further stages to follow shortly.",
+    "badges": [
+      {
+        "label": "Result Out",
+        "cls": "tcb-r"
+      }
+    ],
+    "declaredOn": "--/--/----",
+    "nextStage": "Interview",
+    "resultLink": "https://cukashmir.ac.in",
+    "officialLink": "https://cukashmir.ac.in"
+  },
+  {
+    "category": "central-university",
+    "name": "Central University Of Jammu Assistant Professor Result",
+    "subtitle": "Multiple Schools",
+    "desc": "Interview result declared for Assistant Professor recruitment across multiple schools of study.",
+    "badges": [
+      {
+        "label": "Result Out",
+        "cls": "tcb-r"
+      }
+    ],
+    "declaredOn": "--/--/----",
+    "nextStage": "Document Verification",
+    "resultLink": "https://cujammu.ac.in",
+    "officialLink": "https://cujammu.ac.in"
+  }
+]
