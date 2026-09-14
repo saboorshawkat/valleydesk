@@ -4,11 +4,11 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <script>try{var t=localStorage.getItem("vd-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
-<title>Valley Desk | J&amp;K Jobs, Exams, Admissions, Results &amp; Scholarships</title>
-<meta name="description" content="Valley Desk (valleydesk.in) is Jammu &amp; Kashmir's notification hub — one place for Govt Jobs, Exams, Admissions, Results, Admit Cards, Answer Keys &amp; Scholarships across JKSSB, JKPSC, JKBOSE, Universities &amp; more."/>
+<title>Valley Desk | J&amp;K Student &amp; Job Hub — Exams, Jobs, Results &amp; Admit Cards</title>
+<meta name="description" content="Valley Desk (valleydesk.in) is Jammu &amp; Kashmir's complete student &amp; job hub — JKBOSE 11th/12th, NEET, JEE, JKBOPEE exam dates, plus JKSSB, JKPSC, JK Police &amp; more govt job notifications, results and admit cards."/>
 <link rel="canonical" href="https://valleydesk.in/"/>
 <meta property="og:site_name" content="Valley Desk"/>
-<meta property="og:title" content="Valley Desk | J&amp;K Jobs, Exams, Admissions &amp; Results Hub"/>
+<meta property="og:title" content="Valley Desk | J&amp;K Student &amp; Job Hub"/>
 <meta property="og:url" content="https://valleydesk.in/"/>
 <meta property="og:image" content="https://valleydesk.in/assets/VD_Logo.png"/>
 <link rel="icon" type="image/png" sizes="512x512" href="assets/android-chrome-512x512.png"/>
@@ -27,7 +27,7 @@
 <link rel="stylesheet" href="css/pages.css"/>
 </head>
 <body>
-<div class="ambient-blobs"><div class="ambient-blob ambient-blob1"></div><div class="ambient-blob ambient-blob2"></div><div class="ambient-blob ambient-blob3"></div></div>
+<div class="ambient-blobs"><div class="ambient-blob ambient-blob1"></div><div class="ambient-blob ambient-blob2"></div><div class="ambient-blob ambient-blob3"></div><div class="ambient-blob ambient-blob4"></div></div>
 
 <div id="toastContainer"></div>
 
@@ -46,19 +46,28 @@
       <div class="oc-section-t">Menu</div>
       <ul class="oc-links">
         <li><a href="index.html" class="oc-link" data-page="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
-        <li><a href="jobs.html" class="oc-link" data-page="jobs.html"><i class="fa-solid fa-briefcase"></i>Jobs</a></li>
-        <li><a href="exams.html" class="oc-link" data-page="exams.html"><i class="fa-solid fa-pen-to-square"></i>Exams</a></li>
-        <li><a href="admissions.html" class="oc-link" data-page="admissions.html"><i class="fa-solid fa-graduation-cap"></i>Admissions</a></li>
+        <li><a href="jobs.html" class="oc-link" data-page="jobs.html"><i class="fa-solid fa-briefcase"></i>All Jobs</a></li>
         <li><a href="admitcards.html" class="oc-link" data-page="admitcards.html"><i class="fa-solid fa-id-card-clip"></i>Admit Cards</a></li>
+        <li><a href="examdates.html" class="oc-link" data-page="examdates.html"><i class="fa-solid fa-calendar-days"></i>Exam Dates</a></li>
         <li><a href="results.html" class="oc-link" data-page="results.html"><i class="fa-solid fa-trophy"></i>Results</a></li>
-        <li><a href="scholarships.html" class="oc-link" data-page="scholarships.html"><i class="fa-solid fa-coins"></i>Scholarships</a></li>
         <li><a href="tools.html" class="oc-link" data-page="tools.html"><i class="fa-solid fa-toolbox"></i>Tools</a></li>
         <li><a href="about.html" class="oc-link" data-page="about.html"><i class="fa-solid fa-circle-info"></i>About Us</a></li>
         <li><a href="contact.html" class="oc-link" data-page="contact.html"><i class="fa-solid fa-envelope"></i>Contact Us</a></li>
       </ul>
     </div>
     <div class="oc-section">
-      <div class="oc-section-t">Browse By Category</div>
+      <div class="oc-section-t">Student Exam Categories</div>
+      <ul class="oc-links">
+        <li><a href="examdates.html#jkbose" class="oc-link" onclick="return handleOcExamCategory('jkbose',event)"><span class="cs-dot" style="background:#0ac16c"></span>JKBOSE 11th/12th</a></li>
+        <li><a href="examdates.html#neet" class="oc-link" onclick="return handleOcExamCategory('neet',event)"><span class="cs-dot" style="background:#e11d48"></span>NEET</a></li>
+        <li><a href="examdates.html#jee" class="oc-link" onclick="return handleOcExamCategory('jee',event)"><span class="cs-dot" style="background:#38bdf8"></span>JEE Main/Advanced</a></li>
+        <li><a href="examdates.html#jkbopee" class="oc-link" onclick="return handleOcExamCategory('jkbopee',event)"><span class="cs-dot" style="background:#b060ff"></span>JKBOPEE CET</a></li>
+        <li><a href="examdates.html#jkssb" class="oc-link" onclick="return handleOcExamCategory('jkssb',event)"><span class="cs-dot" style="background:#f5c518"></span>JKSSB Exams</a></li>
+        <li><a href="examdates.html#other" class="oc-link" onclick="return handleOcExamCategory('other',event)"><span class="cs-dot" style="background:#fb923c"></span>Other (CBSE, CUET, NDA)</a></li>
+      </ul>
+    </div>
+    <div class="oc-section">
+      <div class="oc-section-t">Govt Job Categories</div>
       <ul class="oc-links">
         <li><a href="index.html#jkssb" class="oc-link" onclick="return handleOcCategory('jkssb',event)"><span class="cs-dot" style="background:#b060ff"></span>JKSSB</a></li>
         <li><a href="index.html#jkpsc" class="oc-link" onclick="return handleOcCategory('jkpsc',event)"><span class="cs-dot" style="background:#34d399"></span>JKPSC</a></li>
@@ -68,8 +77,6 @@
         <li><a href="index.html#jkteaching" class="oc-link" onclick="return handleOcCategory('jkteaching',event)"><span class="cs-dot" style="background:#25D366"></span>Teaching</a></li>
         <li><a href="index.html#jkhealth" class="oc-link" onclick="return handleOcCategory('jkhealth',event)"><span class="cs-dot" style="background:#fb923c"></span>Health</a></li>
         <li><a href="index.html#jkuniversity" class="oc-link" onclick="return handleOcCategory('jkuniversity',event)"><span class="cs-dot" style="background:#e879f9"></span>University</a></li>
-        <li><a href="index.html#jkbopee" class="oc-link" onclick="return handleOcCategory('jkbopee',event)"><span class="cs-dot" style="background:#ef4444"></span>JKBOPEE</a></li>
-        <li><a href="index.html#jkbose" class="oc-link" onclick="return handleOcCategory('jkbose',event)"><span class="cs-dot" style="background:#14b8a6"></span>JKBOSE</a></li>
       </ul>
     </div>
     <div class="oc-section">
@@ -114,17 +121,13 @@
       <div class="live-pill"><span class="live-dot"></span>LIVE UPDATES</div>
     </div>
     <div class="tb-right">
-      <a href="jobs.html">Jobs</a>
+      <a href="jobs.html">All Jobs</a>
       <div class="tb-sep2"></div>
-      <a href="exams.html">Exams</a>
-      <div class="tb-sep2"></div>
-      <a href="admissions.html">Admissions</a>
+      <a href="examdates.html">Exam Dates</a>
       <div class="tb-sep2"></div>
       <a href="admitcards.html">Admit Cards</a>
       <div class="tb-sep2"></div>
       <a href="results.html">Results</a>
-      <div class="tb-sep2"></div>
-      <a href="scholarships.html">Scholarships</a>
       <div class="tb-sep2"></div>
       <a href="tools.html">Tools</a>
     </div>
@@ -138,13 +141,13 @@
       <div class="logo-box"><img src="assets/VD_Logo.png" alt="Valley Desk Logo" class="logo-img"/></div>
       <div class="logo-text">
         <span class="logo-main">VALLEY<span>DESK</span></span>
-        <span class="logo-sub">valleydesk.in · J&amp;K Notification Hub</span>
+        <span class="logo-sub">valleydesk.in · Student &amp; Job Hub</span>
       </div>
     </div>
     <div class="mast-sep"></div>
     <div class="mast-desc">
-      Jammu &amp; Kashmir's own notification hub for <strong>Govt Jobs</strong>, <strong>Exams</strong> &amp; <strong>Admissions</strong>,<br/>
-      plus Results, Admit Cards &amp; Scholarships across JKSSB, JKPSC, JKBOSE, Universities &amp; more.
+      Jammu &amp; Kashmir's own hub for <strong>Exam Dates</strong>, <strong>Govt Job Notifications</strong> &amp; <strong>Results</strong><br/>
+      across JKBOSE, NEET, JEE, JKBOPEE, JKSSB, JKPSC &amp; more.
     </div>
     <div class="mast-right">
       <div class="mstat"><span class="mstat-n counter" data-target="320">0</span><span class="mstat-l">K Visitors</span></div>
@@ -183,8 +186,6 @@
     <div class="cs-btn" data-cat="jkteaching" onclick="jumpToCat('jkteaching',this)"><span class="cs-dot" style="background:#25D366"></span>Teaching</div>
     <div class="cs-btn" data-cat="jkhealth" onclick="jumpToCat('jkhealth',this)"><span class="cs-dot" style="background:#fb923c"></span>Health</div>
     <div class="cs-btn" data-cat="jkuniversity" onclick="jumpToCat('jkuniversity',this)"><span class="cs-dot" style="background:#e879f9"></span>University</div>
-    <div class="cs-btn" data-cat="jkbopee" onclick="jumpToCat('jkbopee',this)"><span class="cs-dot" style="background:#ef4444"></span>JKBOPEE</div>
-    <div class="cs-btn" data-cat="jkbose" onclick="jumpToCat('jkbose',this)"><span class="cs-dot" style="background:#14b8a6"></span>JKBOSE</div>
   </div>
 </div>
 
@@ -197,33 +198,24 @@
   <div class="hero-inner">
     <div class="hero-eyebrow">
       <span class="hero-eyebrow-ico"><i class="fa fa-bolt"></i></span>
-      <span class="hero-eyebrow-tag">Updated <b>September 2026</b> · Jobs · Exams · Admissions · Results</span>
+      <span class="hero-eyebrow-tag">Updated <b>September 2026</b> · Exams + 180+ live J&amp;K openings</span>
     </div>
     <h1 class="hero-title">
-      <span class="hero-title-main">One Place For Every <span class="hero-title-grad">J&amp;K&nbsp;Notification</span></span>
+      <span class="hero-title-main">Every J&amp;K <span class="hero-title-grad">Exam,&nbsp;Job&nbsp;&amp;&nbsp;Result</span></span>
+      <span class="hero-title-main">In One Place</span>
     </h1>
-    <p class="hero-desc">Govt Jobs, Exams, Admissions, Results, Admit Cards, Answer Keys &amp; Scholarships Across JKSSB, JKPSC, JKBOSE, Universities &amp; More — Verified, Categorised And Tracked In One Clean Feed So You Never Have To Check 20 Different Websites.</p>
+    <p class="hero-desc">JKBOSE 11th/12th, NEET, JEE, JKBOPEE &amp; JKSSB Exam Dates — Plus JKSSB, JKPSC, JK Police, J&amp;K Bank &amp; University Recruitment. Every Notification, Result And Admit Card Tracked In One Clean Feed.</p>
     <div class="hero-search-wrap">
       <i class="fa fa-search" style="color:var(--t3);font-size:12px;flex-shrink:0"></i>
-      <input type="text" class="hero-search-input" placeholder="Search — JKSSB, JKPSC, JK Police..." id="heroSearch" oninput="liveSearch(this.value)"/>
+      <input type="text" class="hero-search-input" placeholder="Search — NEET, JEE, JKSSB, JKPSC..." id="heroSearch" oninput="liveSearch(this.value)"/>
       <a href="#jobsContainer" class="hero-search-btn"><i class="fa fa-layer-group"></i> <span>Browse</span></a>
     </div>
     <div class="hero-quicklinks">
-      <a href="jobs.html" class="hero-ql">💼 Jobs</a>
-      <a href="exams.html" class="hero-ql">📝 Exams</a>
-      <a href="admissions.html" class="hero-ql">🎓 Admissions</a>
-      <a href="admitcards.html" class="hero-ql">🎫 Admit Cards</a>
-      <a href="results.html" class="hero-ql">📊 Results</a>
-      <a href="scholarships.html" class="hero-ql">💰 Scholarships</a>
-    </div>
-    <div class="hero-quicklinks hero-quicklinks-cat" style="margin-top:6px">
-      <span class="hero-ql" onclick="jumpToCat('jkssb')">🏔️ JKSSB</span>
-      <span class="hero-ql" onclick="jumpToCat('jkpsc')">⚖️ JKPSC</span>
+      <span class="hero-ql" onclick="jumpToExamCat('jkbose')">🏔️ JKBOSE</span>
+      <span class="hero-ql" onclick="jumpToExamCat('neet')">🩺 NEET</span>
+      <span class="hero-ql" onclick="jumpToExamCat('jee')">⚙️ JEE</span>
+      <span class="hero-ql" onclick="jumpToCat('jkssb')">📋 JKSSB Jobs</span>
       <span class="hero-ql" onclick="jumpToCat('jkpolice')">🛡️ JK Police</span>
-      <span class="hero-ql" onclick="jumpToCat('jkbank')">🏦 J&amp;K Bank</span>
-      <span class="hero-ql" onclick="jumpToCat('jkteaching')">📘 Teaching</span>
-      <span class="hero-ql" onclick="jumpToCat('jkbopee')">📐 JKBOPEE</span>
-      <span class="hero-ql" onclick="jumpToCat('jkbose')">📚 JKBOSE</span>
     </div>
   </div>
   <div class="hero-wave">
@@ -233,14 +225,60 @@
   </div>
 </div>
 
-<!-- CATEGORY GRID -->
+<!-- STUDENT EXAM CATEGORY GRID -->
 <div class="cat-grid-section">
   <div class="wrap">
     <div class="cgs-header">
       <div class="cgs-title-wrap">
         <div class="cgs-bar"></div>
-        <span class="cgs-title">Browse by Category</span>
-        <span class="cgs-chip">10 Sections</span>
+        <span class="cgs-title">Student Exam Categories</span>
+        <span class="cgs-chip">6 Exams</span>
+      </div>
+      <p class="cgs-sub">Tap an exam to jump straight to its date sheet, admit card &amp; result tracker</p>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-grid-card" onclick="jumpToExamCat('jkbose')">
+        <div class="cgc-icon" style="--cgc:#0ac16c;background:rgba(10,193,108,.1);border-color:rgba(10,193,108,.2)">🏔️</div>
+        <div class="cgc-body"><div class="cgc-name">JKBOSE 11th/12th</div><div class="cgc-desc">Date Sheets, Admit Cards &amp; Results</div><div class="cgc-count" style="color:#0ac16c">3 Updates</div></div>
+        <div class="cgc-arrow" style="color:#0ac16c"><i class="fa fa-arrow-right"></i></div>
+      </div>
+      <div class="cat-grid-card" onclick="jumpToExamCat('neet')">
+        <div class="cgc-icon" style="--cgc:#e11d48;background:rgba(225,29,72,.1);border-color:rgba(225,29,72,.2)">🩺</div>
+        <div class="cgc-body"><div class="cgc-name">NEET (UG)</div><div class="cgc-desc">Medical &amp; Dental Entrance Exam</div><div class="cgc-count" style="color:#e11d48">2 Updates</div></div>
+        <div class="cgc-arrow" style="color:#e11d48"><i class="fa fa-arrow-right"></i></div>
+      </div>
+      <div class="cat-grid-card" onclick="jumpToExamCat('jee')">
+        <div class="cgc-icon" style="--cgc:#38bdf8;background:rgba(56,189,248,.1);border-color:rgba(56,189,248,.2)">⚙️</div>
+        <div class="cgc-body"><div class="cgc-name">JEE Main/Advanced</div><div class="cgc-desc">Engineering Entrance Exam</div><div class="cgc-count" style="color:#38bdf8">2 Updates</div></div>
+        <div class="cgc-arrow" style="color:#38bdf8"><i class="fa fa-arrow-right"></i></div>
+      </div>
+      <div class="cat-grid-card" onclick="jumpToExamCat('jkbopee')">
+        <div class="cgc-icon" style="--cgc:#b060ff;background:rgba(176,96,255,.1);border-color:rgba(176,96,255,.2)">🎓</div>
+        <div class="cgc-body"><div class="cgc-name">JKBOPEE CET</div><div class="cgc-desc">J&amp;K Common Entrance Test</div><div class="cgc-count" style="color:#b060ff">2 Updates</div></div>
+        <div class="cgc-arrow" style="color:#b060ff"><i class="fa fa-arrow-right"></i></div>
+      </div>
+      <div class="cat-grid-card" onclick="jumpToExamCat('jkssb')">
+        <div class="cgc-icon" style="--cgc:#f5c518;background:rgba(245,197,24,.1);border-color:rgba(245,197,24,.2)">📋</div>
+        <div class="cgc-body"><div class="cgc-name">JKSSB Exams</div><div class="cgc-desc">Combined Competitive Exam Dates</div><div class="cgc-count" style="color:#f5c518">2 Updates</div></div>
+        <div class="cgc-arrow" style="color:#f5c518"><i class="fa fa-arrow-right"></i></div>
+      </div>
+      <div class="cat-grid-card" onclick="jumpToExamCat('other')">
+        <div class="cgc-icon" style="--cgc:#fb923c;background:rgba(251,146,60,.1);border-color:rgba(251,146,60,.2)">📌</div>
+        <div class="cgc-body"><div class="cgc-name">Other Popular Exams</div><div class="cgc-desc">CBSE, CUET, NDA &amp; More</div><div class="cgc-count" style="color:#fb923c">3 Updates</div></div>
+        <div class="cgc-arrow" style="color:#fb923c"><i class="fa fa-arrow-right"></i></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GOVT JOB CATEGORY GRID -->
+<div class="cat-grid-section">
+  <div class="wrap">
+    <div class="cgs-header">
+      <div class="cgs-title-wrap">
+        <div class="cgs-bar"></div>
+        <span class="cgs-title">Govt Job Categories</span>
+        <span class="cgs-chip" id="jobCatChip">8 Sections</span>
       </div>
       <p class="cgs-sub">Tap a category to jump straight to those Jammu &amp; Kashmir job listings</p>
     </div>
@@ -285,28 +323,8 @@
         <div class="cgc-body"><div class="cgc-name">University</div><div class="cgc-desc">Kashmir &amp; Jammu University</div><div class="cgc-count" style="color:#e879f9">3 Jobs</div></div>
         <div class="cgc-arrow" style="color:#e879f9"><i class="fa fa-arrow-right"></i></div>
       </div>
-      <div class="cat-grid-card" onclick="jumpToCat('jkbopee')">
-        <div class="cgc-icon" style="--cgc:#ef4444;background:rgba(239,68,68,.1);border-color:rgba(239,68,68,.2)">📐</div>
-        <div class="cgc-body"><div class="cgc-name">JKBOPEE</div><div class="cgc-desc">Professional Entrance Examinations</div><div class="cgc-count" style="color:#ef4444">0 Jobs</div></div>
-        <div class="cgc-arrow" style="color:#ef4444"><i class="fa fa-arrow-right"></i></div>
-      </div>
-      <div class="cat-grid-card" onclick="jumpToCat('jkbose')">
-        <div class="cgc-icon" style="--cgc:#14b8a6;background:rgba(20,184,166,.1);border-color:rgba(20,184,166,.2)">📚</div>
-        <div class="cgc-body"><div class="cgc-name">JKBOSE</div><div class="cgc-desc">Board of School Education</div><div class="cgc-count" style="color:#14b8a6">0 Jobs</div></div>
-        <div class="cgc-arrow" style="color:#14b8a6"><i class="fa fa-arrow-right"></i></div>
-      </div>
     </div>
   </div>
-</div>
-
-<!-- CLOSING SOON -->
-<div class="wrap" id="closingSoonSection" style="display:none">
-  <div class="cat-section-hd" style="background:rgba(255,140,0,.16);border:1px solid rgba(255,140,0,.4);border-left-color:rgb(255,140,0);box-shadow:0 3px 12px rgba(255,140,0,.18)">
-    <div class="csh-icon">🔥</div>
-    <div class="csh-info"><div class="csh-title">Closing Soon</div><div class="csh-desc">Applications Ending Within The Next 7 Days — Don't Miss The Last Date</div></div>
-    <div class="csh-count" id="closingSoonCount" style="color:#ff8c00">0 Closing</div>
-  </div>
-  <div class="tools-list" id="closingSoonList"></div>
 </div>
 
 <!-- JOBS LIST -->
@@ -320,6 +338,21 @@
 
     <div id="noResults"><i class="fa fa-folder-open" style="font-size:28px;display:block;margin-bottom:10px"></i>No Matching Jobs Found. Try A Different Search Term.</div>
 
+  </div>
+</div>
+
+<!-- STUDENT EXAM DATES SECTION -->
+<div class="tools-section" id="examDatesSection">
+  <div class="wrap">
+    <div class="sh">
+      <div class="sh-bar"></div>
+      <div class="sh-title">Student Exam Dates</div>
+      <span class="subpage-total" id="examDatesCount" style="margin-left:auto">0 Tracked</span>
+    </div>
+    <div class="info-box">
+      <i class="fa fa-circle-info"></i>
+      <p><strong>Disclaimer:</strong> Valley Desk Aggregates Publicly Available Exam Information For J&amp;K Students. Always Verify Dates, Eligibility &amp; Syllabus On The Official Exam Website.</p>
+    </div>
   </div>
 </div>
 
@@ -342,36 +375,6 @@
     <div class="csh-count" id="resultCount" style="color:var(--g)">0 Declared</div>
   </div>
   <div class="tools-list" id="resultList"></div>
-</div>
-
-<!-- EXAM SECTION -->
-<div class="wrap" id="examSection">
-  <div class="cat-section-hd" style="background:rgba(176,96,255,.16);border:1px solid rgba(176,96,255,.4);border-left-color:rgb(176,96,255);box-shadow:0 3px 12px rgba(176,96,255,.18)">
-    <div class="csh-icon">📝</div>
-    <div class="csh-info"><div class="csh-title">Exam</div><div class="csh-desc">Upcoming &amp; Ongoing Entrance And Recruitment Exams</div></div>
-    <div class="csh-count" id="examCount" style="color:#b060ff">0 Listed</div>
-  </div>
-  <div class="tools-list" id="examList"></div>
-</div>
-
-<!-- ADMISSION SECTION -->
-<div class="wrap" id="admissionSection">
-  <div class="cat-section-hd" style="background:rgba(232,121,249,.16);border:1px solid rgba(232,121,249,.4);border-left-color:rgb(232,121,249);box-shadow:0 3px 12px rgba(232,121,249,.18)">
-    <div class="csh-icon">🎓</div>
-    <div class="csh-info"><div class="csh-title">Admission</div><div class="csh-desc">UG, PG &amp; Professional Course Admissions Open Now</div></div>
-    <div class="csh-count" id="admissionCount" style="color:#e879f9">0 Open</div>
-  </div>
-  <div class="tools-list" id="admissionList"></div>
-</div>
-
-<!-- SCHOLARSHIP SECTION -->
-<div class="wrap" id="scholarshipSection">
-  <div class="cat-section-hd" style="background:rgba(245,197,24,.16);border:1px solid rgba(245,197,24,.4);border-left-color:rgb(245,197,24);box-shadow:0 3px 12px rgba(245,197,24,.18)">
-    <div class="csh-icon">💰</div>
-    <div class="csh-info"><div class="csh-title">Scholarship</div><div class="csh-desc">Central &amp; J&amp;K Scholarship Schemes Accepting Applications</div></div>
-    <div class="csh-count" id="scholarshipCount" style="color:#f5c518">0 Open</div>
-  </div>
-  <div class="tools-list" id="scholarshipList"></div>
 </div>
 
 <!-- AUTHOR / CREATOR SPOTLIGHT -->
@@ -459,7 +462,6 @@
         <li><a href="#" onclick="jumpToCat('jkpolice');return false;"><i class="fa fa-angle-right"></i>JK Police</a></li>
         <li><a href="#" onclick="jumpToCat('jkbank');return false;"><i class="fa fa-angle-right"></i>J&amp;K Bank</a></li>
         <li><a href="#" onclick="jumpToCat('jkjudiciary');return false;"><i class="fa fa-angle-right"></i>Judiciary</a></li>
-        <li><a href="#" onclick="jumpToCat('jkbopee');return false;"><i class="fa fa-angle-right"></i>JKBOPEE</a></li>
       </ul>
     </div>
     <div>
@@ -468,20 +470,16 @@
         <li><a href="#" onclick="jumpToCat('jkteaching');return false;"><i class="fa fa-angle-right"></i>Teaching (ReT/JKTET)</a></li>
         <li><a href="#" onclick="jumpToCat('jkhealth');return false;"><i class="fa fa-angle-right"></i>Health Dept / SKIMS</a></li>
         <li><a href="#" onclick="jumpToCat('jkuniversity');return false;"><i class="fa fa-angle-right"></i>University Jobs</a></li>
-        <li><a href="#" onclick="jumpToCat('jkbose');return false;"><i class="fa fa-angle-right"></i>JKBOSE</a></li>
         <li><a href="#" onclick="jumpToCat('all');return false;"><i class="fa fa-angle-right"></i>All J&amp;K Jobs</a></li>
       </ul>
     </div>
     <div>
       <div class="fc-t">Quick Links</div>
       <ul class="f-links">
-        <li><a href="jobs.html"><i class="fa fa-angle-right"></i>All Jobs</a></li>
-        <li><a href="exams.html"><i class="fa fa-angle-right"></i>Exams</a></li>
-        <li><a href="admissions.html"><i class="fa fa-angle-right"></i>Admissions</a></li>
-        <li><a href="admitcards.html"><i class="fa fa-angle-right"></i>Admit Card</a></li>
         <li><a href="results.html"><i class="fa fa-angle-right"></i>Results</a></li>
-        <li><a href="scholarships.html"><i class="fa fa-angle-right"></i>Scholarships</a></li>
         <li><a href="tools.html"><i class="fa fa-angle-right"></i>Tools</a></li>
+        <li><a href="admitcards.html"><i class="fa fa-angle-right"></i>Admit Card</a></li>
+        <li><a href="jobs.html"><i class="fa fa-angle-right"></i>All Jobs</a></li>
         <li><a href="#"><i class="fa fa-angle-right"></i>Syllabus</a></li>
         <li><a href="#"><i class="fa fa-angle-right"></i>Answer Key</a></li>
         <li><a href="about.html"><i class="fa fa-angle-right"></i>About Us</a></li>
