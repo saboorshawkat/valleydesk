@@ -106,9 +106,12 @@ function updateCategoryGridCounts(jobs) {
   const counts = {};
   jobs.forEach((j) => (counts[j.category] = (counts[j.category] || 0) + 1));
 
-  document.querySelectorAll(".cat-grid-card").forEach((card) => {
+  document.querySelectorAll("#jobCatGrid .cat-grid-card").forEach((card) => {
     const onclick = card.getAttribute("onclick") || "";
-    const m = onclick.match(/jumpToCat\('([^']+)'/);
+    // Cards link two ways: jumpToCat('cat') scrolls the homepage list, or
+    // location.href='slug.html' goes to a dedicated entity page — match
+    // whichever this card uses so its live count stays accurate either way.
+    const m = onclick.match(/jumpToCat\('([^']+)'/) || onclick.match(/location\.href='([\w-]+)\.html/);
     if (!m) return;
     const cat = m[1];
     const countEl = card.querySelector(".cgc-count");
@@ -194,17 +197,6 @@ function renderExamDates(exams) {
 
   const countEl = document.getElementById("examDatesCount");
   if (countEl) countEl.textContent = `${total} Tracked`;
-
-  // Sync the "Student Exam Categories" grid card counts to real data,
-  // the same way updateCategoryGridCounts() does for the job grid.
-  document.querySelectorAll(".cat-grid-card").forEach((card) => {
-    const onclick = card.getAttribute("onclick") || "";
-    const m = onclick.match(/jumpToExamCat\('([^']+)'/);
-    if (!m) return;
-    const cat = m[1];
-    const countEl2 = card.querySelector(".cgc-count");
-    if (countEl2) countEl2.textContent = `${(byCat[cat] || []).length} Updates`;
-  });
 }
 
 /* Jumps the homepage straight to the Exam Dates section, optionally
