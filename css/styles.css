@@ -234,7 +234,8 @@ button{cursor:pointer;font-family:var(--mono)}
 .tool-card[data-cat="jkjudiciary"]{border-left-color:#38bdf8}
 .tool-card[data-cat="jkteaching"]{border-left-color:#25D366}
 .tool-card[data-cat="jkhealth"]{border-left-color:#fb923c}
-.tool-card[data-cat="jkuniversity"]{border-left-color:#e879f9}
+.tool-card[data-cat="kashmir-university"]{border-left-color:#e879f9}
+.tool-card[data-cat="central-university"]{border-left-color:#a78bfa}
 .tc-body{flex:1;min-width:0}
 .tc-top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;flex-wrap:wrap}
 .tc-name-wrap{display:flex;flex-direction:column}
