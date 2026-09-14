@@ -4,12 +4,12 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <script>try{var t=localStorage.getItem("vd-theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
-<title>JKSSB Recruitment — Jobs, Admit Cards, Results &amp; Study Material | Valley Desk</title>
-<meta name="description" content="JKSSB latest job notifications, exam dates, admit cards, results and study material — all in one place on Valley Desk."/>
-<link rel="canonical" href="https://valleydesk.in/jkssb.html"/>
+<title>Free Tools for J&amp;K Govt Job Aspirants | Valley Desk</title>
+<meta name="description" content="Free browser-based tools for Jammu &amp; Kashmir govt job applicants — compress photos for online forms, resize signatures, calculate age eligibility &amp; more. No upload, everything runs on your device."/>
+<link rel="canonical" href="https://valleydesk.in/tools.html"/>
 <meta property="og:site_name" content="Valley Desk"/>
-<meta property="og:title" content="JKSSB Recruitment | Valley Desk"/>
-<meta property="og:url" content="https://valleydesk.in/jkssb.html"/>
+<meta property="og:title" content="Free Tools for J&amp;K Govt Job Aspirants | Valley Desk"/>
+<meta property="og:url" content="https://valleydesk.in/tools.html"/>
 <meta property="og:image" content="https://valleydesk.in/assets/VD_Logo.png"/>
 <link rel="icon" type="image/png" sizes="512x512" href="assets/android-chrome-512x512.png"/>
 <link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192x192.png"/>
@@ -25,7 +25,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 <link rel="stylesheet" href="css/styles.css"/>
 </head>
-<body data-entity="jkssb">
+<body>
 <div class="ambient-blobs"><div class="ambient-blob ambient-blob1"></div><div class="ambient-blob ambient-blob2"></div><div class="ambient-blob ambient-blob3"></div><div class="ambient-blob ambient-blob4"></div></div>
 
 <div id="toastContainer"></div>
@@ -182,63 +182,140 @@
   </div>
 </div>
 
-<!-- CAT STRIP -->
-<!-- ENTITY HERO -->
-<div class="subpage-hero entity-accent">
+<!-- SUBPAGE HERO -->
+<div class="subpage-hero">
   <div class="wrap subpage-hero-inner">
-    <div style="display:flex;align-items:center;gap:12px">
-      <div class="entity-hero-icon" id="entityIcon">📋</div>
-      <div>
-        <div class="subpage-crumb"><a href="index.html">Home</a> / JKSSB</div>
-        <div class="subpage-title" id="entityTitle">JKSSB Recruitment</div>
-        <div class="subpage-desc" id="entityDesc">J&amp;K Services Selection Board — Jobs, Exam Dates, Admit Cards, Results &amp; Study Material</div>
+    <div>
+      <div class="subpage-crumb"><a href="index.html">Home</a> / Tools</div>
+      <div class="subpage-title">Tools for J&amp;K Govt Job Aspirants</div>
+      <div class="subpage-desc">Free, browser-based utilities for applications &amp; exam prep — nothing you upload ever leaves your device.</div>
+    </div>
+    <span class="subpage-total" id="toolsTotalChip">8 Tools</span>
+  </div>
+</div>
+
+<!-- TOOL PICKER GRID -->
+<div class="cat-grid-section">
+  <div class="wrap">
+    <div class="cgs-header">
+      <div class="cgs-title-wrap">
+        <div class="cgs-bar"></div>
+        <span class="cgs-title">Browse Tools</span>
+        <span class="cgs-chip">8 Tools</span>
+      </div>
+      <p class="cgs-sub">Tap a tool to use it — everything below runs locally in your browser, no sign-up needed</p>
+    </div>
+    <div class="cat-grid" id="toolsGrid">
+      <div class="cat-grid-card tool-grid-card" onclick="document.getElementById('imageCompressor').scrollIntoView({behavior:'smooth',block:'start'})">
+        <div class="cgc-icon" style="--cgc:#0ac16c;background:rgba(10,193,108,.1);border-color:rgba(10,193,108,.2)">🖼️</div>
+        <div class="cgc-body"><div class="cgc-name">Image Compressor</div><div class="cgc-desc">Shrink photo size for online forms</div><div class="cgc-count" style="color:#0ac16c">Ready</div></div>
+        <div class="cgc-arrow" style="color:#0ac16c"><i class="fa fa-arrow-right"></i></div>
+      </div>
+      <div class="cat-grid-card tool-grid-card coming-soon" onclick="showToast('Coming soon!')">
+        <div class="cgc-icon" style="--cgc:#b060ff;background:rgba(176,96,255,.1);border-color:rgba(176,96,255,.2)">✍️</div>
+        <div class="cgc-body"><div class="cgc-name">Photo &amp; Signature Resizer</div><div class="cgc-desc">Fit JKSSB / JKPSC size limits</div><div class="cgc-count">Coming Soon</div></div>
+        <div class="cgc-arrow" style="color:#b060ff"><i class="fa fa-arrow-right"></i></div>
+      </div>
+      <div class="cat-grid-card tool-grid-card coming-soon" onclick="showToast('Coming soon!')">
+        <div class="cgc-icon" style="--cgc:#38bdf8;background:rgba(56,189,248,.1);border-color:rgba(56,189,248,.2)">📄</div>
+        <div class="cgc-body"><div class="cgc-name">PDF Compressor</div><div class="cgc-desc">Reduce PDF size for uploads</div><div class="cgc-count">Coming Soon</div></div>
+        <div class="cgc-arrow" style="color:#38bdf8"><i class="fa fa-arrow-right"></i></div>
+      </div>
+      <div class="cat-grid-card tool-grid-card coming-soon" onclick="showToast('Coming soon!')">
+        <div class="cgc-icon" style="--cgc:#f5c518;background:rgba(245,197,24,.1);border-color:rgba(245,197,24,.2)">🎂</div>
+        <div class="cgc-body"><div class="cgc-name">Age Calculator</div><div class="cgc-desc">Check age eligibility as of cutoff</div><div class="cgc-count">Coming Soon</div></div>
+        <div class="cgc-arrow" style="color:#f5c518"><i class="fa fa-arrow-right"></i></div>
+      </div>
+      <div class="cat-grid-card tool-grid-card coming-soon" onclick="showToast('Coming soon!')">
+        <div class="cgc-icon" style="--cgc:#ff7f50;background:rgba(255,127,80,.1);border-color:rgba(255,127,80,.2)">🧮</div>
+        <div class="cgc-body"><div class="cgc-name">Percentage / CGPA Calculator</div><div class="cgc-desc">Convert CGPA to percentage &amp; back</div><div class="cgc-count">Coming Soon</div></div>
+        <div class="cgc-arrow" style="color:#ff7f50"><i class="fa fa-arrow-right"></i></div>
+      </div>
+      <div class="cat-grid-card tool-grid-card coming-soon" onclick="showToast('Coming soon!')">
+        <div class="cgc-icon" style="--cgc:#25D366;background:rgba(37,211,102,.1);border-color:rgba(37,211,102,.2)">📝</div>
+        <div class="cgc-body"><div class="cgc-name">Mock Test &amp; Quiz</div><div class="cgc-desc">Practice JKSSB / JKPSC style MCQs</div><div class="cgc-count">Coming Soon</div></div>
+        <div class="cgc-arrow" style="color:#25D366"><i class="fa fa-arrow-right"></i></div>
+      </div>
+      <div class="cat-grid-card tool-grid-card coming-soon" onclick="showToast('Coming soon!')">
+        <div class="cgc-icon" style="--cgc:#fb923c;background:rgba(251,146,60,.1);border-color:rgba(251,146,60,.2)">💰</div>
+        <div class="cgc-body"><div class="cgc-name">Pay Scale Calculator</div><div class="cgc-desc">J&amp;K 7th CPC pay matrix lookup</div><div class="cgc-count">Coming Soon</div></div>
+        <div class="cgc-arrow" style="color:#fb923c"><i class="fa fa-arrow-right"></i></div>
+      </div>
+      <div class="cat-grid-card tool-grid-card coming-soon" onclick="showToast('Coming soon!')">
+        <div class="cgc-icon" style="--cgc:#e879f9;background:rgba(232,121,249,.1);border-color:rgba(232,121,249,.2)">✅</div>
+        <div class="cgc-body"><div class="cgc-name">Application Checklist</div><div class="cgc-desc">Documents needed, by category</div><div class="cgc-count">Coming Soon</div></div>
+        <div class="cgc-arrow" style="color:#e879f9"><i class="fa fa-arrow-right"></i></div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="info-box">
-  <i class="fa fa-circle-info"></i>
-  <p><strong>Disclaimer:</strong> Valley Desk aggregates publicly available information for JKSSB only. Always verify dates and eligibility on the official website before applying.</p>
-</div>
+<!-- IMAGE COMPRESSOR -->
+<div class="tools-section">
+  <div class="wrap" id="imageCompressor">
+    <div class="cat-section-hd" style="background:rgba(10,193,108,.16);border:1px solid rgba(10,193,108,.4);border-left-color:#0ac16c;box-shadow:0 3px 12px rgba(10,193,108,.18)">
+      <div class="csh-icon">🖼️</div>
+      <div class="csh-info"><div class="csh-title">Image Compressor</div><div class="csh-desc">Shrink a photo to fit an application form's file-size limit — right here, offline</div></div>
+      <div class="csh-count" style="color:var(--g)">100% Local</div>
+    </div>
 
-<!-- LATEST NOTIFICATIONS / JOBS -->
-<div class="tools-section entity-accent" id="entityJobsSection">
-  <div class="wrap">
-    <div class="sh"><div class="sh-bar"></div><div class="sh-title">Latest Notifications</div><span class="subpage-total" id="entityJobsCount">0</span></div>
-    <div id="entityJobs"></div>
-  </div>
-</div>
+    <div class="tools-list">
+      <div class="tool-card tool-card-wide">
+        <div class="tc-tool-head">
+          <div class="tc-tool-ico"><i class="fa fa-image"></i></div>
+          <div>
+            <div class="tc-tool-title">Compress a Photo</div>
+            <div class="tc-tool-sub">JPG or PNG · works fully in your browser, nothing is uploaded anywhere</div>
+          </div>
+          <span class="tc-tool-badge"><i class="fa fa-lock"></i> Private</span>
+        </div>
 
-<!-- EXAM DATES (hidden by JS if this entity has none) -->
-<div class="tools-section entity-accent" id="entityExamsSection">
-  <div class="wrap">
-    <div class="sh"><div class="sh-bar"></div><div class="sh-title">Exam Dates</div><span class="subpage-total" id="entityExamsCount">0</span></div>
-    <div id="entityExams"></div>
-  </div>
-</div>
+        <div class="dropzone" id="dropzone" role="button" tabindex="0">
+          <i class="fa fa-cloud-arrow-up"></i>
+          <div class="dropzone-text">Tap to choose a photo, or drag one here</div>
+          <div class="dropzone-sub">JPG / PNG — recommended for JKSSB, JKPSC &amp; J&amp;K Bank forms</div>
+          <input type="file" id="imgInput" accept="image/png,image/jpeg,image/webp"/>
+        </div>
 
-<!-- ADMIT CARDS -->
-<div class="tools-section entity-accent" id="entityAdmitSection">
-  <div class="wrap">
-    <div class="sh"><div class="sh-bar"></div><div class="sh-title">Admit Cards</div><span class="subpage-total" id="entityAdmitCount">0</span></div>
-    <div id="entityAdmit"></div>
-  </div>
-</div>
+        <div class="compressor-body" id="compressorBody">
+          <div class="compress-row">
+            <span class="compress-label">Quality</span>
+            <input type="range" id="qualityRange" min="10" max="95" value="75"/>
+            <span class="compress-qty" id="qualityVal">75%</span>
+          </div>
+          <div class="compress-row">
+            <span class="compress-label">Max Width</span>
+            <input type="range" id="widthRange" min="200" max="2000" step="50" value="1000"/>
+            <span class="compress-qty" id="widthVal">1000px</span>
+          </div>
 
-<!-- RESULTS -->
-<div class="tools-section entity-accent" id="entityResultsSection">
-  <div class="wrap">
-    <div class="sh"><div class="sh-bar"></div><div class="sh-title">Results</div><span class="subpage-total" id="entityResultsCount">0</span></div>
-    <div id="entityResults"></div>
-  </div>
-</div>
+          <div class="compress-preview">
+            <div class="compress-pane">
+              <img id="originalPreview" alt="Original preview"/>
+              <div class="compress-pane-label">Original</div>
+              <div class="compress-pane-size" id="originalSize">--</div>
+            </div>
+            <div class="compress-pane">
+              <img id="compressedPreview" alt="Compressed preview"/>
+              <div class="compress-pane-label">Compressed</div>
+              <div class="compress-pane-size" id="compressedSize">--</div>
+            </div>
+          </div>
 
-<!-- STUDY MATERIAL -->
-<div class="tools-section entity-accent" id="entityStudySection">
-  <div class="wrap">
-    <div class="sh"><div class="sh-bar"></div><div class="sh-title">Study Material</div><span class="subpage-total" id="entityStudyCount">0</span></div>
-    <div id="entityStudy"></div>
+          <div class="compress-savings" id="compressSavings"><i class="fa fa-circle-check"></i> Choose a photo to see the size reduction</div>
+
+          <div class="compressor-actions">
+            <a href="#" id="downloadBtn" class="tc-btn tc-btn-g" download="compressed-image.jpg"><i class="fa fa-download"></i> Download Compressed Image</a>
+            <button type="button" class="tc-btn tc-btn-o" id="resetBtn"><i class="fa fa-rotate-left"></i> Choose Another Photo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-box" style="margin-top:16px">
+      <i class="fa fa-circle-info"></i>
+      <p><strong>Tip:</strong> Most J&amp;K govt recruitment portals ask for photos under 50–100 KB. Start around 75% quality and 1000px width, then lower the quality slider if the file is still too large.</p>
+    </div>
   </div>
 </div>
 
@@ -262,31 +339,29 @@
     <div>
       <div class="fc-t">Categories</div>
       <ul class="f-links">
-        <li><a href="jkssb.html"><i class="fa fa-angle-right"></i>JKSSB</a></li>
-        <li><a href="jkpsc.html"><i class="fa fa-angle-right"></i>JKPSC</a></li>
-        <li><a href="jkpolice.html"><i class="fa fa-angle-right"></i>JK Police</a></li>
-        <li><a href="kashmir-university.html"><i class="fa fa-angle-right"></i>University Of Kashmir</a></li>
-        <li><a href="central-university.html"><i class="fa fa-angle-right"></i>Central University</a></li>
-        <li><a href="other-university.html"><i class="fa fa-angle-right"></i>Other Universities</a></li>
+        <li><a href="jobs.html#jkssb" data-jump-cat="jkssb"><i class="fa fa-angle-right"></i>JKSSB</a></li>
+        <li><a href="jobs.html#jkpsc" data-jump-cat="jkpsc"><i class="fa fa-angle-right"></i>JKPSC</a></li>
+        <li><a href="jobs.html#jkpolice" data-jump-cat="jkpolice"><i class="fa fa-angle-right"></i>JK Police</a></li>
+        <li><a href="jobs.html#jkbank" data-jump-cat="jkbank"><i class="fa fa-angle-right"></i>J&amp;K Bank</a></li>
+        <li><a href="jobs.html#jkjudiciary" data-jump-cat="jkjudiciary"><i class="fa fa-angle-right"></i>Judiciary</a></li>
       </ul>
     </div>
     <div>
-      <div class="fc-t">More</div>
+      <div class="fc-t">Tools</div>
       <ul class="f-links">
-        <li><a href="entrance-exams.html"><i class="fa fa-angle-right"></i>Entrance Exams</a></li>
-        <li><a href="admitcards.html"><i class="fa fa-angle-right"></i>All Admit Cards</a></li>
-        <li><a href="results.html"><i class="fa fa-angle-right"></i>All Results</a></li>
-        <li><a href="jobs.html"><i class="fa fa-angle-right"></i>All J&amp;K Jobs</a></li>
+        <li><a href="tools.html#imageCompressor"><i class="fa fa-angle-right"></i>Image Compressor</a></li>
+        <li><a href="#" onclick="showToast('Coming soon!');return false;"><i class="fa fa-angle-right"></i>Photo &amp; Signature Resizer</a></li>
+        <li><a href="#" onclick="showToast('Coming soon!');return false;"><i class="fa fa-angle-right"></i>Age Calculator</a></li>
+        <li><a href="#" onclick="showToast('Coming soon!');return false;"><i class="fa fa-angle-right"></i>Mock Test &amp; Quiz</a></li>
       </ul>
     </div>
     <div>
       <div class="fc-t">Quick Links</div>
       <ul class="f-links">
         <li><a href="results.html"><i class="fa fa-angle-right"></i>Results</a></li>
-        <li><a href="tools.html"><i class="fa fa-angle-right"></i>Tools</a></li>
         <li><a href="admitcards.html"><i class="fa fa-angle-right"></i>Admit Card</a></li>
         <li><a href="jobs.html"><i class="fa fa-angle-right"></i>All Jobs</a></li>
-        <li><a href="#"><i class="fa fa-angle-right"></i>Syllabus</a></li>
+        <li><a href="tools.html"><i class="fa fa-angle-right"></i>Tools</a></li>
         <li><a href="about.html"><i class="fa fa-angle-right"></i>About Us</a></li>
         <li><a href="contact.html"><i class="fa fa-angle-right"></i>Contact Us</a></li>
       </ul>
@@ -310,6 +385,6 @@
 <div id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fa fa-arrow-up"></i></div>
 
 <script src="js/common.js"></script>
-<script src="js/entity-page.js"></script>
+<script src="js/tools-page.js"></script>
 </body>
 </html>

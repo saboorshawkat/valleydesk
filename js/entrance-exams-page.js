@@ -4,7 +4,7 @@
    (jkbose-10/11/12) using the "level" field added to examdates.json /
    studymaterial.json; every other exam filters on category alone. */
 
-const ENTRANCE_CATS = ["jkbose", "neet", "jee", "jkbopee"];
+const ENTRANCE_CATS = ["jkbose", "neet", "jee", "jkbopee", "cuet"];
 
 const entranceState = { exams: [], study: [], filter: "all" };
 

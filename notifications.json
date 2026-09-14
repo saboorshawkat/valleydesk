@@ -1,5 +1,29 @@
 [
   {
+    "id": "n007",
+    "type": "success",
+    "title": "New: CUET (UG) Section Launched",
+    "message": "CUET is now a dedicated section — track exam dates, admit cards, results & study material for admission to Central Universities in one place.",
+    "date": "2026-09-14",
+    "link": "cuet.html"
+  },
+  {
+    "id": "n008",
+    "type": "info",
+    "title": "JKBOSE & JKBOPEE Now Have Full Sections",
+    "message": "Browse JKBOSE (10th/11th/12th) and JKBOPEE CET as dedicated pages with notifications, admit cards, results & study material.",
+    "date": "2026-09-14",
+    "link": "jkbose.html"
+  },
+  {
+    "id": "n009",
+    "type": "job",
+    "title": "Other J&K Universities Section Added",
+    "message": "University of Jammu, SKUAST-Kashmir & IUST Awantipora recruitment now tracked under Other Universities.",
+    "date": "2026-09-14",
+    "link": "other-university.html"
+  },
+  {
     "id": "n001",
     "type": "info",
     "title": "Welcome To Valley Desk",

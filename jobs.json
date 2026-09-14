@@ -628,7 +628,7 @@
   {
     "category": "jkpolice",
     "name": "JK Police Sub-Inspector (Unarmed) Recruitment",
-    "subtitle": "Direct Recruitment \u2014 Executive Wing",
+    "subtitle": "Direct Recruitment — Executive Wing",
     "desc": "Recruitment notification for Sub-Inspector (Unarmed) posts in the Executive wing of Jammu & Kashmir Police.",
     "badges": [
       {
@@ -754,7 +754,7 @@
   },
   {
     "category": "central-university",
-    "name": "CUCET / CUET-PG Admission Schedule \u2014 Central Universities J&K",
+    "name": "CUCET / CUET-PG Admission Schedule — Central Universities J&K",
     "subtitle": "UG & PG Admission Counselling",
     "desc": "Admission schedule and seat allotment for UG/PG programmes at Central University of Kashmir & Central University of Jammu via CUET.",
     "badges": [
@@ -768,5 +768,63 @@
     "applyLink": "https://cukashmir.ac.in",
     "officialLink": "https://cukashmir.ac.in",
     "scrapedAt": "2026-09-02T10:00:00"
+  },
+  {
+    "id": "otheruniv-2026-001",
+    "category": "other-university",
+    "name": "University Of Jammu Non-Teaching Staff Recruitment",
+    "subtitle": "Assistant, Junior Assistant & Lab Attendant Posts",
+    "desc": "Recruitment notification for various non-teaching posts across departments and constituent colleges of the University of Jammu.",
+    "badges": [
+      {
+        "label": "Advt Out",
+        "cls": "tcb-p"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
+    "lastDate": "25/10/2026",
+    "applyLink": "https://jammuuniversity.ac.in",
+    "notificationLink": "https://jammuuniversity.ac.in/recruitment",
+    "officialLink": "https://jammuuniversity.ac.in",
+    "scrapedAt": "2026-09-09T11:00:00"
+  },
+  {
+    "id": "otheruniv-2026-002",
+    "category": "other-university",
+    "name": "SKUAST-Kashmir Assistant Professor Recruitment",
+    "subtitle": "Sher-e-Kashmir University Of Agricultural Sciences & Technology",
+    "desc": "Faculty recruitment drive for Assistant Professor posts across various agricultural science faculties at SKUAST-Kashmir, Shalimar campus.",
+    "badges": [
+      {
+        "label": "Advt Out",
+        "cls": "tcb-p"
+      }
+    ],
+    "lastDate": "05/11/2026",
+    "applyLink": "https://skuastkashmir.ac.in",
+    "notificationLink": "https://skuastkashmir.ac.in/recruitment",
+    "officialLink": "https://skuastkashmir.ac.in",
+    "scrapedAt": "2026-09-05T15:00:00"
+  },
+  {
+    "id": "otheruniv-2026-003",
+    "category": "other-university",
+    "name": "IUST Awantipora Teaching & Non-Teaching Recruitment",
+    "subtitle": "Islamic University Of Science & Technology",
+    "desc": "Combined recruitment notice for Assistant Professor and non-teaching administrative posts at IUST Awantipora.",
+    "badges": [
+      {
+        "label": "Advt Out",
+        "cls": "tcb-p"
+      }
+    ],
+    "lastDate": "18/10/2026",
+    "applyLink": "https://iust.ac.in",
+    "notificationLink": "https://iust.ac.in/recruitment",
+    "officialLink": "https://iust.ac.in",
+    "scrapedAt": "2026-09-03T09:30:00"
   }
 ]

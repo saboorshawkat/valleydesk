@@ -14,6 +14,12 @@ const CATEGORY_META = {
   jkhealth:           { icon: "🩺", title: "JK Health Dept Recruitment", desc: "SKIMS, GMC & Directorate of Health Services", color: "#fb923c" },
   "kashmir-university": { icon: "🎓", title: "University Of Kashmir",   desc: "Hazratbal, Srinagar",                         color: "#e879f9" },
   "central-university": { icon: "🏫", title: "Central University",     desc: "Central University Of Kashmir & Jammu",       color: "#a78bfa" },
+  jkbopee:            { icon: "🎯", title: "JKBOPEE",                 desc: "J&K Board Of Professional Entrance Examinations", color: "#b060ff" },
+  jkbose:             { icon: "🏔️", title: "JKBOSE",                  desc: "J&K Board Of School Education",               color: "#0ac16c" },
+  neet:               { icon: "🩺", title: "NEET (UG)",               desc: "Medical & Dental Entrance Exam",              color: "#e11d48" },
+  jee:                { icon: "⚙️", title: "JEE Main / Advanced",     desc: "Engineering Entrance Exam (NTA / IITs)",      color: "#38bdf8" },
+  cuet:               { icon: "🎯", title: "CUET (UG)",               desc: "Common University Entrance Test (NTA)",       color: "#f97316" },
+  "other-university":  { icon: "🏫", title: "Other J&K Universities",  desc: "Jammu, SKUAST, IUST, Cluster & More",         color: "#14b8a6" },
 };
 
 const FALLBACK_PALETTE = ["#64748b", "#0ea5e9", "#d946ef", "#f97316", "#14b8a6", "#a855f7"];
@@ -44,7 +50,8 @@ const EXAM_CATEGORY_META = {
   jee:     { icon: "⚙️", title: "JEE Main / Advanced",   desc: "Engineering Entrance Exam (NTA / IITs)",     color: "#38bdf8" },
   jkbopee: { icon: "🎓", title: "JKBOPEE CET",           desc: "J&K Common Entrance Test — Engg. & Medical", color: "#b060ff" },
   jkssb:   { icon: "📋", title: "JKSSB Exams",           desc: "Combined Competitive / Written Test Dates",  color: "#f5c518" },
-  other:   { icon: "📌", title: "Other Popular Exams",   desc: "CBSE, CUET, NDA & More",                     color: "#fb923c" },
+  cuet:    { icon: "🎯", title: "CUET (UG)",             desc: "Common University Entrance Test (NTA)",      color: "#f97316" },
+  other:   { icon: "📌", title: "Other Popular Exams",   desc: "CBSE, NDA & More",                           color: "#fb923c" },
 };
 
 function examCategoryMetaFor(catKey) {
@@ -196,7 +203,7 @@ function buildStudyCard(item) {
    kashmir-university.html, central-university.html) — used to decide,
    e.g., whether a homepage category card should link to a real page or
    just scroll/filter the homepage's own Jobs section. */
-const ENTITY_PAGE_SLUGS = ["jkssb", "jkpsc", "jkpolice", "kashmir-university", "central-university"];
+const ENTITY_PAGE_SLUGS = ["jkssb", "jkpsc", "jkpolice", "kashmir-university", "central-university", "jkbopee", "jkbose", "other-university", "neet", "jee", "cuet"];
 
 /* ---------- Pagination helper (shared by jobs.html / results.html / admitcards.html) ---------- */
 

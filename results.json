@@ -186,5 +186,105 @@
     "nextStage": "Document Verification",
     "resultLink": "https://cujammu.ac.in",
     "officialLink": "https://cujammu.ac.in"
+  },
+  {
+    "name": "JKBOSE Class 11th Result 2026",
+    "subtitle": "Annual (Regular) Examination Result",
+    "desc": "Class 11th annual examination results declared on the official JKBOSE results portal; mark sheets available for download.",
+    "badges": [
+      {
+        "label": "Result Out",
+        "cls": "tcb-r"
+      }
+    ],
+    "declaredOn": "20/08/2026",
+    "nextStage": "Class 12th Admission",
+    "resultLink": "https://jkbose.nic.in",
+    "officialLink": "https://jkbose.nic.in",
+    "category": "jkbose"
+  },
+  {
+    "name": "JKBOPEE CET (Medical) 2026 Final Result",
+    "subtitle": "MBBS/BDS/BSc Nursing State Quota",
+    "desc": "Final result and category-wise merit list declared for CET (Medical) 2026, used for state counselling and seat allotment.",
+    "badges": [
+      {
+        "label": "Result Out",
+        "cls": "tcb-r"
+      },
+      {
+        "label": "Merit List PDF",
+        "cls": "tcb-b"
+      }
+    ],
+    "declaredOn": "02/09/2026",
+    "nextStage": "State Counselling",
+    "resultLink": "https://jkbopee.gov.in",
+    "officialLink": "https://jkbopee.gov.in",
+    "category": "jkbopee"
+  },
+  {
+    "name": "NEET (UG) 2026 Result",
+    "subtitle": "National Eligibility cum Entrance Test",
+    "desc": "NEET (UG) 2026 result declared along with All India Rank (AIR) and category rank for all candidates.",
+    "badges": [
+      {
+        "label": "Result Out",
+        "cls": "tcb-r"
+      }
+    ],
+    "declaredOn": "14/06/2026",
+    "nextStage": "Counselling (MCC / State)",
+    "resultLink": "https://neet.nta.nic.in",
+    "officialLink": "https://neet.nta.nic.in",
+    "category": "neet"
+  },
+  {
+    "name": "JEE Main 2026 Session 2 Result",
+    "subtitle": "Joint Entrance Examination — Engineering (NTA)",
+    "desc": "JEE Main 2026 Session 2 result and NTA percentile score declared; combined result of both sessions used for JEE Advanced eligibility.",
+    "badges": [
+      {
+        "label": "Result Out",
+        "cls": "tcb-r"
+      }
+    ],
+    "declaredOn": "17/04/2026",
+    "nextStage": "JEE Advanced Registration",
+    "resultLink": "https://jeemain.nta.nic.in",
+    "officialLink": "https://jeemain.nta.nic.in",
+    "category": "jee"
+  },
+  {
+    "name": "CUET (UG) 2026 Result",
+    "subtitle": "Common University Entrance Test — NTA Scores",
+    "desc": "CUET (UG) 2026 scorecard declared; scores usable for admission counselling across participating central & state universities.",
+    "badges": [
+      {
+        "label": "Result Out",
+        "cls": "tcb-r"
+      }
+    ],
+    "declaredOn": "10/07/2026",
+    "nextStage": "University Counselling (CSAS)",
+    "resultLink": "https://cuet.samarth.ac.in",
+    "officialLink": "https://cuet.samarth.ac.in",
+    "category": "cuet"
+  },
+  {
+    "name": "SKUAST-Kashmir Assistant Professor Result",
+    "subtitle": "Faculty Selection — Various Departments",
+    "desc": "Selection list declared for Assistant Professor posts across agricultural science faculties at SKUAST-Kashmir.",
+    "badges": [
+      {
+        "label": "Result Out",
+        "cls": "tcb-r"
+      }
+    ],
+    "declaredOn": "28/08/2026",
+    "nextStage": "Document Verification",
+    "resultLink": "https://skuastkashmir.ac.in",
+    "officialLink": "https://skuastkashmir.ac.in",
+    "category": "other-university"
   }
 ]

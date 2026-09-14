@@ -153,7 +153,7 @@
   },
   {
     "category": "central-university",
-    "name": "CUET-PG Admit Card \u2014 Central University Of Jammu",
+    "name": "CUET-PG Admit Card — Central University Of Jammu",
     "subtitle": "PG Admission Test",
     "desc": "Admit cards for CUET-PG candidates opting for Central University of Jammu programmes are now available.",
     "badges": [
@@ -166,5 +166,105 @@
     "examDate": "30/09/2026",
     "downloadLink": "https://cujammu.ac.in",
     "officialLink": "https://cujammu.ac.in"
+  },
+  {
+    "name": "JKBOSE Class 12th Practical Examination Admit Card",
+    "subtitle": "Science Stream — Practical Exam Slip",
+    "desc": "Practical examination admit cards made available for Class 12th Science stream students ahead of the theory papers.",
+    "badges": [
+      {
+        "label": "Admit Card",
+        "cls": "tcb-admit"
+      }
+    ],
+    "releasedOn": "01/11/2026",
+    "examDate": "10/11/2026",
+    "downloadLink": "https://jkbose.nic.in",
+    "officialLink": "https://jkbose.nic.in",
+    "category": "jkbose"
+  },
+  {
+    "name": "JKBOPEE CET (Engineering) 2026 Admit Card",
+    "subtitle": "Common Entrance Test — B.E./B.Tech Admissions",
+    "desc": "Admit cards released for the JKBOPEE CET (Engineering) 2026 written examination; download using application/roll number.",
+    "badges": [
+      {
+        "label": "Admit Card",
+        "cls": "tcb-admit"
+      },
+      {
+        "label": "Active",
+        "cls": "tcb-g"
+      }
+    ],
+    "releasedOn": "10/10/2026",
+    "examDate": "20/10/2026",
+    "downloadLink": "https://jkbopee.gov.in",
+    "officialLink": "https://jkbopee.gov.in",
+    "category": "jkbopee"
+  },
+  {
+    "name": "NEET (UG) 2027 Admit Card",
+    "subtitle": "National Eligibility cum Entrance Test — Medical & Dental",
+    "desc": "Admit cards for NEET (UG) 2027 to be released a few days prior to the exam on the official NTA NEET portal.",
+    "badges": [
+      {
+        "label": "Coming Soon",
+        "cls": "tcb-y"
+      }
+    ],
+    "releasedOn": "--/--/----",
+    "examDate": "03/05/2027",
+    "downloadLink": "https://neet.nta.nic.in",
+    "officialLink": "https://neet.nta.nic.in",
+    "category": "neet"
+  },
+  {
+    "name": "JEE Main 2027 Session 1 Admit Card",
+    "subtitle": "Joint Entrance Examination — Engineering (NTA)",
+    "desc": "Admit cards for JEE Main 2027 Session 1 to be issued on the official NTA JEE Main website ahead of the exam dates.",
+    "badges": [
+      {
+        "label": "Coming Soon",
+        "cls": "tcb-y"
+      }
+    ],
+    "releasedOn": "--/--/----",
+    "examDate": "24/01/2027",
+    "downloadLink": "https://jeemain.nta.nic.in",
+    "officialLink": "https://jeemain.nta.nic.in",
+    "category": "jee"
+  },
+  {
+    "name": "CUET (UG) 2027 Admit Card",
+    "subtitle": "NTA Common University Entrance Test",
+    "desc": "Admit cards for CUET (UG) 2027 to be released after the exam city slip, downloadable from the official CUET NTA portal.",
+    "badges": [
+      {
+        "label": "Coming Soon",
+        "cls": "tcb-y"
+      }
+    ],
+    "releasedOn": "--/--/----",
+    "examDate": "22/05/2027",
+    "downloadLink": "https://cuet.samarth.ac.in",
+    "officialLink": "https://cuet.samarth.ac.in",
+    "category": "cuet"
+  },
+  {
+    "name": "University Of Jammu Non-Teaching Written Test Admit Card",
+    "subtitle": "Assistant & Junior Assistant Posts",
+    "desc": "Call letters issued for the written screening test for non-teaching posts advertised by the University of Jammu.",
+    "badges": [
+      {
+        "label": "Admit Card",
+        "cls": "tcb-admit"
+      }
+    ],
+    "releasedOn": "15/10/2026",
+    "examDate": "22/10/2026",
+    "downloadLink": "https://jammuuniversity.ac.in",
+    "officialLink": "https://jammuuniversity.ac.in",
+    "category": "other-university"
   }
 ]

@@ -3,7 +3,7 @@
     "id": "jkbose-2026-001",
     "category": "jkbose",
     "name": "JKBOSE Class 11th Annual Exam 2026 Date Sheet",
-    "subtitle": "Jammu & Kashmir Board of School Education \u2014 Kashmir/Jammu Division",
+    "subtitle": "Jammu & Kashmir Board of School Education — Kashmir/Jammu Division",
     "desc": "Official date sheet released for Class 11th annual (regular) theory examinations across all higher secondary schools in the Valley and Jammu division.",
     "badges": [
       {
@@ -27,7 +27,7 @@
     "id": "jkbose-2026-002",
     "category": "jkbose",
     "name": "JKBOSE Class 12th Annual Exam 2026 Date Sheet",
-    "subtitle": "Science / Commerce / Arts Streams \u2014 Regular & Private",
+    "subtitle": "Science / Commerce / Arts Streams — Regular & Private",
     "desc": "Time table announced for Class 12th annual theory exams; practical exams for Science stream to be conducted at respective school/college centres before the theory papers begin.",
     "badges": [
       {
@@ -71,7 +71,7 @@
     "id": "neet-2027-001",
     "category": "neet",
     "name": "NEET (UG) 2027 Application Form",
-    "subtitle": "National Eligibility cum Entrance Test \u2014 Medical & Dental",
+    "subtitle": "National Eligibility cum Entrance Test — Medical & Dental",
     "desc": "Online application process for NEET (UG) 2027 to begin shortly for admission to MBBS, BDS, AYUSH and other medical courses across India, including J&K quota seats.",
     "badges": [
       {
@@ -93,7 +93,7 @@
   {
     "id": "neet-2026-002",
     "category": "neet",
-    "name": "NEET (UG) 2026 Counselling Schedule \u2014 J&K State Quota",
+    "name": "NEET (UG) 2026 Counselling Schedule — J&K State Quota",
     "subtitle": "J&K Board of Professional Entrance Examinations (State Counselling)",
     "desc": "State-quota counselling schedule for admission to GMC Srinagar, GMC Jammu and other medical/dental colleges in J&K based on NEET 2026 merit.",
     "badges": [
@@ -113,7 +113,7 @@
     "id": "jee-2027-001",
     "category": "jee",
     "name": "JEE Main 2027 Session 1 Registration",
-    "subtitle": "Joint Entrance Examination \u2014 Engineering (NTA)",
+    "subtitle": "Joint Entrance Examination — Engineering (NTA)",
     "desc": "Registration window for JEE Main 2027 Session 1 for admission to NITs, IIITs, CFTIs and as a qualifier for JEE Advanced / IIT admissions.",
     "badges": [
       {
@@ -155,7 +155,7 @@
     "id": "jkbopee-2026-001",
     "category": "jkbopee",
     "name": "JKBOPEE CET (Engineering) 2026 Notification",
-    "subtitle": "Common Entrance Test \u2014 B.E./B.Tech Admissions In J&K",
+    "subtitle": "Common Entrance Test — B.E./B.Tech Admissions In J&K",
     "desc": "Common Entrance Test notification for admission to engineering colleges within J&K UT, including NIT Srinagar state quota and other participating institutes.",
     "badges": [
       {
@@ -178,7 +178,7 @@
     "id": "jkbopee-2026-002",
     "category": "jkbopee",
     "name": "JKBOPEE CET (Medical) 2026 Merit List",
-    "subtitle": "Common Entrance Test \u2014 MBBS/BDS/BSc Nursing State Quota",
+    "subtitle": "Common Entrance Test — MBBS/BDS/BSc Nursing State Quota",
     "desc": "Provisional merit list published for CET (Medical) 2026, used for state-quota counselling to GMC Srinagar, GMC Jammu, SKIMS and nursing colleges.",
     "badges": [
       {
@@ -197,7 +197,7 @@
     "id": "jkssb-exam-2026-001",
     "category": "jkssb",
     "name": "JKSSB Finance Accounts Assistant Written Test Date",
-    "subtitle": "Combined Competitive Exam \u2014 Finance Department",
+    "subtitle": "Combined Competitive Exam — Finance Department",
     "desc": "Written examination date announced for Finance Accounts Assistant posts; admit cards to be released roughly 10 days prior to the test date.",
     "badges": [
       {
@@ -216,7 +216,7 @@
     "id": "jkssb-exam-2026-002",
     "category": "jkssb",
     "name": "JKSSB Combined Graduate Level (CGL) Exam Calendar 2026-27",
-    "subtitle": "Tentative Exam Calendar \u2014 Class III Non-Gazetted Posts",
+    "subtitle": "Tentative Exam Calendar — Class III Non-Gazetted Posts",
     "desc": "Tentative examination calendar released listing likely written-test months for pending Class-III recruitment advertisements, for candidate preparation planning.",
     "badges": [
       {
@@ -252,9 +252,9 @@
   },
   {
     "id": "other-2026-002",
-    "category": "other",
+    "category": "cuet",
     "name": "CUET (UG) 2027 Registration",
-    "subtitle": "Common University Entrance Test \u2014 Central Universities",
+    "subtitle": "Common University Entrance Test — Central Universities",
     "desc": "Registration for CUET (UG) 2027 for admission to Central University of Kashmir, Central University of Jammu and other central/participating universities.",
     "badges": [
       {
@@ -293,7 +293,7 @@
     "category": "jkbose",
     "level": "10",
     "name": "JKBOSE Class 10th Annual Exam 2026 Date Sheet",
-    "subtitle": "Jammu & Kashmir Board of School Education \u2014 Kashmir/Jammu Division",
+    "subtitle": "Jammu & Kashmir Board of School Education — Kashmir/Jammu Division",
     "desc": "Date sheet released for Class 10th annual (regular) theory examinations across all high schools in Kashmir and Jammu division.",
     "badges": [
       {
@@ -311,5 +311,24 @@
     "syllabusLink": "https://jkbose.nic.in/syllabus.html",
     "officialLink": "https://jkbose.nic.in",
     "scrapedAt": "2026-09-08T10:02:00"
+  },
+  {
+    "id": "cuet-2027-001",
+    "category": "cuet",
+    "name": "CUET (UG) 2027 Exam City Slip",
+    "subtitle": "NTA Common University Entrance Test — Exam City Intimation",
+    "desc": "Exam city intimation slip released ahead of admit card, allowing candidates to plan travel to their allotted CUET (UG) 2027 exam city.",
+    "badges": [
+      {
+        "label": "Exam City Slip",
+        "cls": "tcb-b"
+      }
+    ],
+    "examDate": "15/05/2027",
+    "lastDate": "--/--/----",
+    "applyLink": "https://cuet.samarth.ac.in",
+    "syllabusLink": "https://cuet.samarth.ac.in",
+    "officialLink": "https://cuet.samarth.ac.in",
+    "scrapedAt": "2026-09-11T10:00:00"
   }
 ]
