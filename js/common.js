@@ -31,55 +31,40 @@ function categoryMetaFor(catKey) {
   return { icon: "📌", title: label + " Recruitment", desc: "Jammu & Kashmir Govt Recruitment", color };
 }
 
+/* ---------- Student exam category metadata (examdates.json) ---------- */
+/* Kept separate from CATEGORY_META (job boards) on purpose — exam cards use
+   data-examcat instead of data-cat so the Jobs cat-strip filter and the
+   Exam Dates cat-strip filter never fight over the same elements, even
+   though a couple of acronyms (JKSSB) legitimately appear in both. */
+
+const EXAM_CATEGORY_META = {
+  jkbose:  { icon: "🏔️", title: "JKBOSE 11th / 12th",   desc: "Date Sheets, Admit Cards & Results",        color: "#0ac16c" },
+  neet:    { icon: "🩺", title: "NEET (UG)",             desc: "Medical & Dental Entrance Exam",             color: "#e11d48" },
+  jee:     { icon: "⚙️", title: "JEE Main / Advanced",   desc: "Engineering Entrance Exam (NTA / IITs)",     color: "#38bdf8" },
+  jkbopee: { icon: "🎓", title: "JKBOPEE CET",           desc: "J&K Common Entrance Test — Engg. & Medical", color: "#b060ff" },
+  jkssb:   { icon: "📋", title: "JKSSB Exams",           desc: "Combined Competitive / Written Test Dates",  color: "#f5c518" },
+  other:   { icon: "📌", title: "Other Popular Exams",   desc: "CBSE, CUET, NDA & More",                     color: "#fb923c" },
+};
+
+function examCategoryMetaFor(catKey) {
+  if (EXAM_CATEGORY_META[catKey]) return EXAM_CATEGORY_META[catKey];
+  const label = String(catKey || "other")
+    .replace(/[-_]+/g, " ")
+    .replace(/\b\w/g, (c) => c.toUpperCase());
+  let hash = 0;
+  for (let i = 0; i < String(catKey).length; i++) hash = (hash * 31 + String(catKey).charCodeAt(i)) >>> 0;
+  const color = FALLBACK_PALETTE[hash % FALLBACK_PALETTE.length];
+  return { icon: "📌", title: label, desc: "Exam Dates & Notices", color };
+}
+
 function escapeAttr(str) {
   return String(str).replace(/"/g, "&quot;").toLowerCase();
 }
 
-/* ---------- Notification status system ----------
-   Every notification with a closing date (job/exam/admission/scholarship
-   "lastDate" in DD/MM/YYYY) gets an auto-computed status badge instead of
-   a hand-typed one: 🟢 Open, 🟡 Closing Soon (≤5 days left), 🔴 Closed.
-   Returns null when there's no usable date, so callers can skip the badge
-   (e.g. admit cards / results, which don't have an application deadline). */
-
-function parseDMY(str) {
-  if (!str || typeof str !== "string") return null;
-  const m = str.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
-  if (!m) return null;
-  const d = new Date(Number(m[3]), Number(m[2]) - 1, Number(m[1]));
-  return isNaN(d.getTime()) ? null : d;
-}
-
-function daysUntil(dateStr) {
-  const target = parseDMY(dateStr);
-  if (!target) return null;
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  target.setHours(0, 0, 0, 0);
-  return Math.round((target - today) / 86400000);
-}
-
-function computeStatus(lastDateStr) {
-  const days = daysUntil(lastDateStr);
-  if (days === null) return null;
-  if (days < 0) return { label: "Closed", cls: "tcb-r" };
-  if (days === 0) return { label: "Closes Today", cls: "tcb-y" };
-  if (days <= 5) return { label: `Closing In ${days}D`, cls: "tcb-y" };
-  return { label: "Open", cls: "tcb-g" };
-}
-
-/* Prepends the auto status badge (if any) to a static badges array without
-   mutating the original data object. */
-function withStatusBadge(item, dateField) {
-  const status = computeStatus(item[dateField]);
-  const badges = item.badges || [];
-  return status ? [status, ...badges] : badges;
-}
-
-/* ---------- Card builders (shared by home page + the full-listing pages) ---------- */
+/* ---------- Card builders (shared by home page + the 3 full-listing pages) ---------- */
 
 function buildJobCard(job) {
-  const badges = withStatusBadge(job, "lastDate").map((b) => `<span class="tcb ${b.cls}">${b.label}</span>`).join("");
+  const badges = (job.badges || []).map((b) => `<span class="tcb ${b.cls}">${b.label}</span>`).join("");
   return `
     <div class="tool-card" data-cat="${job.category}" data-name="${escapeAttr(job.name)}">
       <div class="tc-body">
@@ -146,20 +131,28 @@ function buildResultCard(item) {
 }
 
 function buildExamCard(item) {
-  const badges = withStatusBadge(item, "lastDate").map((b) => `<span class="tcb ${b.cls}">${b.label}</span>`).join("");
+  const badges = (item.badges || []).map((b) => `<span class="tcb ${b.cls}">${b.label}</span>`).join("");
+  const hasExamDate = item.examDate && item.examDate !== "--/--/----";
+  const hasLastDate = item.lastDate && item.lastDate !== "--/--/----";
+  const dates =
+    (hasExamDate ? `<span class="tc-date tc-date-start"><i class="fa fa-calendar-check"></i> Exam Date: ${item.examDate}</span>` : "") +
+    (hasLastDate ? `<span class="tc-date tc-date-reg"><i class="fa fa-calendar-xmark"></i> Last Date To Apply: ${item.lastDate}</span>` : "");
   return `
-    <div class="tool-card" data-name="${escapeAttr(item.name)}">
+    <div class="tool-card" data-examcat="${item.category}" data-name="${escapeAttr(item.name)}">
       <div class="tc-body">
         <div class="tc-top">
-          <div class="tc-name-wrap"><div class="tc-name">${item.name}</div><div class="tc-ver">${item.subtitle || ""}</div></div>
+          <div class="tc-name-wrap">
+            <div class="tc-name">${item.name}</div>
+            <div class="tc-ver">${item.subtitle || ""}</div>
+          </div>
           <div class="tc-badges">${badges}</div>
         </div>
         <div class="tc-desc">${item.desc || ""}</div>
         <div class="tc-foot">
-          <div class="tc-dates"><span class="tc-date tc-date-start"><i class="fa fa-calendar-check"></i> Exam Date: ${item.examDate || "To Be Announced"}</span><span class="tc-date tc-date-reg"><i class="fa fa-calendar-xmark"></i> Last Date To Apply: ${item.lastDate || "--/--/----"}</span></div>
+          <div class="tc-dates">${dates}</div>
           <div class="tc-actions">
-            <a href="${item.applyLink || "#"}" class="tc-btn tc-btn-g" target="_blank"><i class="fa fa-paper-plane"></i> Apply Now</a>
-            <a href="${item.notificationLink || "#"}" class="tc-btn tc-btn-b" target="_blank"><i class="fa fa-file-pdf"></i> Notification</a>
+            <a href="${item.applyLink || "#"}" class="tc-btn tc-btn-g" target="_blank"><i class="fa fa-paper-plane"></i> Apply / Check</a>
+            <a href="${item.syllabusLink || "#"}" class="tc-btn tc-btn-b" target="_blank"><i class="fa fa-book"></i> Syllabus</a>
             <a href="${item.officialLink || "#"}" class="tc-btn tc-btn-o" target="_blank"><i class="fa fa-globe"></i> Official Website</a>
           </div>
         </div>
@@ -167,50 +160,7 @@ function buildExamCard(item) {
     </div>`;
 }
 
-function buildAdmissionCard(item) {
-  const badges = withStatusBadge(item, "lastDate").map((b) => `<span class="tcb ${b.cls}">${b.label}</span>`).join("");
-  return `
-    <div class="tool-card" data-name="${escapeAttr(item.name)}">
-      <div class="tc-body">
-        <div class="tc-top">
-          <div class="tc-name-wrap"><div class="tc-name">${item.name}</div><div class="tc-ver">${item.subtitle || ""}</div></div>
-          <div class="tc-badges">${badges}</div>
-        </div>
-        <div class="tc-desc">${item.desc || ""}</div>
-        <div class="tc-foot">
-          <div class="tc-dates"><span class="tc-date tc-date-reg"><i class="fa fa-calendar-xmark"></i> Last Date To Apply: ${item.lastDate || "--/--/----"}</span></div>
-          <div class="tc-actions">
-            <a href="${item.applyLink || "#"}" class="tc-btn tc-btn-g" target="_blank"><i class="fa fa-paper-plane"></i> Apply Now</a>
-            <a href="${item.notificationLink || "#"}" class="tc-btn tc-btn-b" target="_blank"><i class="fa fa-file-pdf"></i> Notification</a>
-            <a href="${item.officialLink || "#"}" class="tc-btn tc-btn-o" target="_blank"><i class="fa fa-globe"></i> Official Website</a>
-          </div>
-        </div>
-      </div>
-    </div>`;
-}
-
-function buildScholarshipCard(item) {
-  const badges = withStatusBadge(item, "lastDate").map((b) => `<span class="tcb ${b.cls}">${b.label}</span>`).join("");
-  return `
-    <div class="tool-card" data-name="${escapeAttr(item.name)}">
-      <div class="tc-body">
-        <div class="tc-top">
-          <div class="tc-name-wrap"><div class="tc-name">${item.name}</div><div class="tc-ver">${item.subtitle || ""}</div></div>
-          <div class="tc-badges">${badges}</div>
-        </div>
-        <div class="tc-desc">${item.desc || ""}</div>
-        <div class="tc-foot">
-          <div class="tc-dates"><span class="tc-date tc-date-reg"><i class="fa fa-calendar-xmark"></i> Last Date To Apply: ${item.lastDate || "--/--/----"}</span></div>
-          <div class="tc-actions">
-            <a href="${item.applyLink || "#"}" class="tc-btn tc-btn-g" target="_blank"><i class="fa fa-paper-plane"></i> Apply Now</a>
-            <a href="${item.officialLink || "#"}" class="tc-btn tc-btn-o" target="_blank"><i class="fa fa-globe"></i> Official Website</a>
-          </div>
-        </div>
-      </div>
-    </div>`;
-}
-
-/* ---------- Pagination helper (shared by the full-listing pages) ---------- */
+/* ---------- Pagination helper (shared by jobs.html / results.html / admitcards.html) ---------- */
 
 function paginateArray(items, page, pageSize) {
   const start = (page - 1) * pageSize;
@@ -320,6 +270,19 @@ function handleOcCategory(cat, evt) {
   if (typeof jumpToCat === "function") {
     if (evt) evt.preventDefault();
     jumpToCat(cat);
+    closeOffcanvas();
+    return false;
+  }
+  closeOffcanvas();
+  return true;
+}
+
+/* Same as handleOcCategory() but for the Student Exams links, which point
+   at examdates.html#<cat> instead of index.html#<cat>. */
+function handleOcExamCategory(cat, evt) {
+  if (typeof jumpToExamCat === "function") {
+    if (evt) evt.preventDefault();
+    jumpToExamCat(cat);
     closeOffcanvas();
     return false;
   }
