@@ -5,14 +5,15 @@
 /* ---------- Category metadata (with a fallback for anything new) ---------- */
 
 const CATEGORY_META = {
-  jkssb:        { icon: "📋", title: "JKSSB Recruitment",         desc: "J&K Services Selection Board",              color: "#0ac16c" },
-  jkpsc:        { icon: "⚖️", title: "JKPSC Recruitment",         desc: "Jammu & Kashmir Public Service Commission", color: "#34d399" },
-  jkpolice:     { icon: "👮", title: "JK Police Recruitment",     desc: "Jammu & Kashmir Police Department",         color: "#ff7f50" },
-  jkbank:       { icon: "🏦", title: "J&K Bank Recruitment",      desc: "Jammu & Kashmir Bank Ltd",                  color: "#f5c518" },
-  jkjudiciary:  { icon: "🏛️", title: "JK Judiciary Recruitment",  desc: "J&K High Court & District Courts",          color: "#38bdf8" },
-  jkteaching:   { icon: "📘", title: "JK Teaching Recruitment",   desc: "School Education Department, J&K",          color: "#25d366" },
-  jkhealth:     { icon: "🩺", title: "JK Health Dept Recruitment", desc: "SKIMS, GMC & Directorate of Health Services", color: "#fb923c" },
-  jkuniversity: { icon: "🎓", title: "JK University Recruitment", desc: "University of Kashmir & University of Jammu", color: "#e879f9" },
+  jkssb:              { icon: "📋", title: "JKSSB Recruitment",         desc: "J&K Services Selection Board",                color: "#0ac16c" },
+  jkpsc:              { icon: "⚖️", title: "JKPSC Recruitment",         desc: "Jammu & Kashmir Public Service Commission",   color: "#34d399" },
+  jkpolice:           { icon: "👮", title: "JK Police Recruitment",     desc: "Jammu & Kashmir Police Department",           color: "#ff7f50" },
+  jkbank:             { icon: "🏦", title: "J&K Bank Recruitment",      desc: "Jammu & Kashmir Bank Ltd",                    color: "#f5c518" },
+  jkjudiciary:        { icon: "🏛️", title: "JK Judiciary Recruitment",  desc: "J&K High Court & District Courts",            color: "#38bdf8" },
+  jkteaching:         { icon: "📘", title: "JK Teaching Recruitment",   desc: "School Education Department, J&K",            color: "#25d366" },
+  jkhealth:           { icon: "🩺", title: "JK Health Dept Recruitment", desc: "SKIMS, GMC & Directorate of Health Services", color: "#fb923c" },
+  "kashmir-university": { icon: "🎓", title: "University Of Kashmir",   desc: "Hazratbal, Srinagar",                         color: "#e879f9" },
+  "central-university": { icon: "🏫", title: "Central University",     desc: "Central University Of Kashmir & Jammu",       color: "#a78bfa" },
 };
 
 const FALLBACK_PALETTE = ["#64748b", "#0ea5e9", "#d946ef", "#f97316", "#14b8a6", "#a855f7"];
@@ -138,7 +139,7 @@ function buildExamCard(item) {
     (hasExamDate ? `<span class="tc-date tc-date-start"><i class="fa fa-calendar-check"></i> Exam Date: ${item.examDate}</span>` : "") +
     (hasLastDate ? `<span class="tc-date tc-date-reg"><i class="fa fa-calendar-xmark"></i> Last Date To Apply: ${item.lastDate}</span>` : "");
   return `
-    <div class="tool-card" data-examcat="${item.category}" data-name="${escapeAttr(item.name)}">
+    <div class="tool-card" data-examcat="${item.category}" data-level="${item.level || ""}" data-name="${escapeAttr(item.name)}">
       <div class="tc-body">
         <div class="tc-top">
           <div class="tc-name-wrap">
@@ -159,6 +160,43 @@ function buildExamCard(item) {
       </div>
     </div>`;
 }
+
+/* ---------- Study material cards (studymaterial.json) ---------- */
+/* Shared by every entity page (jkssb.html etc.) and entrance-exams.html.
+   Schema: name, subtitle, desc, type, year, size, downloadLink, viewLink. */
+
+function buildStudyCard(item) {
+  const badges = (item.badges || []).map((b) => `<span class="tcb ${b.cls}">${b.label}</span>`).join("");
+  const meta =
+    (item.year ? `<span class="tc-date tc-date-start"><i class="fa fa-calendar"></i> ${item.year}</span>` : "") +
+    (item.size ? `<span class="tc-date tc-date-reg"><i class="fa fa-file"></i> ${item.size}</span>` : "");
+  return `
+    <div class="tool-card" data-studycat="${item.category}" data-level="${item.level || ""}" data-name="${escapeAttr(item.name)}">
+      <div class="tc-body">
+        <div class="tc-top">
+          <div class="tc-name-wrap">
+            <div class="tc-name">${item.name}</div>
+            <div class="tc-ver">${item.subtitle || ""}</div>
+          </div>
+          <div class="tc-badges">${badges}</div>
+        </div>
+        <div class="tc-desc">${item.desc || ""}</div>
+        <div class="tc-foot">
+          <div class="tc-dates">${meta}</div>
+          <div class="tc-actions">
+            <a href="${item.downloadLink || "#"}" class="tc-btn tc-btn-g" target="_blank"><i class="fa fa-download"></i> Download</a>
+            <a href="${item.viewLink || item.downloadLink || "#"}" class="tc-btn tc-btn-o" target="_blank"><i class="fa fa-eye"></i> View Online</a>
+          </div>
+        </div>
+      </div>
+    </div>`;
+}
+
+/* Slugs with a dedicated deep page (jkssb.html, jkpsc.html, jkpolice.html,
+   kashmir-university.html, central-university.html) — used to decide,
+   e.g., whether a homepage category card should link to a real page or
+   just scroll/filter the homepage's own Jobs section. */
+const ENTITY_PAGE_SLUGS = ["jkssb", "jkpsc", "jkpolice", "kashmir-university", "central-university"];
 
 /* ---------- Pagination helper (shared by jobs.html / results.html / admitcards.html) ---------- */
 
