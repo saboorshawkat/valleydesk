@@ -27,7 +27,7 @@
 <link rel="stylesheet" href="css/pages.css"/>
 </head>
 <body>
-<div class="ambient-blobs"><div class="ambient-blob ambient-blob1"></div><div class="ambient-blob ambient-blob2"></div><div class="ambient-blob ambient-blob3"></div></div>
+<div class="ambient-blobs"><div class="ambient-blob ambient-blob1"></div><div class="ambient-blob ambient-blob2"></div><div class="ambient-blob ambient-blob3"></div><div class="ambient-blob ambient-blob4"></div></div>
 
 <div id="toastContainer"></div>
 
@@ -46,19 +46,28 @@
       <div class="oc-section-t">Menu</div>
       <ul class="oc-links">
         <li><a href="index.html" class="oc-link" data-page="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
-        <li><a href="jobs.html" class="oc-link" data-page="jobs.html"><i class="fa-solid fa-briefcase"></i>Jobs</a></li>
-        <li><a href="exams.html" class="oc-link" data-page="exams.html"><i class="fa-solid fa-pen-to-square"></i>Exams</a></li>
-        <li><a href="admissions.html" class="oc-link" data-page="admissions.html"><i class="fa-solid fa-graduation-cap"></i>Admissions</a></li>
+        <li><a href="jobs.html" class="oc-link" data-page="jobs.html"><i class="fa-solid fa-briefcase"></i>All Jobs</a></li>
         <li><a href="admitcards.html" class="oc-link" data-page="admitcards.html"><i class="fa-solid fa-id-card-clip"></i>Admit Cards</a></li>
+        <li><a href="examdates.html" class="oc-link" data-page="examdates.html"><i class="fa-solid fa-calendar-days"></i>Exam Dates</a></li>
         <li><a href="results.html" class="oc-link" data-page="results.html"><i class="fa-solid fa-trophy"></i>Results</a></li>
-        <li><a href="scholarships.html" class="oc-link" data-page="scholarships.html"><i class="fa-solid fa-coins"></i>Scholarships</a></li>
         <li><a href="tools.html" class="oc-link" data-page="tools.html"><i class="fa-solid fa-toolbox"></i>Tools</a></li>
         <li><a href="about.html" class="oc-link" data-page="about.html"><i class="fa-solid fa-circle-info"></i>About Us</a></li>
         <li><a href="contact.html" class="oc-link" data-page="contact.html"><i class="fa-solid fa-envelope"></i>Contact Us</a></li>
       </ul>
     </div>
     <div class="oc-section">
-      <div class="oc-section-t">Browse By Category</div>
+      <div class="oc-section-t">Student Exam Categories</div>
+      <ul class="oc-links">
+        <li><a href="examdates.html#jkbose" class="oc-link" onclick="return handleOcExamCategory('jkbose',event)"><span class="cs-dot" style="background:#0ac16c"></span>JKBOSE 11th/12th</a></li>
+        <li><a href="examdates.html#neet" class="oc-link" onclick="return handleOcExamCategory('neet',event)"><span class="cs-dot" style="background:#e11d48"></span>NEET</a></li>
+        <li><a href="examdates.html#jee" class="oc-link" onclick="return handleOcExamCategory('jee',event)"><span class="cs-dot" style="background:#38bdf8"></span>JEE Main/Advanced</a></li>
+        <li><a href="examdates.html#jkbopee" class="oc-link" onclick="return handleOcExamCategory('jkbopee',event)"><span class="cs-dot" style="background:#b060ff"></span>JKBOPEE CET</a></li>
+        <li><a href="examdates.html#jkssb" class="oc-link" onclick="return handleOcExamCategory('jkssb',event)"><span class="cs-dot" style="background:#f5c518"></span>JKSSB Exams</a></li>
+        <li><a href="examdates.html#other" class="oc-link" onclick="return handleOcExamCategory('other',event)"><span class="cs-dot" style="background:#fb923c"></span>Other (CBSE, CUET, NDA)</a></li>
+      </ul>
+    </div>
+    <div class="oc-section">
+      <div class="oc-section-t">Govt Job Categories</div>
       <ul class="oc-links">
         <li><a href="index.html#jkssb" class="oc-link" onclick="return handleOcCategory('jkssb',event)"><span class="cs-dot" style="background:#b060ff"></span>JKSSB</a></li>
         <li><a href="index.html#jkpsc" class="oc-link" onclick="return handleOcCategory('jkpsc',event)"><span class="cs-dot" style="background:#34d399"></span>JKPSC</a></li>
@@ -68,8 +77,6 @@
         <li><a href="index.html#jkteaching" class="oc-link" onclick="return handleOcCategory('jkteaching',event)"><span class="cs-dot" style="background:#25D366"></span>Teaching</a></li>
         <li><a href="index.html#jkhealth" class="oc-link" onclick="return handleOcCategory('jkhealth',event)"><span class="cs-dot" style="background:#fb923c"></span>Health</a></li>
         <li><a href="index.html#jkuniversity" class="oc-link" onclick="return handleOcCategory('jkuniversity',event)"><span class="cs-dot" style="background:#e879f9"></span>University</a></li>
-        <li><a href="index.html#jkbopee" class="oc-link" onclick="return handleOcCategory('jkbopee',event)"><span class="cs-dot" style="background:#ef4444"></span>JKBOPEE</a></li>
-        <li><a href="index.html#jkbose" class="oc-link" onclick="return handleOcCategory('jkbose',event)"><span class="cs-dot" style="background:#14b8a6"></span>JKBOSE</a></li>
       </ul>
     </div>
     <div class="oc-section">
@@ -114,17 +121,13 @@
       <div class="live-pill"><span class="live-dot"></span>LIVE UPDATES</div>
     </div>
     <div class="tb-right">
-      <a href="jobs.html">Jobs</a>
+      <a href="jobs.html">All Jobs</a>
       <div class="tb-sep2"></div>
-      <a href="exams.html">Exams</a>
-      <div class="tb-sep2"></div>
-      <a href="admissions.html">Admissions</a>
+      <a href="examdates.html">Exam Dates</a>
       <div class="tb-sep2"></div>
       <a href="admitcards.html">Admit Cards</a>
       <div class="tb-sep2"></div>
       <a href="results.html">Results</a>
-      <div class="tb-sep2"></div>
-      <a href="scholarships.html">Scholarships</a>
       <div class="tb-sep2"></div>
       <a href="tools.html">Tools</a>
     </div>
@@ -138,13 +141,13 @@
       <div class="logo-box"><img src="assets/VD_Logo.png" alt="Valley Desk Logo" class="logo-img"/></div>
       <div class="logo-text">
         <span class="logo-main">VALLEY<span>DESK</span></span>
-        <span class="logo-sub">valleydesk.in · J&amp;K Notification Hub</span>
+        <span class="logo-sub">valleydesk.in · J&amp;K Govt Jobs</span>
       </div>
     </a>
     <div class="mast-sep"></div>
     <div class="mast-desc">
-      Jammu &amp; Kashmir's own notification hub for <strong>Govt Jobs</strong>, <strong>Exams</strong> &amp; <strong>Admissions</strong>,<br/>
-      plus Results, Admit Cards &amp; Scholarships across JKSSB, JKPSC, JKBOSE, Universities &amp; more.
+      Jammu &amp; Kashmir's own hub for <strong>Latest Govt Job Notifications</strong>, <strong>Exam Results</strong> &amp;<br/>
+      Admit Cards across JKSSB, JKPSC, JK Police, J&amp;K Bank, Judiciary &amp; more.
     </div>
     <div class="mast-right">
       <div class="mstat"><span class="mstat-n counter" data-target="320">0</span><span class="mstat-l">K Visitors</span></div>
@@ -340,7 +343,7 @@
         <div class="logo-box"><img src="assets/VD_Logo.png" alt="Valley Desk Logo" class="logo-img"/></div>
         <div class="logo-text"><span class="logo-main">VALLEY<span>DESK</span></span></div>
       </div>
-      <p class="fb-desc">Jammu &amp; Kashmir's complete notification hub for Govt Jobs, Exams, Admissions, Results, Admit Cards &amp; Scholarships — JKSSB, JKPSC, JKBOSE &amp; more. Updated daily, 100% free. Visit us at <a href="https://valleydesk.in" style="color:var(--g);font-weight:700">valleydesk.in</a></p>
+      <p class="fb-desc">Jammu &amp; Kashmir's trusted portal for Govt Job Notifications, Exam Results &amp; Admit Cards — JKSSB, JKPSC, JK Police &amp; more. Updated daily, 100% free. Visit us at <a href="https://valleydesk.in" style="color:var(--g);font-weight:700">valleydesk.in</a></p>
       <div class="soc-row">
         <div class="soc-btn"><i class="fab fa-facebook-f"></i></div>
         <div class="soc-btn"><i class="fab fa-twitter"></i></div>
@@ -357,7 +360,6 @@
         <li><a href="jobs.html#jkpolice" data-jump-cat="jkpolice"><i class="fa fa-angle-right"></i>JK Police</a></li>
         <li><a href="jobs.html#jkbank" data-jump-cat="jkbank"><i class="fa fa-angle-right"></i>J&amp;K Bank</a></li>
         <li><a href="jobs.html#jkjudiciary" data-jump-cat="jkjudiciary"><i class="fa fa-angle-right"></i>Judiciary</a></li>
-        <li><a href="jobs.html#jkbopee" data-jump-cat="jkbopee"><i class="fa fa-angle-right"></i>JKBOPEE</a></li>
       </ul>
     </div>
     <div>
@@ -366,20 +368,16 @@
         <li><a href="jobs.html#jkteaching"><i class="fa fa-angle-right"></i>Teaching (ReT/JKTET)</a></li>
         <li><a href="jobs.html#jkhealth"><i class="fa fa-angle-right"></i>Health Dept / SKIMS</a></li>
         <li><a href="jobs.html#jkuniversity"><i class="fa fa-angle-right"></i>University Jobs</a></li>
-        <li><a href="jobs.html#jkbose"><i class="fa fa-angle-right"></i>JKBOSE</a></li>
         <li><a href="jobs.html"><i class="fa fa-angle-right"></i>All J&amp;K Jobs</a></li>
       </ul>
     </div>
     <div>
       <div class="fc-t">Quick Links</div>
       <ul class="f-links">
-        <li><a href="jobs.html"><i class="fa fa-angle-right"></i>All Jobs</a></li>
-        <li><a href="exams.html"><i class="fa fa-angle-right"></i>Exams</a></li>
-        <li><a href="admissions.html"><i class="fa fa-angle-right"></i>Admissions</a></li>
-        <li><a href="admitcards.html"><i class="fa fa-angle-right"></i>Admit Card</a></li>
         <li><a href="results.html"><i class="fa fa-angle-right"></i>Results</a></li>
-        <li><a href="scholarships.html"><i class="fa fa-angle-right"></i>Scholarships</a></li>
         <li><a href="tools.html"><i class="fa fa-angle-right"></i>Tools</a></li>
+        <li><a href="admitcards.html"><i class="fa fa-angle-right"></i>Admit Card</a></li>
+        <li><a href="jobs.html"><i class="fa fa-angle-right"></i>All Jobs</a></li>
         <li><a href="about.html"><i class="fa fa-angle-right"></i>About Us</a></li>
         <li><a href="contact.html"><i class="fa fa-angle-right"></i>Contact Us</a></li>
       </ul>
