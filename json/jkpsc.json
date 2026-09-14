@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "icon": "⚖️",
+    "title": "JKPSC",
+    "shortTitle": "JKPSC",
+    "fullTitle": "JKPSC — Jammu & Kashmir Public Service Commission",
+    "desc": "KAS & other JKPSC recruitment notifications, exam dates, admit cards, results and study material.",
+    "color": "#34d399",
+    "officialLink": "https://jkpsc.nic.in",
+    "crumb": "JKPSC",
+    "tag": "Recruitment · Gazetted & Combined Competitive Exams",
+    "slug": "jkpsc"
+  },
+  "notifications": [
+    {
+      "category": "jkpsc",
+      "name": "JKPSC Assistant Professor (Various Subjects) Recruitment",
+      "subtitle": "Advt No. 07-PSC (DR) of 2026",
+      "desc": "Direct recruitment notification for Assistant Professor posts in Govt Degree Colleges across J&K under the Higher Education Department.",
+      "badges": [
+        {
+          "label": "Advt Out",
+          "cls": "tcb-p"
+        },
+        {
+          "label": "Active",
+          "cls": "tcb-g"
+        }
+      ],
+      "postDate": "--/--/----",
+      "lastDate": "30/10/2026",
+      "applyLink": "https://jkpsc.nic.in",
+      "officialLink": "https://jkpsc.nic.in",
+      "scrapedAt": "2026-09-10T10:00:00"
+    },
+    {
+      "category": "jkpsc",
+      "name": "JKPSC Combined Competitive Examination (CCE) 2026 Notification",
+      "subtitle": "KAS & Allied Services",
+      "desc": "Notification for the Combined Competitive Examination covering Kashmir Administrative Service and other allied gazetted posts.",
+      "badges": [
+        {
+          "label": "Advt Out",
+          "cls": "tcb-p"
+        }
+      ],
+      "postDate": "--/--/----",
+      "lastDate": "15/10/2026",
+      "applyLink": "https://jkpsc.nic.in",
+      "officialLink": "https://jkpsc.nic.in",
+      "scrapedAt": "2026-09-08T09:00:00"
+    },
+    {
+      "category": "jkpsc",
+      "name": "JKPSC Medical Officer Recruitment",
+      "subtitle": "Health & Medical Education Department",
+      "desc": "Recruitment of Medical Officers (Allopathic) under the Health & Medical Education Department, J&K.",
+      "badges": [
+        {
+          "label": "Active",
+          "cls": "tcb-g"
+        }
+      ],
+      "postDate": "--/--/----",
+      "lastDate": "05/11/2026",
+      "applyLink": "https://jkpsc.nic.in",
+      "officialLink": "https://jkpsc.nic.in",
+      "scrapedAt": "2026-09-05T09:00:00"
+    }
+  ],
+  "examdates": [],
+  "admitcards": [
+    {
+      "category": "jkpsc",
+      "name": "JKPSC KAS (Prelims) Admit Card 2026",
+      "subtitle": "Combined Competitive Examination",
+      "desc": "E-admit cards for the KAS (Preliminary) examination now available for download on the JKPSC candidate portal.",
+      "badges": [
+        {
+          "label": "Admit Card",
+          "cls": "tcb-admit"
+        }
+      ],
+      "releasedOn": "--/--/----",
+      "examDate": "11/10/2026",
+      "downloadLink": "https://jkpsc.nic.in",
+      "officialLink": "https://jkpsc.nic.in"
+    },
+    {
+      "category": "jkpsc",
+      "name": "JKPSC Assistant Professor Screening Test Admit Card",
+      "subtitle": "Higher Education Department",
+      "desc": "Admit cards released for the screening test for Assistant Professor recruitment across various subjects.",
+      "badges": [
+        {
+          "label": "Admit Card",
+          "cls": "tcb-admit"
+        }
+      ],
+      "releasedOn": "--/--/----",
+      "examDate": "05/10/2026",
+      "downloadLink": "https://jkpsc.nic.in",
+      "officialLink": "https://jkpsc.nic.in"
+    }
+  ],
+  "results": [
+    {
+      "category": "jkpsc",
+      "name": "JKPSC Assistant Professor (Physics) Final Result",
+      "subtitle": "Higher Education Department",
+      "desc": "Final select list declared for Assistant Professor (Physics) posts after interview based on merit.",
+      "badges": [
+        {
+          "label": "Result Out",
+          "cls": "tcb-r"
+        }
+      ],
+      "declaredOn": "--/--/----",
+      "nextStage": "Document Verification",
+      "resultLink": "https://jkpsc.nic.in",
+      "officialLink": "https://jkpsc.nic.in"
+    },
+    {
+      "category": "jkpsc",
+      "name": "JKPSC Medical Officer Written Test Result",
+      "subtitle": "Health & Medical Education Department",
+      "desc": "Written test result declared; shortlisted candidates called for interview round.",
+      "badges": [
+        {
+          "label": "Result Out",
+          "cls": "tcb-r"
+        }
+      ],
+      "declaredOn": "--/--/----",
+      "nextStage": "Interview",
+      "resultLink": "https://jkpsc.nic.in",
+      "officialLink": "https://jkpsc.nic.in"
+    }
+  ],
+  "studymaterial": [
+    {
+      "id": "mat-jkpsc-001",
+      "category": "jkpsc",
+      "type": "notes",
+      "name": "JKPSC KAS Prelims Static GK Notes",
+      "subtitle": "Polity, Economy, History & Geography",
+      "desc": "Topic-wise static GK notes commonly asked in the KAS preliminary examination.",
+      "badges": [
+        {
+          "label": "Notes",
+          "cls": "tcb-b"
+        }
+      ],
+      "year": "",
+      "size": "6.1 MB",
+      "downloadLink": "https://jkpsc.nic.in",
+      "viewLink": "https://jkpsc.nic.in",
+      "scrapedAt": "2026-09-10T10:15:00"
+    },
+    {
+      "id": "mat-jkpsc-002",
+      "category": "jkpsc",
+      "type": "pyq",
+      "name": "JKPSC Mains Previous Year Papers",
+      "subtitle": "General Studies I-IV",
+      "desc": "Previous year KAS Mains General Studies papers for answer-writing practice.",
+      "badges": [
+        {
+          "label": "Previous Papers",
+          "cls": "tcb-p"
+        }
+      ],
+      "year": "2018–2025",
+      "size": "9.8 MB",
+      "downloadLink": "https://jkpsc.nic.in",
+      "viewLink": "https://jkpsc.nic.in",
+      "scrapedAt": "2026-09-08T09:20:00"
+    }
+  ]
+}

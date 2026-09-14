@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "icon": "🎓",
+    "title": "University Of Kashmir",
+    "shortTitle": "KU",
+    "fullTitle": "University Of Kashmir — Hazratbal, Srinagar",
+    "desc": "Recruitment notifications, exam dates, admit cards, results and study material from University Of Kashmir.",
+    "color": "#e879f9",
+    "officialLink": "https://kashmiruniversity.net",
+    "crumb": "University Of Kashmir",
+    "tag": "University · Hazratbal, Srinagar",
+    "slug": "kashmir-university"
+  },
+  "notifications": [
+    {
+      "category": "kashmir-university",
+      "name": "University of Kashmir Non-Teaching Staff Recruitment",
+      "subtitle": "Advt No. 09 of 2026",
+      "desc": "Recruitment for various non-teaching posts including Assistant, Junior Assistant and Lab Attendant at University of Kashmir, Hazratbal.",
+      "badges": [
+        {
+          "label": "Advt Out",
+          "cls": "tcb-p"
+        },
+        {
+          "label": "Active",
+          "cls": "tcb-g"
+        }
+      ],
+      "postDate": "--/--/----",
+      "lastDate": "18/10/2026",
+      "applyLink": "https://kashmiruniversity.net",
+      "officialLink": "https://kashmiruniversity.net",
+      "scrapedAt": "2026-09-09T12:00:00"
+    },
+    {
+      "category": "kashmir-university",
+      "name": "University of Kashmir Assistant Professor (Contractual) Hiring",
+      "subtitle": "Various Departments",
+      "desc": "Contractual/guest faculty engagement for Assistant Professor posts across teaching departments at University of Kashmir.",
+      "badges": [
+        {
+          "label": "Active",
+          "cls": "tcb-g"
+        }
+      ],
+      "postDate": "--/--/----",
+      "lastDate": "08/10/2026",
+      "applyLink": "https://kashmiruniversity.net",
+      "officialLink": "https://kashmiruniversity.net",
+      "scrapedAt": "2026-09-03T10:00:00"
+    },
+    {
+      "category": "kashmir-university",
+      "name": "University of Kashmir PG Admission Merit List 2026",
+      "subtitle": "Entrance Test Based Admissions",
+      "desc": "Provisional merit list released for postgraduate admissions across various departments based on entrance test scores.",
+      "badges": [
+        {
+          "label": "Merit List",
+          "cls": "tcb-b"
+        }
+      ],
+      "postDate": "--/--/----",
+      "lastDate": "--/--/----",
+      "applyLink": "https://kashmiruniversity.net",
+      "officialLink": "https://kashmiruniversity.net",
+      "scrapedAt": "2026-09-01T10:00:00"
+    }
+  ],
+  "examdates": [],
+  "admitcards": [
+    {
+      "category": "kashmir-university",
+      "name": "University Of Kashmir PG Entrance Test Admit Card",
+      "subtitle": "Common Entrance Test For PG Programmes",
+      "desc": "Admit cards for the PG entrance test available for download from the candidate login on the university website.",
+      "badges": [
+        {
+          "label": "Admit Card",
+          "cls": "tcb-admit"
+        }
+      ],
+      "releasedOn": "--/--/----",
+      "examDate": "27/09/2026",
+      "downloadLink": "https://kashmiruniversity.net",
+      "officialLink": "https://kashmiruniversity.net"
+    },
+    {
+      "category": "kashmir-university",
+      "name": "University Of Kashmir Non-Teaching Written Test Call Letter",
+      "subtitle": "Advt No. 09 of 2026",
+      "desc": "Call letters for the written screening test for non-teaching posts released for eligible candidates.",
+      "badges": [
+        {
+          "label": "Admit Card",
+          "cls": "tcb-admit"
+        }
+      ],
+      "releasedOn": "--/--/----",
+      "examDate": "08/10/2026",
+      "downloadLink": "https://kashmiruniversity.net",
+      "officialLink": "https://kashmiruniversity.net"
+    }
+  ],
+  "results": [
+    {
+      "category": "kashmir-university",
+      "name": "University Of Kashmir PG Entrance Test Result",
+      "subtitle": "Common Entrance Test",
+      "desc": "Entrance test results declared with department-wise merit list for postgraduate admissions.",
+      "badges": [
+        {
+          "label": "Result Out",
+          "cls": "tcb-r"
+        }
+      ],
+      "declaredOn": "--/--/----",
+      "nextStage": "Counselling",
+      "resultLink": "https://kashmiruniversity.net",
+      "officialLink": "https://kashmiruniversity.net"
+    },
+    {
+      "category": "kashmir-university",
+      "name": "University Of Kashmir Non-Teaching Written Test Result",
+      "subtitle": "Advt No. 09 of 2026",
+      "desc": "Written test scorecards released for non-teaching recruitment candidates.",
+      "badges": [
+        {
+          "label": "Result Out",
+          "cls": "tcb-r"
+        }
+      ],
+      "declaredOn": "--/--/----",
+      "nextStage": "Skill Test",
+      "resultLink": "https://kashmiruniversity.net",
+      "officialLink": "https://kashmiruniversity.net"
+    }
+  ],
+  "studymaterial": [
+    {
+      "id": "mat-ku-001",
+      "category": "kashmir-university",
+      "type": "notes",
+      "name": "University Of Kashmir PG Entrance Sample Papers",
+      "subtitle": "Department-wise Samples",
+      "desc": "Sample question papers for the common PG entrance test used across departments at University of Kashmir.",
+      "badges": [
+        {
+          "label": "Notes",
+          "cls": "tcb-b"
+        }
+      ],
+      "year": "",
+      "size": "3.4 MB",
+      "downloadLink": "https://kashmiruniversity.net",
+      "viewLink": "https://kashmiruniversity.net",
+      "scrapedAt": "2026-09-09T12:20:00"
+    },
+    {
+      "id": "mat-ku-002",
+      "category": "kashmir-university",
+      "type": "syllabus",
+      "name": "University Of Kashmir Non-Teaching Exam Syllabus",
+      "subtitle": "Assistant / Jr. Assistant",
+      "desc": "Syllabus for the written screening test for non-teaching Assistant and Junior Assistant posts.",
+      "badges": [
+        {
+          "label": "Syllabus",
+          "cls": "tcb-g"
+        }
+      ],
+      "year": "",
+      "size": "1.0 MB",
+      "downloadLink": "https://kashmiruniversity.net",
+      "viewLink": "https://kashmiruniversity.net",
+      "scrapedAt": "2026-09-03T10:20:00"
+    }
+  ]
+}

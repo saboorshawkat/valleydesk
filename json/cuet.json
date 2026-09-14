@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "icon": "🎯",
+    "title": "CUET (UG)",
+    "shortTitle": "CUET",
+    "fullTitle": "CUET (UG) — Common University Entrance Test",
+    "desc": "CUET exam dates, admit cards, results and study material for admission to Central Universities.",
+    "color": "#f97316",
+    "officialLink": "https://cuet.nta.nic.in",
+    "crumb": "CUET",
+    "tag": "National Entrance Exam · NTA",
+    "slug": "cuet"
+  },
+  "notifications": [],
+  "examdates": [
+    {
+      "id": "other-2026-002",
+      "category": "cuet",
+      "name": "CUET (UG) 2027 Registration",
+      "subtitle": "Common University Entrance Test — Central Universities",
+      "desc": "Registration for CUET (UG) 2027 for admission to Central University of Kashmir, Central University of Jammu and other central/participating universities.",
+      "badges": [
+        {
+          "label": "Registration Soon",
+          "cls": "tcb-y"
+        }
+      ],
+      "examDate": "--/--/----",
+      "lastDate": "--/--/----",
+      "applyLink": "https://cuet.samarth.ac.in",
+      "syllabusLink": "https://cuet.samarth.ac.in",
+      "officialLink": "https://cuet.samarth.ac.in",
+      "scrapedAt": "2026-09-02T15:00:00"
+    },
+    {
+      "id": "cuet-2027-001",
+      "category": "cuet",
+      "name": "CUET (UG) 2027 Exam City Slip",
+      "subtitle": "NTA Common University Entrance Test — Exam City Intimation",
+      "desc": "Exam city intimation slip released ahead of admit card, allowing candidates to plan travel to their allotted CUET (UG) 2027 exam city.",
+      "badges": [
+        {
+          "label": "Exam City Slip",
+          "cls": "tcb-b"
+        }
+      ],
+      "examDate": "15/05/2027",
+      "lastDate": "--/--/----",
+      "applyLink": "https://cuet.samarth.ac.in",
+      "syllabusLink": "https://cuet.samarth.ac.in",
+      "officialLink": "https://cuet.samarth.ac.in",
+      "scrapedAt": "2026-09-11T10:00:00"
+    }
+  ],
+  "admitcards": [
+    {
+      "name": "CUET (UG) 2027 Admit Card",
+      "subtitle": "NTA Common University Entrance Test",
+      "desc": "Admit cards for CUET (UG) 2027 to be released after the exam city slip, downloadable from the official CUET NTA portal.",
+      "badges": [
+        {
+          "label": "Coming Soon",
+          "cls": "tcb-y"
+        }
+      ],
+      "releasedOn": "--/--/----",
+      "examDate": "22/05/2027",
+      "downloadLink": "https://cuet.samarth.ac.in",
+      "officialLink": "https://cuet.samarth.ac.in",
+      "category": "cuet"
+    }
+  ],
+  "results": [
+    {
+      "name": "CUET (UG) 2026 Result",
+      "subtitle": "Common University Entrance Test — NTA Scores",
+      "desc": "CUET (UG) 2026 scorecard declared; scores usable for admission counselling across participating central & state universities.",
+      "badges": [
+        {
+          "label": "Result Out",
+          "cls": "tcb-r"
+        }
+      ],
+      "declaredOn": "10/07/2026",
+      "nextStage": "University Counselling (CSAS)",
+      "resultLink": "https://cuet.samarth.ac.in",
+      "officialLink": "https://cuet.samarth.ac.in",
+      "category": "cuet"
+    }
+  ],
+  "studymaterial": [
+    {
+      "id": "mat-cuet-001",
+      "category": "cuet",
+      "type": "notes",
+      "name": "CUET (UG) General Test — Complete Preparation Notes",
+      "subtitle": "General Awareness, Reasoning & Numerical Ability",
+      "desc": "Consolidated notes covering the CUET General Test section — general knowledge, quantitative reasoning and logical/analytical reasoning.",
+      "badges": [
+        {
+          "label": "Notes",
+          "cls": "tcb-b"
+        },
+        {
+          "label": "PDF",
+          "cls": "tcb-g"
+        }
+      ],
+      "year": "2027",
+      "size": "4.1 MB",
+      "downloadLink": "https://cuet.samarth.ac.in",
+      "viewLink": "https://cuet.samarth.ac.in",
+      "scrapedAt": "2026-09-11T09:30:00"
+    },
+    {
+      "id": "mat-cuet-002",
+      "category": "cuet",
+      "type": "pyq",
+      "name": "CUET (UG) Previous Year Question Papers (2023-2026)",
+      "subtitle": "Domain Subjects + General Test",
+      "desc": "Compiled previous year CUET (UG) question papers across major domain subjects and the General Test, useful for practice.",
+      "badges": [
+        {
+          "label": "PYQs",
+          "cls": "tcb-p"
+        },
+        {
+          "label": "PDF",
+          "cls": "tcb-g"
+        }
+      ],
+      "year": "2023-26",
+      "size": "6.8 MB",
+      "downloadLink": "https://cuet.samarth.ac.in",
+      "viewLink": "https://cuet.samarth.ac.in",
+      "scrapedAt": "2026-09-11T09:40:00"
+    }
+  ]
+}

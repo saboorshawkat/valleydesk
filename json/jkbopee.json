@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "icon": "🎯",
+    "title": "JKBOPEE",
+    "shortTitle": "JKBOPEE",
+    "fullTitle": "JKBOPEE — J&K Board Of Professional Entrance Examinations",
+    "desc": "CET (Engineering/Medical), counselling schedules, admit cards, results and study material for JKBOPEE aspirants.",
+    "color": "#b060ff",
+    "officialLink": "https://jkbopee.gov.in",
+    "crumb": "JKBOPEE",
+    "tag": "Common Entrance Test · Engineering & Medical",
+    "slug": "jkbopee"
+  },
+  "notifications": [],
+  "examdates": [
+    {
+      "id": "jkbopee-2026-001",
+      "category": "jkbopee",
+      "name": "JKBOPEE CET (Engineering) 2026 Notification",
+      "subtitle": "Common Entrance Test — B.E./B.Tech Admissions In J&K",
+      "desc": "Common Entrance Test notification for admission to engineering colleges within J&K UT, including NIT Srinagar state quota and other participating institutes.",
+      "badges": [
+        {
+          "label": "Advt Out",
+          "cls": "tcb-p"
+        },
+        {
+          "label": "Active",
+          "cls": "tcb-g"
+        }
+      ],
+      "examDate": "--/--/----",
+      "lastDate": "20/10/2026",
+      "applyLink": "https://jkbopee.gov.in",
+      "syllabusLink": "https://jkbopee.gov.in/InfoBulletin",
+      "officialLink": "https://jkbopee.gov.in",
+      "scrapedAt": "2026-09-07T13:00:00"
+    },
+    {
+      "id": "jkbopee-2026-002",
+      "category": "jkbopee",
+      "name": "JKBOPEE CET (Medical) 2026 Merit List",
+      "subtitle": "Common Entrance Test — MBBS/BDS/BSc Nursing State Quota",
+      "desc": "Provisional merit list published for CET (Medical) 2026, used for state-quota counselling to GMC Srinagar, GMC Jammu, SKIMS and nursing colleges.",
+      "badges": [
+        {
+          "label": "Merit List",
+          "cls": "tcb-b"
+        }
+      ],
+      "examDate": "--/--/----",
+      "lastDate": "--/--/----",
+      "applyLink": "https://jkbopee.gov.in",
+      "syllabusLink": "https://jkbopee.gov.in",
+      "officialLink": "https://jkbopee.gov.in",
+      "scrapedAt": "2026-09-04T09:30:00"
+    }
+  ],
+  "admitcards": [
+    {
+      "name": "JKBOPEE CET (Engineering) 2026 Admit Card",
+      "subtitle": "Common Entrance Test — B.E./B.Tech Admissions",
+      "desc": "Admit cards released for the JKBOPEE CET (Engineering) 2026 written examination; download using application/roll number.",
+      "badges": [
+        {
+          "label": "Admit Card",
+          "cls": "tcb-admit"
+        },
+        {
+          "label": "Active",
+          "cls": "tcb-g"
+        }
+      ],
+      "releasedOn": "10/10/2026",
+      "examDate": "20/10/2026",
+      "downloadLink": "https://jkbopee.gov.in",
+      "officialLink": "https://jkbopee.gov.in",
+      "category": "jkbopee"
+    }
+  ],
+  "results": [
+    {
+      "name": "JKBOPEE CET (Medical) 2026 Final Result",
+      "subtitle": "MBBS/BDS/BSc Nursing State Quota",
+      "desc": "Final result and category-wise merit list declared for CET (Medical) 2026, used for state counselling and seat allotment.",
+      "badges": [
+        {
+          "label": "Result Out",
+          "cls": "tcb-r"
+        },
+        {
+          "label": "Merit List PDF",
+          "cls": "tcb-b"
+        }
+      ],
+      "declaredOn": "02/09/2026",
+      "nextStage": "State Counselling",
+      "resultLink": "https://jkbopee.gov.in",
+      "officialLink": "https://jkbopee.gov.in",
+      "category": "jkbopee"
+    }
+  ],
+  "studymaterial": [
+    {
+      "id": "mat-jkbopee-001",
+      "category": "jkbopee",
+      "type": "pyq",
+      "name": "JKBOPEE CET (Engineering) Previous Year Papers",
+      "subtitle": "2019–2025 Question Papers",
+      "desc": "Past years' CET (Engineering) question papers set by JKBOPEE, useful for practicing the exact exam pattern used for J&K engineering admissions.",
+      "badges": [
+        {
+          "label": "Previous Papers",
+          "cls": "tcb-p"
+        }
+      ],
+      "year": "2019–2025",
+      "size": "9.3 MB",
+      "downloadLink": "https://jkbopee.gov.in",
+      "viewLink": "https://jkbopee.gov.in",
+      "scrapedAt": "2026-09-07T13:30:00"
+    },
+    {
+      "id": "mat-jkbopee-002",
+      "category": "jkbopee",
+      "type": "syllabus",
+      "name": "JKBOPEE CET (Medical & Engineering) Syllabus",
+      "subtitle": "Information Bulletin Extract",
+      "desc": "Syllabus and exam-pattern extract from the official JKBOPEE information bulletin for both CET Medical and CET Engineering streams.",
+      "badges": [
+        {
+          "label": "Syllabus",
+          "cls": "tcb-g"
+        }
+      ],
+      "year": "",
+      "size": "1.4 MB",
+      "downloadLink": "https://jkbopee.gov.in/InfoBulletin",
+      "viewLink": "https://jkbopee.gov.in/InfoBulletin",
+      "scrapedAt": "2026-09-07T13:35:00"
+    }
+  ]
+}

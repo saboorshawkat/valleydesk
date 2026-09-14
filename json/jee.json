@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "icon": "⚙️",
+    "title": "JEE Main / Advanced",
+    "shortTitle": "JEE",
+    "fullTitle": "JEE Main / Advanced — Engineering Entrance Exam",
+    "desc": "JEE Main & Advanced exam dates, admit cards, results and study material for engineering aspirants.",
+    "color": "#38bdf8",
+    "officialLink": "https://jeemain.nta.nic.in",
+    "crumb": "JEE",
+    "tag": "National Entrance Exam · NTA / IITs",
+    "slug": "jee"
+  },
+  "notifications": [],
+  "examdates": [
+    {
+      "id": "jee-2027-001",
+      "category": "jee",
+      "name": "JEE Main 2027 Session 1 Registration",
+      "subtitle": "Joint Entrance Examination — Engineering (NTA)",
+      "desc": "Registration window for JEE Main 2027 Session 1 for admission to NITs, IIITs, CFTIs and as a qualifier for JEE Advanced / IIT admissions.",
+      "badges": [
+        {
+          "label": "Registration Soon",
+          "cls": "tcb-y"
+        },
+        {
+          "label": "National Exam",
+          "cls": "tcb-b"
+        }
+      ],
+      "examDate": "24/01/2027",
+      "lastDate": "--/--/----",
+      "applyLink": "https://jeemain.nta.nic.in",
+      "syllabusLink": "https://jeemain.nta.nic.in/information-bulletin",
+      "officialLink": "https://jeemain.nta.nic.in",
+      "scrapedAt": "2026-09-09T14:00:00"
+    },
+    {
+      "id": "jee-2026-002",
+      "category": "jee",
+      "name": "JEE Advanced 2026 Result & AAT",
+      "subtitle": "For Admission To IITs",
+      "desc": "JEE Advanced 2026 results declared; Architecture Aptitude Test (AAT) registration open for candidates seeking B.Arch admission at IITs.",
+      "badges": [
+        {
+          "label": "Result Out",
+          "cls": "tcb-r"
+        }
+      ],
+      "examDate": "--/--/----",
+      "lastDate": "--/--/----",
+      "applyLink": "https://jeeadv.ac.in",
+      "syllabusLink": "https://jeeadv.ac.in",
+      "officialLink": "https://jeeadv.ac.in",
+      "scrapedAt": "2026-09-03T16:00:00"
+    }
+  ],
+  "admitcards": [
+    {
+      "name": "JEE Main 2027 Session 1 Admit Card",
+      "subtitle": "Joint Entrance Examination — Engineering (NTA)",
+      "desc": "Admit cards for JEE Main 2027 Session 1 to be issued on the official NTA JEE Main website ahead of the exam dates.",
+      "badges": [
+        {
+          "label": "Coming Soon",
+          "cls": "tcb-y"
+        }
+      ],
+      "releasedOn": "--/--/----",
+      "examDate": "24/01/2027",
+      "downloadLink": "https://jeemain.nta.nic.in",
+      "officialLink": "https://jeemain.nta.nic.in",
+      "category": "jee"
+    }
+  ],
+  "results": [
+    {
+      "name": "JEE Main 2026 Session 2 Result",
+      "subtitle": "Joint Entrance Examination — Engineering (NTA)",
+      "desc": "JEE Main 2026 Session 2 result and NTA percentile score declared; combined result of both sessions used for JEE Advanced eligibility.",
+      "badges": [
+        {
+          "label": "Result Out",
+          "cls": "tcb-r"
+        }
+      ],
+      "declaredOn": "17/04/2026",
+      "nextStage": "JEE Advanced Registration",
+      "resultLink": "https://jeemain.nta.nic.in",
+      "officialLink": "https://jeemain.nta.nic.in",
+      "category": "jee"
+    }
+  ],
+  "studymaterial": [
+    {
+      "id": "mat-jee-001",
+      "category": "jee",
+      "type": "notes",
+      "name": "JEE Main Maths — Formula & Concept Notes",
+      "subtitle": "Class 11th & 12th Syllabus",
+      "desc": "All-in-one concept and formula notes for JEE Main Mathematics, organised chapter-wise for quick lookup while solving practice sets.",
+      "badges": [
+        {
+          "label": "Notes",
+          "cls": "tcb-b"
+        },
+        {
+          "label": "PDF",
+          "cls": "tcb-g"
+        }
+      ],
+      "year": "",
+      "size": "4.1 MB",
+      "downloadLink": "https://jeemain.nta.nic.in",
+      "viewLink": "https://jeemain.nta.nic.in",
+      "scrapedAt": "2026-09-09T14:30:00"
+    },
+    {
+      "id": "mat-jee-002",
+      "category": "jee",
+      "type": "pyq",
+      "name": "JEE Main Previous Year Papers (All Shifts, 2019–2026)",
+      "subtitle": "Session-wise, With Solutions",
+      "desc": "Shift-wise JEE Main papers from 2019 to 2026 with detailed solutions — the standard practice set recommended by most coaching institutes.",
+      "badges": [
+        {
+          "label": "Previous Papers",
+          "cls": "tcb-p"
+        },
+        {
+          "label": "All Shifts",
+          "cls": "tcb-y"
+        }
+      ],
+      "year": "2019–2026",
+      "size": "31 MB",
+      "downloadLink": "https://jeemain.nta.nic.in",
+      "viewLink": "https://jeemain.nta.nic.in",
+      "scrapedAt": "2026-09-09T14:40:00"
+    },
+    {
+      "id": "mat-jee-003",
+      "category": "jee",
+      "type": "syllabus",
+      "name": "JEE Main & Advanced Official Syllabus 2027",
+      "subtitle": "Physics, Chemistry & Mathematics",
+      "desc": "Official topic-wise syllabus for both JEE Main and JEE Advanced 2027, as released in the information bulletin.",
+      "badges": [
+        {
+          "label": "Syllabus",
+          "cls": "tcb-g"
+        }
+      ],
+      "year": "",
+      "size": "0.9 MB",
+      "downloadLink": "https://jeemain.nta.nic.in/information-bulletin",
+      "viewLink": "https://jeemain.nta.nic.in/information-bulletin",
+      "scrapedAt": "2026-09-09T14:45:00"
+    }
+  ]
+}

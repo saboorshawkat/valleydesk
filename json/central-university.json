@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "icon": "🏫",
+    "title": "Central University",
+    "shortTitle": "CUK",
+    "fullTitle": "Central University Of Kashmir & Jammu",
+    "desc": "Recruitment notifications, exam dates, admit cards, results and study material from Central Universities.",
+    "color": "#a78bfa",
+    "officialLink": "https://cukashmir.ac.in",
+    "crumb": "Central University",
+    "tag": "University · Kashmir & Jammu",
+    "slug": "central-university"
+  },
+  "notifications": [
+    {
+      "category": "central-university",
+      "name": "Central University Of Kashmir Non-Teaching Recruitment",
+      "subtitle": "Group B & C Posts",
+      "desc": "Recruitment for various Group B and Group C non-teaching posts at Central University of Kashmir, Ganderbal.",
+      "badges": [
+        {
+          "label": "Advt Out",
+          "cls": "tcb-p"
+        },
+        {
+          "label": "Active",
+          "cls": "tcb-g"
+        }
+      ],
+      "postDate": "--/--/----",
+      "lastDate": "22/10/2026",
+      "applyLink": "https://cukashmir.ac.in",
+      "officialLink": "https://cukashmir.ac.in",
+      "scrapedAt": "2026-09-09T13:00:00"
+    },
+    {
+      "category": "central-university",
+      "name": "Central University Of Jammu Assistant Professor Recruitment",
+      "subtitle": "Multiple Schools & Departments",
+      "desc": "Direct recruitment of Assistant Professors across multiple schools of study at Central University of Jammu.",
+      "badges": [
+        {
+          "label": "Active",
+          "cls": "tcb-g"
+        }
+      ],
+      "postDate": "--/--/----",
+      "lastDate": "10/10/2026",
+      "applyLink": "https://cujammu.ac.in",
+      "officialLink": "https://cujammu.ac.in",
+      "scrapedAt": "2026-09-05T10:00:00"
+    },
+    {
+      "category": "central-university",
+      "name": "CUCET / CUET-PG Admission Schedule — Central Universities J&K",
+      "subtitle": "UG & PG Admission Counselling",
+      "desc": "Admission schedule and seat allotment for UG/PG programmes at Central University of Kashmir & Central University of Jammu via CUET.",
+      "badges": [
+        {
+          "label": "Counselling",
+          "cls": "tcb-b"
+        }
+      ],
+      "postDate": "--/--/----",
+      "lastDate": "--/--/----",
+      "applyLink": "https://cukashmir.ac.in",
+      "officialLink": "https://cukashmir.ac.in",
+      "scrapedAt": "2026-09-02T10:00:00"
+    }
+  ],
+  "examdates": [],
+  "admitcards": [
+    {
+      "category": "central-university",
+      "name": "Central University Of Kashmir Non-Teaching Written Test Admit Card",
+      "subtitle": "Group B & C Posts",
+      "desc": "Admit cards for the written test for various non-teaching posts released for shortlisted candidates.",
+      "badges": [
+        {
+          "label": "Admit Card",
+          "cls": "tcb-admit"
+        }
+      ],
+      "releasedOn": "--/--/----",
+      "examDate": "04/10/2026",
+      "downloadLink": "https://cukashmir.ac.in",
+      "officialLink": "https://cukashmir.ac.in"
+    },
+    {
+      "category": "central-university",
+      "name": "CUET-PG Admit Card — Central University Of Jammu",
+      "subtitle": "PG Admission Test",
+      "desc": "Admit cards for CUET-PG candidates opting for Central University of Jammu programmes are now available.",
+      "badges": [
+        {
+          "label": "Admit Card",
+          "cls": "tcb-admit"
+        }
+      ],
+      "releasedOn": "--/--/----",
+      "examDate": "30/09/2026",
+      "downloadLink": "https://cujammu.ac.in",
+      "officialLink": "https://cujammu.ac.in"
+    }
+  ],
+  "results": [
+    {
+      "category": "central-university",
+      "name": "Central University Of Kashmir Non-Teaching Result",
+      "subtitle": "Group B & C Posts",
+      "desc": "Written test result declared for shortlisted candidates; further stages to follow shortly.",
+      "badges": [
+        {
+          "label": "Result Out",
+          "cls": "tcb-r"
+        }
+      ],
+      "declaredOn": "--/--/----",
+      "nextStage": "Interview",
+      "resultLink": "https://cukashmir.ac.in",
+      "officialLink": "https://cukashmir.ac.in"
+    },
+    {
+      "category": "central-university",
+      "name": "Central University Of Jammu Assistant Professor Result",
+      "subtitle": "Multiple Schools",
+      "desc": "Interview result declared for Assistant Professor recruitment across multiple schools of study.",
+      "badges": [
+        {
+          "label": "Result Out",
+          "cls": "tcb-r"
+        }
+      ],
+      "declaredOn": "--/--/----",
+      "nextStage": "Document Verification",
+      "resultLink": "https://cujammu.ac.in",
+      "officialLink": "https://cujammu.ac.in"
+    }
+  ],
+  "studymaterial": [
+    {
+      "id": "mat-cu-001",
+      "category": "central-university",
+      "type": "notes",
+      "name": "CUET-PG Preparation Notes — Central Universities J&K",
+      "subtitle": "Subject-wise Notes",
+      "desc": "Preparation notes for common subjects tested in CUET-PG for admission to Central University of Kashmir/Jammu.",
+      "badges": [
+        {
+          "label": "Notes",
+          "cls": "tcb-b"
+        }
+      ],
+      "year": "",
+      "size": "4.4 MB",
+      "downloadLink": "https://cukashmir.ac.in",
+      "viewLink": "https://cukashmir.ac.in",
+      "scrapedAt": "2026-09-09T13:20:00"
+    },
+    {
+      "id": "mat-cu-002",
+      "category": "central-university",
+      "type": "syllabus",
+      "name": "Central University Non-Teaching Exam Pattern Guide",
+      "subtitle": "Group B & C",
+      "desc": "Exam pattern and weightage guide for non-teaching Group B and Group C written tests.",
+      "badges": [
+        {
+          "label": "Syllabus",
+          "cls": "tcb-g"
+        }
+      ],
+      "year": "",
+      "size": "0.9 MB",
+      "downloadLink": "https://cukashmir.ac.in",
+      "viewLink": "https://cukashmir.ac.in",
+      "scrapedAt": "2026-09-05T10:20:00"
+    }
+  ]
+}

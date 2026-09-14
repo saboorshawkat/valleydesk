@@ -1,0 +1,259 @@
+{
+  "meta": {
+    "icon": "🏔️",
+    "title": "JKBOSE",
+    "shortTitle": "JKBOSE",
+    "fullTitle": "JKBOSE — J&K Board Of School Education",
+    "desc": "Class 10th, 11th & 12th date sheets, admit cards, results and study material for J&K Board students.",
+    "color": "#0ac16c",
+    "officialLink": "https://jkbose.nic.in",
+    "crumb": "JKBOSE",
+    "tag": "Board Exams · Kashmir & Jammu Division",
+    "slug": "jkbose"
+  },
+  "notifications": [],
+  "examdates": [
+    {
+      "id": "jkbose-2026-001",
+      "category": "jkbose",
+      "name": "JKBOSE Class 11th Annual Exam 2026 Date Sheet",
+      "subtitle": "Jammu & Kashmir Board of School Education — Kashmir/Jammu Division",
+      "desc": "Official date sheet released for Class 11th annual (regular) theory examinations across all higher secondary schools in the Valley and Jammu division.",
+      "badges": [
+        {
+          "label": "Date Sheet Out",
+          "cls": "tcb-g"
+        },
+        {
+          "label": "Class 11th",
+          "cls": "tcb-p"
+        }
+      ],
+      "examDate": "12/11/2026",
+      "lastDate": "--/--/----",
+      "applyLink": "https://jkbose.nic.in",
+      "syllabusLink": "https://jkbose.nic.in/syllabus.html",
+      "officialLink": "https://jkbose.nic.in",
+      "scrapedAt": "2026-09-08T10:00:00",
+      "level": "11"
+    },
+    {
+      "id": "jkbose-2026-002",
+      "category": "jkbose",
+      "name": "JKBOSE Class 12th Annual Exam 2026 Date Sheet",
+      "subtitle": "Science / Commerce / Arts Streams — Regular & Private",
+      "desc": "Time table announced for Class 12th annual theory exams; practical exams for Science stream to be conducted at respective school/college centres before the theory papers begin.",
+      "badges": [
+        {
+          "label": "Date Sheet Out",
+          "cls": "tcb-g"
+        },
+        {
+          "label": "Class 12th",
+          "cls": "tcb-p"
+        }
+      ],
+      "examDate": "16/11/2026",
+      "lastDate": "--/--/----",
+      "applyLink": "https://jkbose.nic.in",
+      "syllabusLink": "https://jkbose.nic.in/syllabus.html",
+      "officialLink": "https://jkbose.nic.in",
+      "scrapedAt": "2026-09-08T10:05:00",
+      "level": "12"
+    },
+    {
+      "id": "jkbose-2026-003",
+      "category": "jkbose",
+      "name": "JKBOSE 10th & 12th Result 2026 (Bi-Annual)",
+      "subtitle": "Kashmir Division Bi-Annual Exam Result",
+      "desc": "Bi-annual examination results for Class 10th and 12th declared; students can check results online using roll number on the official portal.",
+      "badges": [
+        {
+          "label": "Result Out",
+          "cls": "tcb-r"
+        }
+      ],
+      "examDate": "--/--/----",
+      "lastDate": "--/--/----",
+      "applyLink": "https://jkbose.nic.in",
+      "syllabusLink": "https://jkbose.nic.in",
+      "officialLink": "https://jkbose.nic.in",
+      "scrapedAt": "2026-09-05T09:00:00",
+      "level": "12"
+    },
+    {
+      "id": "jkbose-2026-004",
+      "category": "jkbose",
+      "level": "10",
+      "name": "JKBOSE Class 10th Annual Exam 2026 Date Sheet",
+      "subtitle": "Jammu & Kashmir Board of School Education — Kashmir/Jammu Division",
+      "desc": "Date sheet released for Class 10th annual (regular) theory examinations across all high schools in Kashmir and Jammu division.",
+      "badges": [
+        {
+          "label": "Date Sheet Out",
+          "cls": "tcb-g"
+        },
+        {
+          "label": "Class 10th",
+          "cls": "tcb-p"
+        }
+      ],
+      "examDate": "10/11/2026",
+      "lastDate": "--/--/----",
+      "applyLink": "https://jkbose.nic.in",
+      "syllabusLink": "https://jkbose.nic.in/syllabus.html",
+      "officialLink": "https://jkbose.nic.in",
+      "scrapedAt": "2026-09-08T10:02:00"
+    }
+  ],
+  "admitcards": [
+    {
+      "name": "JKBOSE Class 12th Practical Examination Admit Card",
+      "subtitle": "Science Stream — Practical Exam Slip",
+      "desc": "Practical examination admit cards made available for Class 12th Science stream students ahead of the theory papers.",
+      "badges": [
+        {
+          "label": "Admit Card",
+          "cls": "tcb-admit"
+        }
+      ],
+      "releasedOn": "01/11/2026",
+      "examDate": "10/11/2026",
+      "downloadLink": "https://jkbose.nic.in",
+      "officialLink": "https://jkbose.nic.in",
+      "category": "jkbose"
+    }
+  ],
+  "results": [
+    {
+      "name": "JKBOSE Class 11th Result 2026",
+      "subtitle": "Annual (Regular) Examination Result",
+      "desc": "Class 11th annual examination results declared on the official JKBOSE results portal; mark sheets available for download.",
+      "badges": [
+        {
+          "label": "Result Out",
+          "cls": "tcb-r"
+        }
+      ],
+      "declaredOn": "20/08/2026",
+      "nextStage": "Class 12th Admission",
+      "resultLink": "https://jkbose.nic.in",
+      "officialLink": "https://jkbose.nic.in",
+      "category": "jkbose"
+    }
+  ],
+  "studymaterial": [
+    {
+      "id": "mat-jkbose-001",
+      "category": "jkbose",
+      "type": "notes",
+      "name": "JKBOSE Class 12th Physics — Chapter-wise Notes",
+      "subtitle": "Science Stream · Physics",
+      "desc": "Concise chapter-wise handwritten-style notes covering the full JKBOSE Class 12th Physics syllabus with formula sheets and diagrams.",
+      "badges": [
+        {
+          "label": "Notes",
+          "cls": "tcb-b"
+        },
+        {
+          "label": "PDF",
+          "cls": "tcb-g"
+        }
+      ],
+      "year": "",
+      "size": "3.2 MB",
+      "downloadLink": "https://jkbose.nic.in",
+      "viewLink": "https://jkbose.nic.in",
+      "scrapedAt": "2026-09-10T09:00:00",
+      "level": "12"
+    },
+    {
+      "id": "mat-jkbose-002",
+      "category": "jkbose",
+      "type": "pyq",
+      "name": "JKBOSE Class 12th Previous Year Papers (2021–2025)",
+      "subtitle": "All Subjects · Science, Commerce & Arts",
+      "desc": "Last 5 years' annual and bi-annual question papers for Class 12th, useful for practice before the board exam.",
+      "badges": [
+        {
+          "label": "Previous Papers",
+          "cls": "tcb-p"
+        },
+        {
+          "label": "5 Years",
+          "cls": "tcb-y"
+        }
+      ],
+      "year": "2021–2025",
+      "size": "8.6 MB",
+      "downloadLink": "https://jkbose.nic.in",
+      "viewLink": "https://jkbose.nic.in",
+      "scrapedAt": "2026-09-10T09:05:00",
+      "level": "12"
+    },
+    {
+      "id": "mat-jkbose-003",
+      "category": "jkbose",
+      "type": "syllabus",
+      "name": "JKBOSE Class 11th & 12th Reduced Syllabus 2026-27",
+      "subtitle": "Official Curriculum PDF",
+      "desc": "Latest official syllabus and marking scheme for Class 11th and 12th, all streams, as prescribed by JKBOSE for the current session.",
+      "badges": [
+        {
+          "label": "Syllabus",
+          "cls": "tcb-g"
+        }
+      ],
+      "year": "",
+      "size": "1.1 MB",
+      "downloadLink": "https://jkbose.nic.in/syllabus.html",
+      "viewLink": "https://jkbose.nic.in/syllabus.html",
+      "scrapedAt": "2026-09-08T11:00:00",
+      "level": "11-12"
+    },
+    {
+      "id": "mat-jkbose-004",
+      "category": "jkbose",
+      "level": "10",
+      "type": "pyq",
+      "name": "JKBOSE Class 10th Previous Year Papers (2021–2025)",
+      "subtitle": "All Subjects",
+      "desc": "Last 5 years' annual and bi-annual question papers for Class 10th across all subjects.",
+      "badges": [
+        {
+          "label": "Previous Papers",
+          "cls": "tcb-p"
+        },
+        {
+          "label": "5 Years",
+          "cls": "tcb-y"
+        }
+      ],
+      "year": "2021–2025",
+      "size": "7.9 MB",
+      "downloadLink": "https://jkbose.nic.in",
+      "viewLink": "https://jkbose.nic.in",
+      "scrapedAt": "2026-09-08T10:10:00"
+    },
+    {
+      "id": "mat-jkbose-005",
+      "category": "jkbose",
+      "level": "10",
+      "type": "syllabus",
+      "name": "JKBOSE Class 10th Reduced Syllabus 2026-27",
+      "subtitle": "Official Curriculum PDF",
+      "desc": "Latest official syllabus and marking scheme for Class 10th as prescribed by JKBOSE for the current session.",
+      "badges": [
+        {
+          "label": "Syllabus",
+          "cls": "tcb-g"
+        }
+      ],
+      "year": "",
+      "size": "0.8 MB",
+      "downloadLink": "https://jkbose.nic.in/syllabus.html",
+      "viewLink": "https://jkbose.nic.in/syllabus.html",
+      "scrapedAt": "2026-09-08T10:12:00"
+    }
+  ]
+}
