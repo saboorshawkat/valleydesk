@@ -65,7 +65,7 @@ function paintHero(meta) {
   if (crumbEl) crumbEl.textContent = meta.crumb || meta.title || "";
   if (officialEl && meta.officialLink) officialEl.setAttribute("href", meta.officialLink);
 
-  const accent = meta.color || "#0ac16c";
+  const accent = meta.color || "#e8590c";
   const accentStrong = getAccentStrong(accent);
   document.querySelectorAll(".entity-accent").forEach((el) => {
     el.style.setProperty("--accent", accent);

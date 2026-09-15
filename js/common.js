@@ -21,7 +21,7 @@ function escapeAttr(str) {
    colour only — icon tints and low-opacity backgrounds keep using the
    original bright brand colour. */
 function getAccentStrong(hex) {
-  hex = (hex || "#0ac16c").replace("#", "");
+  hex = (hex || "#e8590c").replace("#", "");
   if (hex.length === 3) hex = hex.split("").map((c) => c + c).join("");
   let r = parseInt(hex.substr(0, 2), 16);
   let g = parseInt(hex.substr(2, 2), 16);
@@ -126,14 +126,14 @@ document.addEventListener("DOMContentLoaded", function () {
    "type" controls the icon/colour: "info" | "alert" | "success" | "job". */
 
 const NOTIF_ICON_META = {
-  info: { icon: "fa-circle-info", color: "#38bdf8" },
+  info: { icon: "fa-circle-info", color: "#b5622f" },
   alert: { icon: "fa-triangle-exclamation", color: "#ff7f50" },
-  success: { icon: "fa-circle-check", color: "#0ac16c" },
-  job: { icon: "fa-briefcase", color: "#b060ff" },
+  success: { icon: "fa-circle-check", color: "#e8590c" },
+  job: { icon: "fa-briefcase", color: "#c2410c" },
 };
 
 function notifMetaFor(type) {
-  return NOTIF_ICON_META[type] || { icon: "fa-bell", color: "#0ac16c" };
+  return NOTIF_ICON_META[type] || { icon: "fa-bell", color: "#e8590c" };
 }
 
 function formatNotifDate(dateStr) {
