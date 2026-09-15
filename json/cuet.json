@@ -11,7 +11,116 @@
     "tag": "National Entrance Exam · NTA",
     "slug": "cuet"
   },
-  "notifications": [],
+  "notifications": [
+    {
+      "id": "cuet-269d4e3f",
+      "category": "cuet",
+      "name": "NTA Declares the Result/NTA Scores of Common University Entrance Test (UG) &#8211; 2026 &#8211; reg.",
+      "subtitle": "CUET (UG)",
+      "desc": "NTA Declares the Result/NTA Scores of Common University Entrance Test (UG) &#8211; 2026 &#8211; reg. — posted by CUET (UG).",
+      "badges": [
+        {
+          "label": "CUET (UG)",
+          "cls": "tcb-g"
+        }
+      ],
+      "lastDate": "--/--/----",
+      "applyLink": "https://cuet.nta.nic.in",
+      "notificationLink": "https://cdnbbsr.s3waas.gov.in/s3d1a21da7bca4abff8b0b61b87597de73/uploads/2026/06/20260623716111016.pdf",
+      "officialLink": "https://cuet.nta.nic.in",
+      "scrapedAt": "2026-09-15T14:27:12.976Z"
+    },
+    {
+      "id": "cuet-e93666e0",
+      "category": "cuet",
+      "name": "Final Answer Keys for CUET(UG) &#8211; 2026",
+      "subtitle": "CUET (UG)",
+      "desc": "Final Answer Keys for CUET(UG) &#8211; 2026 — posted by CUET (UG).",
+      "badges": [
+        {
+          "label": "CUET (UG)",
+          "cls": "tcb-g"
+        }
+      ],
+      "lastDate": "--/--/----",
+      "applyLink": "https://cuet.nta.nic.in",
+      "notificationLink": "https://cdnbbsr.s3waas.gov.in/s3d1a21da7bca4abff8b0b61b87597de73/uploads/2026/06/202606231857909583.pdf",
+      "officialLink": "https://cuet.nta.nic.in",
+      "scrapedAt": "2026-09-15T14:27:12.976Z"
+    },
+    {
+      "id": "cuet-81e23d72",
+      "category": "cuet",
+      "name": "Display of Provisional Answer Keys and Question Papers with Recorded Responses for Answer Key Challenge of Common Univer",
+      "subtitle": "CUET (UG)",
+      "desc": "Display of Provisional Answer Keys and Question Papers with Recorded Responses for Answer Key Challenge of Common University Entrance Test [CUET (UG)]-2026 -reg. — posted by CUET (UG).",
+      "badges": [
+        {
+          "label": "CUET (UG)",
+          "cls": "tcb-g"
+        }
+      ],
+      "lastDate": "--/--/----",
+      "applyLink": "https://cuet.nta.nic.in",
+      "notificationLink": "https://cdnbbsr.s3waas.gov.in/s3d1a21da7bca4abff8b0b61b87597de73/uploads/2026/06/20260609478040431.pdf",
+      "officialLink": "https://cuet.nta.nic.in",
+      "scrapedAt": "2026-09-15T14:27:12.976Z"
+    },
+    {
+      "id": "cuet-315d391a",
+      "category": "cuet",
+      "name": "Release of admit cards for re-scheduled candidates for CUET (UG)- 2026 on 06-07 June 2026-reg.",
+      "subtitle": "CUET (UG)",
+      "desc": "Release of admit cards for re-scheduled candidates for CUET (UG)- 2026 on 06-07 June 2026-reg. — posted by CUET (UG).",
+      "badges": [
+        {
+          "label": "CUET (UG)",
+          "cls": "tcb-g"
+        }
+      ],
+      "lastDate": "--/--/----",
+      "applyLink": "https://cuet.nta.nic.in",
+      "notificationLink": "https://cdnbbsr.s3waas.gov.in/s3d1a21da7bca4abff8b0b61b87597de73/uploads/2026/06/20260601958335840.pdf",
+      "officialLink": "https://cuet.nta.nic.in",
+      "scrapedAt": "2026-09-15T14:27:12.976Z"
+    },
+    {
+      "id": "cuet-6c7417fd",
+      "category": "cuet",
+      "name": "Release of Admit Cards for Re-scheduled CUET (UG) 2026 Examination Candidates-reg.",
+      "subtitle": "CUET (UG)",
+      "desc": "Release of Admit Cards for Re-scheduled CUET (UG) 2026 Examination Candidates-reg. — posted by CUET (UG).",
+      "badges": [
+        {
+          "label": "CUET (UG)",
+          "cls": "tcb-g"
+        }
+      ],
+      "lastDate": "--/--/----",
+      "applyLink": "https://cuet.nta.nic.in",
+      "notificationLink": "https://cdnbbsr.s3waas.gov.in/s3d1a21da7bca4abff8b0b61b87597de73/uploads/2026/05/20260527559172511.pdf",
+      "officialLink": "https://cuet.nta.nic.in",
+      "scrapedAt": "2026-09-15T14:27:12.977Z"
+    },
+    {
+      "id": "cuet-8b59ce16",
+      "category": "cuet",
+      "name": "Admit Card for CUET(UG) &#8211; 2026",
+      "subtitle": "CUET (UG)",
+      "desc": "Admit Card for CUET(UG) &#8211; 2026 — posted by CUET (UG).",
+      "badges": [
+        {
+          "label": "CUET (UG)",
+          "cls": "tcb-g"
+        }
+      ],
+      "lastDate": "--/--/----",
+      "applyLink": "https://cuet.nta.nic.in",
+      "notificationLink": "https://examinationservices.nic.in/AdmitCardService/AcCuetUG/Login?enc=kEinmH8aTDfj7UJERQYzpuwaXWY32HbjAGdMV/iRIao=",
+      "officialLink": "https://cuet.nta.nic.in",
+      "scrapedAt": "2026-09-15T14:27:12.977Z"
+    }
+  ],
   "examdates": [
     {
       "id": "other-2026-002",
