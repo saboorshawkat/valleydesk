@@ -13,6 +13,132 @@
   },
   "notifications": [
     {
+      "id": "kashmir-university-e7622a4c",
+      "category": "kashmir-university",
+      "name": "Jobs/Recruitment\r\n                Advertisements,Call Letters",
+      "subtitle": "University Of Kashmir",
+      "desc": "Jobs/Recruitment\r\n                Advertisements,Call Letters — posted by University Of Kashmir.",
+      "badges": [
+        {
+          "label": "University Of Kashmir",
+          "cls": "tcb-g"
+        }
+      ],
+      "lastDate": "--/--/----",
+      "applyLink": "https://kashmiruniversity.net",
+      "notificationLink": "https://kashmiruniversity.net/jobs.aspx",
+      "officialLink": "https://kashmiruniversity.net",
+      "scrapedAt": "2026-09-15T14:26:36.676Z"
+    },
+    {
+      "id": "kashmir-university-9cfd2046",
+      "category": "kashmir-university",
+      "name": "Notifications",
+      "subtitle": "University Of Kashmir",
+      "desc": "Notifications — posted by University Of Kashmir.",
+      "badges": [
+        {
+          "label": "University Of Kashmir",
+          "cls": "tcb-g"
+        }
+      ],
+      "lastDate": "--/--/----",
+      "applyLink": "https://kashmiruniversity.net",
+      "notificationLink": "https://kashmiruniversity.net/javascript:void(0)",
+      "officialLink": "https://kashmiruniversity.net",
+      "scrapedAt": "2026-09-15T14:26:36.676Z"
+    },
+    {
+      "id": "kashmir-university-9cfd2046",
+      "category": "kashmir-university",
+      "name": "Departmental Notifications",
+      "subtitle": "University Of Kashmir",
+      "desc": "Departmental Notifications — posted by University Of Kashmir.",
+      "badges": [
+        {
+          "label": "University Of Kashmir",
+          "cls": "tcb-g"
+        }
+      ],
+      "lastDate": "--/--/----",
+      "applyLink": "https://kashmiruniversity.net",
+      "notificationLink": "https://kashmiruniversity.net/javascript:void(0)",
+      "officialLink": "https://kashmiruniversity.net",
+      "scrapedAt": "2026-09-15T14:26:36.677Z"
+    },
+    {
+      "id": "kashmir-university-88dcfb05",
+      "category": "kashmir-university",
+      "name": "View All Notifications",
+      "subtitle": "University Of Kashmir",
+      "desc": "View All Notifications — posted by University Of Kashmir.",
+      "badges": [
+        {
+          "label": "University Of Kashmir",
+          "cls": "tcb-g"
+        }
+      ],
+      "lastDate": "--/--/----",
+      "applyLink": "https://kashmiruniversity.net",
+      "notificationLink": "https://kashmiruniversity.net/DepartmentNotification.aspx",
+      "officialLink": "https://kashmiruniversity.net",
+      "scrapedAt": "2026-09-15T14:26:36.677Z"
+    },
+    {
+      "id": "kashmir-university-48c4f899",
+      "category": "kashmir-university",
+      "name": "Career Counselling",
+      "subtitle": "University Of Kashmir",
+      "desc": "Career Counselling — posted by University Of Kashmir.",
+      "badges": [
+        {
+          "label": "University Of Kashmir",
+          "cls": "tcb-g"
+        }
+      ],
+      "lastDate": "--/--/----",
+      "applyLink": "https://kashmiruniversity.net",
+      "notificationLink": "https://ccpc.uok.edu.in/",
+      "officialLink": "https://kashmiruniversity.net",
+      "scrapedAt": "2026-09-15T14:26:36.677Z"
+    },
+    {
+      "id": "kashmir-university-a72f8df9",
+      "category": "kashmir-university",
+      "name": "Recruitment",
+      "subtitle": "University Of Kashmir",
+      "desc": "Recruitment — posted by University Of Kashmir.",
+      "badges": [
+        {
+          "label": "University Of Kashmir",
+          "cls": "tcb-g"
+        }
+      ],
+      "lastDate": "--/--/----",
+      "applyLink": "https://kashmiruniversity.net",
+      "notificationLink": "https://kashmiruniversity.net/Recruitment/",
+      "officialLink": "https://kashmiruniversity.net",
+      "scrapedAt": "2026-09-15T14:26:36.677Z"
+    },
+    {
+      "id": "kashmir-university-78bc3246",
+      "category": "kashmir-university",
+      "name": "Notifications",
+      "subtitle": "University Of Kashmir",
+      "desc": "Notifications — posted by University Of Kashmir.",
+      "badges": [
+        {
+          "label": "University Of Kashmir",
+          "cls": "tcb-g"
+        }
+      ],
+      "lastDate": "--/--/----",
+      "applyLink": "https://kashmiruniversity.net",
+      "notificationLink": "https://kashmiruniversity.net/notifications.aspx",
+      "officialLink": "https://kashmiruniversity.net",
+      "scrapedAt": "2026-09-15T14:26:36.677Z"
+    },
+    {
       "category": "kashmir-university",
       "name": "University of Kashmir Non-Teaching Staff Recruitment",
       "subtitle": "Advt No. 09 of 2026",
