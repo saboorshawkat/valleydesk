@@ -130,10 +130,10 @@ function paintLatestFeed(bySlug) {
     });
   });
 
-  _feedItems = items.slice(0, 24);
+  _feedItems = items.slice(0, 10);
 
   const countEl = document.getElementById("latestFeedCount");
-  if (countEl) countEl.textContent = items.length;
+  if (countEl) countEl.textContent = _feedItems.length;
 
   renderFeed("all");
 }
