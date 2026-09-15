@@ -16,6 +16,22 @@ const HOME_CATEGORIES = [
   "cuet",
 ];
 
+/* Brand colour per category (matches json/<slug>.json meta.color).
+   getAccentStrong() (common.js) darkens the ones that are too light
+   (yellow, mint, sky blue, pink, lavender, orange) to a readable,
+   contrast-safe shade before it's used as plain text/badge colour. */
+const HOME_ACCENT = {
+  jkbose: "#0ac16c",
+  jkbopee: "#b060ff",
+  jkssb: "#f5c518",
+  jkpsc: "#34d399",
+  neet: "#e11d48",
+  jee: "#38bdf8",
+  "kashmir-university": "#e879f9",
+  "central-university": "#a78bfa",
+  cuet: "#f97316",
+};
+
 async function loadHome() {
   const results = await Promise.all(
     HOME_CATEGORIES.map((slug) =>
@@ -53,13 +69,19 @@ function paintCategoryGrid(bySlug) {
     const slug = card.getAttribute("data-cat");
     const countEl = card.querySelector(".cgc-count");
     if (countEl && slug) countEl.textContent = `${totalForCategory(bySlug[slug])} Updates`;
+    const strong = HOME_ACCENT[slug] ? getAccentStrong(HOME_ACCENT[slug]) : null;
+    if (strong) {
+      if (countEl) countEl.style.color = strong;
+      const arrowEl = card.querySelector(".cgc-arrow");
+      if (arrowEl) arrowEl.style.color = strong;
+    }
   });
 }
 
 /* ---------- Latest Updates feed (mixed admit cards + results + notifications) ---------- */
 
 function feedCard(item, section, meta) {
-  const tagColor = meta.color;
+  const tagColor = getAccentStrong(meta.color);
   const sectionLabel = { admitcards: "Admit Card", results: "Result", notifications: "Notification" }[section];
   const primaryLink = item.downloadLink || item.resultLink || item.applyLink || item.officialLink || "#";
   const primaryLabel = { admitcards: "Download", results: "Check Result", notifications: "Apply Now" }[section];

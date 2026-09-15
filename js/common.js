@@ -10,6 +10,39 @@ function escapeAttr(str) {
   return String(str).replace(/"/g, "&quot;").toLowerCase();
 }
 
+/* ---------- Accent colour contrast fix ----------
+   Several category brand colours (JKSSB yellow, JKPSC mint, JEE sky
+   blue, University of Kashmir pink, Central University lavender,
+   CUET orange, JKBOPEE purple) are too light to use as plain text on
+   a white card or as a background under white button text — they sit
+   below ~4:1 contrast. getAccentStrong() darkens a colour toward
+   black just enough to clear that bar, and leaves already-dark
+   colours (NEET red, JKBOSE green) untouched. Used for TEXT/BADGE
+   colour only — icon tints and low-opacity backgrounds keep using the
+   original bright brand colour. */
+function getAccentStrong(hex) {
+  hex = (hex || "#0ac16c").replace("#", "");
+  if (hex.length === 3) hex = hex.split("").map((c) => c + c).join("");
+  let r = parseInt(hex.substr(0, 2), 16);
+  let g = parseInt(hex.substr(2, 2), 16);
+  let b = parseInt(hex.substr(4, 2), 16);
+  const lum = (v) => {
+    v /= 255;
+    return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+  };
+  const relLum = (rr, gg, bb) => 0.2126 * lum(rr) + 0.7152 * lum(gg) + 0.0722 * lum(bb);
+  const contrastVsWhite = (rr, gg, bb) => (1.05) / (relLum(rr, gg, bb) + 0.05);
+  let amt = 0;
+  while (amt < 0.8 && contrastVsWhite(r * (1 - amt), g * (1 - amt), b * (1 - amt)) < 4.0) {
+    amt += 0.02;
+  }
+  const nr = Math.round(r * (1 - amt));
+  const ng = Math.round(g * (1 - amt));
+  const nb = Math.round(b * (1 - amt));
+  const toHex = (v) => v.toString(16).padStart(2, "0");
+  return "#" + toHex(nr) + toHex(ng) + toHex(nb);
+}
+
 /* ---------- Theme (light / dark) ---------- */
 
 function toggleTheme() {

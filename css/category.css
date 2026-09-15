@@ -8,20 +8,20 @@
 
 /* ---------- Entity / category hero ---------- */
 .entity-hero-icon{width:52px;height:52px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:24px;border-radius:16px;background:color-mix(in srgb, var(--accent, var(--g)) 16%, transparent);border:1px solid color-mix(in srgb, var(--accent, var(--g)) 38%, transparent);box-shadow:0 6px 18px color-mix(in srgb, var(--accent, var(--g)) 20%, transparent)}
-.subpage-hero.entity-accent{border-bottom-color:color-mix(in srgb, var(--accent, var(--g)) 30%, var(--glass-brd));position:relative}
+.subpage-hero.entity-accent{border-bottom-color:color-mix(in srgb, var(--accent, var(--g)) 30%, var(--glass-brd));position:relative;background-image:radial-gradient(ellipse 640px 320px at 12% -25%, color-mix(in srgb, var(--accent, var(--g)) 13%, transparent), transparent 72%)}
 .subpage-hero.entity-accent::after{content:'';position:absolute;left:0;right:0;bottom:-1px;height:2.5px;background:var(--accent, var(--g))}
 .tools-section.entity-accent .sh-bar{background:var(--accent, var(--g))}
-.tools-section.entity-accent .subpage-total{border-color:color-mix(in srgb, var(--accent, var(--g)) 45%, var(--glass-brd));color:var(--accent, var(--g))}
-.entity-tag{display:inline-flex;align-items:center;gap:5px;font-size:8px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--accent,var(--g));background:color-mix(in srgb, var(--accent, var(--g)) 12%, transparent);border:1px solid color-mix(in srgb, var(--accent, var(--g)) 34%, transparent);padding:3px 9px;border-radius:20px;margin-bottom:6px}
-.entity-official-btn{display:inline-flex;align-items:center;gap:6px;font-size:9px;font-weight:700;color:#fff;background:var(--accent,var(--g));padding:8px 14px;border-radius:9px;white-space:nowrap;flex-shrink:0;transition:transform .15s,box-shadow .15s}
+.tools-section.entity-accent .subpage-total{border-color:color-mix(in srgb, var(--accent, var(--g)) 45%, var(--glass-brd));color:var(--accent-strong, var(--accent, var(--g)))}
+.entity-tag{display:inline-flex;align-items:center;gap:5px;font-size:8px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--accent-strong,var(--accent,var(--g)));background:color-mix(in srgb, var(--accent, var(--g)) 12%, transparent);border:1px solid color-mix(in srgb, var(--accent, var(--g)) 34%, transparent);padding:3px 9px;border-radius:20px;margin-bottom:6px}
+.entity-official-btn{display:inline-flex;align-items:center;gap:6px;font-size:9px;font-weight:700;color:#fff;background:var(--accent-strong,var(--accent,var(--g)));padding:8px 14px;border-radius:9px;white-space:nowrap;flex-shrink:0;transition:transform .15s,box-shadow .15s}
 .entity-official-btn:hover{transform:translateY(-1.5px);box-shadow:0 8px 18px color-mix(in srgb, var(--accent, var(--g)) 35%, transparent)}
 
 /* ---------- Section quick-nav (jump chips under the hero) ---------- */
 .entity-quicknav{display:flex;flex-wrap:wrap;gap:7px;padding:12px 0 2px}
 .eqn-chip{display:inline-flex;align-items:center;gap:6px;font-size:8.5px;font-weight:700;color:var(--t2);background:var(--bg2);border:1px solid var(--bg4);padding:6px 12px;border-radius:20px;transition:all .15s}
-.eqn-chip i{color:var(--accent,var(--g));font-size:9px}
+.eqn-chip i{color:var(--accent-strong,var(--accent,var(--g)));font-size:9px}
 .eqn-chip:hover{border-color:color-mix(in srgb, var(--accent, var(--g)) 45%, var(--bg4));color:var(--t1);transform:translateY(-1px)}
-.eqn-chip .eqn-n{color:var(--accent,var(--g));font-weight:800}
+.eqn-chip .eqn-n{color:var(--accent-strong,var(--accent,var(--g)));font-weight:800}
 
 /* ---------- Empty-state (a section with zero items for this category) ---------- */
 .entity-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:26px 14px;text-align:center;color:var(--t3);background:var(--bg2);border:1px dashed var(--bg4);border-radius:var(--rad2);font-size:9.5px}
@@ -41,7 +41,7 @@
 .study-tab i{font-size:10px}
 .study-tab .study-tab-n{background:var(--bg3);color:var(--t3);border-radius:20px;padding:1px 6px;font-size:7.5px;font-weight:800}
 .study-tab:hover{border-color:var(--accent,var(--g))}
-.study-tab.act{background:var(--accent,var(--g));border-color:var(--accent,var(--g));color:#fff}
+.study-tab.act{background:var(--accent-strong,var(--accent,var(--g)));border-color:var(--accent-strong,var(--accent,var(--g)));color:#fff}
 .study-tab.act .study-tab-n{background:rgba(255,255,255,.28);color:#fff}
 
 .study-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
@@ -50,9 +50,9 @@
 [data-theme="dark"] .study-card:hover{box-shadow:0 14px 28px rgba(0,0,0,.4)}
 
 .study-card-head{position:relative;padding:16px 14px 34px;background:linear-gradient(150deg, color-mix(in srgb, var(--accent, var(--g)) 14%, transparent), color-mix(in srgb, var(--accent, var(--g)) 3%, transparent))}
-.study-doc-ico{width:40px;height:48px;position:relative;background:var(--bg1);border:1.5px solid color-mix(in srgb, var(--accent, var(--g)) 55%, var(--bg4));border-radius:4px 9px 4px 4px;display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--accent,var(--g));box-shadow:0 6px 14px rgba(0,0,0,.08)}
+.study-doc-ico{width:40px;height:48px;position:relative;background:var(--bg1);border:1.5px solid color-mix(in srgb, var(--accent, var(--g)) 55%, var(--bg4));border-radius:4px 9px 4px 4px;display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--accent-strong,var(--accent,var(--g)));box-shadow:0 6px 14px rgba(0,0,0,.08)}
 .study-doc-ico::before{content:'';position:absolute;top:-1.5px;right:-1.5px;width:0;height:0;border-style:solid;border-width:0 10px 10px 0;border-color:transparent color-mix(in srgb, var(--accent, var(--g)) 30%, var(--bg2)) transparent transparent}
-.study-type-pill{position:absolute;top:14px;right:14px;font-size:7px;font-weight:800;letter-spacing:0.6px;text-transform:uppercase;color:#fff;background:var(--accent,var(--g));padding:3px 8px;border-radius:20px}
+.study-type-pill{position:absolute;top:14px;right:14px;font-size:7px;font-weight:800;letter-spacing:0.6px;text-transform:uppercase;color:#fff;background:var(--accent-strong,var(--accent,var(--g)));padding:3px 8px;border-radius:20px}
 .study-card-fold{position:absolute;left:0;right:0;bottom:-1px;height:22px;background:var(--bg1);border-radius:16px 16px 0 0}
 
 .study-card-body{padding:2px 14px 14px;flex:1;display:flex;flex-direction:column;margin-top:-20px;position:relative;z-index:1}
@@ -64,7 +64,7 @@
 .study-meta-chip i{font-size:7.5px}
 .study-card-actions{display:flex;gap:7px;margin-top:11px}
 .study-btn{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:5px;font-size:8.5px;font-weight:700;padding:8px 8px;border-radius:8px;transition:all .15s}
-.study-btn-dl{background:var(--accent,var(--g));color:#fff}
+.study-btn-dl{background:var(--accent-strong,var(--accent,var(--g)));color:#fff}
 .study-btn-dl:hover{filter:brightness(1.08);transform:translateY(-1px)}
 .study-btn-view{background:var(--bg2);border:1px solid var(--bg4);color:var(--t2)}
 .study-btn-view:hover{border-color:var(--accent,var(--g));color:var(--t1)}
@@ -76,7 +76,7 @@
 .study-card.is-pyq .pyq-sheet{position:absolute;inset:0;background:var(--bg1);border:1.5px solid color-mix(in srgb, var(--accent, var(--g)) 45%, var(--bg4));border-radius:3px 8px 3px 3px}
 .study-card.is-pyq .pyq-sheet:nth-child(1){transform:rotate(-8deg);top:3px}
 .study-card.is-pyq .pyq-sheet:nth-child(2){transform:rotate(4deg);top:1px}
-.study-card.is-pyq .pyq-sheet:nth-child(3){transform:rotate(0deg);display:flex;align-items:center;justify-content:center;color:var(--accent,var(--g));font-size:13px}
+.study-card.is-pyq .pyq-sheet:nth-child(3){transform:rotate(0deg);display:flex;align-items:center;justify-content:center;color:var(--accent-strong,var(--accent,var(--g)));font-size:13px}
 
 @media(max-width:980px){.study-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.study-grid{grid-template-columns:1fr}.study-tabs{overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px}}
@@ -86,7 +86,15 @@
 =================================================================== */
 .cat-grid.cat-grid-9{grid-template-columns:repeat(3,1fr)}
 @media(max-width:980px){.cat-grid.cat-grid-9{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:560px){.cat-grid.cat-grid-9{grid-template-columns:1fr}}
+@media(max-width:560px){.cat-grid.cat-grid-9{grid-template-columns:repeat(2,1fr);gap:8px}}
+@media(max-width:360px){.cat-grid.cat-grid-9{gap:6px}.cat-grid.cat-grid-9 .cgc-desc{display:none}}
+
+/* ---------- Homepage — Quick Tools grid (4 cards) ---------- */
+.cat-grid.cat-grid-4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.cat-grid.cat-grid-4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.cat-grid.cat-grid-4{grid-template-columns:repeat(2,1fr);gap:8px}}
+.tool-grid-card .cgc-body{min-width:0}
+.tool-grid-card .cgc-name{line-height:1.35}
 
 /* ---------- Homepage — mixed "Latest Updates" feed ---------- */
 .feed-tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
