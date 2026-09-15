@@ -11,7 +11,44 @@
     "tag": "Common Entrance Test · Engineering & Medical",
     "slug": "jkbopee"
   },
-  "notifications": [],
+  "notifications": [
+    {
+      "id": "jkbopee-ca3256d0",
+      "category": "jkbopee",
+      "name": "Admit Card",
+      "subtitle": "JKBOPEE",
+      "desc": "Admit Card — posted by JKBOPEE.",
+      "badges": [
+        {
+          "label": "JKBOPEE",
+          "cls": "tcb-g"
+        }
+      ],
+      "lastDate": "--/--/----",
+      "applyLink": "https://jkbopee.gov.in",
+      "notificationLink": "https://jkbopee.gov.in/AdmitCard.aspx",
+      "officialLink": "https://jkbopee.gov.in",
+      "scrapedAt": "2026-09-15T14:27:18.984Z"
+    },
+    {
+      "id": "jkbopee-1729694d",
+      "category": "jkbopee",
+      "name": "Notifications",
+      "subtitle": "JKBOPEE",
+      "desc": "Notifications — posted by JKBOPEE.",
+      "badges": [
+        {
+          "label": "JKBOPEE",
+          "cls": "tcb-g"
+        }
+      ],
+      "lastDate": "--/--/----",
+      "applyLink": "https://jkbopee.gov.in",
+      "notificationLink": "https://jkbopee.gov.in/Notifications.aspx",
+      "officialLink": "https://jkbopee.gov.in",
+      "scrapedAt": "2026-09-15T14:27:18.984Z"
+    }
+  ],
   "examdates": [
     {
       "id": "jkbopee-2026-001",
