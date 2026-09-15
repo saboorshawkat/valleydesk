@@ -153,29 +153,63 @@ async function initNotifications() {
   if (dotEl) dotEl.style.display = "block";
 }
 
+/* The masthead uses backdrop-filter, which (per spec) makes it the
+   containing block for any position:fixed descendant. On mobile the
+   notif panel switches to position:fixed so it can dock as a bottom
+   sheet — but without this fix it would be positioned relative to the
+   ~60px-tall masthead instead of the real viewport and render almost
+   entirely off-screen above the page. Moving the panel to <body> while
+   it's open sidesteps that and keeps desktop's absolute-positioned
+   dropdown (anchored to .notif-wrap) untouched. */
+let notifHomeParent = null;
+
+function isMobileNotifLayout() {
+  return window.matchMedia("(max-width: 480px)").matches;
+}
+
+function returnNotifPanelHome(panel) {
+  if (notifHomeParent && !panel.classList.contains("show")) {
+    notifHomeParent.appendChild(panel);
+    notifHomeParent = null;
+  }
+}
+
 function toggleNotifPanel(evt) {
   if (evt) evt.stopPropagation();
   const panel = document.getElementById("notifPanel");
   const btn = document.getElementById("notifBtn");
-  if (!panel) return;
+  const wrap = document.querySelector(".notif-wrap");
+  if (!panel || !wrap) return;
   const opening = !panel.classList.contains("show");
+
+  if (opening && isMobileNotifLayout() && panel.parentElement !== document.body) {
+    notifHomeParent = wrap;
+    document.body.appendChild(panel);
+  }
+
   panel.classList.toggle("show", opening);
   if (btn) btn.setAttribute("aria-expanded", opening ? "true" : "false");
+
+  if (!opening) setTimeout(function () { returnNotifPanelHome(panel); }, 220);
 }
 
 function closeNotifPanel() {
   const panel = document.getElementById("notifPanel");
   const btn = document.getElementById("notifBtn");
-  if (!panel) return;
+  if (!panel || !panel.classList.contains("show")) return;
   panel.classList.remove("show");
   if (btn) btn.setAttribute("aria-expanded", "false");
+  setTimeout(function () { returnNotifPanelHome(panel); }, 220);
 }
 
 document.addEventListener("DOMContentLoaded", initNotifications);
 
 document.addEventListener("click", function (e) {
   const wrap = document.querySelector(".notif-wrap");
-  if (wrap && !wrap.contains(e.target)) closeNotifPanel();
+  const panel = document.getElementById("notifPanel");
+  const insideWrap = wrap && wrap.contains(e.target);
+  const insidePanel = panel && panel.contains(e.target);
+  if (!insideWrap && !insidePanel) closeNotifPanel();
 });
 
 document.addEventListener("keydown", function (e) {
