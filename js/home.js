@@ -21,15 +21,15 @@ const HOME_CATEGORIES = [
    (yellow, mint, sky blue, pink, lavender, orange) to a readable,
    contrast-safe shade before it's used as plain text/badge colour. */
 const HOME_ACCENT = {
-  jkbose: "#e8590c",
-  jkbopee: "#c2410c",
-  jkssb: "#eab308",
-  jkpsc: "#a16207",
-  neet: "#c81e1e",
-  jee: "#b5622f",
-  "kashmir-university": "#8b2942",
-  "central-university": "#6b4226",
-  cuet: "#f2751a",
+  jkbose: "#0ac16c",
+  jkbopee: "#b060ff",
+  jkssb: "#f5c518",
+  jkpsc: "#34d399",
+  neet: "#e11d48",
+  jee: "#38bdf8",
+  "kashmir-university": "#e879f9",
+  "central-university": "#a78bfa",
+  cuet: "#f97316",
 };
 
 async function loadHome() {
